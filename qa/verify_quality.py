@@ -32,7 +32,7 @@ def run_verification(artifact_report_path=None):
     category_checks = {}
     
     placeholder_pattern = re.compile(
-        r"(scenario\s*#|test\s*#|verify\s*scenario|execute\s*scenario|test\s*case\s*#|scenario\s*\d+|test\s*\d+)", 
+        r"(\bpart\s*\d+|\bscenario\s*#|\btest\s*#|\bverify\s*scenario|\bexecute\s*scenario|\btest\s*case\s*#|\bscenario\s*\d+|\btest\s*\d+)", 
         re.IGNORECASE
     )
     
@@ -43,6 +43,7 @@ def run_verification(artifact_report_path=None):
             "count": count,
             "duplicate_ids": 0,
             "duplicate_titles": 0,
+            "duplicate_features": 0,
             "placeholders": 0,
             "duplicate_scenarios": 0
         }
@@ -52,9 +53,11 @@ def run_verification(artifact_report_path=None):
         if count != 300:
             failures.append(f"Category '{category}' has {count} tests (Expected: exactly 300).")
             
+        category_features = set()
         for spec in specs:
             id_val = spec.get("id")
             title = spec.get("title")
+            feature = spec.get("feature")
             steps = spec.get("steps")
             preconditions = spec.get("preconditions")
             expected = spec.get("expected")
@@ -73,10 +76,17 @@ def run_verification(artifact_report_path=None):
             else:
                 all_titles.add(title)
                 
-            # Check placeholder patterns
-            if placeholder_pattern.search(title):
+            # Check duplicate Features within category
+            if feature in category_features:
+                category_checks[category]["duplicate_features"] += 1
+                failures.append(f"Duplicate feature found in {category.upper()}: '{feature}'")
+            else:
+                category_features.add(feature)
+                
+            # Check placeholder patterns in title and feature name
+            if placeholder_pattern.search(title) or placeholder_pattern.search(feature):
                 category_checks[category]["placeholders"] += 1
-                failures.append(f"Placeholder name violation in title: '{title}'")
+                failures.append(f"Placeholder name violation in test {id_val}: Title='{title}' or Feature='{feature}'")
                 
             # Check duplicate scenarios (combination of preconditions, steps, expected)
             scenario_key = (preconditions, steps, expected)
@@ -89,21 +99,21 @@ def run_verification(artifact_report_path=None):
     # Compile Verification Tables
     report_lines.append("## Category Audit Summary")
     report_lines.append("")
-    report_lines.append("| Category | Total Tests | Duplicate IDs | Duplicate Titles | Placeholders | Duplicate Scenarios | Status |")
-    report_lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+    report_lines.append("| Category | Total Tests | Duplicate IDs | Duplicate Titles | Duplicate Features | Placeholders | Duplicate Scenarios | Status |")
+    report_lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |")
     
     all_ok = True
     for cat in categories:
         checks = category_checks[cat]
         status = "✅ PASS" if (checks["count"] == 300 and checks["duplicate_ids"] == 0 and 
-                               checks["duplicate_titles"] == 0 and checks["placeholders"] == 0 and 
-                               checks["duplicate_scenarios"] == 0) else "❌ FAIL"
+                               checks["duplicate_titles"] == 0 and checks["duplicate_features"] == 0 and
+                               checks["placeholders"] == 0 and checks["duplicate_scenarios"] == 0) else "❌ FAIL"
         if status == "❌ FAIL":
             all_ok = False
             
         report_lines.append(
             f"| {cat.upper()} | {checks['count']} | {checks['duplicate_ids']} | "
-            f"{checks['duplicate_titles']} | {checks['placeholders']} | "
+            f"{checks['duplicate_titles']} | {checks['duplicate_features']} | {checks['placeholders']} | "
             f"{checks['duplicate_scenarios']} | {status} |"
         )
         
@@ -119,7 +129,7 @@ def run_verification(artifact_report_path=None):
         if len(failures) > 50:
             report_lines.append(f"- ... and {len(failures) - 50} more audit issues.")
     else:
-        report_lines.append("🏆 **Zero Quality Audit failures detected! All 1,500 tests meet specifications.**")
+        report_lines.append("🏆 **Zero Quality Audit failures detected! All 1,200 tests meet specifications.**")
         
     report_content = "\n".join(report_lines)
     

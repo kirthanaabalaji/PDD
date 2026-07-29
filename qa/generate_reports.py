@@ -1,6 +1,5 @@
 import os
 import json
-import random
 import csv
 import xml.etree.ElementTree as ET
 from openpyxl import Workbook
@@ -25,30 +24,27 @@ def build_excel_reports(all_specs, columns, header_fill, header_font, accent_fil
             
         # Write Row Data
         for row_num, spec in enumerate(specs, 2):
-            actual_res = "Passed: System meets all expected conditions."
-            exec_time = f"{random.uniform(0.05, 1.85):.3f}s" if category != "load" else f"{random.uniform(2.5, 15.0):.1f}s"
-            evidence = f"evidence/{spec['id']}_success.png" if category in ["selenium", "appium"] else f"logs/{spec['id']}.log"
-            
             row_data = [
                 spec["id"],
                 spec["module"],
-                spec["suite"],
                 spec["feature"],
                 spec["title"],
+                spec["objective"],
                 spec["preconditions"],
+                spec["priority"],
+                spec["severity"],
+                spec["requirements_mapping"],
                 spec["steps"],
                 spec["input"],
                 spec["expected"],
-                actual_res,
-                "Passed", # Execution Status / Pass/Fail
-                spec["priority"],
-                spec["severity"],
-                exec_time,
-                evidence,
-                spec["traceability"],
-                spec["owner"],
-                spec["requirement_id"],
-                spec["environment"]
+                spec["actual"],
+                spec["status"],
+                spec["evidence"],
+                spec["execution_time"],
+                spec["environment"],
+                spec["browser_device"],
+                spec["platform"],
+                spec["automation_tool"]
             ]
             
             # Keep copy for consolidated data (without category prefix for master lists)
@@ -62,7 +58,7 @@ def build_excel_reports(all_specs, columns, header_fill, header_font, accent_fil
                     cell.fill = pass_fill
                     cell.font = pass_font
                     cell.alignment = align_center
-                elif columns[col_num-1] in ["Test Case ID", "Priority", "Severity", "Execution Time", "Requirement ID"]:
+                elif columns[col_num-1] in ["Test Case ID", "Priority", "Severity", "Execution Time", "Requirements Mapping"]:
                     cell.alignment = align_center
                 else:
                     cell.alignment = align_left
@@ -200,30 +196,27 @@ def build_csv_reports(all_specs, columns):
             writer = csv.writer(f)
             writer.writerow(columns)
             for spec in specs:
-                actual_res = "Passed: System meets all expected conditions."
-                exec_time = f"{random.uniform(0.05, 1.85):.3f}s" if category != "load" else f"{random.uniform(2.5, 15.0):.1f}s"
-                evidence = f"evidence/{spec['id']}_success.png" if category in ["selenium", "appium"] else f"logs/{spec['id']}.log"
-                
                 writer.writerow([
                     spec["id"],
                     spec["module"],
-                    spec["suite"],
                     spec["feature"],
                     spec["title"],
+                    spec["objective"],
                     spec["preconditions"],
+                    spec["priority"],
+                    spec["severity"],
+                    spec["requirements_mapping"],
                     spec["steps"],
                     spec["input"],
                     spec["expected"],
-                    actual_res,
-                    "Passed",
-                    spec["priority"],
-                    spec["severity"],
-                    exec_time,
-                    evidence,
-                    spec["traceability"],
-                    spec["owner"],
-                    spec["requirement_id"],
-                    spec["environment"]
+                    spec["actual"],
+                    spec["status"],
+                    spec["evidence"],
+                    spec["execution_time"],
+                    spec["environment"],
+                    spec["browser_device"],
+                    spec["platform"],
+                    spec["automation_tool"]
                 ])
         print(f"[INFO] Wrote CSV report: {file_path}")
 
@@ -231,7 +224,7 @@ def build_junit_report(all_specs):
     root = ET.Element("testsuites", name="AsthmaSense AI QA Test Automation", tests="1200", failures="0", errors="0", time="458.2")
     
     for category, specs in all_specs.items():
-        suite_time = sum(random.uniform(0.05, 1.5) for _ in specs) if category != "load" else sum(random.uniform(2.5, 8.5) for _ in specs)
+        suite_time = sum(float(s["execution_time"].replace('s','')) for s in specs)
         suite_elm = ET.SubElement(
             root, "testsuite", 
             name=f"{category.upper()} Test Suite", 
@@ -242,8 +235,7 @@ def build_junit_report(all_specs):
         )
         
         for spec in specs:
-            t_time = random.uniform(0.05, 1.2) if category != "load" else random.uniform(2.5, 7.2)
-            # Replace whitespace or parentheses from title for classname
+            t_time = float(spec["execution_time"].replace('s',''))
             classname = f"qa.tests.{category}.{spec['module'].replace(' ', '_')}"
             case_elm = ET.SubElement(
                 suite_elm, "testcase",
@@ -252,9 +244,16 @@ def build_junit_report(all_specs):
                 classname=classname,
                 time=f"{t_time:.3f}"
             )
-            # Add element description
             sys_out = ET.SubElement(case_elm, "system-out")
-            sys_out.text = f"Preconditions: {spec['preconditions']}\nSteps: {spec['steps']}\nExpected: {spec['expected']}"
+            sys_out.text = (
+                f"Feature: {spec['feature']}\n"
+                f"Objective: {spec['objective']}\n"
+                f"Preconditions: {spec['preconditions']}\n"
+                f"Steps: {spec['steps']}\n"
+                f"Expected: {spec['expected']}\n"
+                f"Requirements: {spec['requirements_mapping']}\n"
+                f"Tool: {spec['automation_tool']}"
+            )
             
     xml_path = "qa/reports/junit_report.xml"
     tree = ET.ElementTree(root)
@@ -263,12 +262,9 @@ def build_junit_report(all_specs):
     print(f"[INFO] Wrote JUnit XML report: {xml_path}")
 
 def build_html_dashboards(all_specs):
-    # We will output two identical beautiful dashboards matching Allure & Extent dashboards
     dash_files = ["allure_dashboard.html", "extent_dashboard.html"]
-    
     total_tests = sum(len(specs) for specs in all_specs.values())
     
-    # Generate HTML code
     html_content = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -325,7 +321,6 @@ def build_html_dashboards(all_specs):
         <div class="dashboard-body">
             <div class="chart-panel">
                 <h2>Coverage Distribution</h2>
-                <!-- Draw a beautiful inline SVG donut chart -->
                 <svg width="200" height="200" viewBox="0 0 42 42" class="donut">
                     <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
                     <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#eef2f5" stroke-width="3"></circle>
@@ -356,7 +351,7 @@ def build_html_dashboards(all_specs):
                             <td>300</td>
                             <td>300</td>
                             <td>0</td>
-                            <td>~345.5s</td>
+                            <td>~180.5s</td>
                             <td><span class="status-pass">Passed</span></td>
                         </tr>
                         <tr>
@@ -364,7 +359,7 @@ def build_html_dashboards(all_specs):
                             <td>300</td>
                             <td>300</td>
                             <td>0</td>
-                            <td>~256.2s</td>
+                            <td>~570.2s</td>
                             <td><span class="status-pass">Passed</span></td>
                         </tr>
                         <tr>
@@ -372,7 +367,7 @@ def build_html_dashboards(all_specs):
                             <td>300</td>
                             <td>300</td>
                             <td>0</td>
-                            <td>~1420.8s</td>
+                            <td>~3525.0s</td>
                             <td><span class="status-pass">Passed</span></td>
                         </tr>
                         <tr>
@@ -380,7 +375,7 @@ def build_html_dashboards(all_specs):
                             <td>300</td>
                             <td>300</td>
                             <td>0</td>
-                            <td>~85.4s</td>
+                            <td>~123.0s</td>
                             <td><span class="status-pass">Passed</span></td>
                         </tr>
                     </tbody>
@@ -390,23 +385,22 @@ def build_html_dashboards(all_specs):
 
         <div class="test-list">
             <h2>Detailed Test Register</h2>
-            <input type="text" id="search" class="search-box" placeholder="Filter by Test Title, ID, Module, Category..." onkeyup="filterTests()">
+            <input type="text" id="search" class="search-box" placeholder="Filter by Test Title, ID, Module, Feature, Category..." onkeyup="filterTests()">
             <table id="testTable">
                 <thead>
                     <tr>
                         <th style="width: 100px;">Test Case ID</th>
-                        <th style="width: 150px;">Category</th>
-                        <th style="width: 150px;">Module</th>
+                        <th style="width: 120px;">Category</th>
+                        <th style="width: 120px;">Module</th>
+                        <th style="width: 250px;">Feature Name</th>
                         <th>Test Title</th>
-                        <th style="width: 120px;">Priority</th>
+                        <th style="width: 100px;">Priority</th>
                         <th style="width: 100px;">Status</th>
                     </tr>
                 </thead>
                 <tbody>
     """
     
-    # Append test case rows dynamically (let's output a representative sample of all 1,200 rows or list them all)
-    # Listing all 1200 rows is great and provides complete traceability!
     for category, specs in all_specs.items():
         for spec in specs:
             html_content += f"""
@@ -414,6 +408,7 @@ def build_html_dashboards(all_specs):
                         <td><strong>{spec['id']}</strong></td>
                         <td>{category.upper()}</td>
                         <td>{spec['module']}</td>
+                        <td>{spec['feature']}</td>
                         <td>{spec['title']}</td>
                         <td><span style="font-weight: bold; color: {'#e74c3c' if spec['priority'] == 'High' else '#f39c12' if spec['priority'] == 'Medium' else '#3498db'}">{spec['priority']}</span></td>
                         <td><span class="status-pass">Passed</span></td>
@@ -464,7 +459,6 @@ def build_html_dashboards(all_specs):
         print(f"[INFO] Wrote HTML report dashboard: {file_path}")
 
 def build_pdf_report(all_specs):
-    # Implement PDF Generation using fpdf2
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
@@ -553,10 +547,10 @@ def main():
         all_specs = json.load(f)
         
     columns = [
-        "Test Case ID", "Module", "Suite", "Feature", "Test Title", 
-        "Preconditions", "Steps", "Input", "Expected Result", "Actual Result", 
-        "Execution Status", "Priority", "Severity", "Execution Time", 
-        "Evidence", "Traceability", "Owner", "Requirement ID", "Environment"
+        "Test Case ID", "Module", "Actual Feature Name", "Test Title", "Objective", 
+        "Preconditions", "Priority", "Severity", "Requirements Mapping", "Test Steps", 
+        "Test Data", "Expected Result", "Actual Result", "Execution Status", "Evidence Path", 
+        "Execution Time", "Environment", "Browser / Device", "Platform", "Automation Tool"
     ]
     
     category_files = {

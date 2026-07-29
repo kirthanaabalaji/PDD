@@ -4,13 +4,13 @@ This report verifies that the rebuilt QA automation framework meets all strict q
 
 ## Category Audit Summary
 
-| Category | Total Tests | Duplicate IDs | Duplicate Titles | Placeholders | Duplicate Scenarios | Status |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| SELENIUM | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
-| APPIUM | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
-| LOAD | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
-| SECURITY | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
+| Category | Total Tests | Duplicate IDs | Duplicate Titles | Duplicate Features | Placeholders | Duplicate Scenarios | Status |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| SELENIUM | 300 | 0 | 0 | 0 | 0 | 0 | ✅ PASS |
+| APPIUM | 300 | 0 | 0 | 0 | 0 | 0 | ✅ PASS |
+| LOAD | 300 | 0 | 0 | 0 | 0 | 0 | ✅ PASS |
+| SECURITY | 300 | 0 | 0 | 0 | 0 | 0 | ✅ PASS |
 
 ## Detailed Audit Log
 
-🏆 **Zero Quality Audit failures detected! All 1,500 tests meet specifications.**
+🏆 **Zero Quality Audit failures detected! All 1,200 tests meet specifications.**
