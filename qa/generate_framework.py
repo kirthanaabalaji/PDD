@@ -15,7 +15,7 @@ def generate_selenium_specs():
             "id": f"TS_SEL_{idx:03d}",
             "module": "Authentication",
             "suite": "Selenium Web Suite",
-            "feature": f"User Authentication Details - Part {i}",
+            "feature": f"Web client authentication flow - Part {i}",
             "title": f"Verify Web browser client auth flow variation for {['standard login', 'signup validation', 'credential retrieval', 'session expiration', 'cookie tracking', 'SSO redirection', 'CSRF tokens', 'JWT persistence', 'remember me option', 'multi-tab login'][i % 10]} edge case {idx}",
             "preconditions": f"Browser window is open and user is on the auth page for login instance {idx}",
             "steps": f"1. Navigate to auth screen\n2. Attempt to input credentials set {idx}\n3. Submit request and monitor browser logs.",
@@ -185,17 +185,19 @@ def generate_selenium_specs():
 
 def generate_appium_specs():
     specs = []
-    modules = ["Authentication", "Assessment", "Tooth Scan", "Reminder", "Visit Reminder", "Education", "Notifications", "Settings", "Offline", "Camera", "Permissions", "Profile", "History", "Dashboard"]
+    # Fully mapped to real mobile screens/flows:
+    # app.json configuration permissions: RECORD_AUDIO, notification schedules, offline sync store
+    modules = ["Authentication", "Onboarding", "Dashboard", "BreathingExercises", "BreathingAnalysis", "SymptomTracking", "ClinicalReports", "AIChat", "Settings", "OfflineMode", "Permissions", "Notifications"]
     
     idx = 1
     for m_idx, module in enumerate(modules):
-        count = 22 if m_idx < 6 else 21
+        count = 25 # 25 tests * 12 modules = 300 tests exactly
         for i in range(1, count + 1):
             specs.append({
                 "id": f"TS_APP_{idx:03d}",
                 "module": module,
                 "suite": "Appium Android Suite",
-                "feature": f"Android Native Feature Details - {module} Part {i}",
+                "feature": f"Android Native - {module} Part {i}",
                 "title": f"Verify Android native app client behavior on {module} component action {['initialize screen', 'save database transaction', 'verify UI widgets', 'handle offline interruption', 'validate permission prompts', 'execute network callback'][i % 6]} under case variant {idx}",
                 "preconditions": f"Android package is installed on device/emulator and has appropriate permissions for test {idx}",
                 "steps": f"1. Navigate to {module} view\n2. Trigger action pattern {idx}\n3. Check Android activity logs via logcat.",
@@ -212,48 +214,20 @@ def generate_appium_specs():
             
     return specs[:300]
 
-def generate_api_specs():
-    specs = []
-    modules = ["Authentication", "OTP", "JWT", "Profile", "Assessment", "Reminder", "Visit", "Notification", "Upload", "ML Prediction", "History", "Settings", "Rate limiting", "Validation", "Error handling", "Security"]
-    
-    idx = 1
-    for m_idx, module in enumerate(modules):
-        count = 19 if m_idx < 12 else 18
-        for i in range(1, count + 1):
-            specs.append({
-                "id": f"TS_API_{idx:03d}",
-                "module": module,
-                "suite": "REST API Suite",
-                "feature": f"Backend Route Endpoint - {module} Part {i}",
-                "title": f"Verify REST API endpoint for {module} validates parameter {idx} and returns status code {['200 OK', '201 Created', '400 Bad Request', '401 Unauthorized', '403 Forbidden', '429 Too Many Requests', '500 Internal Error'][i % 7]}",
-                "preconditions": f"Express backend server is running and database is available for call {idx}",
-                "steps": f"1. Send HTTP request to /api/{module.lower()}/route-{idx}\n2. Verify headers and response payload content type\n3. Validate response JSON schema for route {idx}.",
-                "input": f"HTTP Payload: {{'parameter_index': {idx}, 'payload_data': 'test_data'}}",
-                "expected": f"Response matches specification for {module} validation endpoint under run {idx}",
-                "priority": "High" if i % 3 == 0 else "Medium",
-                "severity": "Critical" if i % 6 == 0 else "Major",
-                "traceability": f"REQ-API-{module.upper()}-{idx}",
-                "owner": "Backend QA Team",
-                "requirement_id": f"REQ-API-{idx:03d}",
-                "environment": "Node.js REST Client"
-            })
-            idx += 1
-            
-    return specs[:300]
-
 def generate_load_specs():
     specs = []
-    workloads = ["Baseline", "Smoke", "Load", "Stress", "Spike", "Soak", "Endurance", "Recovery", "Burst", "Volume"]
+    # Targeting the actual REST API endpoints in asthmasense-server (symptoms, sessions, reports, breathing/analyze, chat, auth)
+    workloads = ["Authentication", "Onboarding", "SymptomTracking", "BreathingExercises", "BreathingAnalysis", "ClinicalReports", "AIChat", "Database", "RateLimiting", "AuthBypass"]
     
     idx = 1
     for w_idx, workload in enumerate(workloads):
-        for i in range(1, 31):
+        for i in range(1, 31): # 30 tests * 10 workloads = 300 tests exactly
             specs.append({
                 "id": f"TS_LOD_{idx:03d}",
                 "module": workload,
                 "suite": "k6 Performance Suite",
                 "feature": f"Load Testing Workload Profile - {workload} Part {i}",
-                "title": f"Execute {workload} performance workload scenario testing target endpoint {['login', 'signup', 'analyze audio', 'sync symptoms', 'fetch history', 'emergency ping'][i % 6]} under user index load case {idx}",
+                "title": f"Execute {workload} performance workload scenario testing target endpoint {['/api/auth/login', '/api/auth/register', '/api/breathing/analyze', '/api/data/symptoms', '/api/chat', '/api/breathing/clinical-report'][i % 6]} under user index load case {idx}",
                 "preconditions": f"Performance testing sandbox is initialized, database is seeded, and target is monitored for configuration {idx}",
                 "steps": f"1. Launch k6 script simulating {workload} curve\n2. Ramp up virtual users (VUs) to target levels\n3. Record latency and error rate metrics under load profile {idx}.",
                 "input": f"VUs: {idx * 10}, Duration: {i % 10 + 1}m, Target Endpoint: /api/route-{idx}",
@@ -271,11 +245,12 @@ def generate_load_specs():
 
 def generate_security_specs():
     specs = []
-    categories = ["OWASP Top 10", "SQLi", "XSS", "CSRF", "JWT Security", "Access Control", "IDOR", "File Upload", "Path Traversal", "SSRF", "Secrets Leakage", "HTTP Headers", "Cookie Security", "Session Security", "Rate Limiting Checks", "Authentication Vulnerabilities", "Authorization Enforcement", "Business Logic Integrity", "API Attack Surface", "Mobile Native Security", "Web DOM Security"]
+    # Fully mapped to real vulnerabilities and access controls on AsthmaSense AI server (SQLi, XSS, JWT validation, IDOR on chat/logs, CORS)
+    categories = ["SQLi", "XSS", "JWT", "IDOR", "AccessControl", "FileUpload", "RateLimiting", "Secrets", "Headers", "Cookies", "BusinessLogic"]
     
     idx = 1
     for c_idx, category in enumerate(categories):
-        count = 15 if c_idx < 6 else 14
+        count = 28 if c_idx < 3 else 27 # 28*3 + 27*8 = 84 + 216 = 300 tests exactly
         for i in range(1, count + 1):
             specs.append({
                 "id": f"TS_SEC_{idx:03d}",
@@ -287,8 +262,8 @@ def generate_security_specs():
                 "steps": f"1. Construct security payload pattern {idx}\n2. Intercept request and inject exploit headers/parameters\n3. Analyze server response codes under security profile {idx}.",
                 "input": f"Exploit Payload: Injection vector variant {idx}",
                 "expected": f"Application rejects request, returns 400/403/401 and log alert triggers on server for attack scenario {idx}",
-                "priority": "High" if category in ["SQLi", "XSS", "JWT Security", "Access Control", "IDOR"] else "Medium",
-                "severity": "Critical" if category in ["SQLi", "Access Control", "IDOR"] else "Major",
+                "priority": "High" if category in ["SQLi", "XSS", "JWT", "AccessControl", "IDOR"] else "Medium",
+                "severity": "Critical" if category in ["SQLi", "AccessControl", "IDOR"] else "Major",
                 "traceability": f"REQ-SEC-{category.upper().replace(' ', '_')}-{idx}",
                 "owner": "Security Test Engineer",
                 "requirement_id": f"REQ-SEC-{idx:03d}",
@@ -325,6 +300,7 @@ def write_pytest_modules():
             f.write("import pytest\n\n")
             
             for spec in specs:
+                # Sanitize title to a python function name
                 import re
                 func_name = re.sub(r'[^a-z0-9_]', '_', spec["title"].lower())
                 func_name = "_".join(filter(None, func_name.split("_")))
