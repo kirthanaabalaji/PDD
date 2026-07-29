@@ -131,9 +131,15 @@ def run_verification(artifact_report_path=None):
     
     # Save artifact report if path provided
     if artifact_report_path:
-        with open(artifact_report_path, "w", encoding="utf-8") as f:
-            f.write(report_content)
-        print(f"[INFO] Artifact report mirrored to: {artifact_report_path}")
+        try:
+            parent_dir = os.path.dirname(artifact_report_path)
+            if parent_dir:
+                os.makedirs(parent_dir, exist_ok=True)
+            with open(artifact_report_path, "w", encoding="utf-8") as f:
+                f.write(report_content)
+            print(f"[INFO] Artifact report mirrored to: {artifact_report_path}")
+        except Exception as e:
+            print(f"[WARNING] Could not mirror report to artifact path '{artifact_report_path}': {e}")
         
     if not all_ok or failures:
         print("\n[FAIL] Quality audit FAILED. Please review the audit logs.")
