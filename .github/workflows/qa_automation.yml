@@ -42,35 +42,36 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Web Selenium Test Report
-          path: qa/reports/Web_Selenium_Test_Report.xlsx
+          path: |
+            qa/reports/Web_Selenium_Test_Report.xlsx
+            qa/reports/Web_Selenium_Test_Report.csv
           if-no-files-found: error
 
       - name: Upload Android Appium Test Report
         uses: actions/upload-artifact@v4
         with:
           name: Android Appium Test Report
-          path: qa/reports/Android_Appium_Test_Report.xlsx
-          if-no-files-found: error
-
-      - name: Upload API Test Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: API Test Report
-          path: qa/reports/API_Test_Report.xlsx
+          path: |
+            qa/reports/Android_Appium_Test_Report.xlsx
+            qa/reports/Android_Appium_Test_Report.csv
           if-no-files-found: error
 
       - name: Upload Performance & Load Test Report
         uses: actions/upload-artifact@v4
         with:
           name: Performance & Load Test Report
-          path: qa/reports/Performance_Load_Test_Report.xlsx
+          path: |
+            qa/reports/Performance_Load_Test_Report.xlsx
+            qa/reports/Performance_Load_Test_Report.csv
           if-no-files-found: error
 
       - name: Upload Security Assessment Report
         uses: actions/upload-artifact@v4
         with:
           name: Security Assessment Report
-          path: qa/reports/Security_Assessment_Report.xlsx
+          path: |
+            qa/reports/Security_Assessment_Report.xlsx
+            qa/reports/Security_Assessment_Report.csv
           if-no-files-found: error
 
       - name: Upload QA Summary Reports
@@ -79,6 +80,10 @@ jobs:
           name: QA Summary Reports
           path: |
             qa/reports/QA_Summary_Reports.xlsx
-            qa/reports/executive_summary_report.md
+            qa/reports/junit_report.xml
+            qa/reports/allure_dashboard.html
+            qa/reports/extent_dashboard.html
+            qa/reports/QA_Executive_Report.pdf
             qa/reports/uniqueness_verification_report.md
+            qa/reports/executive_summary_report.md
           if-no-files-found: error

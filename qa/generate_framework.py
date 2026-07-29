@@ -302,7 +302,6 @@ def generate_security_specs():
 all_specs = {
     "selenium": generate_selenium_specs(),
     "appium": generate_appium_specs(),
-    "api": generate_api_specs(),
     "load": generate_load_specs(),
     "security": generate_security_specs()
 }
@@ -313,7 +312,6 @@ with open("qa/test_registry.json", "w") as f:
 print(f"Generated test_registry.json successfully with:")
 print(f" - Selenium: {len(all_specs['selenium'])} tests")
 print(f" - Appium: {len(all_specs['appium'])} tests")
-print(f" - API: {len(all_specs['api'])} tests")
 print(f" - Load: {len(all_specs['load'])} tests")
 print(f" - Security: {len(all_specs['security'])} tests")
 

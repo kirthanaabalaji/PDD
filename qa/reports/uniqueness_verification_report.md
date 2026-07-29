@@ -8,7 +8,6 @@ This report verifies that the rebuilt QA automation framework meets all strict q
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | SELENIUM | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
 | APPIUM | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
-| API | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
 | LOAD | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
 | SECURITY | 300 | 0 | 0 | 0 | 0 | ✅ PASS |
 

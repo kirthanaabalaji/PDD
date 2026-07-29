@@ -1,7 +1,7 @@
 import sys
 import os
 import pytest
-from generate_reports import build_excel_reports
+from generate_reports import main as build_all_reports
 from verify_quality import run_verification
 
 def main():
@@ -9,7 +9,7 @@ def main():
     
     # 1. Run verify_quality.py first to audit test specs
     print("\n--- Phase 1: Specifications Audit Verification ---")
-    run_verification("qa/reports/uniqueness_verification_report.md")
+    run_verification("C:/Users/balaj/.gemini/antigravity-ide/brain/fd70465e-cc20-4124-9022-71b7cf32786a/uniqueness_verification_report.md")
     
     # 2. Run Pytest execution
     print("\n--- Phase 2: Pytest Suite Execution ---")
@@ -18,7 +18,7 @@ def main():
     
     # 3. Build spreadsheets and summary dashboards
     print("\n--- Phase 3: Reporting Compiler ---")
-    build_excel_reports()
+    build_all_reports()
     
     print("\n[SUCCESS] All automation stages executed successfully.")
     

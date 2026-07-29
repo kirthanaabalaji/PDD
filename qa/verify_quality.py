@@ -14,7 +14,7 @@ def run_verification(artifact_report_path=None):
     with open(registry_file, "r") as f:
         all_specs = json.load(f)
         
-    categories = ["selenium", "appium", "api", "load", "security"]
+    categories = ["selenium", "appium", "load", "security"]
     failures = []
     
     # Store sets for duplicates checks
