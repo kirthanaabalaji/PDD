@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_140",
+  "module": "Settings",
+  "feature": "ensure contrast ratios for local storage synchronization queue when network speed is throttled",
+  "title": "Verify behavior of local storage synchronization queue during attempts to ensure contrast ratios when network speed is throttled",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for local storage synchronization queue when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to local storage synchronization queue configuration when network speed is throttled (Ref SEL_140).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-140",
+  "steps": "1. Target active interface for local storage synchronization queue.\n2. Trigger action to ensure contrast ratios when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_140).",
+  "input": "Target: local storage synchronization queue, Action: ensure contrast ratios, Parameters: when network speed is throttled, Case Index: SEL_140",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_140.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_140_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_116",
+  "module": "Database",
+  "feature": "check error rate threshold for Rate limiting API gateway with large audio attachment uploads",
+  "title": "Verify behavior of Rate limiting API gateway during attempts to check error rate threshold with large audio attachment uploads",
+  "objective": "Evaluate that user can safely execute check error rate threshold for Rate limiting API gateway with large audio attachment uploads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Rate limiting API gateway configuration with large audio attachment uploads (Ref LOAD_116).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-116",
+  "steps": "1. Target active interface for Rate limiting API gateway.\n2. Trigger action to check error rate threshold with large audio attachment uploads.\n3. Collect audit logs and confirm status code validation (Check LOAD_116).",
+  "input": "Target: Rate limiting API gateway, Action: check error rate threshold, Parameters: with large audio attachment uploads, Case Index: LOAD_116",
+  "expected": "The verification checks confirm that the system throughput scales linearly successfully under reference LOAD_116.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_116_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

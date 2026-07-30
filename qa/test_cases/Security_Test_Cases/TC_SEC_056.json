@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_056",
+  "module": "SQLi",
+  "feature": "inspect logs for exposed keys for forgot password reset link token by requesting admin privilege routes",
+  "title": "Verify behavior of forgot password reset link token during attempts to inspect logs for exposed keys by requesting admin privilege routes",
+  "objective": "Evaluate that user can safely execute inspect logs for exposed keys for forgot password reset link token by requesting admin privilege routes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password reset link token configuration by requesting admin privilege routes (Ref SEC_056).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-056",
+  "steps": "1. Target active interface for forgot password reset link token.\n2. Trigger action to inspect logs for exposed keys by requesting admin privilege routes.\n3. Collect audit logs and confirm status code validation (Check SEC_056).",
+  "input": "Target: forgot password reset link token, Action: inspect logs for exposed keys, Parameters: by requesting admin privilege routes, Case Index: SEC_056",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_056.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_056_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

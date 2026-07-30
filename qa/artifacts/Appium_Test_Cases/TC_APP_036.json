@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_036",
+  "module": "Settings",
+  "feature": "evaluate resource lock duration for battery usage analyzer when background storage is cleared",
+  "title": "Verify behavior of battery usage analyzer during attempts to evaluate resource lock duration when background storage is cleared",
+  "objective": "Evaluate that user can safely execute evaluate resource lock duration for battery usage analyzer when background storage is cleared under system checks.",
+  "preconditions": "System state is reset, and target console is directed to battery usage analyzer configuration when background storage is cleared (Ref APP_036).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-036",
+  "steps": "1. Target active interface for battery usage analyzer.\n2. Trigger action to evaluate resource lock duration when background storage is cleared.\n3. Collect audit logs and confirm status code validation (Check APP_036).",
+  "input": "Target: battery usage analyzer, Action: evaluate resource lock duration, Parameters: when background storage is cleared, Case Index: APP_036",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_036.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_036_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

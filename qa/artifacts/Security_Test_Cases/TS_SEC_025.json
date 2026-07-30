@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_025",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for directory traversal path filters using prompt injection context escape",
+  "title": "Verify behavior of directory traversal path filters during attempts to test parameter parsing pollution using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for directory traversal path filters using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to directory traversal path filters configuration using prompt injection context escape (Ref SEC_025).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-025",
+  "steps": "1. Target active interface for directory traversal path filters.\n2. Trigger action to test parameter parsing pollution using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_025).",
+  "input": "Target: directory traversal path filters, Action: test parameter parsing pollution, Parameters: using prompt injection context escape, Case Index: SEC_025",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_025.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_025_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

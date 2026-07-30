@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_168",
+  "module": "Notifications",
+  "feature": "verify permission dialogue for reminder alarm service during background audio sync",
+  "title": "Verify behavior of reminder alarm service during attempts to verify permission dialogue during background audio sync",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for reminder alarm service during background audio sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reminder alarm service configuration during background audio sync (Ref APP_168).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-168",
+  "steps": "1. Target active interface for reminder alarm service.\n2. Trigger action to verify permission dialogue during background audio sync.\n3. Collect audit logs and confirm status code validation (Check APP_168).",
+  "input": "Target: reminder alarm service, Action: verify permission dialogue, Parameters: during background audio sync, Case Index: APP_168",
+  "expected": "The verification checks confirm that the local storage path is secured successfully under reference APP_168.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_168_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

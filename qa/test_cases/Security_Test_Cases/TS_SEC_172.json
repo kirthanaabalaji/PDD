@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_172",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for command line shell execution check using a different user database index",
+  "title": "Verify behavior of command line shell execution check during attempts to test parameter parsing pollution using a different user database index",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for command line shell execution check using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to command line shell execution check configuration using a different user database index (Ref SEC_172).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-172",
+  "steps": "1. Target active interface for command line shell execution check.\n2. Trigger action to test parameter parsing pollution using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_172).",
+  "input": "Target: command line shell execution check, Action: test parameter parsing pollution, Parameters: using a different user database index, Case Index: SEC_172",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_172.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_172_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

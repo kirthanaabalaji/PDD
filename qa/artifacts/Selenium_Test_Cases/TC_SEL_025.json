@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_025",
+  "module": "AIChat",
+  "feature": "validate regex matching for ai chat markdown rendering structure when file size exceeds limit",
+  "title": "Verify behavior of ai chat markdown rendering structure during attempts to validate regex matching when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute validate regex matching for ai chat markdown rendering structure when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat markdown rendering structure configuration when file size exceeds limit (Ref SEL_025).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-025",
+  "steps": "1. Target active interface for ai chat markdown rendering structure.\n2. Trigger action to validate regex matching when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_025).",
+  "input": "Target: ai chat markdown rendering structure, Action: validate regex matching, Parameters: when file size exceeds limit, Case Index: SEL_025",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_025.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_025_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

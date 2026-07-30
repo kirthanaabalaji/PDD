@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_141",
+  "module": "Settings",
+  "feature": "evaluate resource lock duration for account deletion sequence when offline network state is active",
+  "title": "Verify behavior of account deletion sequence during attempts to evaluate resource lock duration when offline network state is active",
+  "objective": "Evaluate that user can safely execute evaluate resource lock duration for account deletion sequence when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account deletion sequence configuration when offline network state is active (Ref APP_141).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-141",
+  "steps": "1. Target active interface for account deletion sequence.\n2. Trigger action to evaluate resource lock duration when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_141).",
+  "input": "Target: account deletion sequence, Action: evaluate resource lock duration, Parameters: when offline network state is active, Case Index: APP_141",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_141.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_141_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

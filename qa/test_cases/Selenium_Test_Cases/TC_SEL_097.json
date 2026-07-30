@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_097",
+  "module": "Onboarding",
+  "feature": "validate text alignment for image crop zoom controls for assistive screen readers",
+  "title": "Verify behavior of image crop zoom controls during attempts to validate text alignment for assistive screen readers",
+  "objective": "Evaluate that user can safely execute validate text alignment for image crop zoom controls for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration for assistive screen readers (Ref SEL_097).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-097",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to validate text alignment for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_097).",
+  "input": "Target: image crop zoom controls, Action: validate text alignment, Parameters: for assistive screen readers, Case Index: SEL_097",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_097.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_097_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

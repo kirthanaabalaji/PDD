@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_085",
+  "module": "Settings",
+  "feature": "audit touch target scale for emergency swipe validation gesture when database storage quota is exceeded",
+  "title": "Verify behavior of emergency swipe validation gesture during attempts to audit touch target scale when database storage quota is exceeded",
+  "objective": "Evaluate that user can safely execute audit touch target scale for emergency swipe validation gesture when database storage quota is exceeded under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency swipe validation gesture configuration when database storage quota is exceeded (Ref APP_085).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-085",
+  "steps": "1. Target active interface for emergency swipe validation gesture.\n2. Trigger action to audit touch target scale when database storage quota is exceeded.\n3. Collect audit logs and confirm status code validation (Check APP_085).",
+  "input": "Target: emergency swipe validation gesture, Action: audit touch target scale, Parameters: when database storage quota is exceeded, Case Index: APP_085",
+  "expected": "The verification checks confirm that the app shows system settings link successfully under reference APP_085.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_085_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

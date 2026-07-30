@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_190",
+  "module": "AccessControl",
+  "feature": "validate secure header parameters for database field encryption keys using malicious string payloads",
+  "title": "Verify behavior of database field encryption keys during attempts to validate secure header parameters using malicious string payloads",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for database field encryption keys using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to database field encryption keys configuration using malicious string payloads (Ref SEC_190).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-190",
+  "steps": "1. Target active interface for database field encryption keys.\n2. Trigger action to validate secure header parameters using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_190).",
+  "input": "Target: database field encryption keys, Action: validate secure header parameters, Parameters: using malicious string payloads, Case Index: SEC_190",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_190.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_190_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

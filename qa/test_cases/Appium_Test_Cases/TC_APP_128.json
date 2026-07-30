@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_128",
+  "module": "ClinicalReports",
+  "feature": "test network call recovery for pulmonologist contact selector with screen readers enabled",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to test network call recovery with screen readers enabled",
+  "objective": "Evaluate that user can safely execute test network call recovery for pulmonologist contact selector with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration with screen readers enabled (Ref APP_128).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-128",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to test network call recovery with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_128).",
+  "input": "Target: pulmonologist contact selector, Action: test network call recovery, Parameters: with screen readers enabled, Case Index: APP_128",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_128.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_128_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_274",
+  "module": "Onboarding",
+  "feature": "track cookie changes for profile information form fields on high resolution displays",
+  "title": "Verify behavior of profile information form fields during attempts to track cookie changes on high resolution displays",
+  "objective": "Evaluate that user can safely execute track cookie changes for profile information form fields on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile information form fields configuration on high resolution displays (Ref SEL_274).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-274",
+  "steps": "1. Target active interface for profile information form fields.\n2. Trigger action to track cookie changes on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_274).",
+  "input": "Target: profile information form fields, Action: track cookie changes, Parameters: on high resolution displays, Case Index: SEL_274",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_274.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_274_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

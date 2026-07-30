@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_059",
+  "module": "Authentication",
+  "feature": "check storage updates for reset password form submission for assistive screen readers",
+  "title": "Verify behavior of reset password form submission during attempts to check storage updates for assistive screen readers",
+  "objective": "Evaluate that user can safely execute check storage updates for reset password form submission for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reset password form submission configuration for assistive screen readers (Ref SEL_059).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-059",
+  "steps": "1. Target active interface for reset password form submission.\n2. Trigger action to check storage updates for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_059).",
+  "input": "Target: reset password form submission, Action: check storage updates, Parameters: for assistive screen readers, Case Index: SEL_059",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_059.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_059_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

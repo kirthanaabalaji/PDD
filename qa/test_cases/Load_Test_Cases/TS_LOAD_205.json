@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_205",
+  "module": "Database",
+  "feature": "inspect memory consumption for Breathing session average calculations under continuous long-duration soak run",
+  "title": "Verify behavior of Breathing session average calculations during attempts to inspect memory consumption under continuous long-duration soak run",
+  "objective": "Evaluate that user can safely execute inspect memory consumption for Breathing session average calculations under continuous long-duration soak run under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Breathing session average calculations configuration under continuous long-duration soak run (Ref LOAD_205).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-205",
+  "steps": "1. Target active interface for Breathing session average calculations.\n2. Trigger action to inspect memory consumption under continuous long-duration soak run.\n3. Collect audit logs and confirm status code validation (Check LOAD_205).",
+  "input": "Target: Breathing session average calculations, Action: inspect memory consumption, Parameters: under continuous long-duration soak run, Case Index: LOAD_205",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_205.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_205_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

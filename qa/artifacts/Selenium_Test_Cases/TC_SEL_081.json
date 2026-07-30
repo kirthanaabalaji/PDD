@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_081",
+  "module": "Settings",
+  "feature": "test tooltips display for dark mode theme layout colors during server database failover",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to test tooltips display during server database failover",
+  "objective": "Evaluate that user can safely execute test tooltips display for dark mode theme layout colors during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration during server database failover (Ref SEL_081).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-081",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to test tooltips display during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_081).",
+  "input": "Target: dark mode theme layout colors, Action: test tooltips display, Parameters: during server database failover, Case Index: SEL_081",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_081.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_081_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

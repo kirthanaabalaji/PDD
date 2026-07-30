@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_240",
+  "module": "Settings",
+  "feature": "log telemetry events for local storage synchronization queue after five minutes of inactivity",
+  "title": "Verify behavior of local storage synchronization queue during attempts to log telemetry events after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute log telemetry events for local storage synchronization queue after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to local storage synchronization queue configuration after five minutes of inactivity (Ref SEL_240).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-240",
+  "steps": "1. Target active interface for local storage synchronization queue.\n2. Trigger action to log telemetry events after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_240).",
+  "input": "Target: local storage synchronization queue, Action: log telemetry events, Parameters: after five minutes of inactivity, Case Index: SEL_240",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_240.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_240_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

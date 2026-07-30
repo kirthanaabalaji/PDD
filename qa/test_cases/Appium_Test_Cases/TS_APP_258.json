@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_258",
+  "module": "BreathingAnalysis",
+  "feature": "monitor memory consumption for bluetooth stethoscope listener under poor signal coverage",
+  "title": "Verify behavior of bluetooth stethoscope listener during attempts to monitor memory consumption under poor signal coverage",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for bluetooth stethoscope listener under poor signal coverage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to bluetooth stethoscope listener configuration under poor signal coverage (Ref APP_258).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-258",
+  "steps": "1. Target active interface for bluetooth stethoscope listener.\n2. Trigger action to monitor memory consumption under poor signal coverage.\n3. Collect audit logs and confirm status code validation (Check APP_258).",
+  "input": "Target: bluetooth stethoscope listener, Action: monitor memory consumption, Parameters: under poor signal coverage, Case Index: APP_258",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_258.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_258_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

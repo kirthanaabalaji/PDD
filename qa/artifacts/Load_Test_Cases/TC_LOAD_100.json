@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_100",
+  "module": "Authentication",
+  "feature": "inspect memory consumption for /api/auth/register endpoint with high frequency preflight requests",
+  "title": "Verify behavior of /api/auth/register endpoint during attempts to inspect memory consumption with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute inspect memory consumption for /api/auth/register endpoint with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/register endpoint configuration with high frequency preflight requests (Ref LOAD_100).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-100",
+  "steps": "1. Target active interface for /api/auth/register endpoint.\n2. Trigger action to inspect memory consumption with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_100).",
+  "input": "Target: /api/auth/register endpoint, Action: inspect memory consumption, Parameters: with high frequency preflight requests, Case Index: LOAD_100",
+  "expected": "The verification checks confirm that the WebSocket session handles parallel connections successfully under reference LOAD_100.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_100_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

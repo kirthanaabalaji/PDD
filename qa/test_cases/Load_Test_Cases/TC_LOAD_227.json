@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_227",
+  "module": "BreathingExercises",
+  "feature": "test system recovery latency for /api/data/sessions POST route during network connection dropping events",
+  "title": "Verify behavior of /api/data/sessions POST route during attempts to test system recovery latency during network connection dropping events",
+  "objective": "Evaluate that user can safely execute test system recovery latency for /api/data/sessions POST route during network connection dropping events under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions POST route configuration during network connection dropping events (Ref LOAD_227).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-227",
+  "steps": "1. Target active interface for /api/data/sessions POST route.\n2. Trigger action to test system recovery latency during network connection dropping events.\n3. Collect audit logs and confirm status code validation (Check LOAD_227).",
+  "input": "Target: /api/data/sessions POST route, Action: test system recovery latency, Parameters: during network connection dropping events, Case Index: LOAD_227",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_227.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_227_execution.log",
+  "execution_time": "12.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

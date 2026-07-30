@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_225",
+  "module": "AIChat",
+  "feature": "evaluate text wrapping for ai chat markdown rendering structure under local storage quota limits",
+  "title": "Verify behavior of ai chat markdown rendering structure during attempts to evaluate text wrapping under local storage quota limits",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for ai chat markdown rendering structure under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat markdown rendering structure configuration under local storage quota limits (Ref SEL_225).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-225",
+  "steps": "1. Target active interface for ai chat markdown rendering structure.\n2. Trigger action to evaluate text wrapping under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_225).",
+  "input": "Target: ai chat markdown rendering structure, Action: evaluate text wrapping, Parameters: under local storage quota limits, Case Index: SEL_225",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_225.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_225_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

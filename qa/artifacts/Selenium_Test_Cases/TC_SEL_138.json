@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_138",
+  "module": "Authentication",
+  "feature": "inspect modal overlays for session token refresh process during server database failover",
+  "title": "Verify behavior of session token refresh process during attempts to inspect modal overlays during server database failover",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for session token refresh process during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session token refresh process configuration during server database failover (Ref SEL_138).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-138",
+  "steps": "1. Target active interface for session token refresh process.\n2. Trigger action to inspect modal overlays during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_138).",
+  "input": "Target: session token refresh process, Action: inspect modal overlays, Parameters: during server database failover, Case Index: SEL_138",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_138.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_138_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

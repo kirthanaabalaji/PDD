@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_237",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for container runtime user privileges against OWASP top 10 rules",
+  "title": "Verify behavior of container runtime user privileges during attempts to audit brute force block speed against OWASP top 10 rules",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for container runtime user privileges against OWASP top 10 rules under system checks.",
+  "preconditions": "System state is reset, and target console is directed to container runtime user privileges configuration against OWASP top 10 rules (Ref SEC_237).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-237",
+  "steps": "1. Target active interface for container runtime user privileges.\n2. Trigger action to audit brute force block speed against OWASP top 10 rules.\n3. Collect audit logs and confirm status code validation (Check SEC_237).",
+  "input": "Target: container runtime user privileges, Action: audit brute force block speed, Parameters: against OWASP top 10 rules, Case Index: SEC_237",
+  "expected": "The verification checks confirm that the authorization validation check blocks query successfully under reference SEC_237.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_237_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

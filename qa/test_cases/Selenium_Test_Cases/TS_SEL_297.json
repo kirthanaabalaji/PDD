@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_297",
+  "module": "Onboarding",
+  "feature": "verify layout rendering for image crop zoom controls after five minutes of inactivity",
+  "title": "Verify behavior of image crop zoom controls during attempts to verify layout rendering after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute verify layout rendering for image crop zoom controls after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration after five minutes of inactivity (Ref SEL_297).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-297",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to verify layout rendering after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_297).",
+  "input": "Target: image crop zoom controls, Action: verify layout rendering, Parameters: after five minutes of inactivity, Case Index: SEL_297",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_297.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_297_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

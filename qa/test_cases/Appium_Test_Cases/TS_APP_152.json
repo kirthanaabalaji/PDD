@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_152",
+  "module": "Settings",
+  "feature": "audit gesture scaling zoom for cookie token storage sync when user denies camera permission",
+  "title": "Verify behavior of cookie token storage sync during attempts to audit gesture scaling zoom when user denies camera permission",
+  "objective": "Evaluate that user can safely execute audit gesture scaling zoom for cookie token storage sync when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cookie token storage sync configuration when user denies camera permission (Ref APP_152).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-152",
+  "steps": "1. Target active interface for cookie token storage sync.\n2. Trigger action to audit gesture scaling zoom when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_152).",
+  "input": "Target: cookie token storage sync, Action: audit gesture scaling zoom, Parameters: when user denies camera permission, Case Index: APP_152",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_152.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_152_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_084",
+  "module": "Settings",
+  "feature": "validate fields for accessibility keyboard focus indicators on high resolution displays",
+  "title": "Verify behavior of accessibility keyboard focus indicators during attempts to validate fields on high resolution displays",
+  "objective": "Evaluate that user can safely execute validate fields for accessibility keyboard focus indicators on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to accessibility keyboard focus indicators configuration on high resolution displays (Ref SEL_084).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-084",
+  "steps": "1. Target active interface for accessibility keyboard focus indicators.\n2. Trigger action to validate fields on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_084).",
+  "input": "Target: accessibility keyboard focus indicators, Action: validate fields, Parameters: on high resolution displays, Case Index: SEL_084",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_084.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_084_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

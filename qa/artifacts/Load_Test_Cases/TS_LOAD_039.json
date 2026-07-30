@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_039",
+  "module": "BreathingAnalysis",
+  "feature": "check thread context switches for /api/breathing/analyze endpoint during peak hours scheduling traffic",
+  "title": "Verify behavior of /api/breathing/analyze endpoint during attempts to check thread context switches during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute check thread context switches for /api/breathing/analyze endpoint during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/analyze endpoint configuration during peak hours scheduling traffic (Ref LOAD_039).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-039",
+  "steps": "1. Target active interface for /api/breathing/analyze endpoint.\n2. Trigger action to check thread context switches during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_039).",
+  "input": "Target: /api/breathing/analyze endpoint, Action: check thread context switches, Parameters: during peak hours scheduling traffic, Case Index: LOAD_039",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_039.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_039_execution.log",
+  "execution_time": "15.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

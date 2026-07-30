@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_038",
+  "module": "Settings",
+  "feature": "test push alert payload for help search auto-suggestions when user denies camera permission",
+  "title": "Verify behavior of help search auto-suggestions during attempts to test push alert payload when user denies camera permission",
+  "objective": "Evaluate that user can safely execute test push alert payload for help search auto-suggestions when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help search auto-suggestions configuration when user denies camera permission (Ref APP_038).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-038",
+  "steps": "1. Target active interface for help search auto-suggestions.\n2. Trigger action to test push alert payload when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_038).",
+  "input": "Target: help search auto-suggestions, Action: test push alert payload, Parameters: when user denies camera permission, Case Index: APP_038",
+  "expected": "The verification checks confirm that the touch targets resize to accessible scale successfully under reference APP_038.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_038_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

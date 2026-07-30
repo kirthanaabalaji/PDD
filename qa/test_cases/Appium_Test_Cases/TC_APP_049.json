@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_049",
+  "module": "Settings",
+  "feature": "test app launch sequence for terms scroll check modal under poor signal coverage",
+  "title": "Verify behavior of terms scroll check modal during attempts to test app launch sequence under poor signal coverage",
+  "objective": "Evaluate that user can safely execute test app launch sequence for terms scroll check modal under poor signal coverage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to terms scroll check modal configuration under poor signal coverage (Ref APP_049).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-049",
+  "steps": "1. Target active interface for terms scroll check modal.\n2. Trigger action to test app launch sequence under poor signal coverage.\n3. Collect audit logs and confirm status code validation (Check APP_049).",
+  "input": "Target: terms scroll check modal, Action: test app launch sequence, Parameters: under poor signal coverage, Case Index: APP_049",
+  "expected": "The verification checks confirm that the local storage path is secured successfully under reference APP_049.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_049_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

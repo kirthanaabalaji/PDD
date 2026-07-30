@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_181",
+  "module": "ClinicalReports",
+  "feature": "inspect element boundaries for clinical baseline score chart on device orientation rotate",
+  "title": "Verify behavior of clinical baseline score chart during attempts to inspect element boundaries on device orientation rotate",
+  "objective": "Evaluate that user can safely execute inspect element boundaries for clinical baseline score chart on device orientation rotate under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical baseline score chart configuration on device orientation rotate (Ref APP_181).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-181",
+  "steps": "1. Target active interface for clinical baseline score chart.\n2. Trigger action to inspect element boundaries on device orientation rotate.\n3. Collect audit logs and confirm status code validation (Check APP_181).",
+  "input": "Target: clinical baseline score chart, Action: inspect element boundaries, Parameters: on device orientation rotate, Case Index: APP_181",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_181.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_181_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

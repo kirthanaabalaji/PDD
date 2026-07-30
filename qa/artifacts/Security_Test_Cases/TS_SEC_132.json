@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_132",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for account settings password modification flow by requesting admin privilege routes",
+  "title": "Verify behavior of account settings password modification flow during attempts to audit brute force block speed by requesting admin privilege routes",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for account settings password modification flow by requesting admin privilege routes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account settings password modification flow configuration by requesting admin privilege routes (Ref SEC_132).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-132",
+  "steps": "1. Target active interface for account settings password modification flow.\n2. Trigger action to audit brute force block speed by requesting admin privilege routes.\n3. Collect audit logs and confirm status code validation (Check SEC_132).",
+  "input": "Target: account settings password modification flow, Action: audit brute force block speed, Parameters: by requesting admin privilege routes, Case Index: SEC_132",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_132.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_132_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

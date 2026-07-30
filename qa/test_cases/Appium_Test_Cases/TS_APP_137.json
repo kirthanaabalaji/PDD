@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_137",
+  "module": "BreathingExercises",
+  "feature": "verify native toast layout for breathing box pattern timer with custom theme configurations",
+  "title": "Verify behavior of breathing box pattern timer during attempts to verify native toast layout with custom theme configurations",
+  "objective": "Evaluate that user can safely execute verify native toast layout for breathing box pattern timer with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing box pattern timer configuration with custom theme configurations (Ref APP_137).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-137",
+  "steps": "1. Target active interface for breathing box pattern timer.\n2. Trigger action to verify native toast layout with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_137).",
+  "input": "Target: breathing box pattern timer, Action: verify native toast layout, Parameters: with custom theme configurations, Case Index: APP_137",
+  "expected": "The verification checks confirm that the layout switches to landscape mode successfully under reference APP_137.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_137_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

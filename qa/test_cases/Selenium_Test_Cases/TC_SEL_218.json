@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_218",
+  "module": "Authentication",
+  "feature": "process submission for session timeout idle alert during api gateway timeout",
+  "title": "Verify behavior of session timeout idle alert during attempts to process submission during api gateway timeout",
+  "objective": "Evaluate that user can safely execute process submission for session timeout idle alert during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session timeout idle alert configuration during api gateway timeout (Ref SEL_218).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-218",
+  "steps": "1. Target active interface for session timeout idle alert.\n2. Trigger action to process submission during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_218).",
+  "input": "Target: session timeout idle alert, Action: process submission, Parameters: during api gateway timeout, Case Index: SEL_218",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_218.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_218_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

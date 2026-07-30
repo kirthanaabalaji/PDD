@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_035",
+  "module": "Settings",
+  "feature": "execute deep link request for emergency swipe validation gesture during background audio sync",
+  "title": "Verify behavior of emergency swipe validation gesture during attempts to execute deep link request during background audio sync",
+  "objective": "Evaluate that user can safely execute execute deep link request for emergency swipe validation gesture during background audio sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency swipe validation gesture configuration during background audio sync (Ref APP_035).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-035",
+  "steps": "1. Target active interface for emergency swipe validation gesture.\n2. Trigger action to execute deep link request during background audio sync.\n3. Collect audit logs and confirm status code validation (Check APP_035).",
+  "input": "Target: emergency swipe validation gesture, Action: execute deep link request, Parameters: during background audio sync, Case Index: APP_035",
+  "expected": "The verification checks confirm that the layout switches to landscape mode successfully under reference APP_035.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_035_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

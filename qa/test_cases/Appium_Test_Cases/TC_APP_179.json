@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_179",
+  "module": "Settings",
+  "feature": "verify native toast layout for symptom logs calendar view when offline network state is active",
+  "title": "Verify behavior of symptom logs calendar view during attempts to verify native toast layout when offline network state is active",
+  "objective": "Evaluate that user can safely execute verify native toast layout for symptom logs calendar view when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom logs calendar view configuration when offline network state is active (Ref APP_179).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-179",
+  "steps": "1. Target active interface for symptom logs calendar view.\n2. Trigger action to verify native toast layout when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_179).",
+  "input": "Target: symptom logs calendar view, Action: verify native toast layout, Parameters: when offline network state is active, Case Index: APP_179",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_179.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_179_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

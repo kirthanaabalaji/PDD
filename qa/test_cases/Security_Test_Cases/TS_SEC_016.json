@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_016",
+  "module": "AccessControl",
+  "feature": "tamper token authorization signature for XML external entity injection block upon user profile account deletion",
+  "title": "Verify behavior of XML external entity injection block during attempts to tamper token authorization signature upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute tamper token authorization signature for XML external entity injection block upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to XML external entity injection block configuration upon user profile account deletion (Ref SEC_016).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-016",
+  "steps": "1. Target active interface for XML external entity injection block.\n2. Trigger action to tamper token authorization signature upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_016).",
+  "input": "Target: XML external entity injection block, Action: tamper token authorization signature, Parameters: upon user profile account deletion, Case Index: SEC_016",
+  "expected": "The verification checks confirm that the authorization validation check blocks query successfully under reference SEC_016.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_016_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

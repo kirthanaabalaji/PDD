@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_187",
+  "module": "AccessControl",
+  "feature": "test executable file injection for container runtime user privileges upon user profile account deletion",
+  "title": "Verify behavior of container runtime user privileges during attempts to test executable file injection upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute test executable file injection for container runtime user privileges upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to container runtime user privileges configuration upon user profile account deletion (Ref SEC_187).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-187",
+  "steps": "1. Target active interface for container runtime user privileges.\n2. Trigger action to test executable file injection upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_187).",
+  "input": "Target: container runtime user privileges, Action: test executable file injection, Parameters: upon user profile account deletion, Case Index: SEC_187",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_187.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_187_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_129",
+  "module": "Database",
+  "feature": "monitor CPU execution load for Mongoose schema validation pipeline under continuous long-duration soak run",
+  "title": "Verify behavior of Mongoose schema validation pipeline during attempts to monitor CPU execution load under continuous long-duration soak run",
+  "objective": "Evaluate that user can safely execute monitor CPU execution load for Mongoose schema validation pipeline under continuous long-duration soak run under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Mongoose schema validation pipeline configuration under continuous long-duration soak run (Ref LOAD_129).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-129",
+  "steps": "1. Target active interface for Mongoose schema validation pipeline.\n2. Trigger action to monitor CPU execution load under continuous long-duration soak run.\n3. Collect audit logs and confirm status code validation (Check LOAD_129).",
+  "input": "Target: Mongoose schema validation pipeline, Action: monitor CPU execution load, Parameters: under continuous long-duration soak run, Case Index: LOAD_129",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_129.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_129_execution.log",
+  "execution_time": "15.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

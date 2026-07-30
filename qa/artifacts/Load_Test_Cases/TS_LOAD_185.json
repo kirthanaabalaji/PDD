@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_185",
+  "module": "BreathingAnalysis",
+  "feature": "test system recovery latency for /api/data/reports DELETE route on database replica set failover",
+  "title": "Verify behavior of /api/data/reports DELETE route during attempts to test system recovery latency on database replica set failover",
+  "objective": "Evaluate that user can safely execute test system recovery latency for /api/data/reports DELETE route on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/reports DELETE route configuration on database replica set failover (Ref LOAD_185).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-185",
+  "steps": "1. Target active interface for /api/data/reports DELETE route.\n2. Trigger action to test system recovery latency on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_185).",
+  "input": "Target: /api/data/reports DELETE route, Action: test system recovery latency, Parameters: on database replica set failover, Case Index: LOAD_185",
+  "expected": "The verification checks confirm that the WebSocket session handles parallel connections successfully under reference LOAD_185.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_185_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

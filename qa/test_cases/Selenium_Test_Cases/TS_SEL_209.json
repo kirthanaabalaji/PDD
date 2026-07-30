@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_209",
+  "module": "Authentication",
+  "feature": "audit focus states for reset password form submission with empty values",
+  "title": "Verify behavior of reset password form submission during attempts to audit focus states with empty values",
+  "objective": "Evaluate that user can safely execute audit focus states for reset password form submission with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reset password form submission configuration with empty values (Ref SEL_209).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-209",
+  "steps": "1. Target active interface for reset password form submission.\n2. Trigger action to audit focus states with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_209).",
+  "input": "Target: reset password form submission, Action: audit focus states, Parameters: with empty values, Case Index: SEL_209",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_209.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_209_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

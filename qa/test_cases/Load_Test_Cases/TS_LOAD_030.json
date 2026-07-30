@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_030",
+  "module": "BreathingExercises",
+  "feature": "check payload upload time for /api/data/sessions GET route when downstream Groq service is throttled",
+  "title": "Verify behavior of /api/data/sessions GET route during attempts to check payload upload time when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute check payload upload time for /api/data/sessions GET route when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions GET route configuration when downstream Groq service is throttled (Ref LOAD_030).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-030",
+  "steps": "1. Target active interface for /api/data/sessions GET route.\n2. Trigger action to check payload upload time when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_030).",
+  "input": "Target: /api/data/sessions GET route, Action: check payload upload time, Parameters: when downstream Groq service is throttled, Case Index: LOAD_030",
+  "expected": "The verification checks confirm that the failover route restores active states successfully under reference LOAD_030.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_030_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

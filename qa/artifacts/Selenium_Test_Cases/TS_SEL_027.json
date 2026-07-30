@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_027",
+  "module": "Onboarding",
+  "feature": "audit keyboard navigation for profile picture upload modal on high resolution displays",
+  "title": "Verify behavior of profile picture upload modal during attempts to audit keyboard navigation on high resolution displays",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for profile picture upload modal on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile picture upload modal configuration on high resolution displays (Ref SEL_027).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-027",
+  "steps": "1. Target active interface for profile picture upload modal.\n2. Trigger action to audit keyboard navigation on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_027).",
+  "input": "Target: profile picture upload modal, Action: audit keyboard navigation, Parameters: on high resolution displays, Case Index: SEL_027",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_027.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_027_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

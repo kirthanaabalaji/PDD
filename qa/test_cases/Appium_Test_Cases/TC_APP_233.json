@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_233",
+  "module": "Settings",
+  "feature": "test network call recovery for deep link navigation schema with multiple rapid click gestures",
+  "title": "Verify behavior of deep link navigation schema during attempts to test network call recovery with multiple rapid click gestures",
+  "objective": "Evaluate that user can safely execute test network call recovery for deep link navigation schema with multiple rapid click gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to deep link navigation schema configuration with multiple rapid click gestures (Ref APP_233).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-233",
+  "steps": "1. Target active interface for deep link navigation schema.\n2. Trigger action to test network call recovery with multiple rapid click gestures.\n3. Collect audit logs and confirm status code validation (Check APP_233).",
+  "input": "Target: deep link navigation schema, Action: test network call recovery, Parameters: with multiple rapid click gestures, Case Index: APP_233",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_233.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_233_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

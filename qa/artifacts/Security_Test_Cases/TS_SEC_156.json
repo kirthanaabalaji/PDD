@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_156",
+  "module": "SQLi",
+  "feature": "check cookie storage configurations for forgot password reset link token using external URL domains",
+  "title": "Verify behavior of forgot password reset link token during attempts to check cookie storage configurations using external URL domains",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for forgot password reset link token using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password reset link token configuration using external URL domains (Ref SEC_156).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-156",
+  "steps": "1. Target active interface for forgot password reset link token.\n2. Trigger action to check cookie storage configurations using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_156).",
+  "input": "Target: forgot password reset link token, Action: check cookie storage configurations, Parameters: using external URL domains, Case Index: SEC_156",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_156.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_156_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

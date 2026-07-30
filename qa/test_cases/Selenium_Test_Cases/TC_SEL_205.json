@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_205",
+  "module": "Authentication",
+  "feature": "reset options for browser history back navigation behavior when cookies are blocked",
+  "title": "Verify behavior of browser history back navigation behavior during attempts to reset options when cookies are blocked",
+  "objective": "Evaluate that user can safely execute reset options for browser history back navigation behavior when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to browser history back navigation behavior configuration when cookies are blocked (Ref SEL_205).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-205",
+  "steps": "1. Target active interface for browser history back navigation behavior.\n2. Trigger action to reset options when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_205).",
+  "input": "Target: browser history back navigation behavior, Action: reset options, Parameters: when cookies are blocked, Case Index: SEL_205",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_205.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_205_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

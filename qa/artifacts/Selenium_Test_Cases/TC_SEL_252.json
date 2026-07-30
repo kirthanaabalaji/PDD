@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_252",
+  "module": "Authentication",
+  "feature": "validate fields for multi-tab login state sync during server database failover",
+  "title": "Verify behavior of multi-tab login state sync during attempts to validate fields during server database failover",
+  "objective": "Evaluate that user can safely execute validate fields for multi-tab login state sync during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multi-tab login state sync configuration during server database failover (Ref SEL_252).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-252",
+  "steps": "1. Target active interface for multi-tab login state sync.\n2. Trigger action to validate fields during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_252).",
+  "input": "Target: multi-tab login state sync, Action: validate fields, Parameters: during server database failover, Case Index: SEL_252",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_252.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_252_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

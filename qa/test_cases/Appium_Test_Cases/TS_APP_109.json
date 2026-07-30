@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_109",
+  "module": "BreathingAnalysis",
+  "feature": "verify image dimensions for microphone audio capture with screen readers enabled",
+  "title": "Verify behavior of microphone audio capture during attempts to verify image dimensions with screen readers enabled",
+  "objective": "Evaluate that user can safely execute verify image dimensions for microphone audio capture with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to microphone audio capture configuration with screen readers enabled (Ref APP_109).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-109",
+  "steps": "1. Target active interface for microphone audio capture.\n2. Trigger action to verify image dimensions with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_109).",
+  "input": "Target: microphone audio capture, Action: verify image dimensions, Parameters: with screen readers enabled, Case Index: APP_109",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_109.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_109_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

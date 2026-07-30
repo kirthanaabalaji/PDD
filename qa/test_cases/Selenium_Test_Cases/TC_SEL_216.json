@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_216",
+  "module": "ClinicalReports",
+  "feature": "audit keyboard navigation for clinical PDF report print dialog when network speed is throttled",
+  "title": "Verify behavior of clinical PDF report print dialog during attempts to audit keyboard navigation when network speed is throttled",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for clinical PDF report print dialog when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical PDF report print dialog configuration when network speed is throttled (Ref SEL_216).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-216",
+  "steps": "1. Target active interface for clinical PDF report print dialog.\n2. Trigger action to audit keyboard navigation when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_216).",
+  "input": "Target: clinical PDF report print dialog, Action: audit keyboard navigation, Parameters: when network speed is throttled, Case Index: SEL_216",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_216.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_216_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

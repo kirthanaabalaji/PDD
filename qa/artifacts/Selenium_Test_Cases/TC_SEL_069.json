@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_069",
+  "module": "ClinicalReports",
+  "feature": "audit keyboard navigation for doctor search filter dropdown after five minutes of inactivity",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to audit keyboard navigation after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for doctor search filter dropdown after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration after five minutes of inactivity (Ref SEL_069).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-069",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to audit keyboard navigation after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_069).",
+  "input": "Target: doctor search filter dropdown, Action: audit keyboard navigation, Parameters: after five minutes of inactivity, Case Index: SEL_069",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_069.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_069_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

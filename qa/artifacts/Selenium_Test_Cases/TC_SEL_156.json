@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_156",
+  "module": "Authentication",
+  "feature": "log telemetry events for forgot password security link on narrow mobile layout viewport",
+  "title": "Verify behavior of forgot password security link during attempts to log telemetry events on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute log telemetry events for forgot password security link on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password security link configuration on narrow mobile layout viewport (Ref SEL_156).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-156",
+  "steps": "1. Target active interface for forgot password security link.\n2. Trigger action to log telemetry events on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_156).",
+  "input": "Target: forgot password security link, Action: log telemetry events, Parameters: on narrow mobile layout viewport, Case Index: SEL_156",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_156.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_156_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

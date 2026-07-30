@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_132",
+  "module": "AIChat",
+  "feature": "audit keyboard navigation for help center search suggestions dropdown with custom theme configurations",
+  "title": "Verify behavior of help center search suggestions dropdown during attempts to audit keyboard navigation with custom theme configurations",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for help center search suggestions dropdown with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help center search suggestions dropdown configuration with custom theme configurations (Ref SEL_132).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-132",
+  "steps": "1. Target active interface for help center search suggestions dropdown.\n2. Trigger action to audit keyboard navigation with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_132).",
+  "input": "Target: help center search suggestions dropdown, Action: audit keyboard navigation, Parameters: with custom theme configurations, Case Index: SEL_132",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_132.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_132_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

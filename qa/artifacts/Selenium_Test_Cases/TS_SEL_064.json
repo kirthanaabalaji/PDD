@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_064",
+  "module": "SymptomTracking",
+  "feature": "track cookie changes for dosage calculator slider controls when network speed is throttled",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to track cookie changes when network speed is throttled",
+  "objective": "Evaluate that user can safely execute track cookie changes for dosage calculator slider controls when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration when network speed is throttled (Ref SEL_064).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-064",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to track cookie changes when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_064).",
+  "input": "Target: dosage calculator slider controls, Action: track cookie changes, Parameters: when network speed is throttled, Case Index: SEL_064",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_064.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_064_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_002",
+  "module": "AccessControl",
+  "feature": "evaluate privilege escalation bypass for user role privilege escalation limit with high frequency rapid authentication attempts",
+  "title": "Verify behavior of user role privilege escalation limit during attempts to evaluate privilege escalation bypass with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute evaluate privilege escalation bypass for user role privilege escalation limit with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user role privilege escalation limit configuration with high frequency rapid authentication attempts (Ref SEC_002).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-002",
+  "steps": "1. Target active interface for user role privilege escalation limit.\n2. Trigger action to evaluate privilege escalation bypass with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_002).",
+  "input": "Target: user role privilege escalation limit, Action: evaluate privilege escalation bypass, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_002",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_002.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_002_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

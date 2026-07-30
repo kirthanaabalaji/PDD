@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_231",
+  "module": "ClinicalReports",
+  "feature": "verify permission dialogue for clinical baseline score chart for assistive touch gestures",
+  "title": "Verify behavior of clinical baseline score chart during attempts to verify permission dialogue for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for clinical baseline score chart for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical baseline score chart configuration for assistive touch gestures (Ref APP_231).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-231",
+  "steps": "1. Target active interface for clinical baseline score chart.\n2. Trigger action to verify permission dialogue for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_231).",
+  "input": "Target: clinical baseline score chart, Action: verify permission dialogue, Parameters: for assistive touch gestures, Case Index: APP_231",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_231.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_231_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

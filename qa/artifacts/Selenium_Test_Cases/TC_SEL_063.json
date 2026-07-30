@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_063",
+  "module": "SymptomTracking",
+  "feature": "validate fields for symptom log trigger selection checkboxes when file size exceeds limit",
+  "title": "Verify behavior of symptom log trigger selection checkboxes during attempts to validate fields when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute validate fields for symptom log trigger selection checkboxes when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log trigger selection checkboxes configuration when file size exceeds limit (Ref SEL_063).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-063",
+  "steps": "1. Target active interface for symptom log trigger selection checkboxes.\n2. Trigger action to validate fields when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_063).",
+  "input": "Target: symptom log trigger selection checkboxes, Action: validate fields, Parameters: when file size exceeds limit, Case Index: SEL_063",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_063.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_063_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

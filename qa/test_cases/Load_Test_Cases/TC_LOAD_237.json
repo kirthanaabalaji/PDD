@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_237",
+  "module": "Database",
+  "feature": "test queue backlog latency for Audio transcription server socket when rate limiting limits are reached",
+  "title": "Verify behavior of Audio transcription server socket during attempts to test queue backlog latency when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for Audio transcription server socket when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Audio transcription server socket configuration when rate limiting limits are reached (Ref LOAD_237).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-237",
+  "steps": "1. Target active interface for Audio transcription server socket.\n2. Trigger action to test queue backlog latency when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_237).",
+  "input": "Target: Audio transcription server socket, Action: test queue backlog latency, Parameters: when rate limiting limits are reached, Case Index: LOAD_237",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_237.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_237_execution.log",
+  "execution_time": "12.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

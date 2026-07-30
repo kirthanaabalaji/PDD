@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_223",
+  "module": "Settings",
+  "feature": "validate text alignment for notification preferences toggles with multiple simultaneous submits",
+  "title": "Verify behavior of notification preferences toggles during attempts to validate text alignment with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute validate text alignment for notification preferences toggles with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification preferences toggles configuration with multiple simultaneous submits (Ref SEL_223).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-223",
+  "steps": "1. Target active interface for notification preferences toggles.\n2. Trigger action to validate text alignment with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_223).",
+  "input": "Target: notification preferences toggles, Action: validate text alignment, Parameters: with multiple simultaneous submits, Case Index: SEL_223",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_223.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_223_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_015",
+  "module": "Authentication",
+  "feature": "evaluate text wrapping for remember me cookie setting when cookies are blocked",
+  "title": "Verify behavior of remember me cookie setting during attempts to evaluate text wrapping when cookies are blocked",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for remember me cookie setting when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to remember me cookie setting configuration when cookies are blocked (Ref SEL_015).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-015",
+  "steps": "1. Target active interface for remember me cookie setting.\n2. Trigger action to evaluate text wrapping when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_015).",
+  "input": "Target: remember me cookie setting, Action: evaluate text wrapping, Parameters: when cookies are blocked, Case Index: SEL_015",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_015.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_015_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

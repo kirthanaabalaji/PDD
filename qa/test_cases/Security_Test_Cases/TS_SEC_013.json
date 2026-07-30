@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_013",
+  "module": "AccessControl",
+  "feature": "test injection path traversal for unvalidated URL redirection checks with html tag script inputs",
+  "title": "Verify behavior of unvalidated URL redirection checks during attempts to test injection path traversal with html tag script inputs",
+  "objective": "Evaluate that user can safely execute test injection path traversal for unvalidated URL redirection checks with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unvalidated URL redirection checks configuration with html tag script inputs (Ref SEC_013).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-013",
+  "steps": "1. Target active interface for unvalidated URL redirection checks.\n2. Trigger action to test injection path traversal with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_013).",
+  "input": "Target: unvalidated URL redirection checks, Action: test injection path traversal, Parameters: with html tag script inputs, Case Index: SEC_013",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_013.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_013_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

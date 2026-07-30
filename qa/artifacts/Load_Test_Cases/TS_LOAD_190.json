@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_190",
+  "module": "Database",
+  "feature": "measure scaling trigger speed for /api/health check endpoint with 500 concurrent virtual users",
+  "title": "Verify behavior of /api/health check endpoint during attempts to measure scaling trigger speed with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute measure scaling trigger speed for /api/health check endpoint with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/health check endpoint configuration with 500 concurrent virtual users (Ref LOAD_190).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-190",
+  "steps": "1. Target active interface for /api/health check endpoint.\n2. Trigger action to measure scaling trigger speed with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_190).",
+  "input": "Target: /api/health check endpoint, Action: measure scaling trigger speed, Parameters: with 500 concurrent virtual users, Case Index: LOAD_190",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_190.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_190_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

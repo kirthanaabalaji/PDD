@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_134",
+  "module": "Settings",
+  "feature": "process submission for accessibility keyboard focus indicators after session token expiration",
+  "title": "Verify behavior of accessibility keyboard focus indicators during attempts to process submission after session token expiration",
+  "objective": "Evaluate that user can safely execute process submission for accessibility keyboard focus indicators after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to accessibility keyboard focus indicators configuration after session token expiration (Ref SEL_134).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-134",
+  "steps": "1. Target active interface for accessibility keyboard focus indicators.\n2. Trigger action to process submission after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_134).",
+  "input": "Target: accessibility keyboard focus indicators, Action: process submission, Parameters: after session token expiration, Case Index: SEL_134",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_134.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_134_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

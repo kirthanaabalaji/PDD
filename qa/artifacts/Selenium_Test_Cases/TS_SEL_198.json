@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_198",
+  "module": "Settings",
+  "feature": "log telemetry events for questionnaire submit assessment confirmation on high resolution displays",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to log telemetry events on high resolution displays",
+  "objective": "Evaluate that user can safely execute log telemetry events for questionnaire submit assessment confirmation on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration on high resolution displays (Ref SEL_198).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-198",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to log telemetry events on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_198).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: log telemetry events, Parameters: on high resolution displays, Case Index: SEL_198",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_198.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_198_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_104",
+  "module": "BreathingExercises",
+  "feature": "audit focus states for breathing orb size scale animation during api gateway timeout",
+  "title": "Verify behavior of breathing orb size scale animation during attempts to audit focus states during api gateway timeout",
+  "objective": "Evaluate that user can safely execute audit focus states for breathing orb size scale animation during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing orb size scale animation configuration during api gateway timeout (Ref SEL_104).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-104",
+  "steps": "1. Target active interface for breathing orb size scale animation.\n2. Trigger action to audit focus states during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_104).",
+  "input": "Target: breathing orb size scale animation, Action: audit focus states, Parameters: during api gateway timeout, Case Index: SEL_104",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_104.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_104_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

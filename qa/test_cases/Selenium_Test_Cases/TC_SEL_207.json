@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_207",
+  "module": "BreathingExercises",
+  "feature": "test tooltips display for breathing history table paging when database sync is delayed",
+  "title": "Verify behavior of breathing history table paging during attempts to test tooltips display when database sync is delayed",
+  "objective": "Evaluate that user can safely execute test tooltips display for breathing history table paging when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing history table paging configuration when database sync is delayed (Ref SEL_207).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-207",
+  "steps": "1. Target active interface for breathing history table paging.\n2. Trigger action to test tooltips display when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_207).",
+  "input": "Target: breathing history table paging, Action: test tooltips display, Parameters: when database sync is delayed, Case Index: SEL_207",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_207.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_207_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

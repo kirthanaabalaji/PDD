@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_021",
+  "module": "OfflineMode",
+  "feature": "verify permission dialogue for AsyncStorage caching engine during package upgrade install",
+  "title": "Verify behavior of AsyncStorage caching engine during attempts to verify permission dialogue during package upgrade install",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for AsyncStorage caching engine during package upgrade install under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AsyncStorage caching engine configuration during package upgrade install (Ref APP_021).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-021",
+  "steps": "1. Target active interface for AsyncStorage caching engine.\n2. Trigger action to verify permission dialogue during package upgrade install.\n3. Collect audit logs and confirm status code validation (Check APP_021).",
+  "input": "Target: AsyncStorage caching engine, Action: verify permission dialogue, Parameters: during package upgrade install, Case Index: APP_021",
+  "expected": "The verification checks confirm that the touch targets resize to accessible scale successfully under reference APP_021.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_021_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

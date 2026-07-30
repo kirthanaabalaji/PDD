@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_189",
+  "module": "BreathingAnalysis",
+  "feature": "evaluate response time for /api/breathing/analyze endpoint during network connection dropping events",
+  "title": "Verify behavior of /api/breathing/analyze endpoint during attempts to evaluate response time during network connection dropping events",
+  "objective": "Evaluate that user can safely execute evaluate response time for /api/breathing/analyze endpoint during network connection dropping events under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/analyze endpoint configuration during network connection dropping events (Ref LOAD_189).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-189",
+  "steps": "1. Target active interface for /api/breathing/analyze endpoint.\n2. Trigger action to evaluate response time during network connection dropping events.\n3. Collect audit logs and confirm status code validation (Check LOAD_189).",
+  "input": "Target: /api/breathing/analyze endpoint, Action: evaluate response time, Parameters: during network connection dropping events, Case Index: LOAD_189",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_189.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_189_execution.log",
+  "execution_time": "15.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

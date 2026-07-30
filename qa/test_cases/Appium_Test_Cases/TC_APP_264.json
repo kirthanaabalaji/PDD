@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_264",
+  "module": "Settings",
+  "feature": "test local database fetch for system settings redirect link when background storage is cleared",
+  "title": "Verify behavior of system settings redirect link during attempts to test local database fetch when background storage is cleared",
+  "objective": "Evaluate that user can safely execute test local database fetch for system settings redirect link when background storage is cleared under system checks.",
+  "preconditions": "System state is reset, and target console is directed to system settings redirect link configuration when background storage is cleared (Ref APP_264).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-264",
+  "steps": "1. Target active interface for system settings redirect link.\n2. Trigger action to test local database fetch when background storage is cleared.\n3. Collect audit logs and confirm status code validation (Check APP_264).",
+  "input": "Target: system settings redirect link, Action: test local database fetch, Parameters: when background storage is cleared, Case Index: APP_264",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_264.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_264_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

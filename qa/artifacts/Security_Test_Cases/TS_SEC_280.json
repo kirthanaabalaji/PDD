@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_280",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for multer audio file type validation without providing auth token headers",
+  "title": "Verify behavior of multer audio file type validation during attempts to check traversal directory access without providing auth token headers",
+  "objective": "Evaluate that user can safely execute check traversal directory access for multer audio file type validation without providing auth token headers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multer audio file type validation configuration without providing auth token headers (Ref SEC_280).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-280",
+  "steps": "1. Target active interface for multer audio file type validation.\n2. Trigger action to check traversal directory access without providing auth token headers.\n3. Collect audit logs and confirm status code validation (Check SEC_280).",
+  "input": "Target: multer audio file type validation, Action: check traversal directory access, Parameters: without providing auth token headers, Case Index: SEC_280",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_280.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_280_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -38,52 +38,58 @@ jobs:
         run: |
           python qa/run_tests.py
 
-      - name: Upload Web Selenium Test Report
+      - name: Upload Selenium Test Cases Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Web Selenium Test Report
-          path: |
-            qa/reports/Web_Selenium_Test_Report.xlsx
-            qa/reports/Web_Selenium_Test_Report.csv
+          name: Selenium_Test_Cases
+          path: qa/artifacts/Selenium_Test_Cases/
           if-no-files-found: error
 
-      - name: Upload Android Appium Test Report
+      - name: Upload Appium Test Cases Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Android Appium Test Report
-          path: |
-            qa/reports/Android_Appium_Test_Report.xlsx
-            qa/reports/Android_Appium_Test_Report.csv
+          name: Appium_Test_Cases
+          path: qa/artifacts/Appium_Test_Cases/
           if-no-files-found: error
 
-      - name: Upload Performance & Load Test Report
+      - name: Upload Load Test Cases Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Performance & Load Test Report
-          path: |
-            qa/reports/Performance_Load_Test_Report.xlsx
-            qa/reports/Performance_Load_Test_Report.csv
+          name: Load_Test_Cases
+          path: qa/artifacts/Load_Test_Cases/
           if-no-files-found: error
 
-      - name: Upload Security Assessment Report
+      - name: Upload Security Test Cases Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Security Assessment Report
-          path: |
-            qa/reports/Security_Assessment_Report.xlsx
-            qa/reports/Security_Assessment_Report.csv
+          name: Security_Test_Cases
+          path: qa/artifacts/Security_Test_Cases/
           if-no-files-found: error
 
-      - name: Upload QA Summary Reports
+      - name: Upload Reports Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: QA Summary Reports
-          path: |
-            qa/reports/QA_Summary_Reports.xlsx
-            qa/reports/junit_report.xml
-            qa/reports/allure_dashboard.html
-            qa/reports/extent_dashboard.html
-            qa/reports/QA_Executive_Report.pdf
-            qa/reports/uniqueness_verification_report.md
-            qa/reports/executive_summary_report.md
+          name: Reports
+          path: qa/reports/
           if-no-files-found: error
+
+      - name: Upload Logs Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Logs
+          path: qa/logs/
+          if-no-files-found: error
+
+      - name: Upload Screenshots Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Screenshots
+          path: qa/evidence/
+          if-no-files-found: error
+
+      - name: Render Job Step Summary
+        run: |
+          if [ -f qa/reports/github_step_summary.md ]; then
+            cat qa/reports/github_step_summary.md >> $GITHUB_STEP_SUMMARY
+          fi
+

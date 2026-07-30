@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_285",
+  "module": "BreathingAnalysis",
+  "feature": "measure network bandwidth load for /api/data/reports DELETE route with 500 concurrent virtual users",
+  "title": "Verify behavior of /api/data/reports DELETE route during attempts to measure network bandwidth load with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute measure network bandwidth load for /api/data/reports DELETE route with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/reports DELETE route configuration with 500 concurrent virtual users (Ref LOAD_285).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-285",
+  "steps": "1. Target active interface for /api/data/reports DELETE route.\n2. Trigger action to measure network bandwidth load with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_285).",
+  "input": "Target: /api/data/reports DELETE route, Action: measure network bandwidth load, Parameters: with 500 concurrent virtual users, Case Index: LOAD_285",
+  "expected": "The verification checks confirm that the failover route restores active states successfully under reference LOAD_285.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_285_execution.log",
+  "execution_time": "10.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

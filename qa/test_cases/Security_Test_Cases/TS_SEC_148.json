@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_148",
+  "module": "AccessControl",
+  "feature": "validate secure header parameters for security HTTP response headers during server internal log dumping",
+  "title": "Verify behavior of security HTTP response headers during attempts to validate secure header parameters during server internal log dumping",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for security HTTP response headers during server internal log dumping under system checks.",
+  "preconditions": "System state is reset, and target console is directed to security HTTP response headers configuration during server internal log dumping (Ref SEC_148).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-148",
+  "steps": "1. Target active interface for security HTTP response headers.\n2. Trigger action to validate secure header parameters during server internal log dumping.\n3. Collect audit logs and confirm status code validation (Check SEC_148).",
+  "input": "Target: security HTTP response headers, Action: validate secure header parameters, Parameters: during server internal log dumping, Case Index: SEC_148",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_148.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_148_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_049",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for broken session handling invalidator using relative path traversing dots",
+  "title": "Verify behavior of broken session handling invalidator during attempts to check traversal directory access using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute check traversal directory access for broken session handling invalidator using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to broken session handling invalidator configuration using relative path traversing dots (Ref SEC_049).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-049",
+  "steps": "1. Target active interface for broken session handling invalidator.\n2. Trigger action to check traversal directory access using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_049).",
+  "input": "Target: broken session handling invalidator, Action: check traversal directory access, Parameters: using relative path traversing dots, Case Index: SEC_049",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_049.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_049_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

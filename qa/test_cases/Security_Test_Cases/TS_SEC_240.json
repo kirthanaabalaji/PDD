@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_240",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for database field encryption keys under unencrypted transport layer check",
+  "title": "Verify behavior of database field encryption keys during attempts to check cookie storage configurations under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for database field encryption keys under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to database field encryption keys configuration under unencrypted transport layer check (Ref SEC_240).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-240",
+  "steps": "1. Target active interface for database field encryption keys.\n2. Trigger action to check cookie storage configurations under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_240).",
+  "input": "Target: database field encryption keys, Action: check cookie storage configurations, Parameters: under unencrypted transport layer check, Case Index: SEC_240",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_240.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_240_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

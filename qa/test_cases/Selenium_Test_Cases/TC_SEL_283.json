@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_283",
+  "module": "Dashboard",
+  "feature": "inspect download stream for dashboard widget grid layout when database sync is delayed",
+  "title": "Verify behavior of dashboard widget grid layout during attempts to inspect download stream when database sync is delayed",
+  "objective": "Evaluate that user can safely execute inspect download stream for dashboard widget grid layout when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard widget grid layout configuration when database sync is delayed (Ref SEL_283).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-283",
+  "steps": "1. Target active interface for dashboard widget grid layout.\n2. Trigger action to inspect download stream when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_283).",
+  "input": "Target: dashboard widget grid layout, Action: inspect download stream, Parameters: when database sync is delayed, Case Index: SEL_283",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_283.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_283_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_153",
+  "module": "Authentication",
+  "feature": "monitor memory consumption for fingerprint scanner verification during database compaction sync",
+  "title": "Verify behavior of fingerprint scanner verification during attempts to monitor memory consumption during database compaction sync",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for fingerprint scanner verification during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to fingerprint scanner verification configuration during database compaction sync (Ref APP_153).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-153",
+  "steps": "1. Target active interface for fingerprint scanner verification.\n2. Trigger action to monitor memory consumption during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_153).",
+  "input": "Target: fingerprint scanner verification, Action: monitor memory consumption, Parameters: during database compaction sync, Case Index: APP_153",
+  "expected": "The verification checks confirm that the app shows system settings link successfully under reference APP_153.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_153_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

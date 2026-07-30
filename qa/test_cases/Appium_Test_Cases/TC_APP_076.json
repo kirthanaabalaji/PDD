@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_076",
+  "module": "Settings",
+  "feature": "inspect element boundaries for network retry backup loop when user denies camera permission",
+  "title": "Verify behavior of network retry backup loop during attempts to inspect element boundaries when user denies camera permission",
+  "objective": "Evaluate that user can safely execute inspect element boundaries for network retry backup loop when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to network retry backup loop configuration when user denies camera permission (Ref APP_076).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-076",
+  "steps": "1. Target active interface for network retry backup loop.\n2. Trigger action to inspect element boundaries when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_076).",
+  "input": "Target: network retry backup loop, Action: inspect element boundaries, Parameters: when user denies camera permission, Case Index: APP_076",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_076.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_076_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

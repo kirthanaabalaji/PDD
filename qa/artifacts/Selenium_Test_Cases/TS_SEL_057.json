@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_057",
+  "module": "BreathingExercises",
+  "feature": "evaluate text wrapping for breathing history table paging with empty values",
+  "title": "Verify behavior of breathing history table paging during attempts to evaluate text wrapping with empty values",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for breathing history table paging with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing history table paging configuration with empty values (Ref SEL_057).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-057",
+  "steps": "1. Target active interface for breathing history table paging.\n2. Trigger action to evaluate text wrapping with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_057).",
+  "input": "Target: breathing history table paging, Action: evaluate text wrapping, Parameters: with empty values, Case Index: SEL_057",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_057.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_057_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

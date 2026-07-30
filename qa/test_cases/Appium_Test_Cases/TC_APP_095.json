@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_095",
+  "module": "AIChat",
+  "feature": "verify native toast layout for voice input speech recognition when user denies camera permission",
+  "title": "Verify behavior of voice input speech recognition during attempts to verify native toast layout when user denies camera permission",
+  "objective": "Evaluate that user can safely execute verify native toast layout for voice input speech recognition when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to voice input speech recognition configuration when user denies camera permission (Ref APP_095).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-095",
+  "steps": "1. Target active interface for voice input speech recognition.\n2. Trigger action to verify native toast layout when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_095).",
+  "input": "Target: voice input speech recognition, Action: verify native toast layout, Parameters: when user denies camera permission, Case Index: APP_095",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_095.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_095_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

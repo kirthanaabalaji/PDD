@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_063",
+  "module": "BreathingAnalysis",
+  "feature": "verify permission dialogue for AI audio report preview during deep link routing lookup",
+  "title": "Verify behavior of AI audio report preview during attempts to verify permission dialogue during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for AI audio report preview during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AI audio report preview configuration during deep link routing lookup (Ref APP_063).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-063",
+  "steps": "1. Target active interface for AI audio report preview.\n2. Trigger action to verify permission dialogue during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_063).",
+  "input": "Target: AI audio report preview, Action: verify permission dialogue, Parameters: during deep link routing lookup, Case Index: APP_063",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_063.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_063_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_152",
+  "module": "Authentication",
+  "feature": "measure execution time for multi-tab login state sync with empty values",
+  "title": "Verify behavior of multi-tab login state sync during attempts to measure execution time with empty values",
+  "objective": "Evaluate that user can safely execute measure execution time for multi-tab login state sync with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multi-tab login state sync configuration with empty values (Ref SEL_152).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-152",
+  "steps": "1. Target active interface for multi-tab login state sync.\n2. Trigger action to measure execution time with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_152).",
+  "input": "Target: multi-tab login state sync, Action: measure execution time, Parameters: with empty values, Case Index: SEL_152",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_152.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_152_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

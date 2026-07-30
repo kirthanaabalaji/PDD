@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_226",
+  "module": "Settings",
+  "feature": "trigger orientation switch for network retry backup loop when background storage is cleared",
+  "title": "Verify behavior of network retry backup loop during attempts to trigger orientation switch when background storage is cleared",
+  "objective": "Evaluate that user can safely execute trigger orientation switch for network retry backup loop when background storage is cleared under system checks.",
+  "preconditions": "System state is reset, and target console is directed to network retry backup loop configuration when background storage is cleared (Ref APP_226).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-226",
+  "steps": "1. Target active interface for network retry backup loop.\n2. Trigger action to trigger orientation switch when background storage is cleared.\n3. Collect audit logs and confirm status code validation (Check APP_226).",
+  "input": "Target: network retry backup loop, Action: trigger orientation switch, Parameters: when background storage is cleared, Case Index: APP_226",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_226.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_226_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

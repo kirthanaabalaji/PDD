@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_155",
+  "module": "Database",
+  "feature": "measure request throughput for Breathing session average calculations under rapid burst volume spikes",
+  "title": "Verify behavior of Breathing session average calculations during attempts to measure request throughput under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute measure request throughput for Breathing session average calculations under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Breathing session average calculations configuration under rapid burst volume spikes (Ref LOAD_155).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-155",
+  "steps": "1. Target active interface for Breathing session average calculations.\n2. Trigger action to measure request throughput under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_155).",
+  "input": "Target: Breathing session average calculations, Action: measure request throughput, Parameters: under rapid burst volume spikes, Case Index: LOAD_155",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_155.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_155_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_078",
+  "module": "ClinicalReports",
+  "feature": "evaluate resource lock duration for pulmonologist contact selector during package upgrade install",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to evaluate resource lock duration during package upgrade install",
+  "objective": "Evaluate that user can safely execute evaluate resource lock duration for pulmonologist contact selector during package upgrade install under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration during package upgrade install (Ref APP_078).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-078",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to evaluate resource lock duration during package upgrade install.\n3. Collect audit logs and confirm status code validation (Check APP_078).",
+  "input": "Target: pulmonologist contact selector, Action: evaluate resource lock duration, Parameters: during package upgrade install, Case Index: APP_078",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_078.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_078_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

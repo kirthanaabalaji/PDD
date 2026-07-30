@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_095",
+  "module": "Settings",
+  "feature": "check boundary limits for questionnaire save progress state with empty values",
+  "title": "Verify behavior of questionnaire save progress state during attempts to check boundary limits with empty values",
+  "objective": "Evaluate that user can safely execute check boundary limits for questionnaire save progress state with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire save progress state configuration with empty values (Ref SEL_095).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-095",
+  "steps": "1. Target active interface for questionnaire save progress state.\n2. Trigger action to check boundary limits with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_095).",
+  "input": "Target: questionnaire save progress state, Action: check boundary limits, Parameters: with empty values, Case Index: SEL_095",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_095.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_095_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

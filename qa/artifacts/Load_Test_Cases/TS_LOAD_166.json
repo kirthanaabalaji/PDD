@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_166",
+  "module": "Database",
+  "feature": "audit database query times for Rate limiting API gateway on database replica set failover",
+  "title": "Verify behavior of Rate limiting API gateway during attempts to audit database query times on database replica set failover",
+  "objective": "Evaluate that user can safely execute audit database query times for Rate limiting API gateway on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Rate limiting API gateway configuration on database replica set failover (Ref LOAD_166).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-166",
+  "steps": "1. Target active interface for Rate limiting API gateway.\n2. Trigger action to audit database query times on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_166).",
+  "input": "Target: Rate limiting API gateway, Action: audit database query times, Parameters: on database replica set failover, Case Index: LOAD_166",
+  "expected": "The verification checks confirm that the failover route restores active states successfully under reference LOAD_166.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_166_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

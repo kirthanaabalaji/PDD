@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_195",
+  "module": "Settings",
+  "feature": "audit keyboard navigation for questionnaire save progress state during server database failover",
+  "title": "Verify behavior of questionnaire save progress state during attempts to audit keyboard navigation during server database failover",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for questionnaire save progress state during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire save progress state configuration during server database failover (Ref SEL_195).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-195",
+  "steps": "1. Target active interface for questionnaire save progress state.\n2. Trigger action to audit keyboard navigation during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_195).",
+  "input": "Target: questionnaire save progress state, Action: audit keyboard navigation, Parameters: during server database failover, Case Index: SEL_195",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_195.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_195_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

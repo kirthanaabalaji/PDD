@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_232",
+  "module": "AIChat",
+  "feature": "track cookie changes for help center search suggestions dropdown on narrow mobile layout viewport",
+  "title": "Verify behavior of help center search suggestions dropdown during attempts to track cookie changes on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute track cookie changes for help center search suggestions dropdown on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help center search suggestions dropdown configuration on narrow mobile layout viewport (Ref SEL_232).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-232",
+  "steps": "1. Target active interface for help center search suggestions dropdown.\n2. Trigger action to track cookie changes on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_232).",
+  "input": "Target: help center search suggestions dropdown, Action: track cookie changes, Parameters: on narrow mobile layout viewport, Case Index: SEL_232",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_232.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_232_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

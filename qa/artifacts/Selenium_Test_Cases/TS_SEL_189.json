@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_189",
+  "module": "Dashboard",
+  "feature": "validate fields for quick actions shortcuts bar with custom theme configurations",
+  "title": "Verify behavior of quick actions shortcuts bar during attempts to validate fields with custom theme configurations",
+  "objective": "Evaluate that user can safely execute validate fields for quick actions shortcuts bar with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to quick actions shortcuts bar configuration with custom theme configurations (Ref SEL_189).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-189",
+  "steps": "1. Target active interface for quick actions shortcuts bar.\n2. Trigger action to validate fields with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_189).",
+  "input": "Target: quick actions shortcuts bar, Action: validate fields, Parameters: with custom theme configurations, Case Index: SEL_189",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_189.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_189_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

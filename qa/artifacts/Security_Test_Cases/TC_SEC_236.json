@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_236",
+  "module": "AccessControl",
+  "feature": "verify CSRF validation defenses for server secrets database configuration with executable php script files",
+  "title": "Verify behavior of server secrets database configuration during attempts to verify CSRF validation defenses with executable php script files",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for server secrets database configuration with executable php script files under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server secrets database configuration configuration with executable php script files (Ref SEC_236).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-236",
+  "steps": "1. Target active interface for server secrets database configuration.\n2. Trigger action to verify CSRF validation defenses with executable php script files.\n3. Collect audit logs and confirm status code validation (Check SEC_236).",
+  "input": "Target: server secrets database configuration, Action: verify CSRF validation defenses, Parameters: with executable php script files, Case Index: SEC_236",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_236.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_236_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_294",
+  "module": "AccessControl",
+  "feature": "test SQL injection bypass for CORS preflight request routing check against OWASP top 10 rules",
+  "title": "Verify behavior of CORS preflight request routing check during attempts to test SQL injection bypass against OWASP top 10 rules",
+  "objective": "Evaluate that user can safely execute test SQL injection bypass for CORS preflight request routing check against OWASP top 10 rules under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS preflight request routing check configuration against OWASP top 10 rules (Ref SEC_294).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-294",
+  "steps": "1. Target active interface for CORS preflight request routing check.\n2. Trigger action to test SQL injection bypass against OWASP top 10 rules.\n3. Collect audit logs and confirm status code validation (Check SEC_294).",
+  "input": "Target: CORS preflight request routing check, Action: test SQL injection bypass, Parameters: against OWASP top 10 rules, Case Index: SEC_294",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_294.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_294_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

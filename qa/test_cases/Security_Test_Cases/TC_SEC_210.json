@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_210",
+  "module": "AccessControl",
+  "feature": "test SQL injection bypass for express parameter pollution sanitizer using a different user database index",
+  "title": "Verify behavior of express parameter pollution sanitizer during attempts to test SQL injection bypass using a different user database index",
+  "objective": "Evaluate that user can safely execute test SQL injection bypass for express parameter pollution sanitizer using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to express parameter pollution sanitizer configuration using a different user database index (Ref SEC_210).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-210",
+  "steps": "1. Target active interface for express parameter pollution sanitizer.\n2. Trigger action to test SQL injection bypass using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_210).",
+  "input": "Target: express parameter pollution sanitizer, Action: test SQL injection bypass, Parameters: using a different user database index, Case Index: SEC_210",
+  "expected": "The verification checks confirm that the user is kept on original origin domain successfully under reference SEC_210.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_210_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

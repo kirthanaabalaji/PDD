@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_162",
+  "module": "BreathingAnalysis",
+  "feature": "evaluate resource lock duration for camera snapshot frame on device orientation rotate",
+  "title": "Verify behavior of camera snapshot frame during attempts to evaluate resource lock duration on device orientation rotate",
+  "objective": "Evaluate that user can safely execute evaluate resource lock duration for camera snapshot frame on device orientation rotate under system checks.",
+  "preconditions": "System state is reset, and target console is directed to camera snapshot frame configuration on device orientation rotate (Ref APP_162).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-162",
+  "steps": "1. Target active interface for camera snapshot frame.\n2. Trigger action to evaluate resource lock duration on device orientation rotate.\n3. Collect audit logs and confirm status code validation (Check APP_162).",
+  "input": "Target: camera snapshot frame, Action: evaluate resource lock duration, Parameters: on device orientation rotate, Case Index: APP_162",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_162.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_162_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

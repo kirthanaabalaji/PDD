@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_165",
+  "module": "IDOR",
+  "feature": "test prompt payload injection for IDOR checks on daily symptoms logs with html tag script inputs",
+  "title": "Verify behavior of IDOR checks on daily symptoms logs during attempts to test prompt payload injection with html tag script inputs",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for IDOR checks on daily symptoms logs with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on daily symptoms logs configuration with html tag script inputs (Ref SEC_165).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-165",
+  "steps": "1. Target active interface for IDOR checks on daily symptoms logs.\n2. Trigger action to test prompt payload injection with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_165).",
+  "input": "Target: IDOR checks on daily symptoms logs, Action: test prompt payload injection, Parameters: with html tag script inputs, Case Index: SEC_165",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_165.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_165_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

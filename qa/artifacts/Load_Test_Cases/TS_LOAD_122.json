@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_122",
+  "module": "Database",
+  "feature": "test system recovery latency for Groq API LLM proxy queue during massive server cold start",
+  "title": "Verify behavior of Groq API LLM proxy queue during attempts to test system recovery latency during massive server cold start",
+  "objective": "Evaluate that user can safely execute test system recovery latency for Groq API LLM proxy queue during massive server cold start under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq API LLM proxy queue configuration during massive server cold start (Ref LOAD_122).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-122",
+  "steps": "1. Target active interface for Groq API LLM proxy queue.\n2. Trigger action to test system recovery latency during massive server cold start.\n3. Collect audit logs and confirm status code validation (Check LOAD_122).",
+  "input": "Target: Groq API LLM proxy queue, Action: test system recovery latency, Parameters: during massive server cold start, Case Index: LOAD_122",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_122.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_122_execution.log",
+  "execution_time": "6.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

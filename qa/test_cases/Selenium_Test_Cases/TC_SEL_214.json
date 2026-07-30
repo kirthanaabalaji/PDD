@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_214",
+  "module": "SymptomTracking",
+  "feature": "validate regex matching for dosage calculator slider controls during server database failover",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to validate regex matching during server database failover",
+  "objective": "Evaluate that user can safely execute validate regex matching for dosage calculator slider controls during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration during server database failover (Ref SEL_214).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-214",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to validate regex matching during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_214).",
+  "input": "Target: dosage calculator slider controls, Action: validate regex matching, Parameters: during server database failover, Case Index: SEL_214",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_214.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_214_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

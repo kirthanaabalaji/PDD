@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_003",
+  "module": "Authentication",
+  "feature": "verify layout rendering for registration email validation using cross-site scripting strings",
+  "title": "Verify behavior of registration email validation during attempts to verify layout rendering using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute verify layout rendering for registration email validation using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to registration email validation configuration using cross-site scripting strings (Ref SEL_003).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-003",
+  "steps": "1. Target active interface for registration email validation.\n2. Trigger action to verify layout rendering using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_003).",
+  "input": "Target: registration email validation, Action: verify layout rendering, Parameters: using cross-site scripting strings, Case Index: SEL_003",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_003.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_003_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

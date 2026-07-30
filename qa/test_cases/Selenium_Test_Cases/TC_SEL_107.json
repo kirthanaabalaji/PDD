@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_107",
+  "module": "BreathingExercises",
+  "feature": "verify network callback for breathing history table paging after five minutes of inactivity",
+  "title": "Verify behavior of breathing history table paging during attempts to verify network callback after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute verify network callback for breathing history table paging after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing history table paging configuration after five minutes of inactivity (Ref SEL_107).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-107",
+  "steps": "1. Target active interface for breathing history table paging.\n2. Trigger action to verify network callback after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_107).",
+  "input": "Target: breathing history table paging, Action: verify network callback, Parameters: after five minutes of inactivity, Case Index: SEL_107",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_107.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_107_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

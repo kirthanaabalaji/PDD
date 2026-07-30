@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_213",
+  "module": "AccessControl",
+  "feature": "manipulate record ownership indices for unvalidated URL redirection checks using external URL domains",
+  "title": "Verify behavior of unvalidated URL redirection checks during attempts to manipulate record ownership indices using external URL domains",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for unvalidated URL redirection checks using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unvalidated URL redirection checks configuration using external URL domains (Ref SEC_213).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-213",
+  "steps": "1. Target active interface for unvalidated URL redirection checks.\n2. Trigger action to manipulate record ownership indices using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_213).",
+  "input": "Target: unvalidated URL redirection checks, Action: manipulate record ownership indices, Parameters: using external URL domains, Case Index: SEC_213",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_213.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_213_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

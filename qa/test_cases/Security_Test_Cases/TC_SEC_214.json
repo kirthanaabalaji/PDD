@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_214",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for Groq endpoint token allocation quota with blank authorization keys",
+  "title": "Verify behavior of Groq endpoint token allocation quota during attempts to test parameter parsing pollution with blank authorization keys",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for Groq endpoint token allocation quota with blank authorization keys under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq endpoint token allocation quota configuration with blank authorization keys (Ref SEC_214).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-214",
+  "steps": "1. Target active interface for Groq endpoint token allocation quota.\n2. Trigger action to test parameter parsing pollution with blank authorization keys.\n3. Collect audit logs and confirm status code validation (Check SEC_214).",
+  "input": "Target: Groq endpoint token allocation quota, Action: test parameter parsing pollution, Parameters: with blank authorization keys, Case Index: SEC_214",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_214.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_214_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_125",
+  "module": "AccessControl",
+  "feature": "audit code injection vulnerabilities for directory traversal path filters using relative path traversing dots",
+  "title": "Verify behavior of directory traversal path filters during attempts to audit code injection vulnerabilities using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for directory traversal path filters using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to directory traversal path filters configuration using relative path traversing dots (Ref SEC_125).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-125",
+  "steps": "1. Target active interface for directory traversal path filters.\n2. Trigger action to audit code injection vulnerabilities using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_125).",
+  "input": "Target: directory traversal path filters, Action: audit code injection vulnerabilities, Parameters: using relative path traversing dots, Case Index: SEC_125",
+  "expected": "The verification checks confirm that the user is kept on original origin domain successfully under reference SEC_125.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_125_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

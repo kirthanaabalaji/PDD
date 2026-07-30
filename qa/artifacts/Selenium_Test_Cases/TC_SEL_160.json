@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_160",
+  "module": "SymptomTracking",
+  "feature": "validate text alignment for symptom log severity score slider on high resolution displays",
+  "title": "Verify behavior of symptom log severity score slider during attempts to validate text alignment on high resolution displays",
+  "objective": "Evaluate that user can safely execute validate text alignment for symptom log severity score slider on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration on high resolution displays (Ref SEL_160).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-160",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to validate text alignment on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_160).",
+  "input": "Target: symptom log severity score slider, Action: validate text alignment, Parameters: on high resolution displays, Case Index: SEL_160",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_160.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_160_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

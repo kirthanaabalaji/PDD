@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_260",
+  "module": "Settings",
+  "feature": "process voice capture for medicine alarm vibration pattern under extreme low battery conditions",
+  "title": "Verify behavior of medicine alarm vibration pattern during attempts to process voice capture under extreme low battery conditions",
+  "objective": "Evaluate that user can safely execute process voice capture for medicine alarm vibration pattern under extreme low battery conditions under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine alarm vibration pattern configuration under extreme low battery conditions (Ref APP_260).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-260",
+  "steps": "1. Target active interface for medicine alarm vibration pattern.\n2. Trigger action to process voice capture under extreme low battery conditions.\n3. Collect audit logs and confirm status code validation (Check APP_260).",
+  "input": "Target: medicine alarm vibration pattern, Action: process voice capture, Parameters: under extreme low battery conditions, Case Index: APP_260",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_260.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_260_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

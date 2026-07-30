@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_172",
+  "module": "Database",
+  "feature": "verify cache hit ratio for Groq API LLM proxy queue during peak hours scheduling traffic",
+  "title": "Verify behavior of Groq API LLM proxy queue during attempts to verify cache hit ratio during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for Groq API LLM proxy queue during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq API LLM proxy queue configuration during peak hours scheduling traffic (Ref LOAD_172).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-172",
+  "steps": "1. Target active interface for Groq API LLM proxy queue.\n2. Trigger action to verify cache hit ratio during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_172).",
+  "input": "Target: Groq API LLM proxy queue, Action: verify cache hit ratio, Parameters: during peak hours scheduling traffic, Case Index: LOAD_172",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_172.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_172_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

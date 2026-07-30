@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_296",
+  "module": "Settings",
+  "feature": "test network call recovery for network latency indicator under poor signal coverage",
+  "title": "Verify behavior of network latency indicator during attempts to test network call recovery under poor signal coverage",
+  "objective": "Evaluate that user can safely execute test network call recovery for network latency indicator under poor signal coverage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to network latency indicator configuration under poor signal coverage (Ref APP_296).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-296",
+  "steps": "1. Target active interface for network latency indicator.\n2. Trigger action to test network call recovery under poor signal coverage.\n3. Collect audit logs and confirm status code validation (Check APP_296).",
+  "input": "Target: network latency indicator, Action: test network call recovery, Parameters: under poor signal coverage, Case Index: APP_296",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_296.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_296_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

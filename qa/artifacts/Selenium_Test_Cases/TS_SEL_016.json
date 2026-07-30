@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_016",
+  "module": "ClinicalReports",
+  "feature": "reset options for clinical PDF report print dialog under local storage quota limits",
+  "title": "Verify behavior of clinical PDF report print dialog during attempts to reset options under local storage quota limits",
+  "objective": "Evaluate that user can safely execute reset options for clinical PDF report print dialog under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical PDF report print dialog configuration under local storage quota limits (Ref SEL_016).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-016",
+  "steps": "1. Target active interface for clinical PDF report print dialog.\n2. Trigger action to reset options under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_016).",
+  "input": "Target: clinical PDF report print dialog, Action: reset options, Parameters: under local storage quota limits, Case Index: SEL_016",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_016.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_016_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

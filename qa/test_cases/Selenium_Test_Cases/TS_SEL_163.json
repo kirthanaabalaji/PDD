@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_163",
+  "module": "SymptomTracking",
+  "feature": "reset options for symptom log trigger selection checkboxes for special character strings",
+  "title": "Verify behavior of symptom log trigger selection checkboxes during attempts to reset options for special character strings",
+  "objective": "Evaluate that user can safely execute reset options for symptom log trigger selection checkboxes for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log trigger selection checkboxes configuration for special character strings (Ref SEL_163).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-163",
+  "steps": "1. Target active interface for symptom log trigger selection checkboxes.\n2. Trigger action to reset options for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_163).",
+  "input": "Target: symptom log trigger selection checkboxes, Action: reset options, Parameters: for special character strings, Case Index: SEL_163",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_163.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_163_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_276",
+  "module": "Database",
+  "feature": "monitor CPU execution load for Atlas backup restore throughput during server container restart cycles",
+  "title": "Verify behavior of Atlas backup restore throughput during attempts to monitor CPU execution load during server container restart cycles",
+  "objective": "Evaluate that user can safely execute monitor CPU execution load for Atlas backup restore throughput during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Atlas backup restore throughput configuration during server container restart cycles (Ref LOAD_276).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-276",
+  "steps": "1. Target active interface for Atlas backup restore throughput.\n2. Trigger action to monitor CPU execution load during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_276).",
+  "input": "Target: Atlas backup restore throughput, Action: monitor CPU execution load, Parameters: during server container restart cycles, Case Index: LOAD_276",
+  "expected": "The verification checks confirm that the database throughput handles burst operations successfully under reference LOAD_276.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_276_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

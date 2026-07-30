@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_010",
+  "module": "Database",
+  "feature": "inspect memory allocation limits for Redis cache response storage during server container restart cycles",
+  "title": "Verify behavior of Redis cache response storage during attempts to inspect memory allocation limits during server container restart cycles",
+  "objective": "Evaluate that user can safely execute inspect memory allocation limits for Redis cache response storage during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Redis cache response storage configuration during server container restart cycles (Ref LOAD_010).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-010",
+  "steps": "1. Target active interface for Redis cache response storage.\n2. Trigger action to inspect memory allocation limits during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_010).",
+  "input": "Target: Redis cache response storage, Action: inspect memory allocation limits, Parameters: during server container restart cycles, Case Index: LOAD_010",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_010.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_010_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

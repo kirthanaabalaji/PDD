@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_141",
+  "module": "Onboarding",
+  "feature": "evaluate text wrapping for user deletion confirmation popup on high resolution displays",
+  "title": "Verify behavior of user deletion confirmation popup during attempts to evaluate text wrapping on high resolution displays",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for user deletion confirmation popup on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user deletion confirmation popup configuration on high resolution displays (Ref SEL_141).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-141",
+  "steps": "1. Target active interface for user deletion confirmation popup.\n2. Trigger action to evaluate text wrapping on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_141).",
+  "input": "Target: user deletion confirmation popup, Action: evaluate text wrapping, Parameters: on high resolution displays, Case Index: SEL_141",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_141.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_141_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

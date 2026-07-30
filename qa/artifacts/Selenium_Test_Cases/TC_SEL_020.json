@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_020",
+  "module": "ClinicalReports",
+  "feature": "audit focus states for pulmonologist appointment booking slot selection after session token expiration",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to audit focus states after session token expiration",
+  "objective": "Evaluate that user can safely execute audit focus states for pulmonologist appointment booking slot selection after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration after session token expiration (Ref SEL_020).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-020",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to audit focus states after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_020).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: audit focus states, Parameters: after session token expiration, Case Index: SEL_020",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_020.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_020_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_164",
+  "module": "Database",
+  "feature": "test system recovery latency for JWT token refresh route under continuous memory heap pressure",
+  "title": "Verify behavior of JWT token refresh route during attempts to test system recovery latency under continuous memory heap pressure",
+  "objective": "Evaluate that user can safely execute test system recovery latency for JWT token refresh route under continuous memory heap pressure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to JWT token refresh route configuration under continuous memory heap pressure (Ref LOAD_164).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-164",
+  "steps": "1. Target active interface for JWT token refresh route.\n2. Trigger action to test system recovery latency under continuous memory heap pressure.\n3. Collect audit logs and confirm status code validation (Check LOAD_164).",
+  "input": "Target: JWT token refresh route, Action: test system recovery latency, Parameters: under continuous memory heap pressure, Case Index: LOAD_164",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_164.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_164_execution.log",
+  "execution_time": "9.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

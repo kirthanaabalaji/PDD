@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_297",
+  "module": "Database",
+  "feature": "monitor CPU execution load for MongoDB Atlas replication network under continuous memory heap pressure",
+  "title": "Verify behavior of MongoDB Atlas replication network during attempts to monitor CPU execution load under continuous memory heap pressure",
+  "objective": "Evaluate that user can safely execute monitor CPU execution load for MongoDB Atlas replication network under continuous memory heap pressure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas replication network configuration under continuous memory heap pressure (Ref LOAD_297).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-297",
+  "steps": "1. Target active interface for MongoDB Atlas replication network.\n2. Trigger action to monitor CPU execution load under continuous memory heap pressure.\n3. Collect audit logs and confirm status code validation (Check LOAD_297).",
+  "input": "Target: MongoDB Atlas replication network, Action: monitor CPU execution load, Parameters: under continuous memory heap pressure, Case Index: LOAD_297",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_297.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_297_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

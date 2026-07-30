@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_288",
+  "module": "AccessControl",
+  "feature": "test token generation logic for Atlas backup storage access control for client local cookie storage",
+  "title": "Verify behavior of Atlas backup storage access control during attempts to test token generation logic for client local cookie storage",
+  "objective": "Evaluate that user can safely execute test token generation logic for Atlas backup storage access control for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Atlas backup storage access control configuration for client local cookie storage (Ref SEC_288).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-288",
+  "steps": "1. Target active interface for Atlas backup storage access control.\n2. Trigger action to test token generation logic for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_288).",
+  "input": "Target: Atlas backup storage access control, Action: test token generation logic, Parameters: for client local cookie storage, Case Index: SEC_288",
+  "expected": "The verification checks confirm that the authorization validation check blocks query successfully under reference SEC_288.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_288_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

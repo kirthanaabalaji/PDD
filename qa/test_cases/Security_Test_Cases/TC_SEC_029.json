@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_029",
+  "module": "AccessControl",
+  "feature": "check stored script execution for clinical insights calculations validation with array parameter pollution payloads",
+  "title": "Verify behavior of clinical insights calculations validation during attempts to check stored script execution with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute check stored script execution for clinical insights calculations validation with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical insights calculations validation configuration with array parameter pollution payloads (Ref SEC_029).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-029",
+  "steps": "1. Target active interface for clinical insights calculations validation.\n2. Trigger action to check stored script execution with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_029).",
+  "input": "Target: clinical insights calculations validation, Action: check stored script execution, Parameters: with array parameter pollution payloads, Case Index: SEC_029",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_029.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_029_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

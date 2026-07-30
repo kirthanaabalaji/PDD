@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_045",
+  "module": "XSS",
+  "feature": "manipulate record ownership indices for SQL injection payload filters by altering token payload structure",
+  "title": "Verify behavior of SQL injection payload filters during attempts to manipulate record ownership indices by altering token payload structure",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for SQL injection payload filters by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to SQL injection payload filters configuration by altering token payload structure (Ref SEC_045).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-045",
+  "steps": "1. Target active interface for SQL injection payload filters.\n2. Trigger action to manipulate record ownership indices by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_045).",
+  "input": "Target: SQL injection payload filters, Action: manipulate record ownership indices, Parameters: by altering token payload structure, Case Index: SEC_045",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_045.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_045_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

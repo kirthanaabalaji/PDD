@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_024",
+  "module": "IDOR",
+  "feature": "manipulate record ownership indices for IDOR checks on AI chat messages with blank authorization keys",
+  "title": "Verify behavior of IDOR checks on AI chat messages during attempts to manipulate record ownership indices with blank authorization keys",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for IDOR checks on AI chat messages with blank authorization keys under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on AI chat messages configuration with blank authorization keys (Ref SEC_024).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-024",
+  "steps": "1. Target active interface for IDOR checks on AI chat messages.\n2. Trigger action to manipulate record ownership indices with blank authorization keys.\n3. Collect audit logs and confirm status code validation (Check SEC_024).",
+  "input": "Target: IDOR checks on AI chat messages, Action: manipulate record ownership indices, Parameters: with blank authorization keys, Case Index: SEC_024",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_024.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_024_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

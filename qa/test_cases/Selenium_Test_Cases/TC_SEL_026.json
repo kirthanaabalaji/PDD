@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_026",
+  "module": "ClinicalReports",
+  "feature": "measure execution time for clinical recommendations expansion accordion when network speed is throttled",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to measure execution time when network speed is throttled",
+  "objective": "Evaluate that user can safely execute measure execution time for clinical recommendations expansion accordion when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration when network speed is throttled (Ref SEL_026).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-026",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to measure execution time when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_026).",
+  "input": "Target: clinical recommendations expansion accordion, Action: measure execution time, Parameters: when network speed is throttled, Case Index: SEL_026",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_026.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_026_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

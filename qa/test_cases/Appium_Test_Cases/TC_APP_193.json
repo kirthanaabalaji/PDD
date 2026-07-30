@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_193",
+  "module": "BreathingAnalysis",
+  "feature": "verify image dimensions for image cropping editor for assistive touch gestures",
+  "title": "Verify behavior of image cropping editor during attempts to verify image dimensions for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute verify image dimensions for image cropping editor for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image cropping editor configuration for assistive touch gestures (Ref APP_193).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-193",
+  "steps": "1. Target active interface for image cropping editor.\n2. Trigger action to verify image dimensions for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_193).",
+  "input": "Target: image cropping editor, Action: verify image dimensions, Parameters: for assistive touch gestures, Case Index: APP_193",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_193.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_193_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

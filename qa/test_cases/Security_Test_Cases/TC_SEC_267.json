@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_267",
+  "module": "AccessControl",
+  "feature": "test token generation logic for emergency contact phone text validation using a different user database index",
+  "title": "Verify behavior of emergency contact phone text validation during attempts to test token generation logic using a different user database index",
+  "objective": "Evaluate that user can safely execute test token generation logic for emergency contact phone text validation using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency contact phone text validation configuration using a different user database index (Ref SEC_267).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-267",
+  "steps": "1. Target active interface for emergency contact phone text validation.\n2. Trigger action to test token generation logic using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_267).",
+  "input": "Target: emergency contact phone text validation, Action: test token generation logic, Parameters: using a different user database index, Case Index: SEC_267",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_267.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_267_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

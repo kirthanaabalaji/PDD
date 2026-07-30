@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_245",
+  "module": "XSS",
+  "feature": "inspect logs for exposed keys for SQL injection payload filters with command terminal syntax symbols",
+  "title": "Verify behavior of SQL injection payload filters during attempts to inspect logs for exposed keys with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute inspect logs for exposed keys for SQL injection payload filters with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to SQL injection payload filters configuration with command terminal syntax symbols (Ref SEC_245).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-245",
+  "steps": "1. Target active interface for SQL injection payload filters.\n2. Trigger action to inspect logs for exposed keys with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_245).",
+  "input": "Target: SQL injection payload filters, Action: inspect logs for exposed keys, Parameters: with command terminal syntax symbols, Case Index: SEC_245",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_245.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_245_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

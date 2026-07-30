@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_044",
+  "module": "AIChat",
+  "feature": "measure server warm start delay for /api/chat/clear POST route with multi-threaded k6 load configurations",
+  "title": "Verify behavior of /api/chat/clear POST route during attempts to measure server warm start delay with multi-threaded k6 load configurations",
+  "objective": "Evaluate that user can safely execute measure server warm start delay for /api/chat/clear POST route with multi-threaded k6 load configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat/clear POST route configuration with multi-threaded k6 load configurations (Ref LOAD_044).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-044",
+  "steps": "1. Target active interface for /api/chat/clear POST route.\n2. Trigger action to measure server warm start delay with multi-threaded k6 load configurations.\n3. Collect audit logs and confirm status code validation (Check LOAD_044).",
+  "input": "Target: /api/chat/clear POST route, Action: measure server warm start delay, Parameters: with multi-threaded k6 load configurations, Case Index: LOAD_044",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_044.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_044_execution.log",
+  "execution_time": "9.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

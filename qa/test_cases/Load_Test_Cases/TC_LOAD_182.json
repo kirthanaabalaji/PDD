@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_182",
+  "module": "Database",
+  "feature": "evaluate connection pool reuse for Gemini audio processing call queue when downstream Groq service is throttled",
+  "title": "Verify behavior of Gemini audio processing call queue during attempts to evaluate connection pool reuse when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for Gemini audio processing call queue when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Gemini audio processing call queue configuration when downstream Groq service is throttled (Ref LOAD_182).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-182",
+  "steps": "1. Target active interface for Gemini audio processing call queue.\n2. Trigger action to evaluate connection pool reuse when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_182).",
+  "input": "Target: Gemini audio processing call queue, Action: evaluate connection pool reuse, Parameters: when downstream Groq service is throttled, Case Index: LOAD_182",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_182.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_182_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

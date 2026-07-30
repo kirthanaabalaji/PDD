@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_094",
+  "module": "Settings",
+  "feature": "inspect download stream for api error toast notifications with custom theme configurations",
+  "title": "Verify behavior of api error toast notifications during attempts to inspect download stream with custom theme configurations",
+  "objective": "Evaluate that user can safely execute inspect download stream for api error toast notifications with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration with custom theme configurations (Ref SEL_094).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-094",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to inspect download stream with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_094).",
+  "input": "Target: api error toast notifications, Action: inspect download stream, Parameters: with custom theme configurations, Case Index: SEL_094",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_094.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_094_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

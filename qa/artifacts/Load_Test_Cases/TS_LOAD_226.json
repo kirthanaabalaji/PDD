@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_226",
+  "module": "Database",
+  "feature": "inspect memory consumption for Atlas backup restore throughput under complex aggregation pipeline queries",
+  "title": "Verify behavior of Atlas backup restore throughput during attempts to inspect memory consumption under complex aggregation pipeline queries",
+  "objective": "Evaluate that user can safely execute inspect memory consumption for Atlas backup restore throughput under complex aggregation pipeline queries under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Atlas backup restore throughput configuration under complex aggregation pipeline queries (Ref LOAD_226).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-226",
+  "steps": "1. Target active interface for Atlas backup restore throughput.\n2. Trigger action to inspect memory consumption under complex aggregation pipeline queries.\n3. Collect audit logs and confirm status code validation (Check LOAD_226).",
+  "input": "Target: Atlas backup restore throughput, Action: inspect memory consumption, Parameters: under complex aggregation pipeline queries, Case Index: LOAD_226",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_226.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_226_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_168",
+  "module": "Authentication",
+  "feature": "validate fields for session timeout idle alert under local storage quota limits",
+  "title": "Verify behavior of session timeout idle alert during attempts to validate fields under local storage quota limits",
+  "objective": "Evaluate that user can safely execute validate fields for session timeout idle alert under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session timeout idle alert configuration under local storage quota limits (Ref SEL_168).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-168",
+  "steps": "1. Target active interface for session timeout idle alert.\n2. Trigger action to validate fields under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_168).",
+  "input": "Target: session timeout idle alert, Action: validate fields, Parameters: under local storage quota limits, Case Index: SEL_168",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_168.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_168_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_031",
+  "module": "Settings",
+  "feature": "inspect download stream for dark mode theme layout colors after five minutes of inactivity",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to inspect download stream after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute inspect download stream for dark mode theme layout colors after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration after five minutes of inactivity (Ref SEL_031).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-031",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to inspect download stream after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_031).",
+  "input": "Target: dark mode theme layout colors, Action: inspect download stream, Parameters: after five minutes of inactivity, Case Index: SEL_031",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_031.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_031_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

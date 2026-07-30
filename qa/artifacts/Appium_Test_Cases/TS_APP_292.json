@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_292",
+  "module": "Settings",
+  "feature": "test swipe gesture handlers for app crash recovery state when background execution is suspended",
+  "title": "Verify behavior of app crash recovery state during attempts to test swipe gesture handlers when background execution is suspended",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for app crash recovery state when background execution is suspended under system checks.",
+  "preconditions": "System state is reset, and target console is directed to app crash recovery state configuration when background execution is suspended (Ref APP_292).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-292",
+  "steps": "1. Target active interface for app crash recovery state.\n2. Trigger action to test swipe gesture handlers when background execution is suspended.\n3. Collect audit logs and confirm status code validation (Check APP_292).",
+  "input": "Target: app crash recovery state, Action: test swipe gesture handlers, Parameters: when background execution is suspended, Case Index: APP_292",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_292.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_292_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

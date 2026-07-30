@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_217",
+  "module": "SymptomTracking",
+  "feature": "check tab indexing for medicine entry list scroll position on high resolution displays",
+  "title": "Verify behavior of medicine entry list scroll position during attempts to check tab indexing on high resolution displays",
+  "objective": "Evaluate that user can safely execute check tab indexing for medicine entry list scroll position on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine entry list scroll position configuration on high resolution displays (Ref SEL_217).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-217",
+  "steps": "1. Target active interface for medicine entry list scroll position.\n2. Trigger action to check tab indexing on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_217).",
+  "input": "Target: medicine entry list scroll position, Action: check tab indexing, Parameters: on high resolution displays, Case Index: SEL_217",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_217.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_217_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

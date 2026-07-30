@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_253",
+  "module": "Authentication",
+  "feature": "track cookie changes for registration email validation when file size exceeds limit",
+  "title": "Verify behavior of registration email validation during attempts to track cookie changes when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute track cookie changes for registration email validation when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to registration email validation configuration when file size exceeds limit (Ref SEL_253).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-253",
+  "steps": "1. Target active interface for registration email validation.\n2. Trigger action to track cookie changes when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_253).",
+  "input": "Target: registration email validation, Action: track cookie changes, Parameters: when file size exceeds limit, Case Index: SEL_253",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_253.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_253_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

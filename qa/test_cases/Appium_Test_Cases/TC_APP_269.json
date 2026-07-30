@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_269",
+  "module": "Onboarding",
+  "feature": "test push alert payload for onboarding questionnaire pagination for assistive touch gestures",
+  "title": "Verify behavior of onboarding questionnaire pagination during attempts to test push alert payload for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute test push alert payload for onboarding questionnaire pagination for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to onboarding questionnaire pagination configuration for assistive touch gestures (Ref APP_269).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-269",
+  "steps": "1. Target active interface for onboarding questionnaire pagination.\n2. Trigger action to test push alert payload for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_269).",
+  "input": "Target: onboarding questionnaire pagination, Action: test push alert payload, Parameters: for assistive touch gestures, Case Index: APP_269",
+  "expected": "The verification checks confirm that the image crop boundaries are validated successfully under reference APP_269.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_269_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

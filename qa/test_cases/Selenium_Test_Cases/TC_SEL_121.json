@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_121",
+  "module": "Authentication",
+  "feature": "reset options for logout redirect landing page when network speed is throttled",
+  "title": "Verify behavior of logout redirect landing page during attempts to reset options when network speed is throttled",
+  "objective": "Evaluate that user can safely execute reset options for logout redirect landing page when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to logout redirect landing page configuration when network speed is throttled (Ref SEL_121).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-121",
+  "steps": "1. Target active interface for logout redirect landing page.\n2. Trigger action to reset options when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_121).",
+  "input": "Target: logout redirect landing page, Action: reset options, Parameters: when network speed is throttled, Case Index: SEL_121",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_121.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_121_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

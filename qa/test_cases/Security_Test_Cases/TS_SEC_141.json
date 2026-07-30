@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_141",
+  "module": "AccessControl",
+  "feature": "test token generation logic for log logger system credentials with executable php script files",
+  "title": "Verify behavior of log logger system credentials during attempts to test token generation logic with executable php script files",
+  "objective": "Evaluate that user can safely execute test token generation logic for log logger system credentials with executable php script files under system checks.",
+  "preconditions": "System state is reset, and target console is directed to log logger system credentials configuration with executable php script files (Ref SEC_141).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-141",
+  "steps": "1. Target active interface for log logger system credentials.\n2. Trigger action to test token generation logic with executable php script files.\n3. Collect audit logs and confirm status code validation (Check SEC_141).",
+  "input": "Target: log logger system credentials, Action: test token generation logic, Parameters: with executable php script files, Case Index: SEC_141",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_141.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_141_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

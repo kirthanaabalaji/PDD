@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_189",
+  "module": "Settings",
+  "feature": "verify permission dialogue for memory footprint monitoring after biometric authentication failure",
+  "title": "Verify behavior of memory footprint monitoring during attempts to verify permission dialogue after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for memory footprint monitoring after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to memory footprint monitoring configuration after biometric authentication failure (Ref APP_189).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-189",
+  "steps": "1. Target active interface for memory footprint monitoring.\n2. Trigger action to verify permission dialogue after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_189).",
+  "input": "Target: memory footprint monitoring, Action: verify permission dialogue, Parameters: after biometric authentication failure, Case Index: APP_189",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_189.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_189_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

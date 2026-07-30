@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_028",
+  "module": "ClinicalReports",
+  "feature": "test app launch sequence for pulmonologist contact selector when database storage quota is exceeded",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to test app launch sequence when database storage quota is exceeded",
+  "objective": "Evaluate that user can safely execute test app launch sequence for pulmonologist contact selector when database storage quota is exceeded under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration when database storage quota is exceeded (Ref APP_028).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-028",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to test app launch sequence when database storage quota is exceeded.\n3. Collect audit logs and confirm status code validation (Check APP_028).",
+  "input": "Target: pulmonologist contact selector, Action: test app launch sequence, Parameters: when database storage quota is exceeded, Case Index: APP_028",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_028.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_028_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

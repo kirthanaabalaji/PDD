@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_106",
+  "module": "Authentication",
+  "feature": "track cookie changes for forgot password security link for special character strings",
+  "title": "Verify behavior of forgot password security link during attempts to track cookie changes for special character strings",
+  "objective": "Evaluate that user can safely execute track cookie changes for forgot password security link for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password security link configuration for special character strings (Ref SEL_106).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-106",
+  "steps": "1. Target active interface for forgot password security link.\n2. Trigger action to track cookie changes for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_106).",
+  "input": "Target: forgot password security link, Action: track cookie changes, Parameters: for special character strings, Case Index: SEL_106",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_106.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_106_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

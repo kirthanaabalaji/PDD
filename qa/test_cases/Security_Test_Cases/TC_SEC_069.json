@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_069",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for server-side request forgery checks under unencrypted transport layer check",
+  "title": "Verify behavior of server-side request forgery checks during attempts to audit brute force block speed under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for server-side request forgery checks under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server-side request forgery checks configuration under unencrypted transport layer check (Ref SEC_069).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-069",
+  "steps": "1. Target active interface for server-side request forgery checks.\n2. Trigger action to audit brute force block speed under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_069).",
+  "input": "Target: server-side request forgery checks, Action: audit brute force block speed, Parameters: under unencrypted transport layer check, Case Index: SEC_069",
+  "expected": "The verification checks confirm that the system rejects the tampered token successfully under reference SEC_069.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_069_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

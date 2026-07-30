@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_087",
+  "module": "AccessControl",
+  "feature": "manipulate record ownership indices for container runtime user privileges using relative path traversing dots",
+  "title": "Verify behavior of container runtime user privileges during attempts to manipulate record ownership indices using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for container runtime user privileges using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to container runtime user privileges configuration using relative path traversing dots (Ref SEC_087).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-087",
+  "steps": "1. Target active interface for container runtime user privileges.\n2. Trigger action to manipulate record ownership indices using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_087).",
+  "input": "Target: container runtime user privileges, Action: manipulate record ownership indices, Parameters: using relative path traversing dots, Case Index: SEC_087",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_087.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_087_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

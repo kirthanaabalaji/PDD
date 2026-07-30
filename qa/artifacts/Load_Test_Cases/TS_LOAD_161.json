@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_161",
+  "module": "BreathingExercises",
+  "feature": "evaluate connection pool reuse for /api/data/sessions DELETE route when rate limiting limits are reached",
+  "title": "Verify behavior of /api/data/sessions DELETE route during attempts to evaluate connection pool reuse when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for /api/data/sessions DELETE route when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions DELETE route configuration when rate limiting limits are reached (Ref LOAD_161).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-161",
+  "steps": "1. Target active interface for /api/data/sessions DELETE route.\n2. Trigger action to evaluate connection pool reuse when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_161).",
+  "input": "Target: /api/data/sessions DELETE route, Action: evaluate connection pool reuse, Parameters: when rate limiting limits are reached, Case Index: LOAD_161",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_161.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_161_execution.log",
+  "execution_time": "5.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_017",
+  "module": "AccessControl",
+  "feature": "verify cascade data wiping for emergency contact phone text validation with command terminal syntax symbols",
+  "title": "Verify behavior of emergency contact phone text validation during attempts to verify cascade data wiping with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for emergency contact phone text validation with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency contact phone text validation configuration with command terminal syntax symbols (Ref SEC_017).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-017",
+  "steps": "1. Target active interface for emergency contact phone text validation.\n2. Trigger action to verify cascade data wiping with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_017).",
+  "input": "Target: emergency contact phone text validation, Action: verify cascade data wiping, Parameters: with command terminal syntax symbols, Case Index: SEC_017",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_017.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_017_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

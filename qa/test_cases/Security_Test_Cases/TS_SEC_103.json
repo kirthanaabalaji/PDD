@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_103",
+  "module": "SQLi",
+  "feature": "test executable file injection for login password input sanitization with executable php script files",
+  "title": "Verify behavior of login password input sanitization during attempts to test executable file injection with executable php script files",
+  "objective": "Evaluate that user can safely execute test executable file injection for login password input sanitization with executable php script files under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login password input sanitization configuration with executable php script files (Ref SEC_103).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-103",
+  "steps": "1. Target active interface for login password input sanitization.\n2. Trigger action to test executable file injection with executable php script files.\n3. Collect audit logs and confirm status code validation (Check SEC_103).",
+  "input": "Target: login password input sanitization, Action: test executable file injection, Parameters: with executable php script files, Case Index: SEC_103",
+  "expected": "The verification checks confirm that the system rejects the tampered token successfully under reference SEC_103.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_103_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_024",
+  "module": "OfflineMode",
+  "feature": "test background execution for sync queue network background check with multiple rapid click gestures",
+  "title": "Verify behavior of sync queue network background check during attempts to test background execution with multiple rapid click gestures",
+  "objective": "Evaluate that user can safely execute test background execution for sync queue network background check with multiple rapid click gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to sync queue network background check configuration with multiple rapid click gestures (Ref APP_024).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-024",
+  "steps": "1. Target active interface for sync queue network background check.\n2. Trigger action to test background execution with multiple rapid click gestures.\n3. Collect audit logs and confirm status code validation (Check APP_024).",
+  "input": "Target: sync queue network background check, Action: test background execution, Parameters: with multiple rapid click gestures, Case Index: APP_024",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_024.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_024_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

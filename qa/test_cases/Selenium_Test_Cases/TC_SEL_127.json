@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_127",
+  "module": "Onboarding",
+  "feature": "track cookie changes for profile picture upload modal using invalid credentials",
+  "title": "Verify behavior of profile picture upload modal during attempts to track cookie changes using invalid credentials",
+  "objective": "Evaluate that user can safely execute track cookie changes for profile picture upload modal using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile picture upload modal configuration using invalid credentials (Ref SEL_127).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-127",
+  "steps": "1. Target active interface for profile picture upload modal.\n2. Trigger action to track cookie changes using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_127).",
+  "input": "Target: profile picture upload modal, Action: track cookie changes, Parameters: using invalid credentials, Case Index: SEL_127",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_127.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_127_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

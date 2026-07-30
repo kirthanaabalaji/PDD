@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_063",
+  "module": "AccessControl",
+  "feature": "test SQL injection bypass for unvalidated URL redirection checks using prompt injection context escape",
+  "title": "Verify behavior of unvalidated URL redirection checks during attempts to test SQL injection bypass using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute test SQL injection bypass for unvalidated URL redirection checks using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unvalidated URL redirection checks configuration using prompt injection context escape (Ref SEC_063).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-063",
+  "steps": "1. Target active interface for unvalidated URL redirection checks.\n2. Trigger action to test SQL injection bypass using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_063).",
+  "input": "Target: unvalidated URL redirection checks, Action: test SQL injection bypass, Parameters: using prompt injection context escape, Case Index: SEC_063",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_063.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_063_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

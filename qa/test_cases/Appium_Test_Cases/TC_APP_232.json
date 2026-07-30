@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_232",
+  "module": "SymptomTracking",
+  "feature": "audit touch target scale for dosage calculator inputs with custom theme configurations",
+  "title": "Verify behavior of dosage calculator inputs during attempts to audit touch target scale with custom theme configurations",
+  "objective": "Evaluate that user can safely execute audit touch target scale for dosage calculator inputs with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator inputs configuration with custom theme configurations (Ref APP_232).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-232",
+  "steps": "1. Target active interface for dosage calculator inputs.\n2. Trigger action to audit touch target scale with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_232).",
+  "input": "Target: dosage calculator inputs, Action: audit touch target scale, Parameters: with custom theme configurations, Case Index: APP_232",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_232.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_232_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

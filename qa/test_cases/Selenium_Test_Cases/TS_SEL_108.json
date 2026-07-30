@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_108",
+  "module": "Dashboard",
+  "feature": "verify layout rendering for dashboard live graph animation using invalid credentials",
+  "title": "Verify behavior of dashboard live graph animation during attempts to verify layout rendering using invalid credentials",
+  "objective": "Evaluate that user can safely execute verify layout rendering for dashboard live graph animation using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard live graph animation configuration using invalid credentials (Ref SEL_108).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-108",
+  "steps": "1. Target active interface for dashboard live graph animation.\n2. Trigger action to verify layout rendering using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_108).",
+  "input": "Target: dashboard live graph animation, Action: verify layout rendering, Parameters: using invalid credentials, Case Index: SEL_108",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_108.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_108_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

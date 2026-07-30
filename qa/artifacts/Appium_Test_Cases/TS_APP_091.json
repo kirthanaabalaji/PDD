@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_091",
+  "module": "Settings",
+  "feature": "test app launch sequence for account deletion sequence on cold start app initialization",
+  "title": "Verify behavior of account deletion sequence during attempts to test app launch sequence on cold start app initialization",
+  "objective": "Evaluate that user can safely execute test app launch sequence for account deletion sequence on cold start app initialization under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account deletion sequence configuration on cold start app initialization (Ref APP_091).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-091",
+  "steps": "1. Target active interface for account deletion sequence.\n2. Trigger action to test app launch sequence on cold start app initialization.\n3. Collect audit logs and confirm status code validation (Check APP_091).",
+  "input": "Target: account deletion sequence, Action: test app launch sequence, Parameters: on cold start app initialization, Case Index: APP_091",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_091.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_091_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

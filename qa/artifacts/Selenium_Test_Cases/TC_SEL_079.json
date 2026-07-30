@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_079",
+  "module": "Settings",
+  "feature": "reset options for emergency trigger swipe action button using cross-site scripting strings",
+  "title": "Verify behavior of emergency trigger swipe action button during attempts to reset options using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute reset options for emergency trigger swipe action button using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency trigger swipe action button configuration using cross-site scripting strings (Ref SEL_079).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-079",
+  "steps": "1. Target active interface for emergency trigger swipe action button.\n2. Trigger action to reset options using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_079).",
+  "input": "Target: emergency trigger swipe action button, Action: reset options, Parameters: using cross-site scripting strings, Case Index: SEL_079",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_079.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_079_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

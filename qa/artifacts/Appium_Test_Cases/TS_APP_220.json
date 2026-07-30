@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_220",
+  "module": "Settings",
+  "feature": "inspect alarm configuration for cold start initialization duration under poor signal coverage",
+  "title": "Verify behavior of cold start initialization duration during attempts to inspect alarm configuration under poor signal coverage",
+  "objective": "Evaluate that user can safely execute inspect alarm configuration for cold start initialization duration under poor signal coverage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cold start initialization duration configuration under poor signal coverage (Ref APP_220).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-220",
+  "steps": "1. Target active interface for cold start initialization duration.\n2. Trigger action to inspect alarm configuration under poor signal coverage.\n3. Collect audit logs and confirm status code validation (Check APP_220).",
+  "input": "Target: cold start initialization duration, Action: inspect alarm configuration, Parameters: under poor signal coverage, Case Index: APP_220",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_220.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_220_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_113",
+  "module": "SymptomTracking",
+  "feature": "process submission for symptom log trigger selection checkboxes with custom theme configurations",
+  "title": "Verify behavior of symptom log trigger selection checkboxes during attempts to process submission with custom theme configurations",
+  "objective": "Evaluate that user can safely execute process submission for symptom log trigger selection checkboxes with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log trigger selection checkboxes configuration with custom theme configurations (Ref SEL_113).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-113",
+  "steps": "1. Target active interface for symptom log trigger selection checkboxes.\n2. Trigger action to process submission with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_113).",
+  "input": "Target: symptom log trigger selection checkboxes, Action: process submission, Parameters: with custom theme configurations, Case Index: SEL_113",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_113.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_113_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

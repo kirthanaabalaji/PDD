@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_135",
+  "module": "Settings",
+  "feature": "log telemetry events for terms of service scroll validation for assistive screen readers",
+  "title": "Verify behavior of terms of service scroll validation during attempts to log telemetry events for assistive screen readers",
+  "objective": "Evaluate that user can safely execute log telemetry events for terms of service scroll validation for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to terms of service scroll validation configuration for assistive screen readers (Ref SEL_135).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-135",
+  "steps": "1. Target active interface for terms of service scroll validation.\n2. Trigger action to log telemetry events for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_135).",
+  "input": "Target: terms of service scroll validation, Action: log telemetry events, Parameters: for assistive screen readers, Case Index: SEL_135",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_135.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_135_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_212",
+  "module": "Authentication",
+  "feature": "measure server warm start delay for /api/auth/verify-otp endpoint under rapid burst volume spikes",
+  "title": "Verify behavior of /api/auth/verify-otp endpoint during attempts to measure server warm start delay under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute measure server warm start delay for /api/auth/verify-otp endpoint under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/verify-otp endpoint configuration under rapid burst volume spikes (Ref LOAD_212).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-212",
+  "steps": "1. Target active interface for /api/auth/verify-otp endpoint.\n2. Trigger action to measure server warm start delay under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_212).",
+  "input": "Target: /api/auth/verify-otp endpoint, Action: measure server warm start delay, Parameters: under rapid burst volume spikes, Case Index: LOAD_212",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_212.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_212_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

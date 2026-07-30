@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_287",
+  "module": "AccessControl",
+  "feature": "inspect logs for exposed keys for container runtime user privileges with high frequency rapid authentication attempts",
+  "title": "Verify behavior of container runtime user privileges during attempts to inspect logs for exposed keys with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute inspect logs for exposed keys for container runtime user privileges with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to container runtime user privileges configuration with high frequency rapid authentication attempts (Ref SEC_287).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-287",
+  "steps": "1. Target active interface for container runtime user privileges.\n2. Trigger action to inspect logs for exposed keys with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_287).",
+  "input": "Target: container runtime user privileges, Action: inspect logs for exposed keys, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_287",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_287.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_287_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

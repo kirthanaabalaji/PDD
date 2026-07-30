@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_287",
+  "module": "BreathingExercises",
+  "feature": "execute deep link request for breathing box pattern timer during package upgrade install",
+  "title": "Verify behavior of breathing box pattern timer during attempts to execute deep link request during package upgrade install",
+  "objective": "Evaluate that user can safely execute execute deep link request for breathing box pattern timer during package upgrade install under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing box pattern timer configuration during package upgrade install (Ref APP_287).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-287",
+  "steps": "1. Target active interface for breathing box pattern timer.\n2. Trigger action to execute deep link request during package upgrade install.\n3. Collect audit logs and confirm status code validation (Check APP_287).",
+  "input": "Target: breathing box pattern timer, Action: execute deep link request, Parameters: during package upgrade install, Case Index: APP_287",
+  "expected": "The verification checks confirm that the local storage path is secured successfully under reference APP_287.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_287_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

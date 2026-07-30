@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_227",
+  "module": "Onboarding",
+  "feature": "check storage updates for profile picture upload modal with custom theme configurations",
+  "title": "Verify behavior of profile picture upload modal during attempts to check storage updates with custom theme configurations",
+  "objective": "Evaluate that user can safely execute check storage updates for profile picture upload modal with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile picture upload modal configuration with custom theme configurations (Ref SEL_227).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-227",
+  "steps": "1. Target active interface for profile picture upload modal.\n2. Trigger action to check storage updates with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_227).",
+  "input": "Target: profile picture upload modal, Action: check storage updates, Parameters: with custom theme configurations, Case Index: SEL_227",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_227.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_227_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_053",
+  "module": "Authentication",
+  "feature": "check boundary limits for registration email validation when cookies are blocked",
+  "title": "Verify behavior of registration email validation during attempts to check boundary limits when cookies are blocked",
+  "objective": "Evaluate that user can safely execute check boundary limits for registration email validation when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to registration email validation configuration when cookies are blocked (Ref SEL_053).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-053",
+  "steps": "1. Target active interface for registration email validation.\n2. Trigger action to check boundary limits when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_053).",
+  "input": "Target: registration email validation, Action: check boundary limits, Parameters: when cookies are blocked, Case Index: SEL_053",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_053.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_053_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

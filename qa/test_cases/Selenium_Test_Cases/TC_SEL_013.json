@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_013",
+  "module": "SymptomTracking",
+  "feature": "validate text alignment for symptom log trigger selection checkboxes using invalid credentials",
+  "title": "Verify behavior of symptom log trigger selection checkboxes during attempts to validate text alignment using invalid credentials",
+  "objective": "Evaluate that user can safely execute validate text alignment for symptom log trigger selection checkboxes using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log trigger selection checkboxes configuration using invalid credentials (Ref SEL_013).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-013",
+  "steps": "1. Target active interface for symptom log trigger selection checkboxes.\n2. Trigger action to validate text alignment using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_013).",
+  "input": "Target: symptom log trigger selection checkboxes, Action: validate text alignment, Parameters: using invalid credentials, Case Index: SEL_013",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_013.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_013_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_114",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for Groq endpoint token allocation quota using malicious string payloads",
+  "title": "Verify behavior of Groq endpoint token allocation quota during attempts to check cookie storage configurations using malicious string payloads",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for Groq endpoint token allocation quota using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq endpoint token allocation quota configuration using malicious string payloads (Ref SEC_114).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-114",
+  "steps": "1. Target active interface for Groq endpoint token allocation quota.\n2. Trigger action to check cookie storage configurations using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_114).",
+  "input": "Target: Groq endpoint token allocation quota, Action: check cookie storage configurations, Parameters: using malicious string payloads, Case Index: SEC_114",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_114.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_114_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

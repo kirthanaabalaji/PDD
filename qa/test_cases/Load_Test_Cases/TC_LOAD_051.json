@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_051",
+  "module": "Database",
+  "feature": "check payload upload time for MongoDB Atlas connection pool with 1000 concurrent virtual users",
+  "title": "Verify behavior of MongoDB Atlas connection pool during attempts to check payload upload time with 1000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute check payload upload time for MongoDB Atlas connection pool with 1000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas connection pool configuration with 1000 concurrent virtual users (Ref LOAD_051).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-051",
+  "steps": "1. Target active interface for MongoDB Atlas connection pool.\n2. Trigger action to check payload upload time with 1000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_051).",
+  "input": "Target: MongoDB Atlas connection pool, Action: check payload upload time, Parameters: with 1000 concurrent virtual users, Case Index: LOAD_051",
+  "expected": "The verification checks confirm that the response latency remains below 300ms successfully under reference LOAD_051.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_051_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

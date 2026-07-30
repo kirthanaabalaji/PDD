@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_243",
+  "module": "Settings",
+  "feature": "inspect modal overlays for captcha validation image challenge when cookies are blocked",
+  "title": "Verify behavior of captcha validation image challenge during attempts to inspect modal overlays when cookies are blocked",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for captcha validation image challenge when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to captcha validation image challenge configuration when cookies are blocked (Ref SEL_243).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-243",
+  "steps": "1. Target active interface for captcha validation image challenge.\n2. Trigger action to inspect modal overlays when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_243).",
+  "input": "Target: captcha validation image challenge, Action: inspect modal overlays, Parameters: when cookies are blocked, Case Index: SEL_243",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_243.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_243_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

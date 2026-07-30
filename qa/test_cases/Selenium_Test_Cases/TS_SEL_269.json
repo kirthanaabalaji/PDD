@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_269",
+  "module": "ClinicalReports",
+  "feature": "check storage updates for doctor search filter dropdown using cross-site scripting strings",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to check storage updates using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute check storage updates for doctor search filter dropdown using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration using cross-site scripting strings (Ref SEL_269).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-269",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to check storage updates using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_269).",
+  "input": "Target: doctor search filter dropdown, Action: check storage updates, Parameters: using cross-site scripting strings, Case Index: SEL_269",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_269.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_269_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

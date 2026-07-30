@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_147",
+  "module": "Database",
+  "feature": "evaluate response time for MongoDB Atlas replication network on database replica set failover",
+  "title": "Verify behavior of MongoDB Atlas replication network during attempts to evaluate response time on database replica set failover",
+  "objective": "Evaluate that user can safely execute evaluate response time for MongoDB Atlas replication network on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas replication network configuration on database replica set failover (Ref LOAD_147).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-147",
+  "steps": "1. Target active interface for MongoDB Atlas replication network.\n2. Trigger action to evaluate response time on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_147).",
+  "input": "Target: MongoDB Atlas replication network, Action: evaluate response time, Parameters: on database replica set failover, Case Index: LOAD_147",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_147.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_147_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

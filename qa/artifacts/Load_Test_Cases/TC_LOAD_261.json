@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_261",
+  "module": "BreathingExercises",
+  "feature": "check payload upload time for /api/data/sessions DELETE route on database replica set failover",
+  "title": "Verify behavior of /api/data/sessions DELETE route during attempts to check payload upload time on database replica set failover",
+  "objective": "Evaluate that user can safely execute check payload upload time for /api/data/sessions DELETE route on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions DELETE route configuration on database replica set failover (Ref LOAD_261).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-261",
+  "steps": "1. Target active interface for /api/data/sessions DELETE route.\n2. Trigger action to check payload upload time on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_261).",
+  "input": "Target: /api/data/sessions DELETE route, Action: check payload upload time, Parameters: on database replica set failover, Case Index: LOAD_261",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_261.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_261_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

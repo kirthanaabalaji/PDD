@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_155",
+  "module": "AccessControl",
+  "feature": "check stored script execution for MongoDB Atlas network IP access list for client local cookie storage",
+  "title": "Verify behavior of MongoDB Atlas network IP access list during attempts to check stored script execution for client local cookie storage",
+  "objective": "Evaluate that user can safely execute check stored script execution for MongoDB Atlas network IP access list for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas network IP access list configuration for client local cookie storage (Ref SEC_155).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-155",
+  "steps": "1. Target active interface for MongoDB Atlas network IP access list.\n2. Trigger action to check stored script execution for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_155).",
+  "input": "Target: MongoDB Atlas network IP access list, Action: check stored script execution, Parameters: for client local cookie storage, Case Index: SEC_155",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_155.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_155_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

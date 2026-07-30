@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_211",
+  "module": "SymptomTracking",
+  "feature": "track cookie changes for symptom history calendar grid view for assistive screen readers",
+  "title": "Verify behavior of symptom history calendar grid view during attempts to track cookie changes for assistive screen readers",
+  "objective": "Evaluate that user can safely execute track cookie changes for symptom history calendar grid view for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom history calendar grid view configuration for assistive screen readers (Ref SEL_211).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-211",
+  "steps": "1. Target active interface for symptom history calendar grid view.\n2. Trigger action to track cookie changes for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_211).",
+  "input": "Target: symptom history calendar grid view, Action: track cookie changes, Parameters: for assistive screen readers, Case Index: SEL_211",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_211.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_211_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

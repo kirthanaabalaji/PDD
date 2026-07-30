@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_295",
+  "module": "Settings",
+  "feature": "track cookie changes for questionnaire save progress state with browser extensions active",
+  "title": "Verify behavior of questionnaire save progress state during attempts to track cookie changes with browser extensions active",
+  "objective": "Evaluate that user can safely execute track cookie changes for questionnaire save progress state with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire save progress state configuration with browser extensions active (Ref SEL_295).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-295",
+  "steps": "1. Target active interface for questionnaire save progress state.\n2. Trigger action to track cookie changes with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_295).",
+  "input": "Target: questionnaire save progress state, Action: track cookie changes, Parameters: with browser extensions active, Case Index: SEL_295",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_295.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_295_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

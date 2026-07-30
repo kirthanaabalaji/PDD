@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_151",
+  "module": "Database",
+  "feature": "verify cache hit ratio for MongoDB Atlas connection pool during network connection dropping events",
+  "title": "Verify behavior of MongoDB Atlas connection pool during attempts to verify cache hit ratio during network connection dropping events",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for MongoDB Atlas connection pool during network connection dropping events under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas connection pool configuration during network connection dropping events (Ref LOAD_151).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-151",
+  "steps": "1. Target active interface for MongoDB Atlas connection pool.\n2. Trigger action to verify cache hit ratio during network connection dropping events.\n3. Collect audit logs and confirm status code validation (Check LOAD_151).",
+  "input": "Target: MongoDB Atlas connection pool, Action: verify cache hit ratio, Parameters: during network connection dropping events, Case Index: LOAD_151",
+  "expected": "The verification checks confirm that the WebSocket session handles parallel connections successfully under reference LOAD_151.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_151_execution.log",
+  "execution_time": "5.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

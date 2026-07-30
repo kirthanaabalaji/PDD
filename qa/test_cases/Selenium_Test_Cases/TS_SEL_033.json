@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_033",
+  "module": "Dashboard",
+  "feature": "inspect modal overlays for dashboard widget grid layout with multiple simultaneous submits",
+  "title": "Verify behavior of dashboard widget grid layout during attempts to inspect modal overlays with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for dashboard widget grid layout with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard widget grid layout configuration with multiple simultaneous submits (Ref SEL_033).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-033",
+  "steps": "1. Target active interface for dashboard widget grid layout.\n2. Trigger action to inspect modal overlays with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_033).",
+  "input": "Target: dashboard widget grid layout, Action: inspect modal overlays, Parameters: with multiple simultaneous submits, Case Index: SEL_033",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_033.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_033_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

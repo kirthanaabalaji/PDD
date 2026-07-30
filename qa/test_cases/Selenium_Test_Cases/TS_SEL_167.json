@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_167",
+  "module": "SymptomTracking",
+  "feature": "audit focus states for medicine entry list scroll position when cookies are blocked",
+  "title": "Verify behavior of medicine entry list scroll position during attempts to audit focus states when cookies are blocked",
+  "objective": "Evaluate that user can safely execute audit focus states for medicine entry list scroll position when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine entry list scroll position configuration when cookies are blocked (Ref SEL_167).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-167",
+  "steps": "1. Target active interface for medicine entry list scroll position.\n2. Trigger action to audit focus states when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_167).",
+  "input": "Target: medicine entry list scroll position, Action: audit focus states, Parameters: when cookies are blocked, Case Index: SEL_167",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_167.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_167_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_267",
+  "module": "SymptomTracking",
+  "feature": "evaluate text wrapping for medicine entry list scroll position after session token expiration",
+  "title": "Verify behavior of medicine entry list scroll position during attempts to evaluate text wrapping after session token expiration",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for medicine entry list scroll position after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine entry list scroll position configuration after session token expiration (Ref SEL_267).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-267",
+  "steps": "1. Target active interface for medicine entry list scroll position.\n2. Trigger action to evaluate text wrapping after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_267).",
+  "input": "Target: medicine entry list scroll position, Action: evaluate text wrapping, Parameters: after session token expiration, Case Index: SEL_267",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_267.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_267_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

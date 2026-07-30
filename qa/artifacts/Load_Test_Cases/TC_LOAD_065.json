@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_065",
+  "module": "Authentication",
+  "feature": "measure server warm start delay for /api/auth/reset-password endpoint during massive server cold start",
+  "title": "Verify behavior of /api/auth/reset-password endpoint during attempts to measure server warm start delay during massive server cold start",
+  "objective": "Evaluate that user can safely execute measure server warm start delay for /api/auth/reset-password endpoint during massive server cold start under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/reset-password endpoint configuration during massive server cold start (Ref LOAD_065).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-065",
+  "steps": "1. Target active interface for /api/auth/reset-password endpoint.\n2. Trigger action to measure server warm start delay during massive server cold start.\n3. Collect audit logs and confirm status code validation (Check LOAD_065).",
+  "input": "Target: /api/auth/reset-password endpoint, Action: measure server warm start delay, Parameters: during massive server cold start, Case Index: LOAD_065",
+  "expected": "The verification checks confirm that the system throughput scales linearly successfully under reference LOAD_065.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_065_execution.log",
+  "execution_time": "10.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

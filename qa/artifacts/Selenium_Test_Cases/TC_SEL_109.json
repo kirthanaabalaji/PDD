@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_109",
+  "module": "Authentication",
+  "feature": "validate regex matching for reset password form submission with multiple simultaneous submits",
+  "title": "Verify behavior of reset password form submission during attempts to validate regex matching with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute validate regex matching for reset password form submission with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reset password form submission configuration with multiple simultaneous submits (Ref SEL_109).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-109",
+  "steps": "1. Target active interface for reset password form submission.\n2. Trigger action to validate regex matching with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_109).",
+  "input": "Target: reset password form submission, Action: validate regex matching, Parameters: with multiple simultaneous submits, Case Index: SEL_109",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_109.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_109_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

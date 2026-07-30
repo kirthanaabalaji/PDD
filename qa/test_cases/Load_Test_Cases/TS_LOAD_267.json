@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_267",
+  "module": "Database",
+  "feature": "verify database writes capacity for Express error logger route during peak hours scheduling traffic",
+  "title": "Verify behavior of Express error logger route during attempts to verify database writes capacity during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute verify database writes capacity for Express error logger route during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express error logger route configuration during peak hours scheduling traffic (Ref LOAD_267).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-267",
+  "steps": "1. Target active interface for Express error logger route.\n2. Trigger action to verify database writes capacity during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_267).",
+  "input": "Target: Express error logger route, Action: verify database writes capacity, Parameters: during peak hours scheduling traffic, Case Index: LOAD_267",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_267.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_267_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

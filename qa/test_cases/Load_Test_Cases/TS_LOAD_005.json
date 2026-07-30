@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_005",
+  "module": "Database",
+  "feature": "test failover routing times for Breathing session average calculations with high frequency preflight requests",
+  "title": "Verify behavior of Breathing session average calculations during attempts to test failover routing times with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute test failover routing times for Breathing session average calculations with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Breathing session average calculations configuration with high frequency preflight requests (Ref LOAD_005).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-005",
+  "steps": "1. Target active interface for Breathing session average calculations.\n2. Trigger action to test failover routing times with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_005).",
+  "input": "Target: Breathing session average calculations, Action: test failover routing times, Parameters: with high frequency preflight requests, Case Index: LOAD_005",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_005.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_005_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

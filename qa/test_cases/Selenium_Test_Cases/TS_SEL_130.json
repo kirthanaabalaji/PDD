@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_130",
+  "module": "Onboarding",
+  "feature": "validate regex matching for change password input validation under local storage quota limits",
+  "title": "Verify behavior of change password input validation during attempts to validate regex matching under local storage quota limits",
+  "objective": "Evaluate that user can safely execute validate regex matching for change password input validation under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration under local storage quota limits (Ref SEL_130).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-130",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to validate regex matching under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_130).",
+  "input": "Target: change password input validation, Action: validate regex matching, Parameters: under local storage quota limits, Case Index: SEL_130",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_130.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_130_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

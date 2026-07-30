@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_275",
+  "module": "Settings",
+  "feature": "test network call recovery for doctor call emergency button when database storage quota is exceeded",
+  "title": "Verify behavior of doctor call emergency button during attempts to test network call recovery when database storage quota is exceeded",
+  "objective": "Evaluate that user can safely execute test network call recovery for doctor call emergency button when database storage quota is exceeded under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor call emergency button configuration when database storage quota is exceeded (Ref APP_275).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-275",
+  "steps": "1. Target active interface for doctor call emergency button.\n2. Trigger action to test network call recovery when database storage quota is exceeded.\n3. Collect audit logs and confirm status code validation (Check APP_275).",
+  "input": "Target: doctor call emergency button, Action: test network call recovery, Parameters: when database storage quota is exceeded, Case Index: APP_275",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_275.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_275_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

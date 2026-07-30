@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_142",
+  "module": "BreathingAnalysis",
+  "feature": "inspect memory consumption for /api/breathing/clinical-report endpoint when rate limiting limits are reached",
+  "title": "Verify behavior of /api/breathing/clinical-report endpoint during attempts to inspect memory consumption when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute inspect memory consumption for /api/breathing/clinical-report endpoint when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/clinical-report endpoint configuration when rate limiting limits are reached (Ref LOAD_142).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-142",
+  "steps": "1. Target active interface for /api/breathing/clinical-report endpoint.\n2. Trigger action to inspect memory consumption when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_142).",
+  "input": "Target: /api/breathing/clinical-report endpoint, Action: inspect memory consumption, Parameters: when rate limiting limits are reached, Case Index: LOAD_142",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_142.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_142_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

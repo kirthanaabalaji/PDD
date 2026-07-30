@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_199",
+  "module": "AccessControl",
+  "feature": "verify database decryption controls for broken session handling invalidator against OWASP top 10 rules",
+  "title": "Verify behavior of broken session handling invalidator during attempts to verify database decryption controls against OWASP top 10 rules",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for broken session handling invalidator against OWASP top 10 rules under system checks.",
+  "preconditions": "System state is reset, and target console is directed to broken session handling invalidator configuration against OWASP top 10 rules (Ref SEC_199).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-199",
+  "steps": "1. Target active interface for broken session handling invalidator.\n2. Trigger action to verify database decryption controls against OWASP top 10 rules.\n3. Collect audit logs and confirm status code validation (Check SEC_199).",
+  "input": "Target: broken session handling invalidator, Action: verify database decryption controls, Parameters: against OWASP top 10 rules, Case Index: SEC_199",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_199.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_199_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

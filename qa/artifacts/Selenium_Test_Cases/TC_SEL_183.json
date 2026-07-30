@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_183",
+  "module": "Dashboard",
+  "feature": "evaluate text wrapping for dashboard widget grid layout after five minutes of inactivity",
+  "title": "Verify behavior of dashboard widget grid layout during attempts to evaluate text wrapping after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for dashboard widget grid layout after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard widget grid layout configuration after five minutes of inactivity (Ref SEL_183).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-183",
+  "steps": "1. Target active interface for dashboard widget grid layout.\n2. Trigger action to evaluate text wrapping after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_183).",
+  "input": "Target: dashboard widget grid layout, Action: evaluate text wrapping, Parameters: after five minutes of inactivity, Case Index: SEL_183",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_183.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_183_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

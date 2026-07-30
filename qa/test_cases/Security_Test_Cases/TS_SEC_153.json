@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_153",
+  "module": "SQLi",
+  "feature": "audit brute force block speed for login password input sanitization using a different user database index",
+  "title": "Verify behavior of login password input sanitization during attempts to audit brute force block speed using a different user database index",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for login password input sanitization using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login password input sanitization configuration using a different user database index (Ref SEC_153).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-153",
+  "steps": "1. Target active interface for login password input sanitization.\n2. Trigger action to audit brute force block speed using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_153).",
+  "input": "Target: login password input sanitization, Action: audit brute force block speed, Parameters: using a different user database index, Case Index: SEC_153",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_153.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_153_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

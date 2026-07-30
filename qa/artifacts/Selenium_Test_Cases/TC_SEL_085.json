@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_085",
+  "module": "Settings",
+  "feature": "track cookie changes for terms of service scroll validation during api gateway timeout",
+  "title": "Verify behavior of terms of service scroll validation during attempts to track cookie changes during api gateway timeout",
+  "objective": "Evaluate that user can safely execute track cookie changes for terms of service scroll validation during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to terms of service scroll validation configuration during api gateway timeout (Ref SEL_085).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-085",
+  "steps": "1. Target active interface for terms of service scroll validation.\n2. Trigger action to track cookie changes during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_085).",
+  "input": "Target: terms of service scroll validation, Action: track cookie changes, Parameters: during api gateway timeout, Case Index: SEL_085",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_085.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_085_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

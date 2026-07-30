@@ -3,9 +3,9 @@
 
 import pytest
 
-def test_ts_sel_001_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_track_cookie_changes_after_session_token_expiration():
+def test_tc_sel_001_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_track_cookie_changes_after_session_token_expiration():
     """
-    ID: TS_SEL_001
+    ID: TC_SEL_001
     Module: BreathingExercises
     Feature: track cookie changes for breathing exercise custom configuration after session token expiration
     Title: Verify behavior of breathing exercise custom configuration during attempts to track cookie changes after session token expiration
@@ -15,9 +15,9 @@ def test_ts_sel_001_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_002_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_verify_network_callback_for_assistive_screen_readers():
+def test_tc_sel_002_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_verify_network_callback_for_assistive_screen_readers():
     """
-    ID: TS_SEL_002
+    ID: TC_SEL_002
     Module: Authentication
     Feature: verify network callback for multi-tab login state sync for assistive screen readers
     Title: Verify behavior of multi-tab login state sync during attempts to verify network callback for assistive screen readers
@@ -27,9 +27,9 @@ def test_ts_sel_002_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_003_verify_behavior_of_registration_email_validation_during_attempts_to_verify_layout_rendering_using_cross_site_scripting_strings():
+def test_tc_sel_003_verify_behavior_of_registration_email_validation_during_attempts_to_verify_layout_rendering_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_003
+    ID: TC_SEL_003
     Module: Authentication
     Feature: verify layout rendering for registration email validation using cross-site scripting strings
     Title: Verify behavior of registration email validation during attempts to verify layout rendering using cross-site scripting strings
@@ -39,9 +39,9 @@ def test_ts_sel_003_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_004_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_validate_regex_matching_on_narrow_mobile_layout_viewport():
+def test_tc_sel_004_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_validate_regex_matching_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_004
+    ID: TC_SEL_004
     Module: BreathingExercises
     Feature: validate regex matching for breathing orb size scale animation on narrow mobile layout viewport
     Title: Verify behavior of breathing orb size scale animation during attempts to validate regex matching on narrow mobile layout viewport
@@ -51,9 +51,9 @@ def test_ts_sel_004_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_005_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_measure_execution_time_during_server_database_failover():
+def test_tc_sel_005_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_measure_execution_time_during_server_database_failover():
     """
-    ID: TS_SEL_005
+    ID: TC_SEL_005
     Module: Authentication
     Feature: measure execution time for browser history back navigation behavior during server database failover
     Title: Verify behavior of browser history back navigation behavior during attempts to measure execution time during server database failover
@@ -63,9 +63,9 @@ def test_ts_sel_005_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_006_verify_behavior_of_forgot_password_security_link_during_attempts_to_audit_keyboard_navigation_when_file_size_exceeds_limit():
+def test_tc_sel_006_verify_behavior_of_forgot_password_security_link_during_attempts_to_audit_keyboard_navigation_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_006
+    ID: TC_SEL_006
     Module: Authentication
     Feature: audit keyboard navigation for forgot password security link when file size exceeds limit
     Title: Verify behavior of forgot password security link during attempts to audit keyboard navigation when file size exceeds limit
@@ -75,9 +75,9 @@ def test_ts_sel_006_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_007_verify_behavior_of_breathing_history_table_paging_during_attempts_to_check_tab_indexing_when_network_speed_is_throttled():
+def test_tc_sel_007_verify_behavior_of_breathing_history_table_paging_during_attempts_to_check_tab_indexing_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_007
+    ID: TC_SEL_007
     Module: BreathingExercises
     Feature: check tab indexing for breathing history table paging when network speed is throttled
     Title: Verify behavior of breathing history table paging during attempts to check tab indexing when network speed is throttled
@@ -87,9 +87,9 @@ def test_ts_sel_007_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_008_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_process_submission_on_high_resolution_displays():
+def test_tc_sel_008_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_process_submission_on_high_resolution_displays():
     """
-    ID: TS_SEL_008
+    ID: TC_SEL_008
     Module: Dashboard
     Feature: process submission for dashboard live graph animation on high resolution displays
     Title: Verify behavior of dashboard live graph animation during attempts to process submission on high resolution displays
@@ -99,9 +99,9 @@ def test_ts_sel_008_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_009_verify_behavior_of_reset_password_form_submission_during_attempts_to_log_telemetry_events_during_api_gateway_timeout():
+def test_tc_sel_009_verify_behavior_of_reset_password_form_submission_during_attempts_to_log_telemetry_events_during_api_gateway_timeout():
     """
-    ID: TS_SEL_009
+    ID: TC_SEL_009
     Module: Authentication
     Feature: log telemetry events for reset password form submission during api gateway timeout
     Title: Verify behavior of reset password form submission during attempts to log telemetry events during api gateway timeout
@@ -111,9 +111,9 @@ def test_ts_sel_009_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_010_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_inspect_download_stream_with_browser_extensions_active():
+def test_tc_sel_010_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_inspect_download_stream_with_browser_extensions_active():
     """
-    ID: TS_SEL_010
+    ID: TC_SEL_010
     Module: SymptomTracking
     Feature: inspect download stream for symptom log severity score slider with browser extensions active
     Title: Verify behavior of symptom log severity score slider during attempts to inspect download stream with browser extensions active
@@ -123,9 +123,9 @@ def test_ts_sel_010_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_011_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_check_boundary_limits_for_special_character_strings():
+def test_tc_sel_011_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_check_boundary_limits_for_special_character_strings():
     """
-    ID: TS_SEL_011
+    ID: TC_SEL_011
     Module: SymptomTracking
     Feature: check boundary limits for symptom history calendar grid view for special character strings
     Title: Verify behavior of symptom history calendar grid view during attempts to check boundary limits for special character strings
@@ -135,9 +135,9 @@ def test_ts_sel_011_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_012_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_inspect_modal_overlays_after_five_minutes_of_inactivity():
+def test_tc_sel_012_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_inspect_modal_overlays_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_012
+    ID: TC_SEL_012
     Module: Authentication
     Feature: inspect modal overlays for OTP verification screen timer after five minutes of inactivity
     Title: Verify behavior of OTP verification screen timer during attempts to inspect modal overlays after five minutes of inactivity
@@ -147,9 +147,9 @@ def test_ts_sel_012_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_013_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_validate_text_alignment_using_invalid_credentials():
+def test_tc_sel_013_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_validate_text_alignment_using_invalid_credentials():
     """
-    ID: TS_SEL_013
+    ID: TC_SEL_013
     Module: SymptomTracking
     Feature: validate text alignment for symptom log trigger selection checkboxes using invalid credentials
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to validate text alignment using invalid credentials
@@ -159,9 +159,9 @@ def test_ts_sel_013_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_014_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_ensure_contrast_ratios_with_multiple_simultaneous_submits():
+def test_tc_sel_014_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_ensure_contrast_ratios_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_014
+    ID: TC_SEL_014
     Module: SymptomTracking
     Feature: ensure contrast ratios for dosage calculator slider controls with multiple simultaneous submits
     Title: Verify behavior of dosage calculator slider controls during attempts to ensure contrast ratios with multiple simultaneous submits
@@ -171,9 +171,9 @@ def test_ts_sel_014_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_015_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_evaluate_text_wrapping_when_cookies_are_blocked():
+def test_tc_sel_015_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_evaluate_text_wrapping_when_cookies_are_blocked():
     """
-    ID: TS_SEL_015
+    ID: TC_SEL_015
     Module: Authentication
     Feature: evaluate text wrapping for remember me cookie setting when cookies are blocked
     Title: Verify behavior of remember me cookie setting during attempts to evaluate text wrapping when cookies are blocked
@@ -183,9 +183,9 @@ def test_ts_sel_015_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_016_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_reset_options_under_local_storage_quota_limits():
+def test_tc_sel_016_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_reset_options_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_016
+    ID: TC_SEL_016
     Module: ClinicalReports
     Feature: reset options for clinical PDF report print dialog under local storage quota limits
     Title: Verify behavior of clinical PDF report print dialog during attempts to reset options under local storage quota limits
@@ -195,9 +195,9 @@ def test_ts_sel_016_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_017_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_check_storage_updates_when_database_sync_is_delayed():
+def test_tc_sel_017_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_check_storage_updates_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_017
+    ID: TC_SEL_017
     Module: SymptomTracking
     Feature: check storage updates for medicine entry list scroll position when database sync is delayed
     Title: Verify behavior of medicine entry list scroll position during attempts to check storage updates when database sync is delayed
@@ -207,9 +207,9 @@ def test_ts_sel_017_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_018_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_test_tooltips_display_with_custom_theme_configurations():
+def test_tc_sel_018_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_test_tooltips_display_with_custom_theme_configurations():
     """
-    ID: TS_SEL_018
+    ID: TC_SEL_018
     Module: Authentication
     Feature: test tooltips display for session timeout idle alert with custom theme configurations
     Title: Verify behavior of session timeout idle alert during attempts to test tooltips display with custom theme configurations
@@ -219,9 +219,9 @@ def test_ts_sel_018_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_019_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_inspect_click_handlers_with_empty_values():
+def test_tc_sel_019_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_inspect_click_handlers_with_empty_values():
     """
-    ID: TS_SEL_019
+    ID: TC_SEL_019
     Module: ClinicalReports
     Feature: inspect click handlers for doctor search filter dropdown with empty values
     Title: Verify behavior of doctor search filter dropdown during attempts to inspect click handlers with empty values
@@ -231,9 +231,9 @@ def test_ts_sel_019_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_020_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_audit_focus_states_after_session_token_expiration():
+def test_tc_sel_020_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_audit_focus_states_after_session_token_expiration():
     """
-    ID: TS_SEL_020
+    ID: TC_SEL_020
     Module: ClinicalReports
     Feature: audit focus states for pulmonologist appointment booking slot selection after session token expiration
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to audit focus states after session token expiration
@@ -243,9 +243,9 @@ def test_ts_sel_020_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_021_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_validate_fields_for_assistive_screen_readers():
+def test_tc_sel_021_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_validate_fields_for_assistive_screen_readers():
     """
-    ID: TS_SEL_021
+    ID: TC_SEL_021
     Module: Authentication
     Feature: validate fields for logout redirect landing page for assistive screen readers
     Title: Verify behavior of logout redirect landing page during attempts to validate fields for assistive screen readers
@@ -255,9 +255,9 @@ def test_ts_sel_021_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_022_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_track_cookie_changes_using_cross_site_scripting_strings():
+def test_tc_sel_022_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_track_cookie_changes_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_022
+    ID: TC_SEL_022
     Module: AIChat
     Feature: track cookie changes for ai chat message input box using cross-site scripting strings
     Title: Verify behavior of ai chat message input box during attempts to track cookie changes using cross-site scripting strings
@@ -267,9 +267,9 @@ def test_ts_sel_022_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_023_verify_behavior_of_notification_preferences_toggles_during_attempts_to_verify_network_callback_on_narrow_mobile_layout_viewport():
+def test_tc_sel_023_verify_behavior_of_notification_preferences_toggles_during_attempts_to_verify_network_callback_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_023
+    ID: TC_SEL_023
     Module: Settings
     Feature: verify network callback for notification preferences toggles on narrow mobile layout viewport
     Title: Verify behavior of notification preferences toggles during attempts to verify network callback on narrow mobile layout viewport
@@ -279,9 +279,9 @@ def test_ts_sel_023_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_024_verify_behavior_of_profile_information_form_fields_during_attempts_to_verify_layout_rendering_during_server_database_failover():
+def test_tc_sel_024_verify_behavior_of_profile_information_form_fields_during_attempts_to_verify_layout_rendering_during_server_database_failover():
     """
-    ID: TS_SEL_024
+    ID: TC_SEL_024
     Module: Onboarding
     Feature: verify layout rendering for profile information form fields during server database failover
     Title: Verify behavior of profile information form fields during attempts to verify layout rendering during server database failover
@@ -291,9 +291,9 @@ def test_ts_sel_024_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_025_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_validate_regex_matching_when_file_size_exceeds_limit():
+def test_tc_sel_025_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_validate_regex_matching_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_025
+    ID: TC_SEL_025
     Module: AIChat
     Feature: validate regex matching for ai chat markdown rendering structure when file size exceeds limit
     Title: Verify behavior of ai chat markdown rendering structure during attempts to validate regex matching when file size exceeds limit
@@ -303,9 +303,9 @@ def test_ts_sel_025_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_026_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_measure_execution_time_when_network_speed_is_throttled():
+def test_tc_sel_026_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_measure_execution_time_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_026
+    ID: TC_SEL_026
     Module: ClinicalReports
     Feature: measure execution time for clinical recommendations expansion accordion when network speed is throttled
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to measure execution time when network speed is throttled
@@ -315,9 +315,9 @@ def test_ts_sel_026_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_027_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_audit_keyboard_navigation_on_high_resolution_displays():
+def test_tc_sel_027_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_audit_keyboard_navigation_on_high_resolution_displays():
     """
-    ID: TS_SEL_027
+    ID: TC_SEL_027
     Module: Onboarding
     Feature: audit keyboard navigation for profile picture upload modal on high resolution displays
     Title: Verify behavior of profile picture upload modal during attempts to audit keyboard navigation on high resolution displays
@@ -327,9 +327,9 @@ def test_ts_sel_027_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_028_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_check_tab_indexing_during_api_gateway_timeout():
+def test_tc_sel_028_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_check_tab_indexing_during_api_gateway_timeout():
     """
-    ID: TS_SEL_028
+    ID: TC_SEL_028
     Module: Settings
     Feature: check tab indexing for emergency contact name entry during api gateway timeout
     Title: Verify behavior of emergency contact name entry during attempts to check tab indexing during api gateway timeout
@@ -339,9 +339,9 @@ def test_ts_sel_028_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_029_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_process_submission_with_browser_extensions_active():
+def test_tc_sel_029_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_process_submission_with_browser_extensions_active():
     """
-    ID: TS_SEL_029
+    ID: TC_SEL_029
     Module: Settings
     Feature: process submission for emergency trigger swipe action button with browser extensions active
     Title: Verify behavior of emergency trigger swipe action button during attempts to process submission with browser extensions active
@@ -351,9 +351,9 @@ def test_ts_sel_029_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_030_verify_behavior_of_change_password_input_validation_during_attempts_to_log_telemetry_events_for_special_character_strings():
+def test_tc_sel_030_verify_behavior_of_change_password_input_validation_during_attempts_to_log_telemetry_events_for_special_character_strings():
     """
-    ID: TS_SEL_030
+    ID: TC_SEL_030
     Module: Onboarding
     Feature: log telemetry events for change password input validation for special character strings
     Title: Verify behavior of change password input validation during attempts to log telemetry events for special character strings
@@ -363,9 +363,9 @@ def test_ts_sel_030_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_031_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_inspect_download_stream_after_five_minutes_of_inactivity():
+def test_tc_sel_031_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_inspect_download_stream_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_031
+    ID: TC_SEL_031
     Module: Settings
     Feature: inspect download stream for dark mode theme layout colors after five minutes of inactivity
     Title: Verify behavior of dark mode theme layout colors during attempts to inspect download stream after five minutes of inactivity
@@ -375,9 +375,9 @@ def test_ts_sel_031_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_032_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_check_boundary_limits_using_invalid_credentials():
+def test_tc_sel_032_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_check_boundary_limits_using_invalid_credentials():
     """
-    ID: TS_SEL_032
+    ID: TC_SEL_032
     Module: AIChat
     Feature: check boundary limits for help center search suggestions dropdown using invalid credentials
     Title: Verify behavior of help center search suggestions dropdown during attempts to check boundary limits using invalid credentials
@@ -387,9 +387,9 @@ def test_ts_sel_032_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_033_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_inspect_modal_overlays_with_multiple_simultaneous_submits():
+def test_tc_sel_033_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_inspect_modal_overlays_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_033
+    ID: TC_SEL_033
     Module: Dashboard
     Feature: inspect modal overlays for dashboard widget grid layout with multiple simultaneous submits
     Title: Verify behavior of dashboard widget grid layout during attempts to inspect modal overlays with multiple simultaneous submits
@@ -399,9 +399,9 @@ def test_ts_sel_033_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_034_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_validate_text_alignment_when_cookies_are_blocked():
+def test_tc_sel_034_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_validate_text_alignment_when_cookies_are_blocked():
     """
-    ID: TS_SEL_034
+    ID: TC_SEL_034
     Module: Settings
     Feature: validate text alignment for accessibility keyboard focus indicators when cookies are blocked
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to validate text alignment when cookies are blocked
@@ -411,9 +411,9 @@ def test_ts_sel_034_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_035_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_ensure_contrast_ratios_under_local_storage_quota_limits():
+def test_tc_sel_035_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_ensure_contrast_ratios_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_035
+    ID: TC_SEL_035
     Module: Settings
     Feature: ensure contrast ratios for terms of service scroll validation under local storage quota limits
     Title: Verify behavior of terms of service scroll validation during attempts to ensure contrast ratios under local storage quota limits
@@ -423,9 +423,9 @@ def test_ts_sel_035_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_036_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_evaluate_text_wrapping_when_database_sync_is_delayed():
+def test_tc_sel_036_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_evaluate_text_wrapping_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_036
+    ID: TC_SEL_036
     Module: Dashboard
     Feature: evaluate text wrapping for navigation drawer menu items when database sync is delayed
     Title: Verify behavior of navigation drawer menu items during attempts to evaluate text wrapping when database sync is delayed
@@ -435,9 +435,9 @@ def test_ts_sel_036_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_037_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_reset_options_with_custom_theme_configurations():
+def test_tc_sel_037_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_reset_options_with_custom_theme_configurations():
     """
-    ID: TS_SEL_037
+    ID: TC_SEL_037
     Module: Settings
     Feature: reset options for offline mode status warning banner with custom theme configurations
     Title: Verify behavior of offline mode status warning banner during attempts to reset options with custom theme configurations
@@ -447,9 +447,9 @@ def test_ts_sel_037_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_038_verify_behavior_of_session_token_refresh_process_during_attempts_to_check_storage_updates_with_empty_values():
+def test_tc_sel_038_verify_behavior_of_session_token_refresh_process_during_attempts_to_check_storage_updates_with_empty_values():
     """
-    ID: TS_SEL_038
+    ID: TC_SEL_038
     Module: Authentication
     Feature: check storage updates for session token refresh process with empty values
     Title: Verify behavior of session token refresh process during attempts to check storage updates with empty values
@@ -459,9 +459,9 @@ def test_ts_sel_038_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_039_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_test_tooltips_display_after_session_token_expiration():
+def test_tc_sel_039_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_test_tooltips_display_after_session_token_expiration():
     """
-    ID: TS_SEL_039
+    ID: TC_SEL_039
     Module: Dashboard
     Feature: test tooltips display for quick actions shortcuts bar after session token expiration
     Title: Verify behavior of quick actions shortcuts bar during attempts to test tooltips display after session token expiration
@@ -471,9 +471,9 @@ def test_ts_sel_039_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_040_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_inspect_click_handlers_for_assistive_screen_readers():
+def test_tc_sel_040_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_inspect_click_handlers_for_assistive_screen_readers():
     """
-    ID: TS_SEL_040
+    ID: TC_SEL_040
     Module: Settings
     Feature: inspect click handlers for local storage synchronization queue for assistive screen readers
     Title: Verify behavior of local storage synchronization queue during attempts to inspect click handlers for assistive screen readers
@@ -483,9 +483,9 @@ def test_ts_sel_040_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_041_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_audit_focus_states_using_cross_site_scripting_strings():
+def test_tc_sel_041_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_audit_focus_states_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_041
+    ID: TC_SEL_041
     Module: Onboarding
     Feature: audit focus states for user deletion confirmation popup using cross-site scripting strings
     Title: Verify behavior of user deletion confirmation popup during attempts to audit focus states using cross-site scripting strings
@@ -495,9 +495,9 @@ def test_ts_sel_041_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_042_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_validate_fields_on_narrow_mobile_layout_viewport():
+def test_tc_sel_042_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_validate_fields_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_042
+    ID: TC_SEL_042
     Module: Settings
     Feature: validate fields for onboarding assessment launch button on narrow mobile layout viewport
     Title: Verify behavior of onboarding assessment launch button during attempts to validate fields on narrow mobile layout viewport
@@ -507,9 +507,9 @@ def test_ts_sel_042_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_043_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_track_cookie_changes_during_server_database_failover():
+def test_tc_sel_043_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_track_cookie_changes_during_server_database_failover():
     """
-    ID: TS_SEL_043
+    ID: TC_SEL_043
     Module: Settings
     Feature: track cookie changes for captcha validation image challenge during server database failover
     Title: Verify behavior of captcha validation image challenge during attempts to track cookie changes during server database failover
@@ -519,9 +519,9 @@ def test_ts_sel_043_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_044_verify_behavior_of_api_error_toast_notifications_during_attempts_to_verify_network_callback_when_file_size_exceeds_limit():
+def test_tc_sel_044_verify_behavior_of_api_error_toast_notifications_during_attempts_to_verify_network_callback_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_044
+    ID: TC_SEL_044
     Module: Settings
     Feature: verify network callback for api error toast notifications when file size exceeds limit
     Title: Verify behavior of api error toast notifications during attempts to verify network callback when file size exceeds limit
@@ -531,9 +531,9 @@ def test_ts_sel_044_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_045_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_verify_layout_rendering_when_network_speed_is_throttled():
+def test_tc_sel_045_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_verify_layout_rendering_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_045
+    ID: TC_SEL_045
     Module: Settings
     Feature: verify layout rendering for questionnaire save progress state when network speed is throttled
     Title: Verify behavior of questionnaire save progress state during attempts to verify layout rendering when network speed is throttled
@@ -543,9 +543,9 @@ def test_ts_sel_045_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_046_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_validate_regex_matching_on_high_resolution_displays():
+def test_tc_sel_046_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_validate_regex_matching_on_high_resolution_displays():
     """
-    ID: TS_SEL_046
+    ID: TC_SEL_046
     Module: Settings
     Feature: validate regex matching for password visibility toggle switch on high resolution displays
     Title: Verify behavior of password visibility toggle switch during attempts to validate regex matching on high resolution displays
@@ -555,9 +555,9 @@ def test_ts_sel_046_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_047_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_measure_execution_time_during_api_gateway_timeout():
+def test_tc_sel_047_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_measure_execution_time_during_api_gateway_timeout():
     """
-    ID: TS_SEL_047
+    ID: TC_SEL_047
     Module: Onboarding
     Feature: measure execution time for image crop zoom controls during api gateway timeout
     Title: Verify behavior of image crop zoom controls during attempts to measure execution time during api gateway timeout
@@ -567,9 +567,9 @@ def test_ts_sel_047_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_048_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_audit_keyboard_navigation_with_browser_extensions_active():
+def test_tc_sel_048_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_audit_keyboard_navigation_with_browser_extensions_active():
     """
-    ID: TS_SEL_048
+    ID: TC_SEL_048
     Module: Settings
     Feature: audit keyboard navigation for questionnaire submit assessment confirmation with browser extensions active
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to audit keyboard navigation with browser extensions active
@@ -579,9 +579,9 @@ def test_ts_sel_048_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_049_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_check_tab_indexing_for_special_character_strings():
+def test_tc_sel_049_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_check_tab_indexing_for_special_character_strings():
     """
-    ID: TS_SEL_049
+    ID: TC_SEL_049
     Module: Authentication
     Feature: check tab indexing for cookie consent policy banner for special character strings
     Title: Verify behavior of cookie consent policy banner during attempts to check tab indexing for special character strings
@@ -591,9 +591,9 @@ def test_ts_sel_049_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_050_verify_behavior_of_login_input_fields_during_attempts_to_process_submission_after_five_minutes_of_inactivity():
+def test_tc_sel_050_verify_behavior_of_login_input_fields_during_attempts_to_process_submission_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_050
+    ID: TC_SEL_050
     Module: Authentication
     Feature: process submission for login input fields after five minutes of inactivity
     Title: Verify behavior of login input fields during attempts to process submission after five minutes of inactivity
@@ -603,9 +603,9 @@ def test_ts_sel_050_verify_behavior_of_login_input_fields_during_attempts_to_pro
     # Simulated execution logic
     assert True
 
-def test_ts_sel_051_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_log_telemetry_events_using_invalid_credentials():
+def test_tc_sel_051_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_log_telemetry_events_using_invalid_credentials():
     """
-    ID: TS_SEL_051
+    ID: TC_SEL_051
     Module: BreathingExercises
     Feature: log telemetry events for breathing exercise custom configuration using invalid credentials
     Title: Verify behavior of breathing exercise custom configuration during attempts to log telemetry events using invalid credentials
@@ -615,9 +615,9 @@ def test_ts_sel_051_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_052_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_inspect_download_stream_with_multiple_simultaneous_submits():
+def test_tc_sel_052_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_inspect_download_stream_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_052
+    ID: TC_SEL_052
     Module: Authentication
     Feature: inspect download stream for multi-tab login state sync with multiple simultaneous submits
     Title: Verify behavior of multi-tab login state sync during attempts to inspect download stream with multiple simultaneous submits
@@ -627,9 +627,9 @@ def test_ts_sel_052_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_053_verify_behavior_of_registration_email_validation_during_attempts_to_check_boundary_limits_when_cookies_are_blocked():
+def test_tc_sel_053_verify_behavior_of_registration_email_validation_during_attempts_to_check_boundary_limits_when_cookies_are_blocked():
     """
-    ID: TS_SEL_053
+    ID: TC_SEL_053
     Module: Authentication
     Feature: check boundary limits for registration email validation when cookies are blocked
     Title: Verify behavior of registration email validation during attempts to check boundary limits when cookies are blocked
@@ -639,9 +639,9 @@ def test_ts_sel_053_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_054_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_inspect_modal_overlays_under_local_storage_quota_limits():
+def test_tc_sel_054_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_inspect_modal_overlays_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_054
+    ID: TC_SEL_054
     Module: BreathingExercises
     Feature: inspect modal overlays for breathing orb size scale animation under local storage quota limits
     Title: Verify behavior of breathing orb size scale animation during attempts to inspect modal overlays under local storage quota limits
@@ -651,9 +651,9 @@ def test_ts_sel_054_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_055_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_validate_text_alignment_when_database_sync_is_delayed():
+def test_tc_sel_055_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_validate_text_alignment_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_055
+    ID: TC_SEL_055
     Module: Authentication
     Feature: validate text alignment for browser history back navigation behavior when database sync is delayed
     Title: Verify behavior of browser history back navigation behavior during attempts to validate text alignment when database sync is delayed
@@ -663,9 +663,9 @@ def test_ts_sel_055_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_056_verify_behavior_of_forgot_password_security_link_during_attempts_to_ensure_contrast_ratios_with_custom_theme_configurations():
+def test_tc_sel_056_verify_behavior_of_forgot_password_security_link_during_attempts_to_ensure_contrast_ratios_with_custom_theme_configurations():
     """
-    ID: TS_SEL_056
+    ID: TC_SEL_056
     Module: Authentication
     Feature: ensure contrast ratios for forgot password security link with custom theme configurations
     Title: Verify behavior of forgot password security link during attempts to ensure contrast ratios with custom theme configurations
@@ -675,9 +675,9 @@ def test_ts_sel_056_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_057_verify_behavior_of_breathing_history_table_paging_during_attempts_to_evaluate_text_wrapping_with_empty_values():
+def test_tc_sel_057_verify_behavior_of_breathing_history_table_paging_during_attempts_to_evaluate_text_wrapping_with_empty_values():
     """
-    ID: TS_SEL_057
+    ID: TC_SEL_057
     Module: BreathingExercises
     Feature: evaluate text wrapping for breathing history table paging with empty values
     Title: Verify behavior of breathing history table paging during attempts to evaluate text wrapping with empty values
@@ -687,9 +687,9 @@ def test_ts_sel_057_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_058_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_reset_options_after_session_token_expiration():
+def test_tc_sel_058_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_reset_options_after_session_token_expiration():
     """
-    ID: TS_SEL_058
+    ID: TC_SEL_058
     Module: Dashboard
     Feature: reset options for dashboard live graph animation after session token expiration
     Title: Verify behavior of dashboard live graph animation during attempts to reset options after session token expiration
@@ -699,9 +699,9 @@ def test_ts_sel_058_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_059_verify_behavior_of_reset_password_form_submission_during_attempts_to_check_storage_updates_for_assistive_screen_readers():
+def test_tc_sel_059_verify_behavior_of_reset_password_form_submission_during_attempts_to_check_storage_updates_for_assistive_screen_readers():
     """
-    ID: TS_SEL_059
+    ID: TC_SEL_059
     Module: Authentication
     Feature: check storage updates for reset password form submission for assistive screen readers
     Title: Verify behavior of reset password form submission during attempts to check storage updates for assistive screen readers
@@ -711,9 +711,9 @@ def test_ts_sel_059_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_060_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_test_tooltips_display_using_cross_site_scripting_strings():
+def test_tc_sel_060_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_test_tooltips_display_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_060
+    ID: TC_SEL_060
     Module: SymptomTracking
     Feature: test tooltips display for symptom log severity score slider using cross-site scripting strings
     Title: Verify behavior of symptom log severity score slider during attempts to test tooltips display using cross-site scripting strings
@@ -723,9 +723,9 @@ def test_ts_sel_060_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_061_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_inspect_click_handlers_on_narrow_mobile_layout_viewport():
+def test_tc_sel_061_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_inspect_click_handlers_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_061
+    ID: TC_SEL_061
     Module: SymptomTracking
     Feature: inspect click handlers for symptom history calendar grid view on narrow mobile layout viewport
     Title: Verify behavior of symptom history calendar grid view during attempts to inspect click handlers on narrow mobile layout viewport
@@ -735,9 +735,9 @@ def test_ts_sel_061_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_062_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_audit_focus_states_during_server_database_failover():
+def test_tc_sel_062_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_audit_focus_states_during_server_database_failover():
     """
-    ID: TS_SEL_062
+    ID: TC_SEL_062
     Module: Authentication
     Feature: audit focus states for OTP verification screen timer during server database failover
     Title: Verify behavior of OTP verification screen timer during attempts to audit focus states during server database failover
@@ -747,9 +747,9 @@ def test_ts_sel_062_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_063_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_validate_fields_when_file_size_exceeds_limit():
+def test_tc_sel_063_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_validate_fields_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_063
+    ID: TC_SEL_063
     Module: SymptomTracking
     Feature: validate fields for symptom log trigger selection checkboxes when file size exceeds limit
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to validate fields when file size exceeds limit
@@ -759,9 +759,9 @@ def test_ts_sel_063_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_064_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_track_cookie_changes_when_network_speed_is_throttled():
+def test_tc_sel_064_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_track_cookie_changes_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_064
+    ID: TC_SEL_064
     Module: SymptomTracking
     Feature: track cookie changes for dosage calculator slider controls when network speed is throttled
     Title: Verify behavior of dosage calculator slider controls during attempts to track cookie changes when network speed is throttled
@@ -771,9 +771,9 @@ def test_ts_sel_064_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_065_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_verify_network_callback_on_high_resolution_displays():
+def test_tc_sel_065_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_verify_network_callback_on_high_resolution_displays():
     """
-    ID: TS_SEL_065
+    ID: TC_SEL_065
     Module: Authentication
     Feature: verify network callback for remember me cookie setting on high resolution displays
     Title: Verify behavior of remember me cookie setting during attempts to verify network callback on high resolution displays
@@ -783,9 +783,9 @@ def test_ts_sel_065_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_066_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_verify_layout_rendering_during_api_gateway_timeout():
+def test_tc_sel_066_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_verify_layout_rendering_during_api_gateway_timeout():
     """
-    ID: TS_SEL_066
+    ID: TC_SEL_066
     Module: ClinicalReports
     Feature: verify layout rendering for clinical PDF report print dialog during api gateway timeout
     Title: Verify behavior of clinical PDF report print dialog during attempts to verify layout rendering during api gateway timeout
@@ -795,9 +795,9 @@ def test_ts_sel_066_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_067_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_validate_regex_matching_with_browser_extensions_active():
+def test_tc_sel_067_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_validate_regex_matching_with_browser_extensions_active():
     """
-    ID: TS_SEL_067
+    ID: TC_SEL_067
     Module: SymptomTracking
     Feature: validate regex matching for medicine entry list scroll position with browser extensions active
     Title: Verify behavior of medicine entry list scroll position during attempts to validate regex matching with browser extensions active
@@ -807,9 +807,9 @@ def test_ts_sel_067_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_068_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_measure_execution_time_for_special_character_strings():
+def test_tc_sel_068_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_measure_execution_time_for_special_character_strings():
     """
-    ID: TS_SEL_068
+    ID: TC_SEL_068
     Module: Authentication
     Feature: measure execution time for session timeout idle alert for special character strings
     Title: Verify behavior of session timeout idle alert during attempts to measure execution time for special character strings
@@ -819,9 +819,9 @@ def test_ts_sel_068_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_069_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_audit_keyboard_navigation_after_five_minutes_of_inactivity():
+def test_tc_sel_069_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_audit_keyboard_navigation_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_069
+    ID: TC_SEL_069
     Module: ClinicalReports
     Feature: audit keyboard navigation for doctor search filter dropdown after five minutes of inactivity
     Title: Verify behavior of doctor search filter dropdown during attempts to audit keyboard navigation after five minutes of inactivity
@@ -831,9 +831,9 @@ def test_ts_sel_069_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_070_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_check_tab_indexing_using_invalid_credentials():
+def test_tc_sel_070_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_check_tab_indexing_using_invalid_credentials():
     """
-    ID: TS_SEL_070
+    ID: TC_SEL_070
     Module: ClinicalReports
     Feature: check tab indexing for pulmonologist appointment booking slot selection using invalid credentials
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to check tab indexing using invalid credentials
@@ -843,9 +843,9 @@ def test_ts_sel_070_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_071_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_process_submission_with_multiple_simultaneous_submits():
+def test_tc_sel_071_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_process_submission_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_071
+    ID: TC_SEL_071
     Module: Authentication
     Feature: process submission for logout redirect landing page with multiple simultaneous submits
     Title: Verify behavior of logout redirect landing page during attempts to process submission with multiple simultaneous submits
@@ -855,9 +855,9 @@ def test_ts_sel_071_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_072_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_log_telemetry_events_when_cookies_are_blocked():
+def test_tc_sel_072_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_log_telemetry_events_when_cookies_are_blocked():
     """
-    ID: TS_SEL_072
+    ID: TC_SEL_072
     Module: AIChat
     Feature: log telemetry events for ai chat message input box when cookies are blocked
     Title: Verify behavior of ai chat message input box during attempts to log telemetry events when cookies are blocked
@@ -867,9 +867,9 @@ def test_ts_sel_072_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_073_verify_behavior_of_notification_preferences_toggles_during_attempts_to_inspect_download_stream_under_local_storage_quota_limits():
+def test_tc_sel_073_verify_behavior_of_notification_preferences_toggles_during_attempts_to_inspect_download_stream_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_073
+    ID: TC_SEL_073
     Module: Settings
     Feature: inspect download stream for notification preferences toggles under local storage quota limits
     Title: Verify behavior of notification preferences toggles during attempts to inspect download stream under local storage quota limits
@@ -879,9 +879,9 @@ def test_ts_sel_073_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_074_verify_behavior_of_profile_information_form_fields_during_attempts_to_check_boundary_limits_when_database_sync_is_delayed():
+def test_tc_sel_074_verify_behavior_of_profile_information_form_fields_during_attempts_to_check_boundary_limits_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_074
+    ID: TC_SEL_074
     Module: Onboarding
     Feature: check boundary limits for profile information form fields when database sync is delayed
     Title: Verify behavior of profile information form fields during attempts to check boundary limits when database sync is delayed
@@ -891,9 +891,9 @@ def test_ts_sel_074_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_075_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_inspect_modal_overlays_with_custom_theme_configurations():
+def test_tc_sel_075_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_inspect_modal_overlays_with_custom_theme_configurations():
     """
-    ID: TS_SEL_075
+    ID: TC_SEL_075
     Module: AIChat
     Feature: inspect modal overlays for ai chat markdown rendering structure with custom theme configurations
     Title: Verify behavior of ai chat markdown rendering structure during attempts to inspect modal overlays with custom theme configurations
@@ -903,9 +903,9 @@ def test_ts_sel_075_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_076_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_validate_text_alignment_with_empty_values():
+def test_tc_sel_076_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_validate_text_alignment_with_empty_values():
     """
-    ID: TS_SEL_076
+    ID: TC_SEL_076
     Module: ClinicalReports
     Feature: validate text alignment for clinical recommendations expansion accordion with empty values
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to validate text alignment with empty values
@@ -915,9 +915,9 @@ def test_ts_sel_076_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_077_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_ensure_contrast_ratios_after_session_token_expiration():
+def test_tc_sel_077_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_ensure_contrast_ratios_after_session_token_expiration():
     """
-    ID: TS_SEL_077
+    ID: TC_SEL_077
     Module: Onboarding
     Feature: ensure contrast ratios for profile picture upload modal after session token expiration
     Title: Verify behavior of profile picture upload modal during attempts to ensure contrast ratios after session token expiration
@@ -927,9 +927,9 @@ def test_ts_sel_077_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_078_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_evaluate_text_wrapping_for_assistive_screen_readers():
+def test_tc_sel_078_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_evaluate_text_wrapping_for_assistive_screen_readers():
     """
-    ID: TS_SEL_078
+    ID: TC_SEL_078
     Module: Settings
     Feature: evaluate text wrapping for emergency contact name entry for assistive screen readers
     Title: Verify behavior of emergency contact name entry during attempts to evaluate text wrapping for assistive screen readers
@@ -939,9 +939,9 @@ def test_ts_sel_078_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_079_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_reset_options_using_cross_site_scripting_strings():
+def test_tc_sel_079_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_reset_options_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_079
+    ID: TC_SEL_079
     Module: Settings
     Feature: reset options for emergency trigger swipe action button using cross-site scripting strings
     Title: Verify behavior of emergency trigger swipe action button during attempts to reset options using cross-site scripting strings
@@ -951,9 +951,9 @@ def test_ts_sel_079_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_080_verify_behavior_of_change_password_input_validation_during_attempts_to_check_storage_updates_on_narrow_mobile_layout_viewport():
+def test_tc_sel_080_verify_behavior_of_change_password_input_validation_during_attempts_to_check_storage_updates_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_080
+    ID: TC_SEL_080
     Module: Onboarding
     Feature: check storage updates for change password input validation on narrow mobile layout viewport
     Title: Verify behavior of change password input validation during attempts to check storage updates on narrow mobile layout viewport
@@ -963,9 +963,9 @@ def test_ts_sel_080_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_081_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_test_tooltips_display_during_server_database_failover():
+def test_tc_sel_081_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_test_tooltips_display_during_server_database_failover():
     """
-    ID: TS_SEL_081
+    ID: TC_SEL_081
     Module: Settings
     Feature: test tooltips display for dark mode theme layout colors during server database failover
     Title: Verify behavior of dark mode theme layout colors during attempts to test tooltips display during server database failover
@@ -975,9 +975,9 @@ def test_ts_sel_081_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_082_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_inspect_click_handlers_when_file_size_exceeds_limit():
+def test_tc_sel_082_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_inspect_click_handlers_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_082
+    ID: TC_SEL_082
     Module: AIChat
     Feature: inspect click handlers for help center search suggestions dropdown when file size exceeds limit
     Title: Verify behavior of help center search suggestions dropdown during attempts to inspect click handlers when file size exceeds limit
@@ -987,9 +987,9 @@ def test_ts_sel_082_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_083_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_audit_focus_states_when_network_speed_is_throttled():
+def test_tc_sel_083_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_audit_focus_states_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_083
+    ID: TC_SEL_083
     Module: Dashboard
     Feature: audit focus states for dashboard widget grid layout when network speed is throttled
     Title: Verify behavior of dashboard widget grid layout during attempts to audit focus states when network speed is throttled
@@ -999,9 +999,9 @@ def test_ts_sel_083_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_084_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_validate_fields_on_high_resolution_displays():
+def test_tc_sel_084_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_validate_fields_on_high_resolution_displays():
     """
-    ID: TS_SEL_084
+    ID: TC_SEL_084
     Module: Settings
     Feature: validate fields for accessibility keyboard focus indicators on high resolution displays
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to validate fields on high resolution displays
@@ -1011,9 +1011,9 @@ def test_ts_sel_084_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_085_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_track_cookie_changes_during_api_gateway_timeout():
+def test_tc_sel_085_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_track_cookie_changes_during_api_gateway_timeout():
     """
-    ID: TS_SEL_085
+    ID: TC_SEL_085
     Module: Settings
     Feature: track cookie changes for terms of service scroll validation during api gateway timeout
     Title: Verify behavior of terms of service scroll validation during attempts to track cookie changes during api gateway timeout
@@ -1023,9 +1023,9 @@ def test_ts_sel_085_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_086_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_verify_network_callback_with_browser_extensions_active():
+def test_tc_sel_086_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_verify_network_callback_with_browser_extensions_active():
     """
-    ID: TS_SEL_086
+    ID: TC_SEL_086
     Module: Dashboard
     Feature: verify network callback for navigation drawer menu items with browser extensions active
     Title: Verify behavior of navigation drawer menu items during attempts to verify network callback with browser extensions active
@@ -1035,9 +1035,9 @@ def test_ts_sel_086_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_087_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_verify_layout_rendering_for_special_character_strings():
+def test_tc_sel_087_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_verify_layout_rendering_for_special_character_strings():
     """
-    ID: TS_SEL_087
+    ID: TC_SEL_087
     Module: Settings
     Feature: verify layout rendering for offline mode status warning banner for special character strings
     Title: Verify behavior of offline mode status warning banner during attempts to verify layout rendering for special character strings
@@ -1047,9 +1047,9 @@ def test_ts_sel_087_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_088_verify_behavior_of_session_token_refresh_process_during_attempts_to_validate_regex_matching_after_five_minutes_of_inactivity():
+def test_tc_sel_088_verify_behavior_of_session_token_refresh_process_during_attempts_to_validate_regex_matching_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_088
+    ID: TC_SEL_088
     Module: Authentication
     Feature: validate regex matching for session token refresh process after five minutes of inactivity
     Title: Verify behavior of session token refresh process during attempts to validate regex matching after five minutes of inactivity
@@ -1059,9 +1059,9 @@ def test_ts_sel_088_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_089_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_measure_execution_time_using_invalid_credentials():
+def test_tc_sel_089_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_measure_execution_time_using_invalid_credentials():
     """
-    ID: TS_SEL_089
+    ID: TC_SEL_089
     Module: Dashboard
     Feature: measure execution time for quick actions shortcuts bar using invalid credentials
     Title: Verify behavior of quick actions shortcuts bar during attempts to measure execution time using invalid credentials
@@ -1071,9 +1071,9 @@ def test_ts_sel_089_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_090_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_audit_keyboard_navigation_with_multiple_simultaneous_submits():
+def test_tc_sel_090_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_audit_keyboard_navigation_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_090
+    ID: TC_SEL_090
     Module: Settings
     Feature: audit keyboard navigation for local storage synchronization queue with multiple simultaneous submits
     Title: Verify behavior of local storage synchronization queue during attempts to audit keyboard navigation with multiple simultaneous submits
@@ -1083,9 +1083,9 @@ def test_ts_sel_090_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_091_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_check_tab_indexing_when_cookies_are_blocked():
+def test_tc_sel_091_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_check_tab_indexing_when_cookies_are_blocked():
     """
-    ID: TS_SEL_091
+    ID: TC_SEL_091
     Module: Onboarding
     Feature: check tab indexing for user deletion confirmation popup when cookies are blocked
     Title: Verify behavior of user deletion confirmation popup during attempts to check tab indexing when cookies are blocked
@@ -1095,9 +1095,9 @@ def test_ts_sel_091_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_092_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_process_submission_under_local_storage_quota_limits():
+def test_tc_sel_092_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_process_submission_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_092
+    ID: TC_SEL_092
     Module: Settings
     Feature: process submission for onboarding assessment launch button under local storage quota limits
     Title: Verify behavior of onboarding assessment launch button during attempts to process submission under local storage quota limits
@@ -1107,9 +1107,9 @@ def test_ts_sel_092_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_093_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_log_telemetry_events_when_database_sync_is_delayed():
+def test_tc_sel_093_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_log_telemetry_events_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_093
+    ID: TC_SEL_093
     Module: Settings
     Feature: log telemetry events for captcha validation image challenge when database sync is delayed
     Title: Verify behavior of captcha validation image challenge during attempts to log telemetry events when database sync is delayed
@@ -1119,9 +1119,9 @@ def test_ts_sel_093_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_094_verify_behavior_of_api_error_toast_notifications_during_attempts_to_inspect_download_stream_with_custom_theme_configurations():
+def test_tc_sel_094_verify_behavior_of_api_error_toast_notifications_during_attempts_to_inspect_download_stream_with_custom_theme_configurations():
     """
-    ID: TS_SEL_094
+    ID: TC_SEL_094
     Module: Settings
     Feature: inspect download stream for api error toast notifications with custom theme configurations
     Title: Verify behavior of api error toast notifications during attempts to inspect download stream with custom theme configurations
@@ -1131,9 +1131,9 @@ def test_ts_sel_094_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_095_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_check_boundary_limits_with_empty_values():
+def test_tc_sel_095_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_check_boundary_limits_with_empty_values():
     """
-    ID: TS_SEL_095
+    ID: TC_SEL_095
     Module: Settings
     Feature: check boundary limits for questionnaire save progress state with empty values
     Title: Verify behavior of questionnaire save progress state during attempts to check boundary limits with empty values
@@ -1143,9 +1143,9 @@ def test_ts_sel_095_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_096_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_inspect_modal_overlays_after_session_token_expiration():
+def test_tc_sel_096_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_inspect_modal_overlays_after_session_token_expiration():
     """
-    ID: TS_SEL_096
+    ID: TC_SEL_096
     Module: Settings
     Feature: inspect modal overlays for password visibility toggle switch after session token expiration
     Title: Verify behavior of password visibility toggle switch during attempts to inspect modal overlays after session token expiration
@@ -1155,9 +1155,9 @@ def test_ts_sel_096_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_097_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_validate_text_alignment_for_assistive_screen_readers():
+def test_tc_sel_097_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_validate_text_alignment_for_assistive_screen_readers():
     """
-    ID: TS_SEL_097
+    ID: TC_SEL_097
     Module: Onboarding
     Feature: validate text alignment for image crop zoom controls for assistive screen readers
     Title: Verify behavior of image crop zoom controls during attempts to validate text alignment for assistive screen readers
@@ -1167,9 +1167,9 @@ def test_ts_sel_097_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_098_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_ensure_contrast_ratios_using_cross_site_scripting_strings():
+def test_tc_sel_098_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_ensure_contrast_ratios_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_098
+    ID: TC_SEL_098
     Module: Settings
     Feature: ensure contrast ratios for questionnaire submit assessment confirmation using cross-site scripting strings
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to ensure contrast ratios using cross-site scripting strings
@@ -1179,9 +1179,9 @@ def test_ts_sel_098_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_099_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_evaluate_text_wrapping_on_narrow_mobile_layout_viewport():
+def test_tc_sel_099_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_evaluate_text_wrapping_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_099
+    ID: TC_SEL_099
     Module: Authentication
     Feature: evaluate text wrapping for cookie consent policy banner on narrow mobile layout viewport
     Title: Verify behavior of cookie consent policy banner during attempts to evaluate text wrapping on narrow mobile layout viewport
@@ -1191,9 +1191,9 @@ def test_ts_sel_099_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_100_verify_behavior_of_login_input_fields_during_attempts_to_reset_options_during_server_database_failover():
+def test_tc_sel_100_verify_behavior_of_login_input_fields_during_attempts_to_reset_options_during_server_database_failover():
     """
-    ID: TS_SEL_100
+    ID: TC_SEL_100
     Module: Authentication
     Feature: reset options for login input fields during server database failover
     Title: Verify behavior of login input fields during attempts to reset options during server database failover
@@ -1203,9 +1203,9 @@ def test_ts_sel_100_verify_behavior_of_login_input_fields_during_attempts_to_res
     # Simulated execution logic
     assert True
 
-def test_ts_sel_101_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_check_storage_updates_when_file_size_exceeds_limit():
+def test_tc_sel_101_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_check_storage_updates_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_101
+    ID: TC_SEL_101
     Module: BreathingExercises
     Feature: check storage updates for breathing exercise custom configuration when file size exceeds limit
     Title: Verify behavior of breathing exercise custom configuration during attempts to check storage updates when file size exceeds limit
@@ -1215,9 +1215,9 @@ def test_ts_sel_101_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_102_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_test_tooltips_display_when_network_speed_is_throttled():
+def test_tc_sel_102_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_test_tooltips_display_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_102
+    ID: TC_SEL_102
     Module: Authentication
     Feature: test tooltips display for multi-tab login state sync when network speed is throttled
     Title: Verify behavior of multi-tab login state sync during attempts to test tooltips display when network speed is throttled
@@ -1227,9 +1227,9 @@ def test_ts_sel_102_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_103_verify_behavior_of_registration_email_validation_during_attempts_to_inspect_click_handlers_on_high_resolution_displays():
+def test_tc_sel_103_verify_behavior_of_registration_email_validation_during_attempts_to_inspect_click_handlers_on_high_resolution_displays():
     """
-    ID: TS_SEL_103
+    ID: TC_SEL_103
     Module: Authentication
     Feature: inspect click handlers for registration email validation on high resolution displays
     Title: Verify behavior of registration email validation during attempts to inspect click handlers on high resolution displays
@@ -1239,9 +1239,9 @@ def test_ts_sel_103_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_104_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_audit_focus_states_during_api_gateway_timeout():
+def test_tc_sel_104_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_audit_focus_states_during_api_gateway_timeout():
     """
-    ID: TS_SEL_104
+    ID: TC_SEL_104
     Module: BreathingExercises
     Feature: audit focus states for breathing orb size scale animation during api gateway timeout
     Title: Verify behavior of breathing orb size scale animation during attempts to audit focus states during api gateway timeout
@@ -1251,9 +1251,9 @@ def test_ts_sel_104_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_105_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_validate_fields_with_browser_extensions_active():
+def test_tc_sel_105_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_validate_fields_with_browser_extensions_active():
     """
-    ID: TS_SEL_105
+    ID: TC_SEL_105
     Module: Authentication
     Feature: validate fields for browser history back navigation behavior with browser extensions active
     Title: Verify behavior of browser history back navigation behavior during attempts to validate fields with browser extensions active
@@ -1263,9 +1263,9 @@ def test_ts_sel_105_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_106_verify_behavior_of_forgot_password_security_link_during_attempts_to_track_cookie_changes_for_special_character_strings():
+def test_tc_sel_106_verify_behavior_of_forgot_password_security_link_during_attempts_to_track_cookie_changes_for_special_character_strings():
     """
-    ID: TS_SEL_106
+    ID: TC_SEL_106
     Module: Authentication
     Feature: track cookie changes for forgot password security link for special character strings
     Title: Verify behavior of forgot password security link during attempts to track cookie changes for special character strings
@@ -1275,9 +1275,9 @@ def test_ts_sel_106_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_107_verify_behavior_of_breathing_history_table_paging_during_attempts_to_verify_network_callback_after_five_minutes_of_inactivity():
+def test_tc_sel_107_verify_behavior_of_breathing_history_table_paging_during_attempts_to_verify_network_callback_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_107
+    ID: TC_SEL_107
     Module: BreathingExercises
     Feature: verify network callback for breathing history table paging after five minutes of inactivity
     Title: Verify behavior of breathing history table paging during attempts to verify network callback after five minutes of inactivity
@@ -1287,9 +1287,9 @@ def test_ts_sel_107_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_108_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_verify_layout_rendering_using_invalid_credentials():
+def test_tc_sel_108_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_verify_layout_rendering_using_invalid_credentials():
     """
-    ID: TS_SEL_108
+    ID: TC_SEL_108
     Module: Dashboard
     Feature: verify layout rendering for dashboard live graph animation using invalid credentials
     Title: Verify behavior of dashboard live graph animation during attempts to verify layout rendering using invalid credentials
@@ -1299,9 +1299,9 @@ def test_ts_sel_108_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_109_verify_behavior_of_reset_password_form_submission_during_attempts_to_validate_regex_matching_with_multiple_simultaneous_submits():
+def test_tc_sel_109_verify_behavior_of_reset_password_form_submission_during_attempts_to_validate_regex_matching_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_109
+    ID: TC_SEL_109
     Module: Authentication
     Feature: validate regex matching for reset password form submission with multiple simultaneous submits
     Title: Verify behavior of reset password form submission during attempts to validate regex matching with multiple simultaneous submits
@@ -1311,9 +1311,9 @@ def test_ts_sel_109_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_110_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_measure_execution_time_when_cookies_are_blocked():
+def test_tc_sel_110_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_measure_execution_time_when_cookies_are_blocked():
     """
-    ID: TS_SEL_110
+    ID: TC_SEL_110
     Module: SymptomTracking
     Feature: measure execution time for symptom log severity score slider when cookies are blocked
     Title: Verify behavior of symptom log severity score slider during attempts to measure execution time when cookies are blocked
@@ -1323,9 +1323,9 @@ def test_ts_sel_110_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_111_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_audit_keyboard_navigation_under_local_storage_quota_limits():
+def test_tc_sel_111_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_audit_keyboard_navigation_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_111
+    ID: TC_SEL_111
     Module: SymptomTracking
     Feature: audit keyboard navigation for symptom history calendar grid view under local storage quota limits
     Title: Verify behavior of symptom history calendar grid view during attempts to audit keyboard navigation under local storage quota limits
@@ -1335,9 +1335,9 @@ def test_ts_sel_111_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_112_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_check_tab_indexing_when_database_sync_is_delayed():
+def test_tc_sel_112_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_check_tab_indexing_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_112
+    ID: TC_SEL_112
     Module: Authentication
     Feature: check tab indexing for OTP verification screen timer when database sync is delayed
     Title: Verify behavior of OTP verification screen timer during attempts to check tab indexing when database sync is delayed
@@ -1347,9 +1347,9 @@ def test_ts_sel_112_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_113_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_process_submission_with_custom_theme_configurations():
+def test_tc_sel_113_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_process_submission_with_custom_theme_configurations():
     """
-    ID: TS_SEL_113
+    ID: TC_SEL_113
     Module: SymptomTracking
     Feature: process submission for symptom log trigger selection checkboxes with custom theme configurations
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to process submission with custom theme configurations
@@ -1359,9 +1359,9 @@ def test_ts_sel_113_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_114_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_log_telemetry_events_with_empty_values():
+def test_tc_sel_114_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_log_telemetry_events_with_empty_values():
     """
-    ID: TS_SEL_114
+    ID: TC_SEL_114
     Module: SymptomTracking
     Feature: log telemetry events for dosage calculator slider controls with empty values
     Title: Verify behavior of dosage calculator slider controls during attempts to log telemetry events with empty values
@@ -1371,9 +1371,9 @@ def test_ts_sel_114_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_115_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_inspect_download_stream_after_session_token_expiration():
+def test_tc_sel_115_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_inspect_download_stream_after_session_token_expiration():
     """
-    ID: TS_SEL_115
+    ID: TC_SEL_115
     Module: Authentication
     Feature: inspect download stream for remember me cookie setting after session token expiration
     Title: Verify behavior of remember me cookie setting during attempts to inspect download stream after session token expiration
@@ -1383,9 +1383,9 @@ def test_ts_sel_115_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_116_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_check_boundary_limits_for_assistive_screen_readers():
+def test_tc_sel_116_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_check_boundary_limits_for_assistive_screen_readers():
     """
-    ID: TS_SEL_116
+    ID: TC_SEL_116
     Module: ClinicalReports
     Feature: check boundary limits for clinical PDF report print dialog for assistive screen readers
     Title: Verify behavior of clinical PDF report print dialog during attempts to check boundary limits for assistive screen readers
@@ -1395,9 +1395,9 @@ def test_ts_sel_116_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_117_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_inspect_modal_overlays_using_cross_site_scripting_strings():
+def test_tc_sel_117_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_inspect_modal_overlays_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_117
+    ID: TC_SEL_117
     Module: SymptomTracking
     Feature: inspect modal overlays for medicine entry list scroll position using cross-site scripting strings
     Title: Verify behavior of medicine entry list scroll position during attempts to inspect modal overlays using cross-site scripting strings
@@ -1407,9 +1407,9 @@ def test_ts_sel_117_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_118_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_validate_text_alignment_on_narrow_mobile_layout_viewport():
+def test_tc_sel_118_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_validate_text_alignment_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_118
+    ID: TC_SEL_118
     Module: Authentication
     Feature: validate text alignment for session timeout idle alert on narrow mobile layout viewport
     Title: Verify behavior of session timeout idle alert during attempts to validate text alignment on narrow mobile layout viewport
@@ -1419,9 +1419,9 @@ def test_ts_sel_118_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_119_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_ensure_contrast_ratios_during_server_database_failover():
+def test_tc_sel_119_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_ensure_contrast_ratios_during_server_database_failover():
     """
-    ID: TS_SEL_119
+    ID: TC_SEL_119
     Module: ClinicalReports
     Feature: ensure contrast ratios for doctor search filter dropdown during server database failover
     Title: Verify behavior of doctor search filter dropdown during attempts to ensure contrast ratios during server database failover
@@ -1431,9 +1431,9 @@ def test_ts_sel_119_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_120_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_evaluate_text_wrapping_when_file_size_exceeds_limit():
+def test_tc_sel_120_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_evaluate_text_wrapping_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_120
+    ID: TC_SEL_120
     Module: ClinicalReports
     Feature: evaluate text wrapping for pulmonologist appointment booking slot selection when file size exceeds limit
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to evaluate text wrapping when file size exceeds limit
@@ -1443,9 +1443,9 @@ def test_ts_sel_120_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_121_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_reset_options_when_network_speed_is_throttled():
+def test_tc_sel_121_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_reset_options_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_121
+    ID: TC_SEL_121
     Module: Authentication
     Feature: reset options for logout redirect landing page when network speed is throttled
     Title: Verify behavior of logout redirect landing page during attempts to reset options when network speed is throttled
@@ -1455,9 +1455,9 @@ def test_ts_sel_121_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_122_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_check_storage_updates_on_high_resolution_displays():
+def test_tc_sel_122_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_check_storage_updates_on_high_resolution_displays():
     """
-    ID: TS_SEL_122
+    ID: TC_SEL_122
     Module: AIChat
     Feature: check storage updates for ai chat message input box on high resolution displays
     Title: Verify behavior of ai chat message input box during attempts to check storage updates on high resolution displays
@@ -1467,9 +1467,9 @@ def test_ts_sel_122_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_123_verify_behavior_of_notification_preferences_toggles_during_attempts_to_test_tooltips_display_during_api_gateway_timeout():
+def test_tc_sel_123_verify_behavior_of_notification_preferences_toggles_during_attempts_to_test_tooltips_display_during_api_gateway_timeout():
     """
-    ID: TS_SEL_123
+    ID: TC_SEL_123
     Module: Settings
     Feature: test tooltips display for notification preferences toggles during api gateway timeout
     Title: Verify behavior of notification preferences toggles during attempts to test tooltips display during api gateway timeout
@@ -1479,9 +1479,9 @@ def test_ts_sel_123_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_124_verify_behavior_of_profile_information_form_fields_during_attempts_to_inspect_click_handlers_with_browser_extensions_active():
+def test_tc_sel_124_verify_behavior_of_profile_information_form_fields_during_attempts_to_inspect_click_handlers_with_browser_extensions_active():
     """
-    ID: TS_SEL_124
+    ID: TC_SEL_124
     Module: Onboarding
     Feature: inspect click handlers for profile information form fields with browser extensions active
     Title: Verify behavior of profile information form fields during attempts to inspect click handlers with browser extensions active
@@ -1491,9 +1491,9 @@ def test_ts_sel_124_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_125_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_audit_focus_states_for_special_character_strings():
+def test_tc_sel_125_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_audit_focus_states_for_special_character_strings():
     """
-    ID: TS_SEL_125
+    ID: TC_SEL_125
     Module: AIChat
     Feature: audit focus states for ai chat markdown rendering structure for special character strings
     Title: Verify behavior of ai chat markdown rendering structure during attempts to audit focus states for special character strings
@@ -1503,9 +1503,9 @@ def test_ts_sel_125_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_126_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_validate_fields_after_five_minutes_of_inactivity():
+def test_tc_sel_126_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_validate_fields_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_126
+    ID: TC_SEL_126
     Module: ClinicalReports
     Feature: validate fields for clinical recommendations expansion accordion after five minutes of inactivity
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to validate fields after five minutes of inactivity
@@ -1515,9 +1515,9 @@ def test_ts_sel_126_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_127_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_track_cookie_changes_using_invalid_credentials():
+def test_tc_sel_127_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_track_cookie_changes_using_invalid_credentials():
     """
-    ID: TS_SEL_127
+    ID: TC_SEL_127
     Module: Onboarding
     Feature: track cookie changes for profile picture upload modal using invalid credentials
     Title: Verify behavior of profile picture upload modal during attempts to track cookie changes using invalid credentials
@@ -1527,9 +1527,9 @@ def test_ts_sel_127_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_128_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_verify_network_callback_with_multiple_simultaneous_submits():
+def test_tc_sel_128_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_verify_network_callback_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_128
+    ID: TC_SEL_128
     Module: Settings
     Feature: verify network callback for emergency contact name entry with multiple simultaneous submits
     Title: Verify behavior of emergency contact name entry during attempts to verify network callback with multiple simultaneous submits
@@ -1539,9 +1539,9 @@ def test_ts_sel_128_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_129_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_verify_layout_rendering_when_cookies_are_blocked():
+def test_tc_sel_129_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_verify_layout_rendering_when_cookies_are_blocked():
     """
-    ID: TS_SEL_129
+    ID: TC_SEL_129
     Module: Settings
     Feature: verify layout rendering for emergency trigger swipe action button when cookies are blocked
     Title: Verify behavior of emergency trigger swipe action button during attempts to verify layout rendering when cookies are blocked
@@ -1551,9 +1551,9 @@ def test_ts_sel_129_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_130_verify_behavior_of_change_password_input_validation_during_attempts_to_validate_regex_matching_under_local_storage_quota_limits():
+def test_tc_sel_130_verify_behavior_of_change_password_input_validation_during_attempts_to_validate_regex_matching_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_130
+    ID: TC_SEL_130
     Module: Onboarding
     Feature: validate regex matching for change password input validation under local storage quota limits
     Title: Verify behavior of change password input validation during attempts to validate regex matching under local storage quota limits
@@ -1563,9 +1563,9 @@ def test_ts_sel_130_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_131_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_measure_execution_time_when_database_sync_is_delayed():
+def test_tc_sel_131_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_measure_execution_time_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_131
+    ID: TC_SEL_131
     Module: Settings
     Feature: measure execution time for dark mode theme layout colors when database sync is delayed
     Title: Verify behavior of dark mode theme layout colors during attempts to measure execution time when database sync is delayed
@@ -1575,9 +1575,9 @@ def test_ts_sel_131_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_132_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_audit_keyboard_navigation_with_custom_theme_configurations():
+def test_tc_sel_132_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_audit_keyboard_navigation_with_custom_theme_configurations():
     """
-    ID: TS_SEL_132
+    ID: TC_SEL_132
     Module: AIChat
     Feature: audit keyboard navigation for help center search suggestions dropdown with custom theme configurations
     Title: Verify behavior of help center search suggestions dropdown during attempts to audit keyboard navigation with custom theme configurations
@@ -1587,9 +1587,9 @@ def test_ts_sel_132_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_133_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_check_tab_indexing_with_empty_values():
+def test_tc_sel_133_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_check_tab_indexing_with_empty_values():
     """
-    ID: TS_SEL_133
+    ID: TC_SEL_133
     Module: Dashboard
     Feature: check tab indexing for dashboard widget grid layout with empty values
     Title: Verify behavior of dashboard widget grid layout during attempts to check tab indexing with empty values
@@ -1599,9 +1599,9 @@ def test_ts_sel_133_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_134_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_process_submission_after_session_token_expiration():
+def test_tc_sel_134_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_process_submission_after_session_token_expiration():
     """
-    ID: TS_SEL_134
+    ID: TC_SEL_134
     Module: Settings
     Feature: process submission for accessibility keyboard focus indicators after session token expiration
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to process submission after session token expiration
@@ -1611,9 +1611,9 @@ def test_ts_sel_134_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_135_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_log_telemetry_events_for_assistive_screen_readers():
+def test_tc_sel_135_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_log_telemetry_events_for_assistive_screen_readers():
     """
-    ID: TS_SEL_135
+    ID: TC_SEL_135
     Module: Settings
     Feature: log telemetry events for terms of service scroll validation for assistive screen readers
     Title: Verify behavior of terms of service scroll validation during attempts to log telemetry events for assistive screen readers
@@ -1623,9 +1623,9 @@ def test_ts_sel_135_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_136_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_inspect_download_stream_using_cross_site_scripting_strings():
+def test_tc_sel_136_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_inspect_download_stream_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_136
+    ID: TC_SEL_136
     Module: Dashboard
     Feature: inspect download stream for navigation drawer menu items using cross-site scripting strings
     Title: Verify behavior of navigation drawer menu items during attempts to inspect download stream using cross-site scripting strings
@@ -1635,9 +1635,9 @@ def test_ts_sel_136_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_137_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_check_boundary_limits_on_narrow_mobile_layout_viewport():
+def test_tc_sel_137_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_check_boundary_limits_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_137
+    ID: TC_SEL_137
     Module: Settings
     Feature: check boundary limits for offline mode status warning banner on narrow mobile layout viewport
     Title: Verify behavior of offline mode status warning banner during attempts to check boundary limits on narrow mobile layout viewport
@@ -1647,9 +1647,9 @@ def test_ts_sel_137_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_138_verify_behavior_of_session_token_refresh_process_during_attempts_to_inspect_modal_overlays_during_server_database_failover():
+def test_tc_sel_138_verify_behavior_of_session_token_refresh_process_during_attempts_to_inspect_modal_overlays_during_server_database_failover():
     """
-    ID: TS_SEL_138
+    ID: TC_SEL_138
     Module: Authentication
     Feature: inspect modal overlays for session token refresh process during server database failover
     Title: Verify behavior of session token refresh process during attempts to inspect modal overlays during server database failover
@@ -1659,9 +1659,9 @@ def test_ts_sel_138_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_139_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_validate_text_alignment_when_file_size_exceeds_limit():
+def test_tc_sel_139_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_validate_text_alignment_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_139
+    ID: TC_SEL_139
     Module: Dashboard
     Feature: validate text alignment for quick actions shortcuts bar when file size exceeds limit
     Title: Verify behavior of quick actions shortcuts bar during attempts to validate text alignment when file size exceeds limit
@@ -1671,9 +1671,9 @@ def test_ts_sel_139_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_140_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_ensure_contrast_ratios_when_network_speed_is_throttled():
+def test_tc_sel_140_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_ensure_contrast_ratios_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_140
+    ID: TC_SEL_140
     Module: Settings
     Feature: ensure contrast ratios for local storage synchronization queue when network speed is throttled
     Title: Verify behavior of local storage synchronization queue during attempts to ensure contrast ratios when network speed is throttled
@@ -1683,9 +1683,9 @@ def test_ts_sel_140_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_141_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_evaluate_text_wrapping_on_high_resolution_displays():
+def test_tc_sel_141_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_evaluate_text_wrapping_on_high_resolution_displays():
     """
-    ID: TS_SEL_141
+    ID: TC_SEL_141
     Module: Onboarding
     Feature: evaluate text wrapping for user deletion confirmation popup on high resolution displays
     Title: Verify behavior of user deletion confirmation popup during attempts to evaluate text wrapping on high resolution displays
@@ -1695,9 +1695,9 @@ def test_ts_sel_141_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_142_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_reset_options_during_api_gateway_timeout():
+def test_tc_sel_142_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_reset_options_during_api_gateway_timeout():
     """
-    ID: TS_SEL_142
+    ID: TC_SEL_142
     Module: Settings
     Feature: reset options for onboarding assessment launch button during api gateway timeout
     Title: Verify behavior of onboarding assessment launch button during attempts to reset options during api gateway timeout
@@ -1707,9 +1707,9 @@ def test_ts_sel_142_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_143_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_check_storage_updates_with_browser_extensions_active():
+def test_tc_sel_143_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_check_storage_updates_with_browser_extensions_active():
     """
-    ID: TS_SEL_143
+    ID: TC_SEL_143
     Module: Settings
     Feature: check storage updates for captcha validation image challenge with browser extensions active
     Title: Verify behavior of captcha validation image challenge during attempts to check storage updates with browser extensions active
@@ -1719,9 +1719,9 @@ def test_ts_sel_143_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_144_verify_behavior_of_api_error_toast_notifications_during_attempts_to_test_tooltips_display_for_special_character_strings():
+def test_tc_sel_144_verify_behavior_of_api_error_toast_notifications_during_attempts_to_test_tooltips_display_for_special_character_strings():
     """
-    ID: TS_SEL_144
+    ID: TC_SEL_144
     Module: Settings
     Feature: test tooltips display for api error toast notifications for special character strings
     Title: Verify behavior of api error toast notifications during attempts to test tooltips display for special character strings
@@ -1731,9 +1731,9 @@ def test_ts_sel_144_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_145_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_inspect_click_handlers_after_five_minutes_of_inactivity():
+def test_tc_sel_145_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_inspect_click_handlers_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_145
+    ID: TC_SEL_145
     Module: Settings
     Feature: inspect click handlers for questionnaire save progress state after five minutes of inactivity
     Title: Verify behavior of questionnaire save progress state during attempts to inspect click handlers after five minutes of inactivity
@@ -1743,9 +1743,9 @@ def test_ts_sel_145_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_146_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_audit_focus_states_using_invalid_credentials():
+def test_tc_sel_146_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_audit_focus_states_using_invalid_credentials():
     """
-    ID: TS_SEL_146
+    ID: TC_SEL_146
     Module: Settings
     Feature: audit focus states for password visibility toggle switch using invalid credentials
     Title: Verify behavior of password visibility toggle switch during attempts to audit focus states using invalid credentials
@@ -1755,9 +1755,9 @@ def test_ts_sel_146_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_147_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_validate_fields_with_multiple_simultaneous_submits():
+def test_tc_sel_147_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_validate_fields_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_147
+    ID: TC_SEL_147
     Module: Onboarding
     Feature: validate fields for image crop zoom controls with multiple simultaneous submits
     Title: Verify behavior of image crop zoom controls during attempts to validate fields with multiple simultaneous submits
@@ -1767,9 +1767,9 @@ def test_ts_sel_147_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_148_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_track_cookie_changes_when_cookies_are_blocked():
+def test_tc_sel_148_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_track_cookie_changes_when_cookies_are_blocked():
     """
-    ID: TS_SEL_148
+    ID: TC_SEL_148
     Module: Settings
     Feature: track cookie changes for questionnaire submit assessment confirmation when cookies are blocked
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to track cookie changes when cookies are blocked
@@ -1779,9 +1779,9 @@ def test_ts_sel_148_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_149_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_verify_network_callback_under_local_storage_quota_limits():
+def test_tc_sel_149_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_verify_network_callback_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_149
+    ID: TC_SEL_149
     Module: Authentication
     Feature: verify network callback for cookie consent policy banner under local storage quota limits
     Title: Verify behavior of cookie consent policy banner during attempts to verify network callback under local storage quota limits
@@ -1791,9 +1791,9 @@ def test_ts_sel_149_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_150_verify_behavior_of_login_input_fields_during_attempts_to_verify_layout_rendering_when_database_sync_is_delayed():
+def test_tc_sel_150_verify_behavior_of_login_input_fields_during_attempts_to_verify_layout_rendering_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_150
+    ID: TC_SEL_150
     Module: Authentication
     Feature: verify layout rendering for login input fields when database sync is delayed
     Title: Verify behavior of login input fields during attempts to verify layout rendering when database sync is delayed
@@ -1803,9 +1803,9 @@ def test_ts_sel_150_verify_behavior_of_login_input_fields_during_attempts_to_ver
     # Simulated execution logic
     assert True
 
-def test_ts_sel_151_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_validate_regex_matching_with_custom_theme_configurations():
+def test_tc_sel_151_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_validate_regex_matching_with_custom_theme_configurations():
     """
-    ID: TS_SEL_151
+    ID: TC_SEL_151
     Module: BreathingExercises
     Feature: validate regex matching for breathing exercise custom configuration with custom theme configurations
     Title: Verify behavior of breathing exercise custom configuration during attempts to validate regex matching with custom theme configurations
@@ -1815,9 +1815,9 @@ def test_ts_sel_151_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_152_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_measure_execution_time_with_empty_values():
+def test_tc_sel_152_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_measure_execution_time_with_empty_values():
     """
-    ID: TS_SEL_152
+    ID: TC_SEL_152
     Module: Authentication
     Feature: measure execution time for multi-tab login state sync with empty values
     Title: Verify behavior of multi-tab login state sync during attempts to measure execution time with empty values
@@ -1827,9 +1827,9 @@ def test_ts_sel_152_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_153_verify_behavior_of_registration_email_validation_during_attempts_to_audit_keyboard_navigation_after_session_token_expiration():
+def test_tc_sel_153_verify_behavior_of_registration_email_validation_during_attempts_to_audit_keyboard_navigation_after_session_token_expiration():
     """
-    ID: TS_SEL_153
+    ID: TC_SEL_153
     Module: Authentication
     Feature: audit keyboard navigation for registration email validation after session token expiration
     Title: Verify behavior of registration email validation during attempts to audit keyboard navigation after session token expiration
@@ -1839,9 +1839,9 @@ def test_ts_sel_153_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_154_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_check_tab_indexing_for_assistive_screen_readers():
+def test_tc_sel_154_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_check_tab_indexing_for_assistive_screen_readers():
     """
-    ID: TS_SEL_154
+    ID: TC_SEL_154
     Module: BreathingExercises
     Feature: check tab indexing for breathing orb size scale animation for assistive screen readers
     Title: Verify behavior of breathing orb size scale animation during attempts to check tab indexing for assistive screen readers
@@ -1851,9 +1851,9 @@ def test_ts_sel_154_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_155_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_process_submission_using_cross_site_scripting_strings():
+def test_tc_sel_155_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_process_submission_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_155
+    ID: TC_SEL_155
     Module: Authentication
     Feature: process submission for browser history back navigation behavior using cross-site scripting strings
     Title: Verify behavior of browser history back navigation behavior during attempts to process submission using cross-site scripting strings
@@ -1863,9 +1863,9 @@ def test_ts_sel_155_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_156_verify_behavior_of_forgot_password_security_link_during_attempts_to_log_telemetry_events_on_narrow_mobile_layout_viewport():
+def test_tc_sel_156_verify_behavior_of_forgot_password_security_link_during_attempts_to_log_telemetry_events_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_156
+    ID: TC_SEL_156
     Module: Authentication
     Feature: log telemetry events for forgot password security link on narrow mobile layout viewport
     Title: Verify behavior of forgot password security link during attempts to log telemetry events on narrow mobile layout viewport
@@ -1875,9 +1875,9 @@ def test_ts_sel_156_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_157_verify_behavior_of_breathing_history_table_paging_during_attempts_to_inspect_download_stream_during_server_database_failover():
+def test_tc_sel_157_verify_behavior_of_breathing_history_table_paging_during_attempts_to_inspect_download_stream_during_server_database_failover():
     """
-    ID: TS_SEL_157
+    ID: TC_SEL_157
     Module: BreathingExercises
     Feature: inspect download stream for breathing history table paging during server database failover
     Title: Verify behavior of breathing history table paging during attempts to inspect download stream during server database failover
@@ -1887,9 +1887,9 @@ def test_ts_sel_157_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_158_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_check_boundary_limits_when_file_size_exceeds_limit():
+def test_tc_sel_158_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_check_boundary_limits_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_158
+    ID: TC_SEL_158
     Module: Dashboard
     Feature: check boundary limits for dashboard live graph animation when file size exceeds limit
     Title: Verify behavior of dashboard live graph animation during attempts to check boundary limits when file size exceeds limit
@@ -1899,9 +1899,9 @@ def test_ts_sel_158_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_159_verify_behavior_of_reset_password_form_submission_during_attempts_to_inspect_modal_overlays_when_network_speed_is_throttled():
+def test_tc_sel_159_verify_behavior_of_reset_password_form_submission_during_attempts_to_inspect_modal_overlays_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_159
+    ID: TC_SEL_159
     Module: Authentication
     Feature: inspect modal overlays for reset password form submission when network speed is throttled
     Title: Verify behavior of reset password form submission during attempts to inspect modal overlays when network speed is throttled
@@ -1911,9 +1911,9 @@ def test_ts_sel_159_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_160_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_validate_text_alignment_on_high_resolution_displays():
+def test_tc_sel_160_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_validate_text_alignment_on_high_resolution_displays():
     """
-    ID: TS_SEL_160
+    ID: TC_SEL_160
     Module: SymptomTracking
     Feature: validate text alignment for symptom log severity score slider on high resolution displays
     Title: Verify behavior of symptom log severity score slider during attempts to validate text alignment on high resolution displays
@@ -1923,9 +1923,9 @@ def test_ts_sel_160_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_161_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_ensure_contrast_ratios_during_api_gateway_timeout():
+def test_tc_sel_161_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_ensure_contrast_ratios_during_api_gateway_timeout():
     """
-    ID: TS_SEL_161
+    ID: TC_SEL_161
     Module: SymptomTracking
     Feature: ensure contrast ratios for symptom history calendar grid view during api gateway timeout
     Title: Verify behavior of symptom history calendar grid view during attempts to ensure contrast ratios during api gateway timeout
@@ -1935,9 +1935,9 @@ def test_ts_sel_161_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_162_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_evaluate_text_wrapping_with_browser_extensions_active():
+def test_tc_sel_162_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_evaluate_text_wrapping_with_browser_extensions_active():
     """
-    ID: TS_SEL_162
+    ID: TC_SEL_162
     Module: Authentication
     Feature: evaluate text wrapping for OTP verification screen timer with browser extensions active
     Title: Verify behavior of OTP verification screen timer during attempts to evaluate text wrapping with browser extensions active
@@ -1947,9 +1947,9 @@ def test_ts_sel_162_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_163_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_reset_options_for_special_character_strings():
+def test_tc_sel_163_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_reset_options_for_special_character_strings():
     """
-    ID: TS_SEL_163
+    ID: TC_SEL_163
     Module: SymptomTracking
     Feature: reset options for symptom log trigger selection checkboxes for special character strings
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to reset options for special character strings
@@ -1959,9 +1959,9 @@ def test_ts_sel_163_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_164_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_check_storage_updates_after_five_minutes_of_inactivity():
+def test_tc_sel_164_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_check_storage_updates_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_164
+    ID: TC_SEL_164
     Module: SymptomTracking
     Feature: check storage updates for dosage calculator slider controls after five minutes of inactivity
     Title: Verify behavior of dosage calculator slider controls during attempts to check storage updates after five minutes of inactivity
@@ -1971,9 +1971,9 @@ def test_ts_sel_164_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_165_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_test_tooltips_display_using_invalid_credentials():
+def test_tc_sel_165_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_test_tooltips_display_using_invalid_credentials():
     """
-    ID: TS_SEL_165
+    ID: TC_SEL_165
     Module: Authentication
     Feature: test tooltips display for remember me cookie setting using invalid credentials
     Title: Verify behavior of remember me cookie setting during attempts to test tooltips display using invalid credentials
@@ -1983,9 +1983,9 @@ def test_ts_sel_165_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_166_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_inspect_click_handlers_with_multiple_simultaneous_submits():
+def test_tc_sel_166_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_inspect_click_handlers_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_166
+    ID: TC_SEL_166
     Module: ClinicalReports
     Feature: inspect click handlers for clinical PDF report print dialog with multiple simultaneous submits
     Title: Verify behavior of clinical PDF report print dialog during attempts to inspect click handlers with multiple simultaneous submits
@@ -1995,9 +1995,9 @@ def test_ts_sel_166_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_167_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_audit_focus_states_when_cookies_are_blocked():
+def test_tc_sel_167_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_audit_focus_states_when_cookies_are_blocked():
     """
-    ID: TS_SEL_167
+    ID: TC_SEL_167
     Module: SymptomTracking
     Feature: audit focus states for medicine entry list scroll position when cookies are blocked
     Title: Verify behavior of medicine entry list scroll position during attempts to audit focus states when cookies are blocked
@@ -2007,9 +2007,9 @@ def test_ts_sel_167_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_168_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_validate_fields_under_local_storage_quota_limits():
+def test_tc_sel_168_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_validate_fields_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_168
+    ID: TC_SEL_168
     Module: Authentication
     Feature: validate fields for session timeout idle alert under local storage quota limits
     Title: Verify behavior of session timeout idle alert during attempts to validate fields under local storage quota limits
@@ -2019,9 +2019,9 @@ def test_ts_sel_168_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_169_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_track_cookie_changes_when_database_sync_is_delayed():
+def test_tc_sel_169_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_track_cookie_changes_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_169
+    ID: TC_SEL_169
     Module: ClinicalReports
     Feature: track cookie changes for doctor search filter dropdown when database sync is delayed
     Title: Verify behavior of doctor search filter dropdown during attempts to track cookie changes when database sync is delayed
@@ -2031,9 +2031,9 @@ def test_ts_sel_169_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_170_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_verify_network_callback_with_custom_theme_configurations():
+def test_tc_sel_170_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_verify_network_callback_with_custom_theme_configurations():
     """
-    ID: TS_SEL_170
+    ID: TC_SEL_170
     Module: ClinicalReports
     Feature: verify network callback for pulmonologist appointment booking slot selection with custom theme configurations
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to verify network callback with custom theme configurations
@@ -2043,9 +2043,9 @@ def test_ts_sel_170_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_171_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_verify_layout_rendering_with_empty_values():
+def test_tc_sel_171_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_verify_layout_rendering_with_empty_values():
     """
-    ID: TS_SEL_171
+    ID: TC_SEL_171
     Module: Authentication
     Feature: verify layout rendering for logout redirect landing page with empty values
     Title: Verify behavior of logout redirect landing page during attempts to verify layout rendering with empty values
@@ -2055,9 +2055,9 @@ def test_ts_sel_171_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_172_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_validate_regex_matching_after_session_token_expiration():
+def test_tc_sel_172_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_validate_regex_matching_after_session_token_expiration():
     """
-    ID: TS_SEL_172
+    ID: TC_SEL_172
     Module: AIChat
     Feature: validate regex matching for ai chat message input box after session token expiration
     Title: Verify behavior of ai chat message input box during attempts to validate regex matching after session token expiration
@@ -2067,9 +2067,9 @@ def test_ts_sel_172_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_173_verify_behavior_of_notification_preferences_toggles_during_attempts_to_measure_execution_time_for_assistive_screen_readers():
+def test_tc_sel_173_verify_behavior_of_notification_preferences_toggles_during_attempts_to_measure_execution_time_for_assistive_screen_readers():
     """
-    ID: TS_SEL_173
+    ID: TC_SEL_173
     Module: Settings
     Feature: measure execution time for notification preferences toggles for assistive screen readers
     Title: Verify behavior of notification preferences toggles during attempts to measure execution time for assistive screen readers
@@ -2079,9 +2079,9 @@ def test_ts_sel_173_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_174_verify_behavior_of_profile_information_form_fields_during_attempts_to_audit_keyboard_navigation_using_cross_site_scripting_strings():
+def test_tc_sel_174_verify_behavior_of_profile_information_form_fields_during_attempts_to_audit_keyboard_navigation_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_174
+    ID: TC_SEL_174
     Module: Onboarding
     Feature: audit keyboard navigation for profile information form fields using cross-site scripting strings
     Title: Verify behavior of profile information form fields during attempts to audit keyboard navigation using cross-site scripting strings
@@ -2091,9 +2091,9 @@ def test_ts_sel_174_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_175_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_check_tab_indexing_on_narrow_mobile_layout_viewport():
+def test_tc_sel_175_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_check_tab_indexing_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_175
+    ID: TC_SEL_175
     Module: AIChat
     Feature: check tab indexing for ai chat markdown rendering structure on narrow mobile layout viewport
     Title: Verify behavior of ai chat markdown rendering structure during attempts to check tab indexing on narrow mobile layout viewport
@@ -2103,9 +2103,9 @@ def test_ts_sel_175_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_176_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_process_submission_during_server_database_failover():
+def test_tc_sel_176_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_process_submission_during_server_database_failover():
     """
-    ID: TS_SEL_176
+    ID: TC_SEL_176
     Module: ClinicalReports
     Feature: process submission for clinical recommendations expansion accordion during server database failover
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to process submission during server database failover
@@ -2115,9 +2115,9 @@ def test_ts_sel_176_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_177_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_log_telemetry_events_when_file_size_exceeds_limit():
+def test_tc_sel_177_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_log_telemetry_events_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_177
+    ID: TC_SEL_177
     Module: Onboarding
     Feature: log telemetry events for profile picture upload modal when file size exceeds limit
     Title: Verify behavior of profile picture upload modal during attempts to log telemetry events when file size exceeds limit
@@ -2127,9 +2127,9 @@ def test_ts_sel_177_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_178_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_inspect_download_stream_when_network_speed_is_throttled():
+def test_tc_sel_178_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_inspect_download_stream_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_178
+    ID: TC_SEL_178
     Module: Settings
     Feature: inspect download stream for emergency contact name entry when network speed is throttled
     Title: Verify behavior of emergency contact name entry during attempts to inspect download stream when network speed is throttled
@@ -2139,9 +2139,9 @@ def test_ts_sel_178_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_179_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_check_boundary_limits_on_high_resolution_displays():
+def test_tc_sel_179_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_check_boundary_limits_on_high_resolution_displays():
     """
-    ID: TS_SEL_179
+    ID: TC_SEL_179
     Module: Settings
     Feature: check boundary limits for emergency trigger swipe action button on high resolution displays
     Title: Verify behavior of emergency trigger swipe action button during attempts to check boundary limits on high resolution displays
@@ -2151,9 +2151,9 @@ def test_ts_sel_179_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_180_verify_behavior_of_change_password_input_validation_during_attempts_to_inspect_modal_overlays_during_api_gateway_timeout():
+def test_tc_sel_180_verify_behavior_of_change_password_input_validation_during_attempts_to_inspect_modal_overlays_during_api_gateway_timeout():
     """
-    ID: TS_SEL_180
+    ID: TC_SEL_180
     Module: Onboarding
     Feature: inspect modal overlays for change password input validation during api gateway timeout
     Title: Verify behavior of change password input validation during attempts to inspect modal overlays during api gateway timeout
@@ -2163,9 +2163,9 @@ def test_ts_sel_180_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_181_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_validate_text_alignment_with_browser_extensions_active():
+def test_tc_sel_181_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_validate_text_alignment_with_browser_extensions_active():
     """
-    ID: TS_SEL_181
+    ID: TC_SEL_181
     Module: Settings
     Feature: validate text alignment for dark mode theme layout colors with browser extensions active
     Title: Verify behavior of dark mode theme layout colors during attempts to validate text alignment with browser extensions active
@@ -2175,9 +2175,9 @@ def test_ts_sel_181_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_182_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_ensure_contrast_ratios_for_special_character_strings():
+def test_tc_sel_182_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_ensure_contrast_ratios_for_special_character_strings():
     """
-    ID: TS_SEL_182
+    ID: TC_SEL_182
     Module: AIChat
     Feature: ensure contrast ratios for help center search suggestions dropdown for special character strings
     Title: Verify behavior of help center search suggestions dropdown during attempts to ensure contrast ratios for special character strings
@@ -2187,9 +2187,9 @@ def test_ts_sel_182_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_183_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_evaluate_text_wrapping_after_five_minutes_of_inactivity():
+def test_tc_sel_183_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_evaluate_text_wrapping_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_183
+    ID: TC_SEL_183
     Module: Dashboard
     Feature: evaluate text wrapping for dashboard widget grid layout after five minutes of inactivity
     Title: Verify behavior of dashboard widget grid layout during attempts to evaluate text wrapping after five minutes of inactivity
@@ -2199,9 +2199,9 @@ def test_ts_sel_183_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_184_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_reset_options_using_invalid_credentials():
+def test_tc_sel_184_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_reset_options_using_invalid_credentials():
     """
-    ID: TS_SEL_184
+    ID: TC_SEL_184
     Module: Settings
     Feature: reset options for accessibility keyboard focus indicators using invalid credentials
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to reset options using invalid credentials
@@ -2211,9 +2211,9 @@ def test_ts_sel_184_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_185_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_check_storage_updates_with_multiple_simultaneous_submits():
+def test_tc_sel_185_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_check_storage_updates_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_185
+    ID: TC_SEL_185
     Module: Settings
     Feature: check storage updates for terms of service scroll validation with multiple simultaneous submits
     Title: Verify behavior of terms of service scroll validation during attempts to check storage updates with multiple simultaneous submits
@@ -2223,9 +2223,9 @@ def test_ts_sel_185_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_186_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_test_tooltips_display_when_cookies_are_blocked():
+def test_tc_sel_186_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_test_tooltips_display_when_cookies_are_blocked():
     """
-    ID: TS_SEL_186
+    ID: TC_SEL_186
     Module: Dashboard
     Feature: test tooltips display for navigation drawer menu items when cookies are blocked
     Title: Verify behavior of navigation drawer menu items during attempts to test tooltips display when cookies are blocked
@@ -2235,9 +2235,9 @@ def test_ts_sel_186_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_187_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_inspect_click_handlers_under_local_storage_quota_limits():
+def test_tc_sel_187_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_inspect_click_handlers_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_187
+    ID: TC_SEL_187
     Module: Settings
     Feature: inspect click handlers for offline mode status warning banner under local storage quota limits
     Title: Verify behavior of offline mode status warning banner during attempts to inspect click handlers under local storage quota limits
@@ -2247,9 +2247,9 @@ def test_ts_sel_187_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_188_verify_behavior_of_session_token_refresh_process_during_attempts_to_audit_focus_states_when_database_sync_is_delayed():
+def test_tc_sel_188_verify_behavior_of_session_token_refresh_process_during_attempts_to_audit_focus_states_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_188
+    ID: TC_SEL_188
     Module: Authentication
     Feature: audit focus states for session token refresh process when database sync is delayed
     Title: Verify behavior of session token refresh process during attempts to audit focus states when database sync is delayed
@@ -2259,9 +2259,9 @@ def test_ts_sel_188_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_189_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_validate_fields_with_custom_theme_configurations():
+def test_tc_sel_189_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_validate_fields_with_custom_theme_configurations():
     """
-    ID: TS_SEL_189
+    ID: TC_SEL_189
     Module: Dashboard
     Feature: validate fields for quick actions shortcuts bar with custom theme configurations
     Title: Verify behavior of quick actions shortcuts bar during attempts to validate fields with custom theme configurations
@@ -2271,9 +2271,9 @@ def test_ts_sel_189_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_190_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_track_cookie_changes_with_empty_values():
+def test_tc_sel_190_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_track_cookie_changes_with_empty_values():
     """
-    ID: TS_SEL_190
+    ID: TC_SEL_190
     Module: Settings
     Feature: track cookie changes for local storage synchronization queue with empty values
     Title: Verify behavior of local storage synchronization queue during attempts to track cookie changes with empty values
@@ -2283,9 +2283,9 @@ def test_ts_sel_190_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_191_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_verify_network_callback_after_session_token_expiration():
+def test_tc_sel_191_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_verify_network_callback_after_session_token_expiration():
     """
-    ID: TS_SEL_191
+    ID: TC_SEL_191
     Module: Onboarding
     Feature: verify network callback for user deletion confirmation popup after session token expiration
     Title: Verify behavior of user deletion confirmation popup during attempts to verify network callback after session token expiration
@@ -2295,9 +2295,9 @@ def test_ts_sel_191_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_192_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_verify_layout_rendering_for_assistive_screen_readers():
+def test_tc_sel_192_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_verify_layout_rendering_for_assistive_screen_readers():
     """
-    ID: TS_SEL_192
+    ID: TC_SEL_192
     Module: Settings
     Feature: verify layout rendering for onboarding assessment launch button for assistive screen readers
     Title: Verify behavior of onboarding assessment launch button during attempts to verify layout rendering for assistive screen readers
@@ -2307,9 +2307,9 @@ def test_ts_sel_192_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_193_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_validate_regex_matching_using_cross_site_scripting_strings():
+def test_tc_sel_193_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_validate_regex_matching_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_193
+    ID: TC_SEL_193
     Module: Settings
     Feature: validate regex matching for captcha validation image challenge using cross-site scripting strings
     Title: Verify behavior of captcha validation image challenge during attempts to validate regex matching using cross-site scripting strings
@@ -2319,9 +2319,9 @@ def test_ts_sel_193_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_194_verify_behavior_of_api_error_toast_notifications_during_attempts_to_measure_execution_time_on_narrow_mobile_layout_viewport():
+def test_tc_sel_194_verify_behavior_of_api_error_toast_notifications_during_attempts_to_measure_execution_time_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_194
+    ID: TC_SEL_194
     Module: Settings
     Feature: measure execution time for api error toast notifications on narrow mobile layout viewport
     Title: Verify behavior of api error toast notifications during attempts to measure execution time on narrow mobile layout viewport
@@ -2331,9 +2331,9 @@ def test_ts_sel_194_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_195_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_audit_keyboard_navigation_during_server_database_failover():
+def test_tc_sel_195_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_audit_keyboard_navigation_during_server_database_failover():
     """
-    ID: TS_SEL_195
+    ID: TC_SEL_195
     Module: Settings
     Feature: audit keyboard navigation for questionnaire save progress state during server database failover
     Title: Verify behavior of questionnaire save progress state during attempts to audit keyboard navigation during server database failover
@@ -2343,9 +2343,9 @@ def test_ts_sel_195_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_196_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_check_tab_indexing_when_file_size_exceeds_limit():
+def test_tc_sel_196_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_check_tab_indexing_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_196
+    ID: TC_SEL_196
     Module: Settings
     Feature: check tab indexing for password visibility toggle switch when file size exceeds limit
     Title: Verify behavior of password visibility toggle switch during attempts to check tab indexing when file size exceeds limit
@@ -2355,9 +2355,9 @@ def test_ts_sel_196_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_197_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_process_submission_when_network_speed_is_throttled():
+def test_tc_sel_197_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_process_submission_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_197
+    ID: TC_SEL_197
     Module: Onboarding
     Feature: process submission for image crop zoom controls when network speed is throttled
     Title: Verify behavior of image crop zoom controls during attempts to process submission when network speed is throttled
@@ -2367,9 +2367,9 @@ def test_ts_sel_197_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_198_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_log_telemetry_events_on_high_resolution_displays():
+def test_tc_sel_198_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_log_telemetry_events_on_high_resolution_displays():
     """
-    ID: TS_SEL_198
+    ID: TC_SEL_198
     Module: Settings
     Feature: log telemetry events for questionnaire submit assessment confirmation on high resolution displays
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to log telemetry events on high resolution displays
@@ -2379,9 +2379,9 @@ def test_ts_sel_198_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_199_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_inspect_download_stream_during_api_gateway_timeout():
+def test_tc_sel_199_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_inspect_download_stream_during_api_gateway_timeout():
     """
-    ID: TS_SEL_199
+    ID: TC_SEL_199
     Module: Authentication
     Feature: inspect download stream for cookie consent policy banner during api gateway timeout
     Title: Verify behavior of cookie consent policy banner during attempts to inspect download stream during api gateway timeout
@@ -2391,9 +2391,9 @@ def test_ts_sel_199_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_200_verify_behavior_of_login_input_fields_during_attempts_to_check_boundary_limits_with_browser_extensions_active():
+def test_tc_sel_200_verify_behavior_of_login_input_fields_during_attempts_to_check_boundary_limits_with_browser_extensions_active():
     """
-    ID: TS_SEL_200
+    ID: TC_SEL_200
     Module: Authentication
     Feature: check boundary limits for login input fields with browser extensions active
     Title: Verify behavior of login input fields during attempts to check boundary limits with browser extensions active
@@ -2403,9 +2403,9 @@ def test_ts_sel_200_verify_behavior_of_login_input_fields_during_attempts_to_che
     # Simulated execution logic
     assert True
 
-def test_ts_sel_201_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_inspect_modal_overlays_for_special_character_strings():
+def test_tc_sel_201_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_inspect_modal_overlays_for_special_character_strings():
     """
-    ID: TS_SEL_201
+    ID: TC_SEL_201
     Module: BreathingExercises
     Feature: inspect modal overlays for breathing exercise custom configuration for special character strings
     Title: Verify behavior of breathing exercise custom configuration during attempts to inspect modal overlays for special character strings
@@ -2415,9 +2415,9 @@ def test_ts_sel_201_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_202_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_validate_text_alignment_after_five_minutes_of_inactivity():
+def test_tc_sel_202_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_validate_text_alignment_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_202
+    ID: TC_SEL_202
     Module: Authentication
     Feature: validate text alignment for multi-tab login state sync after five minutes of inactivity
     Title: Verify behavior of multi-tab login state sync during attempts to validate text alignment after five minutes of inactivity
@@ -2427,9 +2427,9 @@ def test_ts_sel_202_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_203_verify_behavior_of_registration_email_validation_during_attempts_to_ensure_contrast_ratios_using_invalid_credentials():
+def test_tc_sel_203_verify_behavior_of_registration_email_validation_during_attempts_to_ensure_contrast_ratios_using_invalid_credentials():
     """
-    ID: TS_SEL_203
+    ID: TC_SEL_203
     Module: Authentication
     Feature: ensure contrast ratios for registration email validation using invalid credentials
     Title: Verify behavior of registration email validation during attempts to ensure contrast ratios using invalid credentials
@@ -2439,9 +2439,9 @@ def test_ts_sel_203_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_204_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_evaluate_text_wrapping_with_multiple_simultaneous_submits():
+def test_tc_sel_204_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_evaluate_text_wrapping_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_204
+    ID: TC_SEL_204
     Module: BreathingExercises
     Feature: evaluate text wrapping for breathing orb size scale animation with multiple simultaneous submits
     Title: Verify behavior of breathing orb size scale animation during attempts to evaluate text wrapping with multiple simultaneous submits
@@ -2451,9 +2451,9 @@ def test_ts_sel_204_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_205_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_reset_options_when_cookies_are_blocked():
+def test_tc_sel_205_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_reset_options_when_cookies_are_blocked():
     """
-    ID: TS_SEL_205
+    ID: TC_SEL_205
     Module: Authentication
     Feature: reset options for browser history back navigation behavior when cookies are blocked
     Title: Verify behavior of browser history back navigation behavior during attempts to reset options when cookies are blocked
@@ -2463,9 +2463,9 @@ def test_ts_sel_205_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_206_verify_behavior_of_forgot_password_security_link_during_attempts_to_check_storage_updates_under_local_storage_quota_limits():
+def test_tc_sel_206_verify_behavior_of_forgot_password_security_link_during_attempts_to_check_storage_updates_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_206
+    ID: TC_SEL_206
     Module: Authentication
     Feature: check storage updates for forgot password security link under local storage quota limits
     Title: Verify behavior of forgot password security link during attempts to check storage updates under local storage quota limits
@@ -2475,9 +2475,9 @@ def test_ts_sel_206_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_207_verify_behavior_of_breathing_history_table_paging_during_attempts_to_test_tooltips_display_when_database_sync_is_delayed():
+def test_tc_sel_207_verify_behavior_of_breathing_history_table_paging_during_attempts_to_test_tooltips_display_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_207
+    ID: TC_SEL_207
     Module: BreathingExercises
     Feature: test tooltips display for breathing history table paging when database sync is delayed
     Title: Verify behavior of breathing history table paging during attempts to test tooltips display when database sync is delayed
@@ -2487,9 +2487,9 @@ def test_ts_sel_207_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_208_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_inspect_click_handlers_with_custom_theme_configurations():
+def test_tc_sel_208_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_inspect_click_handlers_with_custom_theme_configurations():
     """
-    ID: TS_SEL_208
+    ID: TC_SEL_208
     Module: Dashboard
     Feature: inspect click handlers for dashboard live graph animation with custom theme configurations
     Title: Verify behavior of dashboard live graph animation during attempts to inspect click handlers with custom theme configurations
@@ -2499,9 +2499,9 @@ def test_ts_sel_208_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_209_verify_behavior_of_reset_password_form_submission_during_attempts_to_audit_focus_states_with_empty_values():
+def test_tc_sel_209_verify_behavior_of_reset_password_form_submission_during_attempts_to_audit_focus_states_with_empty_values():
     """
-    ID: TS_SEL_209
+    ID: TC_SEL_209
     Module: Authentication
     Feature: audit focus states for reset password form submission with empty values
     Title: Verify behavior of reset password form submission during attempts to audit focus states with empty values
@@ -2511,9 +2511,9 @@ def test_ts_sel_209_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_210_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_validate_fields_after_session_token_expiration():
+def test_tc_sel_210_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_validate_fields_after_session_token_expiration():
     """
-    ID: TS_SEL_210
+    ID: TC_SEL_210
     Module: SymptomTracking
     Feature: validate fields for symptom log severity score slider after session token expiration
     Title: Verify behavior of symptom log severity score slider during attempts to validate fields after session token expiration
@@ -2523,9 +2523,9 @@ def test_ts_sel_210_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_211_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_track_cookie_changes_for_assistive_screen_readers():
+def test_tc_sel_211_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_track_cookie_changes_for_assistive_screen_readers():
     """
-    ID: TS_SEL_211
+    ID: TC_SEL_211
     Module: SymptomTracking
     Feature: track cookie changes for symptom history calendar grid view for assistive screen readers
     Title: Verify behavior of symptom history calendar grid view during attempts to track cookie changes for assistive screen readers
@@ -2535,9 +2535,9 @@ def test_ts_sel_211_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_212_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_verify_network_callback_using_cross_site_scripting_strings():
+def test_tc_sel_212_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_verify_network_callback_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_212
+    ID: TC_SEL_212
     Module: Authentication
     Feature: verify network callback for OTP verification screen timer using cross-site scripting strings
     Title: Verify behavior of OTP verification screen timer during attempts to verify network callback using cross-site scripting strings
@@ -2547,9 +2547,9 @@ def test_ts_sel_212_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_213_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_verify_layout_rendering_on_narrow_mobile_layout_viewport():
+def test_tc_sel_213_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_verify_layout_rendering_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_213
+    ID: TC_SEL_213
     Module: SymptomTracking
     Feature: verify layout rendering for symptom log trigger selection checkboxes on narrow mobile layout viewport
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to verify layout rendering on narrow mobile layout viewport
@@ -2559,9 +2559,9 @@ def test_ts_sel_213_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_214_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_validate_regex_matching_during_server_database_failover():
+def test_tc_sel_214_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_validate_regex_matching_during_server_database_failover():
     """
-    ID: TS_SEL_214
+    ID: TC_SEL_214
     Module: SymptomTracking
     Feature: validate regex matching for dosage calculator slider controls during server database failover
     Title: Verify behavior of dosage calculator slider controls during attempts to validate regex matching during server database failover
@@ -2571,9 +2571,9 @@ def test_ts_sel_214_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_215_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_measure_execution_time_when_file_size_exceeds_limit():
+def test_tc_sel_215_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_measure_execution_time_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_215
+    ID: TC_SEL_215
     Module: Authentication
     Feature: measure execution time for remember me cookie setting when file size exceeds limit
     Title: Verify behavior of remember me cookie setting during attempts to measure execution time when file size exceeds limit
@@ -2583,9 +2583,9 @@ def test_ts_sel_215_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_216_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_audit_keyboard_navigation_when_network_speed_is_throttled():
+def test_tc_sel_216_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_audit_keyboard_navigation_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_216
+    ID: TC_SEL_216
     Module: ClinicalReports
     Feature: audit keyboard navigation for clinical PDF report print dialog when network speed is throttled
     Title: Verify behavior of clinical PDF report print dialog during attempts to audit keyboard navigation when network speed is throttled
@@ -2595,9 +2595,9 @@ def test_ts_sel_216_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_217_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_check_tab_indexing_on_high_resolution_displays():
+def test_tc_sel_217_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_check_tab_indexing_on_high_resolution_displays():
     """
-    ID: TS_SEL_217
+    ID: TC_SEL_217
     Module: SymptomTracking
     Feature: check tab indexing for medicine entry list scroll position on high resolution displays
     Title: Verify behavior of medicine entry list scroll position during attempts to check tab indexing on high resolution displays
@@ -2607,9 +2607,9 @@ def test_ts_sel_217_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_218_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_process_submission_during_api_gateway_timeout():
+def test_tc_sel_218_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_process_submission_during_api_gateway_timeout():
     """
-    ID: TS_SEL_218
+    ID: TC_SEL_218
     Module: Authentication
     Feature: process submission for session timeout idle alert during api gateway timeout
     Title: Verify behavior of session timeout idle alert during attempts to process submission during api gateway timeout
@@ -2619,9 +2619,9 @@ def test_ts_sel_218_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_219_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_log_telemetry_events_with_browser_extensions_active():
+def test_tc_sel_219_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_log_telemetry_events_with_browser_extensions_active():
     """
-    ID: TS_SEL_219
+    ID: TC_SEL_219
     Module: ClinicalReports
     Feature: log telemetry events for doctor search filter dropdown with browser extensions active
     Title: Verify behavior of doctor search filter dropdown during attempts to log telemetry events with browser extensions active
@@ -2631,9 +2631,9 @@ def test_ts_sel_219_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_220_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_inspect_download_stream_for_special_character_strings():
+def test_tc_sel_220_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_inspect_download_stream_for_special_character_strings():
     """
-    ID: TS_SEL_220
+    ID: TC_SEL_220
     Module: ClinicalReports
     Feature: inspect download stream for pulmonologist appointment booking slot selection for special character strings
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to inspect download stream for special character strings
@@ -2643,9 +2643,9 @@ def test_ts_sel_220_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_221_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_check_boundary_limits_after_five_minutes_of_inactivity():
+def test_tc_sel_221_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_check_boundary_limits_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_221
+    ID: TC_SEL_221
     Module: Authentication
     Feature: check boundary limits for logout redirect landing page after five minutes of inactivity
     Title: Verify behavior of logout redirect landing page during attempts to check boundary limits after five minutes of inactivity
@@ -2655,9 +2655,9 @@ def test_ts_sel_221_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_222_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_inspect_modal_overlays_using_invalid_credentials():
+def test_tc_sel_222_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_inspect_modal_overlays_using_invalid_credentials():
     """
-    ID: TS_SEL_222
+    ID: TC_SEL_222
     Module: AIChat
     Feature: inspect modal overlays for ai chat message input box using invalid credentials
     Title: Verify behavior of ai chat message input box during attempts to inspect modal overlays using invalid credentials
@@ -2667,9 +2667,9 @@ def test_ts_sel_222_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_223_verify_behavior_of_notification_preferences_toggles_during_attempts_to_validate_text_alignment_with_multiple_simultaneous_submits():
+def test_tc_sel_223_verify_behavior_of_notification_preferences_toggles_during_attempts_to_validate_text_alignment_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_223
+    ID: TC_SEL_223
     Module: Settings
     Feature: validate text alignment for notification preferences toggles with multiple simultaneous submits
     Title: Verify behavior of notification preferences toggles during attempts to validate text alignment with multiple simultaneous submits
@@ -2679,9 +2679,9 @@ def test_ts_sel_223_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_224_verify_behavior_of_profile_information_form_fields_during_attempts_to_ensure_contrast_ratios_when_cookies_are_blocked():
+def test_tc_sel_224_verify_behavior_of_profile_information_form_fields_during_attempts_to_ensure_contrast_ratios_when_cookies_are_blocked():
     """
-    ID: TS_SEL_224
+    ID: TC_SEL_224
     Module: Onboarding
     Feature: ensure contrast ratios for profile information form fields when cookies are blocked
     Title: Verify behavior of profile information form fields during attempts to ensure contrast ratios when cookies are blocked
@@ -2691,9 +2691,9 @@ def test_ts_sel_224_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_225_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_evaluate_text_wrapping_under_local_storage_quota_limits():
+def test_tc_sel_225_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_evaluate_text_wrapping_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_225
+    ID: TC_SEL_225
     Module: AIChat
     Feature: evaluate text wrapping for ai chat markdown rendering structure under local storage quota limits
     Title: Verify behavior of ai chat markdown rendering structure during attempts to evaluate text wrapping under local storage quota limits
@@ -2703,9 +2703,9 @@ def test_ts_sel_225_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_226_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_reset_options_when_database_sync_is_delayed():
+def test_tc_sel_226_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_reset_options_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_226
+    ID: TC_SEL_226
     Module: ClinicalReports
     Feature: reset options for clinical recommendations expansion accordion when database sync is delayed
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to reset options when database sync is delayed
@@ -2715,9 +2715,9 @@ def test_ts_sel_226_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_227_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_check_storage_updates_with_custom_theme_configurations():
+def test_tc_sel_227_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_check_storage_updates_with_custom_theme_configurations():
     """
-    ID: TS_SEL_227
+    ID: TC_SEL_227
     Module: Onboarding
     Feature: check storage updates for profile picture upload modal with custom theme configurations
     Title: Verify behavior of profile picture upload modal during attempts to check storage updates with custom theme configurations
@@ -2727,9 +2727,9 @@ def test_ts_sel_227_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_228_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_test_tooltips_display_with_empty_values():
+def test_tc_sel_228_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_test_tooltips_display_with_empty_values():
     """
-    ID: TS_SEL_228
+    ID: TC_SEL_228
     Module: Settings
     Feature: test tooltips display for emergency contact name entry with empty values
     Title: Verify behavior of emergency contact name entry during attempts to test tooltips display with empty values
@@ -2739,9 +2739,9 @@ def test_ts_sel_228_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_229_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_inspect_click_handlers_after_session_token_expiration():
+def test_tc_sel_229_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_inspect_click_handlers_after_session_token_expiration():
     """
-    ID: TS_SEL_229
+    ID: TC_SEL_229
     Module: Settings
     Feature: inspect click handlers for emergency trigger swipe action button after session token expiration
     Title: Verify behavior of emergency trigger swipe action button during attempts to inspect click handlers after session token expiration
@@ -2751,9 +2751,9 @@ def test_ts_sel_229_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_230_verify_behavior_of_change_password_input_validation_during_attempts_to_audit_focus_states_for_assistive_screen_readers():
+def test_tc_sel_230_verify_behavior_of_change_password_input_validation_during_attempts_to_audit_focus_states_for_assistive_screen_readers():
     """
-    ID: TS_SEL_230
+    ID: TC_SEL_230
     Module: Onboarding
     Feature: audit focus states for change password input validation for assistive screen readers
     Title: Verify behavior of change password input validation during attempts to audit focus states for assistive screen readers
@@ -2763,9 +2763,9 @@ def test_ts_sel_230_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_231_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_validate_fields_using_cross_site_scripting_strings():
+def test_tc_sel_231_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_validate_fields_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_231
+    ID: TC_SEL_231
     Module: Settings
     Feature: validate fields for dark mode theme layout colors using cross-site scripting strings
     Title: Verify behavior of dark mode theme layout colors during attempts to validate fields using cross-site scripting strings
@@ -2775,9 +2775,9 @@ def test_ts_sel_231_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_232_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_track_cookie_changes_on_narrow_mobile_layout_viewport():
+def test_tc_sel_232_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_track_cookie_changes_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_232
+    ID: TC_SEL_232
     Module: AIChat
     Feature: track cookie changes for help center search suggestions dropdown on narrow mobile layout viewport
     Title: Verify behavior of help center search suggestions dropdown during attempts to track cookie changes on narrow mobile layout viewport
@@ -2787,9 +2787,9 @@ def test_ts_sel_232_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_233_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_verify_network_callback_during_server_database_failover():
+def test_tc_sel_233_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_verify_network_callback_during_server_database_failover():
     """
-    ID: TS_SEL_233
+    ID: TC_SEL_233
     Module: Dashboard
     Feature: verify network callback for dashboard widget grid layout during server database failover
     Title: Verify behavior of dashboard widget grid layout during attempts to verify network callback during server database failover
@@ -2799,9 +2799,9 @@ def test_ts_sel_233_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_234_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_verify_layout_rendering_when_file_size_exceeds_limit():
+def test_tc_sel_234_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_verify_layout_rendering_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_234
+    ID: TC_SEL_234
     Module: Settings
     Feature: verify layout rendering for accessibility keyboard focus indicators when file size exceeds limit
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to verify layout rendering when file size exceeds limit
@@ -2811,9 +2811,9 @@ def test_ts_sel_234_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_235_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_validate_regex_matching_when_network_speed_is_throttled():
+def test_tc_sel_235_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_validate_regex_matching_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_235
+    ID: TC_SEL_235
     Module: Settings
     Feature: validate regex matching for terms of service scroll validation when network speed is throttled
     Title: Verify behavior of terms of service scroll validation during attempts to validate regex matching when network speed is throttled
@@ -2823,9 +2823,9 @@ def test_ts_sel_235_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_236_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_measure_execution_time_on_high_resolution_displays():
+def test_tc_sel_236_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_measure_execution_time_on_high_resolution_displays():
     """
-    ID: TS_SEL_236
+    ID: TC_SEL_236
     Module: Dashboard
     Feature: measure execution time for navigation drawer menu items on high resolution displays
     Title: Verify behavior of navigation drawer menu items during attempts to measure execution time on high resolution displays
@@ -2835,9 +2835,9 @@ def test_ts_sel_236_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_237_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_audit_keyboard_navigation_during_api_gateway_timeout():
+def test_tc_sel_237_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_audit_keyboard_navigation_during_api_gateway_timeout():
     """
-    ID: TS_SEL_237
+    ID: TC_SEL_237
     Module: Settings
     Feature: audit keyboard navigation for offline mode status warning banner during api gateway timeout
     Title: Verify behavior of offline mode status warning banner during attempts to audit keyboard navigation during api gateway timeout
@@ -2847,9 +2847,9 @@ def test_ts_sel_237_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_238_verify_behavior_of_session_token_refresh_process_during_attempts_to_check_tab_indexing_with_browser_extensions_active():
+def test_tc_sel_238_verify_behavior_of_session_token_refresh_process_during_attempts_to_check_tab_indexing_with_browser_extensions_active():
     """
-    ID: TS_SEL_238
+    ID: TC_SEL_238
     Module: Authentication
     Feature: check tab indexing for session token refresh process with browser extensions active
     Title: Verify behavior of session token refresh process during attempts to check tab indexing with browser extensions active
@@ -2859,9 +2859,9 @@ def test_ts_sel_238_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_239_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_process_submission_for_special_character_strings():
+def test_tc_sel_239_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_process_submission_for_special_character_strings():
     """
-    ID: TS_SEL_239
+    ID: TC_SEL_239
     Module: Dashboard
     Feature: process submission for quick actions shortcuts bar for special character strings
     Title: Verify behavior of quick actions shortcuts bar during attempts to process submission for special character strings
@@ -2871,9 +2871,9 @@ def test_ts_sel_239_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_240_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_log_telemetry_events_after_five_minutes_of_inactivity():
+def test_tc_sel_240_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_log_telemetry_events_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_240
+    ID: TC_SEL_240
     Module: Settings
     Feature: log telemetry events for local storage synchronization queue after five minutes of inactivity
     Title: Verify behavior of local storage synchronization queue during attempts to log telemetry events after five minutes of inactivity
@@ -2883,9 +2883,9 @@ def test_ts_sel_240_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_241_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_inspect_download_stream_using_invalid_credentials():
+def test_tc_sel_241_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_inspect_download_stream_using_invalid_credentials():
     """
-    ID: TS_SEL_241
+    ID: TC_SEL_241
     Module: Onboarding
     Feature: inspect download stream for user deletion confirmation popup using invalid credentials
     Title: Verify behavior of user deletion confirmation popup during attempts to inspect download stream using invalid credentials
@@ -2895,9 +2895,9 @@ def test_ts_sel_241_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_242_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_check_boundary_limits_with_multiple_simultaneous_submits():
+def test_tc_sel_242_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_check_boundary_limits_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_242
+    ID: TC_SEL_242
     Module: Settings
     Feature: check boundary limits for onboarding assessment launch button with multiple simultaneous submits
     Title: Verify behavior of onboarding assessment launch button during attempts to check boundary limits with multiple simultaneous submits
@@ -2907,9 +2907,9 @@ def test_ts_sel_242_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_243_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_inspect_modal_overlays_when_cookies_are_blocked():
+def test_tc_sel_243_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_inspect_modal_overlays_when_cookies_are_blocked():
     """
-    ID: TS_SEL_243
+    ID: TC_SEL_243
     Module: Settings
     Feature: inspect modal overlays for captcha validation image challenge when cookies are blocked
     Title: Verify behavior of captcha validation image challenge during attempts to inspect modal overlays when cookies are blocked
@@ -2919,9 +2919,9 @@ def test_ts_sel_243_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_244_verify_behavior_of_api_error_toast_notifications_during_attempts_to_validate_text_alignment_under_local_storage_quota_limits():
+def test_tc_sel_244_verify_behavior_of_api_error_toast_notifications_during_attempts_to_validate_text_alignment_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_244
+    ID: TC_SEL_244
     Module: Settings
     Feature: validate text alignment for api error toast notifications under local storage quota limits
     Title: Verify behavior of api error toast notifications during attempts to validate text alignment under local storage quota limits
@@ -2931,9 +2931,9 @@ def test_ts_sel_244_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_245_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_ensure_contrast_ratios_when_database_sync_is_delayed():
+def test_tc_sel_245_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_ensure_contrast_ratios_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_245
+    ID: TC_SEL_245
     Module: Settings
     Feature: ensure contrast ratios for questionnaire save progress state when database sync is delayed
     Title: Verify behavior of questionnaire save progress state during attempts to ensure contrast ratios when database sync is delayed
@@ -2943,9 +2943,9 @@ def test_ts_sel_245_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_246_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_evaluate_text_wrapping_with_custom_theme_configurations():
+def test_tc_sel_246_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_evaluate_text_wrapping_with_custom_theme_configurations():
     """
-    ID: TS_SEL_246
+    ID: TC_SEL_246
     Module: Settings
     Feature: evaluate text wrapping for password visibility toggle switch with custom theme configurations
     Title: Verify behavior of password visibility toggle switch during attempts to evaluate text wrapping with custom theme configurations
@@ -2955,9 +2955,9 @@ def test_ts_sel_246_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_247_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_reset_options_with_empty_values():
+def test_tc_sel_247_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_reset_options_with_empty_values():
     """
-    ID: TS_SEL_247
+    ID: TC_SEL_247
     Module: Onboarding
     Feature: reset options for image crop zoom controls with empty values
     Title: Verify behavior of image crop zoom controls during attempts to reset options with empty values
@@ -2967,9 +2967,9 @@ def test_ts_sel_247_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_248_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_check_storage_updates_after_session_token_expiration():
+def test_tc_sel_248_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_check_storage_updates_after_session_token_expiration():
     """
-    ID: TS_SEL_248
+    ID: TC_SEL_248
     Module: Settings
     Feature: check storage updates for questionnaire submit assessment confirmation after session token expiration
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to check storage updates after session token expiration
@@ -2979,9 +2979,9 @@ def test_ts_sel_248_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_249_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_test_tooltips_display_for_assistive_screen_readers():
+def test_tc_sel_249_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_test_tooltips_display_for_assistive_screen_readers():
     """
-    ID: TS_SEL_249
+    ID: TC_SEL_249
     Module: Authentication
     Feature: test tooltips display for cookie consent policy banner for assistive screen readers
     Title: Verify behavior of cookie consent policy banner during attempts to test tooltips display for assistive screen readers
@@ -2991,9 +2991,9 @@ def test_ts_sel_249_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_250_verify_behavior_of_login_input_fields_during_attempts_to_inspect_click_handlers_using_cross_site_scripting_strings():
+def test_tc_sel_250_verify_behavior_of_login_input_fields_during_attempts_to_inspect_click_handlers_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_250
+    ID: TC_SEL_250
     Module: Authentication
     Feature: inspect click handlers for login input fields using cross-site scripting strings
     Title: Verify behavior of login input fields during attempts to inspect click handlers using cross-site scripting strings
@@ -3003,9 +3003,9 @@ def test_ts_sel_250_verify_behavior_of_login_input_fields_during_attempts_to_ins
     # Simulated execution logic
     assert True
 
-def test_ts_sel_251_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_audit_focus_states_on_narrow_mobile_layout_viewport():
+def test_tc_sel_251_verify_behavior_of_breathing_exercise_custom_configuration_during_attempts_to_audit_focus_states_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_251
+    ID: TC_SEL_251
     Module: BreathingExercises
     Feature: audit focus states for breathing exercise custom configuration on narrow mobile layout viewport
     Title: Verify behavior of breathing exercise custom configuration during attempts to audit focus states on narrow mobile layout viewport
@@ -3015,9 +3015,9 @@ def test_ts_sel_251_verify_behavior_of_breathing_exercise_custom_configuration_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_252_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_validate_fields_during_server_database_failover():
+def test_tc_sel_252_verify_behavior_of_multi_tab_login_state_sync_during_attempts_to_validate_fields_during_server_database_failover():
     """
-    ID: TS_SEL_252
+    ID: TC_SEL_252
     Module: Authentication
     Feature: validate fields for multi-tab login state sync during server database failover
     Title: Verify behavior of multi-tab login state sync during attempts to validate fields during server database failover
@@ -3027,9 +3027,9 @@ def test_ts_sel_252_verify_behavior_of_multi_tab_login_state_sync_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_253_verify_behavior_of_registration_email_validation_during_attempts_to_track_cookie_changes_when_file_size_exceeds_limit():
+def test_tc_sel_253_verify_behavior_of_registration_email_validation_during_attempts_to_track_cookie_changes_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_253
+    ID: TC_SEL_253
     Module: Authentication
     Feature: track cookie changes for registration email validation when file size exceeds limit
     Title: Verify behavior of registration email validation during attempts to track cookie changes when file size exceeds limit
@@ -3039,9 +3039,9 @@ def test_ts_sel_253_verify_behavior_of_registration_email_validation_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_254_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_verify_network_callback_when_network_speed_is_throttled():
+def test_tc_sel_254_verify_behavior_of_breathing_orb_size_scale_animation_during_attempts_to_verify_network_callback_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_254
+    ID: TC_SEL_254
     Module: BreathingExercises
     Feature: verify network callback for breathing orb size scale animation when network speed is throttled
     Title: Verify behavior of breathing orb size scale animation during attempts to verify network callback when network speed is throttled
@@ -3051,9 +3051,9 @@ def test_ts_sel_254_verify_behavior_of_breathing_orb_size_scale_animation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_255_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_verify_layout_rendering_on_high_resolution_displays():
+def test_tc_sel_255_verify_behavior_of_browser_history_back_navigation_behavior_during_attempts_to_verify_layout_rendering_on_high_resolution_displays():
     """
-    ID: TS_SEL_255
+    ID: TC_SEL_255
     Module: Authentication
     Feature: verify layout rendering for browser history back navigation behavior on high resolution displays
     Title: Verify behavior of browser history back navigation behavior during attempts to verify layout rendering on high resolution displays
@@ -3063,9 +3063,9 @@ def test_ts_sel_255_verify_behavior_of_browser_history_back_navigation_behavior_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_256_verify_behavior_of_forgot_password_security_link_during_attempts_to_validate_regex_matching_during_api_gateway_timeout():
+def test_tc_sel_256_verify_behavior_of_forgot_password_security_link_during_attempts_to_validate_regex_matching_during_api_gateway_timeout():
     """
-    ID: TS_SEL_256
+    ID: TC_SEL_256
     Module: Authentication
     Feature: validate regex matching for forgot password security link during api gateway timeout
     Title: Verify behavior of forgot password security link during attempts to validate regex matching during api gateway timeout
@@ -3075,9 +3075,9 @@ def test_ts_sel_256_verify_behavior_of_forgot_password_security_link_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_257_verify_behavior_of_breathing_history_table_paging_during_attempts_to_measure_execution_time_with_browser_extensions_active():
+def test_tc_sel_257_verify_behavior_of_breathing_history_table_paging_during_attempts_to_measure_execution_time_with_browser_extensions_active():
     """
-    ID: TS_SEL_257
+    ID: TC_SEL_257
     Module: BreathingExercises
     Feature: measure execution time for breathing history table paging with browser extensions active
     Title: Verify behavior of breathing history table paging during attempts to measure execution time with browser extensions active
@@ -3087,9 +3087,9 @@ def test_ts_sel_257_verify_behavior_of_breathing_history_table_paging_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_258_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_audit_keyboard_navigation_for_special_character_strings():
+def test_tc_sel_258_verify_behavior_of_dashboard_live_graph_animation_during_attempts_to_audit_keyboard_navigation_for_special_character_strings():
     """
-    ID: TS_SEL_258
+    ID: TC_SEL_258
     Module: Dashboard
     Feature: audit keyboard navigation for dashboard live graph animation for special character strings
     Title: Verify behavior of dashboard live graph animation during attempts to audit keyboard navigation for special character strings
@@ -3099,9 +3099,9 @@ def test_ts_sel_258_verify_behavior_of_dashboard_live_graph_animation_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_259_verify_behavior_of_reset_password_form_submission_during_attempts_to_check_tab_indexing_after_five_minutes_of_inactivity():
+def test_tc_sel_259_verify_behavior_of_reset_password_form_submission_during_attempts_to_check_tab_indexing_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_259
+    ID: TC_SEL_259
     Module: Authentication
     Feature: check tab indexing for reset password form submission after five minutes of inactivity
     Title: Verify behavior of reset password form submission during attempts to check tab indexing after five minutes of inactivity
@@ -3111,9 +3111,9 @@ def test_ts_sel_259_verify_behavior_of_reset_password_form_submission_during_att
     # Simulated execution logic
     assert True
 
-def test_ts_sel_260_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_process_submission_using_invalid_credentials():
+def test_tc_sel_260_verify_behavior_of_symptom_log_severity_score_slider_during_attempts_to_process_submission_using_invalid_credentials():
     """
-    ID: TS_SEL_260
+    ID: TC_SEL_260
     Module: SymptomTracking
     Feature: process submission for symptom log severity score slider using invalid credentials
     Title: Verify behavior of symptom log severity score slider during attempts to process submission using invalid credentials
@@ -3123,9 +3123,9 @@ def test_ts_sel_260_verify_behavior_of_symptom_log_severity_score_slider_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_261_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_log_telemetry_events_with_multiple_simultaneous_submits():
+def test_tc_sel_261_verify_behavior_of_symptom_history_calendar_grid_view_during_attempts_to_log_telemetry_events_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_261
+    ID: TC_SEL_261
     Module: SymptomTracking
     Feature: log telemetry events for symptom history calendar grid view with multiple simultaneous submits
     Title: Verify behavior of symptom history calendar grid view during attempts to log telemetry events with multiple simultaneous submits
@@ -3135,9 +3135,9 @@ def test_ts_sel_261_verify_behavior_of_symptom_history_calendar_grid_view_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_262_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_inspect_download_stream_when_cookies_are_blocked():
+def test_tc_sel_262_verify_behavior_of_otp_verification_screen_timer_during_attempts_to_inspect_download_stream_when_cookies_are_blocked():
     """
-    ID: TS_SEL_262
+    ID: TC_SEL_262
     Module: Authentication
     Feature: inspect download stream for OTP verification screen timer when cookies are blocked
     Title: Verify behavior of OTP verification screen timer during attempts to inspect download stream when cookies are blocked
@@ -3147,9 +3147,9 @@ def test_ts_sel_262_verify_behavior_of_otp_verification_screen_timer_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_263_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_check_boundary_limits_under_local_storage_quota_limits():
+def test_tc_sel_263_verify_behavior_of_symptom_log_trigger_selection_checkboxes_during_attempts_to_check_boundary_limits_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_263
+    ID: TC_SEL_263
     Module: SymptomTracking
     Feature: check boundary limits for symptom log trigger selection checkboxes under local storage quota limits
     Title: Verify behavior of symptom log trigger selection checkboxes during attempts to check boundary limits under local storage quota limits
@@ -3159,9 +3159,9 @@ def test_ts_sel_263_verify_behavior_of_symptom_log_trigger_selection_checkboxes_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_264_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_inspect_modal_overlays_when_database_sync_is_delayed():
+def test_tc_sel_264_verify_behavior_of_dosage_calculator_slider_controls_during_attempts_to_inspect_modal_overlays_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_264
+    ID: TC_SEL_264
     Module: SymptomTracking
     Feature: inspect modal overlays for dosage calculator slider controls when database sync is delayed
     Title: Verify behavior of dosage calculator slider controls during attempts to inspect modal overlays when database sync is delayed
@@ -3171,9 +3171,9 @@ def test_ts_sel_264_verify_behavior_of_dosage_calculator_slider_controls_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_265_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_validate_text_alignment_with_custom_theme_configurations():
+def test_tc_sel_265_verify_behavior_of_remember_me_cookie_setting_during_attempts_to_validate_text_alignment_with_custom_theme_configurations():
     """
-    ID: TS_SEL_265
+    ID: TC_SEL_265
     Module: Authentication
     Feature: validate text alignment for remember me cookie setting with custom theme configurations
     Title: Verify behavior of remember me cookie setting during attempts to validate text alignment with custom theme configurations
@@ -3183,9 +3183,9 @@ def test_ts_sel_265_verify_behavior_of_remember_me_cookie_setting_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_266_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_ensure_contrast_ratios_with_empty_values():
+def test_tc_sel_266_verify_behavior_of_clinical_pdf_report_print_dialog_during_attempts_to_ensure_contrast_ratios_with_empty_values():
     """
-    ID: TS_SEL_266
+    ID: TC_SEL_266
     Module: ClinicalReports
     Feature: ensure contrast ratios for clinical PDF report print dialog with empty values
     Title: Verify behavior of clinical PDF report print dialog during attempts to ensure contrast ratios with empty values
@@ -3195,9 +3195,9 @@ def test_ts_sel_266_verify_behavior_of_clinical_pdf_report_print_dialog_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_267_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_evaluate_text_wrapping_after_session_token_expiration():
+def test_tc_sel_267_verify_behavior_of_medicine_entry_list_scroll_position_during_attempts_to_evaluate_text_wrapping_after_session_token_expiration():
     """
-    ID: TS_SEL_267
+    ID: TC_SEL_267
     Module: SymptomTracking
     Feature: evaluate text wrapping for medicine entry list scroll position after session token expiration
     Title: Verify behavior of medicine entry list scroll position during attempts to evaluate text wrapping after session token expiration
@@ -3207,9 +3207,9 @@ def test_ts_sel_267_verify_behavior_of_medicine_entry_list_scroll_position_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_268_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_reset_options_for_assistive_screen_readers():
+def test_tc_sel_268_verify_behavior_of_session_timeout_idle_alert_during_attempts_to_reset_options_for_assistive_screen_readers():
     """
-    ID: TS_SEL_268
+    ID: TC_SEL_268
     Module: Authentication
     Feature: reset options for session timeout idle alert for assistive screen readers
     Title: Verify behavior of session timeout idle alert during attempts to reset options for assistive screen readers
@@ -3219,9 +3219,9 @@ def test_ts_sel_268_verify_behavior_of_session_timeout_idle_alert_during_attempt
     # Simulated execution logic
     assert True
 
-def test_ts_sel_269_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_check_storage_updates_using_cross_site_scripting_strings():
+def test_tc_sel_269_verify_behavior_of_doctor_search_filter_dropdown_during_attempts_to_check_storage_updates_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_269
+    ID: TC_SEL_269
     Module: ClinicalReports
     Feature: check storage updates for doctor search filter dropdown using cross-site scripting strings
     Title: Verify behavior of doctor search filter dropdown during attempts to check storage updates using cross-site scripting strings
@@ -3231,9 +3231,9 @@ def test_ts_sel_269_verify_behavior_of_doctor_search_filter_dropdown_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_270_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_test_tooltips_display_on_narrow_mobile_layout_viewport():
+def test_tc_sel_270_verify_behavior_of_pulmonologist_appointment_booking_slot_selection_during_attempts_to_test_tooltips_display_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_270
+    ID: TC_SEL_270
     Module: ClinicalReports
     Feature: test tooltips display for pulmonologist appointment booking slot selection on narrow mobile layout viewport
     Title: Verify behavior of pulmonologist appointment booking slot selection during attempts to test tooltips display on narrow mobile layout viewport
@@ -3243,9 +3243,9 @@ def test_ts_sel_270_verify_behavior_of_pulmonologist_appointment_booking_slot_se
     # Simulated execution logic
     assert True
 
-def test_ts_sel_271_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_inspect_click_handlers_during_server_database_failover():
+def test_tc_sel_271_verify_behavior_of_logout_redirect_landing_page_during_attempts_to_inspect_click_handlers_during_server_database_failover():
     """
-    ID: TS_SEL_271
+    ID: TC_SEL_271
     Module: Authentication
     Feature: inspect click handlers for logout redirect landing page during server database failover
     Title: Verify behavior of logout redirect landing page during attempts to inspect click handlers during server database failover
@@ -3255,9 +3255,9 @@ def test_ts_sel_271_verify_behavior_of_logout_redirect_landing_page_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_272_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_audit_focus_states_when_file_size_exceeds_limit():
+def test_tc_sel_272_verify_behavior_of_ai_chat_message_input_box_during_attempts_to_audit_focus_states_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_272
+    ID: TC_SEL_272
     Module: AIChat
     Feature: audit focus states for ai chat message input box when file size exceeds limit
     Title: Verify behavior of ai chat message input box during attempts to audit focus states when file size exceeds limit
@@ -3267,9 +3267,9 @@ def test_ts_sel_272_verify_behavior_of_ai_chat_message_input_box_during_attempts
     # Simulated execution logic
     assert True
 
-def test_ts_sel_273_verify_behavior_of_notification_preferences_toggles_during_attempts_to_validate_fields_when_network_speed_is_throttled():
+def test_tc_sel_273_verify_behavior_of_notification_preferences_toggles_during_attempts_to_validate_fields_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_273
+    ID: TC_SEL_273
     Module: Settings
     Feature: validate fields for notification preferences toggles when network speed is throttled
     Title: Verify behavior of notification preferences toggles during attempts to validate fields when network speed is throttled
@@ -3279,9 +3279,9 @@ def test_ts_sel_273_verify_behavior_of_notification_preferences_toggles_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_274_verify_behavior_of_profile_information_form_fields_during_attempts_to_track_cookie_changes_on_high_resolution_displays():
+def test_tc_sel_274_verify_behavior_of_profile_information_form_fields_during_attempts_to_track_cookie_changes_on_high_resolution_displays():
     """
-    ID: TS_SEL_274
+    ID: TC_SEL_274
     Module: Onboarding
     Feature: track cookie changes for profile information form fields on high resolution displays
     Title: Verify behavior of profile information form fields during attempts to track cookie changes on high resolution displays
@@ -3291,9 +3291,9 @@ def test_ts_sel_274_verify_behavior_of_profile_information_form_fields_during_at
     # Simulated execution logic
     assert True
 
-def test_ts_sel_275_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_verify_network_callback_during_api_gateway_timeout():
+def test_tc_sel_275_verify_behavior_of_ai_chat_markdown_rendering_structure_during_attempts_to_verify_network_callback_during_api_gateway_timeout():
     """
-    ID: TS_SEL_275
+    ID: TC_SEL_275
     Module: AIChat
     Feature: verify network callback for ai chat markdown rendering structure during api gateway timeout
     Title: Verify behavior of ai chat markdown rendering structure during attempts to verify network callback during api gateway timeout
@@ -3303,9 +3303,9 @@ def test_ts_sel_275_verify_behavior_of_ai_chat_markdown_rendering_structure_duri
     # Simulated execution logic
     assert True
 
-def test_ts_sel_276_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_verify_layout_rendering_with_browser_extensions_active():
+def test_tc_sel_276_verify_behavior_of_clinical_recommendations_expansion_accordion_during_attempts_to_verify_layout_rendering_with_browser_extensions_active():
     """
-    ID: TS_SEL_276
+    ID: TC_SEL_276
     Module: ClinicalReports
     Feature: verify layout rendering for clinical recommendations expansion accordion with browser extensions active
     Title: Verify behavior of clinical recommendations expansion accordion during attempts to verify layout rendering with browser extensions active
@@ -3315,9 +3315,9 @@ def test_ts_sel_276_verify_behavior_of_clinical_recommendations_expansion_accord
     # Simulated execution logic
     assert True
 
-def test_ts_sel_277_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_validate_regex_matching_for_special_character_strings():
+def test_tc_sel_277_verify_behavior_of_profile_picture_upload_modal_during_attempts_to_validate_regex_matching_for_special_character_strings():
     """
-    ID: TS_SEL_277
+    ID: TC_SEL_277
     Module: Onboarding
     Feature: validate regex matching for profile picture upload modal for special character strings
     Title: Verify behavior of profile picture upload modal during attempts to validate regex matching for special character strings
@@ -3327,9 +3327,9 @@ def test_ts_sel_277_verify_behavior_of_profile_picture_upload_modal_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_278_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_measure_execution_time_after_five_minutes_of_inactivity():
+def test_tc_sel_278_verify_behavior_of_emergency_contact_name_entry_during_attempts_to_measure_execution_time_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_278
+    ID: TC_SEL_278
     Module: Settings
     Feature: measure execution time for emergency contact name entry after five minutes of inactivity
     Title: Verify behavior of emergency contact name entry during attempts to measure execution time after five minutes of inactivity
@@ -3339,9 +3339,9 @@ def test_ts_sel_278_verify_behavior_of_emergency_contact_name_entry_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_279_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_audit_keyboard_navigation_using_invalid_credentials():
+def test_tc_sel_279_verify_behavior_of_emergency_trigger_swipe_action_button_during_attempts_to_audit_keyboard_navigation_using_invalid_credentials():
     """
-    ID: TS_SEL_279
+    ID: TC_SEL_279
     Module: Settings
     Feature: audit keyboard navigation for emergency trigger swipe action button using invalid credentials
     Title: Verify behavior of emergency trigger swipe action button during attempts to audit keyboard navigation using invalid credentials
@@ -3351,9 +3351,9 @@ def test_ts_sel_279_verify_behavior_of_emergency_trigger_swipe_action_button_dur
     # Simulated execution logic
     assert True
 
-def test_ts_sel_280_verify_behavior_of_change_password_input_validation_during_attempts_to_check_tab_indexing_with_multiple_simultaneous_submits():
+def test_tc_sel_280_verify_behavior_of_change_password_input_validation_during_attempts_to_check_tab_indexing_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_280
+    ID: TC_SEL_280
     Module: Onboarding
     Feature: check tab indexing for change password input validation with multiple simultaneous submits
     Title: Verify behavior of change password input validation during attempts to check tab indexing with multiple simultaneous submits
@@ -3363,9 +3363,9 @@ def test_ts_sel_280_verify_behavior_of_change_password_input_validation_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_281_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_process_submission_when_cookies_are_blocked():
+def test_tc_sel_281_verify_behavior_of_dark_mode_theme_layout_colors_during_attempts_to_process_submission_when_cookies_are_blocked():
     """
-    ID: TS_SEL_281
+    ID: TC_SEL_281
     Module: Settings
     Feature: process submission for dark mode theme layout colors when cookies are blocked
     Title: Verify behavior of dark mode theme layout colors during attempts to process submission when cookies are blocked
@@ -3375,9 +3375,9 @@ def test_ts_sel_281_verify_behavior_of_dark_mode_theme_layout_colors_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_282_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_log_telemetry_events_under_local_storage_quota_limits():
+def test_tc_sel_282_verify_behavior_of_help_center_search_suggestions_dropdown_during_attempts_to_log_telemetry_events_under_local_storage_quota_limits():
     """
-    ID: TS_SEL_282
+    ID: TC_SEL_282
     Module: AIChat
     Feature: log telemetry events for help center search suggestions dropdown under local storage quota limits
     Title: Verify behavior of help center search suggestions dropdown during attempts to log telemetry events under local storage quota limits
@@ -3387,9 +3387,9 @@ def test_ts_sel_282_verify_behavior_of_help_center_search_suggestions_dropdown_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_283_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_inspect_download_stream_when_database_sync_is_delayed():
+def test_tc_sel_283_verify_behavior_of_dashboard_widget_grid_layout_during_attempts_to_inspect_download_stream_when_database_sync_is_delayed():
     """
-    ID: TS_SEL_283
+    ID: TC_SEL_283
     Module: Dashboard
     Feature: inspect download stream for dashboard widget grid layout when database sync is delayed
     Title: Verify behavior of dashboard widget grid layout during attempts to inspect download stream when database sync is delayed
@@ -3399,9 +3399,9 @@ def test_ts_sel_283_verify_behavior_of_dashboard_widget_grid_layout_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_284_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_check_boundary_limits_with_custom_theme_configurations():
+def test_tc_sel_284_verify_behavior_of_accessibility_keyboard_focus_indicators_during_attempts_to_check_boundary_limits_with_custom_theme_configurations():
     """
-    ID: TS_SEL_284
+    ID: TC_SEL_284
     Module: Settings
     Feature: check boundary limits for accessibility keyboard focus indicators with custom theme configurations
     Title: Verify behavior of accessibility keyboard focus indicators during attempts to check boundary limits with custom theme configurations
@@ -3411,9 +3411,9 @@ def test_ts_sel_284_verify_behavior_of_accessibility_keyboard_focus_indicators_d
     # Simulated execution logic
     assert True
 
-def test_ts_sel_285_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_inspect_modal_overlays_with_empty_values():
+def test_tc_sel_285_verify_behavior_of_terms_of_service_scroll_validation_during_attempts_to_inspect_modal_overlays_with_empty_values():
     """
-    ID: TS_SEL_285
+    ID: TC_SEL_285
     Module: Settings
     Feature: inspect modal overlays for terms of service scroll validation with empty values
     Title: Verify behavior of terms of service scroll validation during attempts to inspect modal overlays with empty values
@@ -3423,9 +3423,9 @@ def test_ts_sel_285_verify_behavior_of_terms_of_service_scroll_validation_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_286_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_validate_text_alignment_after_session_token_expiration():
+def test_tc_sel_286_verify_behavior_of_navigation_drawer_menu_items_during_attempts_to_validate_text_alignment_after_session_token_expiration():
     """
-    ID: TS_SEL_286
+    ID: TC_SEL_286
     Module: Dashboard
     Feature: validate text alignment for navigation drawer menu items after session token expiration
     Title: Verify behavior of navigation drawer menu items during attempts to validate text alignment after session token expiration
@@ -3435,9 +3435,9 @@ def test_ts_sel_286_verify_behavior_of_navigation_drawer_menu_items_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_287_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_ensure_contrast_ratios_for_assistive_screen_readers():
+def test_tc_sel_287_verify_behavior_of_offline_mode_status_warning_banner_during_attempts_to_ensure_contrast_ratios_for_assistive_screen_readers():
     """
-    ID: TS_SEL_287
+    ID: TC_SEL_287
     Module: Settings
     Feature: ensure contrast ratios for offline mode status warning banner for assistive screen readers
     Title: Verify behavior of offline mode status warning banner during attempts to ensure contrast ratios for assistive screen readers
@@ -3447,9 +3447,9 @@ def test_ts_sel_287_verify_behavior_of_offline_mode_status_warning_banner_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_288_verify_behavior_of_session_token_refresh_process_during_attempts_to_evaluate_text_wrapping_using_cross_site_scripting_strings():
+def test_tc_sel_288_verify_behavior_of_session_token_refresh_process_during_attempts_to_evaluate_text_wrapping_using_cross_site_scripting_strings():
     """
-    ID: TS_SEL_288
+    ID: TC_SEL_288
     Module: Authentication
     Feature: evaluate text wrapping for session token refresh process using cross-site scripting strings
     Title: Verify behavior of session token refresh process during attempts to evaluate text wrapping using cross-site scripting strings
@@ -3459,9 +3459,9 @@ def test_ts_sel_288_verify_behavior_of_session_token_refresh_process_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_289_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_reset_options_on_narrow_mobile_layout_viewport():
+def test_tc_sel_289_verify_behavior_of_quick_actions_shortcuts_bar_during_attempts_to_reset_options_on_narrow_mobile_layout_viewport():
     """
-    ID: TS_SEL_289
+    ID: TC_SEL_289
     Module: Dashboard
     Feature: reset options for quick actions shortcuts bar on narrow mobile layout viewport
     Title: Verify behavior of quick actions shortcuts bar during attempts to reset options on narrow mobile layout viewport
@@ -3471,9 +3471,9 @@ def test_ts_sel_289_verify_behavior_of_quick_actions_shortcuts_bar_during_attemp
     # Simulated execution logic
     assert True
 
-def test_ts_sel_290_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_check_storage_updates_during_server_database_failover():
+def test_tc_sel_290_verify_behavior_of_local_storage_synchronization_queue_during_attempts_to_check_storage_updates_during_server_database_failover():
     """
-    ID: TS_SEL_290
+    ID: TC_SEL_290
     Module: Settings
     Feature: check storage updates for local storage synchronization queue during server database failover
     Title: Verify behavior of local storage synchronization queue during attempts to check storage updates during server database failover
@@ -3483,9 +3483,9 @@ def test_ts_sel_290_verify_behavior_of_local_storage_synchronization_queue_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_291_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_test_tooltips_display_when_file_size_exceeds_limit():
+def test_tc_sel_291_verify_behavior_of_user_deletion_confirmation_popup_during_attempts_to_test_tooltips_display_when_file_size_exceeds_limit():
     """
-    ID: TS_SEL_291
+    ID: TC_SEL_291
     Module: Onboarding
     Feature: test tooltips display for user deletion confirmation popup when file size exceeds limit
     Title: Verify behavior of user deletion confirmation popup during attempts to test tooltips display when file size exceeds limit
@@ -3495,9 +3495,9 @@ def test_ts_sel_291_verify_behavior_of_user_deletion_confirmation_popup_during_a
     # Simulated execution logic
     assert True
 
-def test_ts_sel_292_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_inspect_click_handlers_when_network_speed_is_throttled():
+def test_tc_sel_292_verify_behavior_of_onboarding_assessment_launch_button_during_attempts_to_inspect_click_handlers_when_network_speed_is_throttled():
     """
-    ID: TS_SEL_292
+    ID: TC_SEL_292
     Module: Settings
     Feature: inspect click handlers for onboarding assessment launch button when network speed is throttled
     Title: Verify behavior of onboarding assessment launch button during attempts to inspect click handlers when network speed is throttled
@@ -3507,9 +3507,9 @@ def test_ts_sel_292_verify_behavior_of_onboarding_assessment_launch_button_durin
     # Simulated execution logic
     assert True
 
-def test_ts_sel_293_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_audit_focus_states_on_high_resolution_displays():
+def test_tc_sel_293_verify_behavior_of_captcha_validation_image_challenge_during_attempts_to_audit_focus_states_on_high_resolution_displays():
     """
-    ID: TS_SEL_293
+    ID: TC_SEL_293
     Module: Settings
     Feature: audit focus states for captcha validation image challenge on high resolution displays
     Title: Verify behavior of captcha validation image challenge during attempts to audit focus states on high resolution displays
@@ -3519,9 +3519,9 @@ def test_ts_sel_293_verify_behavior_of_captcha_validation_image_challenge_during
     # Simulated execution logic
     assert True
 
-def test_ts_sel_294_verify_behavior_of_api_error_toast_notifications_during_attempts_to_validate_fields_during_api_gateway_timeout():
+def test_tc_sel_294_verify_behavior_of_api_error_toast_notifications_during_attempts_to_validate_fields_during_api_gateway_timeout():
     """
-    ID: TS_SEL_294
+    ID: TC_SEL_294
     Module: Settings
     Feature: validate fields for api error toast notifications during api gateway timeout
     Title: Verify behavior of api error toast notifications during attempts to validate fields during api gateway timeout
@@ -3531,9 +3531,9 @@ def test_ts_sel_294_verify_behavior_of_api_error_toast_notifications_during_atte
     # Simulated execution logic
     assert True
 
-def test_ts_sel_295_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_track_cookie_changes_with_browser_extensions_active():
+def test_tc_sel_295_verify_behavior_of_questionnaire_save_progress_state_during_attempts_to_track_cookie_changes_with_browser_extensions_active():
     """
-    ID: TS_SEL_295
+    ID: TC_SEL_295
     Module: Settings
     Feature: track cookie changes for questionnaire save progress state with browser extensions active
     Title: Verify behavior of questionnaire save progress state during attempts to track cookie changes with browser extensions active
@@ -3543,9 +3543,9 @@ def test_ts_sel_295_verify_behavior_of_questionnaire_save_progress_state_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_296_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_verify_network_callback_for_special_character_strings():
+def test_tc_sel_296_verify_behavior_of_password_visibility_toggle_switch_during_attempts_to_verify_network_callback_for_special_character_strings():
     """
-    ID: TS_SEL_296
+    ID: TC_SEL_296
     Module: Settings
     Feature: verify network callback for password visibility toggle switch for special character strings
     Title: Verify behavior of password visibility toggle switch during attempts to verify network callback for special character strings
@@ -3555,9 +3555,9 @@ def test_ts_sel_296_verify_behavior_of_password_visibility_toggle_switch_during_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_297_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_verify_layout_rendering_after_five_minutes_of_inactivity():
+def test_tc_sel_297_verify_behavior_of_image_crop_zoom_controls_during_attempts_to_verify_layout_rendering_after_five_minutes_of_inactivity():
     """
-    ID: TS_SEL_297
+    ID: TC_SEL_297
     Module: Onboarding
     Feature: verify layout rendering for image crop zoom controls after five minutes of inactivity
     Title: Verify behavior of image crop zoom controls during attempts to verify layout rendering after five minutes of inactivity
@@ -3567,9 +3567,9 @@ def test_ts_sel_297_verify_behavior_of_image_crop_zoom_controls_during_attempts_
     # Simulated execution logic
     assert True
 
-def test_ts_sel_298_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_validate_regex_matching_using_invalid_credentials():
+def test_tc_sel_298_verify_behavior_of_questionnaire_submit_assessment_confirmation_during_attempts_to_validate_regex_matching_using_invalid_credentials():
     """
-    ID: TS_SEL_298
+    ID: TC_SEL_298
     Module: Settings
     Feature: validate regex matching for questionnaire submit assessment confirmation using invalid credentials
     Title: Verify behavior of questionnaire submit assessment confirmation during attempts to validate regex matching using invalid credentials
@@ -3579,9 +3579,9 @@ def test_ts_sel_298_verify_behavior_of_questionnaire_submit_assessment_confirmat
     # Simulated execution logic
     assert True
 
-def test_ts_sel_299_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_measure_execution_time_with_multiple_simultaneous_submits():
+def test_tc_sel_299_verify_behavior_of_cookie_consent_policy_banner_during_attempts_to_measure_execution_time_with_multiple_simultaneous_submits():
     """
-    ID: TS_SEL_299
+    ID: TC_SEL_299
     Module: Authentication
     Feature: measure execution time for cookie consent policy banner with multiple simultaneous submits
     Title: Verify behavior of cookie consent policy banner during attempts to measure execution time with multiple simultaneous submits
@@ -3591,9 +3591,9 @@ def test_ts_sel_299_verify_behavior_of_cookie_consent_policy_banner_during_attem
     # Simulated execution logic
     assert True
 
-def test_ts_sel_300_verify_behavior_of_login_input_fields_during_attempts_to_audit_keyboard_navigation_when_cookies_are_blocked():
+def test_tc_sel_300_verify_behavior_of_login_input_fields_during_attempts_to_audit_keyboard_navigation_when_cookies_are_blocked():
     """
-    ID: TS_SEL_300
+    ID: TC_SEL_300
     Module: Authentication
     Feature: audit keyboard navigation for login input fields when cookies are blocked
     Title: Verify behavior of login input fields during attempts to audit keyboard navigation when cookies are blocked

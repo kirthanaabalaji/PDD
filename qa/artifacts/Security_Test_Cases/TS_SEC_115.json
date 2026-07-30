@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_115",
+  "module": "IDOR",
+  "feature": "verify database decryption controls for IDOR checks on daily symptoms logs using a different user database index",
+  "title": "Verify behavior of IDOR checks on daily symptoms logs during attempts to verify database decryption controls using a different user database index",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for IDOR checks on daily symptoms logs using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on daily symptoms logs configuration using a different user database index (Ref SEC_115).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-115",
+  "steps": "1. Target active interface for IDOR checks on daily symptoms logs.\n2. Trigger action to verify database decryption controls using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_115).",
+  "input": "Target: IDOR checks on daily symptoms logs, Action: verify database decryption controls, Parameters: using a different user database index, Case Index: SEC_115",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_115.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_115_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

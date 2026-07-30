@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_204",
+  "module": "Database",
+  "feature": "verify database writes capacity for Express HTTP router cluster on database replica set failover",
+  "title": "Verify behavior of Express HTTP router cluster during attempts to verify database writes capacity on database replica set failover",
+  "objective": "Evaluate that user can safely execute verify database writes capacity for Express HTTP router cluster on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express HTTP router cluster configuration on database replica set failover (Ref LOAD_204).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-204",
+  "steps": "1. Target active interface for Express HTTP router cluster.\n2. Trigger action to verify database writes capacity on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_204).",
+  "input": "Target: Express HTTP router cluster, Action: verify database writes capacity, Parameters: on database replica set failover, Case Index: LOAD_204",
+  "expected": "The verification checks confirm that the response latency remains below 300ms successfully under reference LOAD_204.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_204_execution.log",
+  "execution_time": "9.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

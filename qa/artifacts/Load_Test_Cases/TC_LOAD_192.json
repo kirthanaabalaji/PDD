@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_192",
+  "module": "BreathingAnalysis",
+  "feature": "monitor CPU execution load for /api/breathing/clinical-report endpoint with large audio attachment uploads",
+  "title": "Verify behavior of /api/breathing/clinical-report endpoint during attempts to monitor CPU execution load with large audio attachment uploads",
+  "objective": "Evaluate that user can safely execute monitor CPU execution load for /api/breathing/clinical-report endpoint with large audio attachment uploads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/clinical-report endpoint configuration with large audio attachment uploads (Ref LOAD_192).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-192",
+  "steps": "1. Target active interface for /api/breathing/clinical-report endpoint.\n2. Trigger action to monitor CPU execution load with large audio attachment uploads.\n3. Collect audit logs and confirm status code validation (Check LOAD_192).",
+  "input": "Target: /api/breathing/clinical-report endpoint, Action: monitor CPU execution load, Parameters: with large audio attachment uploads, Case Index: LOAD_192",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_192.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_192_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

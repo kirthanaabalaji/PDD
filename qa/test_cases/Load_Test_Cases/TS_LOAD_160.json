@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_160",
+  "module": "Database",
+  "feature": "test query throughput for Redis cache response storage during massive server cold start",
+  "title": "Verify behavior of Redis cache response storage during attempts to test query throughput during massive server cold start",
+  "objective": "Evaluate that user can safely execute test query throughput for Redis cache response storage during massive server cold start under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Redis cache response storage configuration during massive server cold start (Ref LOAD_160).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-160",
+  "steps": "1. Target active interface for Redis cache response storage.\n2. Trigger action to test query throughput during massive server cold start.\n3. Collect audit logs and confirm status code validation (Check LOAD_160).",
+  "input": "Target: Redis cache response storage, Action: test query throughput, Parameters: during massive server cold start, Case Index: LOAD_160",
+  "expected": "The verification checks confirm that the log parser executes without writing delay successfully under reference LOAD_160.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_160_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

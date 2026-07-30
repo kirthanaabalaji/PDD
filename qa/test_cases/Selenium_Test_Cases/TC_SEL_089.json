@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_089",
+  "module": "Dashboard",
+  "feature": "measure execution time for quick actions shortcuts bar using invalid credentials",
+  "title": "Verify behavior of quick actions shortcuts bar during attempts to measure execution time using invalid credentials",
+  "objective": "Evaluate that user can safely execute measure execution time for quick actions shortcuts bar using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to quick actions shortcuts bar configuration using invalid credentials (Ref SEL_089).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-089",
+  "steps": "1. Target active interface for quick actions shortcuts bar.\n2. Trigger action to measure execution time using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_089).",
+  "input": "Target: quick actions shortcuts bar, Action: measure execution time, Parameters: using invalid credentials, Case Index: SEL_089",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_089.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_089_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

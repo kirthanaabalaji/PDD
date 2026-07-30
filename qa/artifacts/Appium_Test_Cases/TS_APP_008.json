@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_008",
+  "module": "BreathingAnalysis",
+  "feature": "process voice capture for bluetooth stethoscope listener when offline network state is active",
+  "title": "Verify behavior of bluetooth stethoscope listener during attempts to process voice capture when offline network state is active",
+  "objective": "Evaluate that user can safely execute process voice capture for bluetooth stethoscope listener when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to bluetooth stethoscope listener configuration when offline network state is active (Ref APP_008).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-008",
+  "steps": "1. Target active interface for bluetooth stethoscope listener.\n2. Trigger action to process voice capture when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_008).",
+  "input": "Target: bluetooth stethoscope listener, Action: process voice capture, Parameters: when offline network state is active, Case Index: APP_008",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_008.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_008_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

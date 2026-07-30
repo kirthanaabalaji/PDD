@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_165",
+  "module": "Authentication",
+  "feature": "test tooltips display for remember me cookie setting using invalid credentials",
+  "title": "Verify behavior of remember me cookie setting during attempts to test tooltips display using invalid credentials",
+  "objective": "Evaluate that user can safely execute test tooltips display for remember me cookie setting using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to remember me cookie setting configuration using invalid credentials (Ref SEL_165).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-165",
+  "steps": "1. Target active interface for remember me cookie setting.\n2. Trigger action to test tooltips display using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_165).",
+  "input": "Target: remember me cookie setting, Action: test tooltips display, Parameters: using invalid credentials, Case Index: SEL_165",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_165.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_165_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

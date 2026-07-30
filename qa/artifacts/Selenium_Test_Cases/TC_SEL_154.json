@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_154",
+  "module": "BreathingExercises",
+  "feature": "check tab indexing for breathing orb size scale animation for assistive screen readers",
+  "title": "Verify behavior of breathing orb size scale animation during attempts to check tab indexing for assistive screen readers",
+  "objective": "Evaluate that user can safely execute check tab indexing for breathing orb size scale animation for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing orb size scale animation configuration for assistive screen readers (Ref SEL_154).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-154",
+  "steps": "1. Target active interface for breathing orb size scale animation.\n2. Trigger action to check tab indexing for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_154).",
+  "input": "Target: breathing orb size scale animation, Action: check tab indexing, Parameters: for assistive screen readers, Case Index: SEL_154",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_154.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_154_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

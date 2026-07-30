@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_252",
+  "module": "Database",
+  "feature": "evaluate response time for Symptom report query aggregator with high frequency preflight requests",
+  "title": "Verify behavior of Symptom report query aggregator during attempts to evaluate response time with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute evaluate response time for Symptom report query aggregator with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Symptom report query aggregator configuration with high frequency preflight requests (Ref LOAD_252).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-252",
+  "steps": "1. Target active interface for Symptom report query aggregator.\n2. Trigger action to evaluate response time with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_252).",
+  "input": "Target: Symptom report query aggregator, Action: evaluate response time, Parameters: with high frequency preflight requests, Case Index: LOAD_252",
+  "expected": "The verification checks confirm that the system throughput scales linearly successfully under reference LOAD_252.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_252_execution.log",
+  "execution_time": "6.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

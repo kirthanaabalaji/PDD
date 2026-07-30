@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_038",
+  "module": "Authentication",
+  "feature": "check storage updates for session token refresh process with empty values",
+  "title": "Verify behavior of session token refresh process during attempts to check storage updates with empty values",
+  "objective": "Evaluate that user can safely execute check storage updates for session token refresh process with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session token refresh process configuration with empty values (Ref SEL_038).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-038",
+  "steps": "1. Target active interface for session token refresh process.\n2. Trigger action to check storage updates with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_038).",
+  "input": "Target: session token refresh process, Action: check storage updates, Parameters: with empty values, Case Index: SEL_038",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_038.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_038_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

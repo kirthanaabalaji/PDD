@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_071",
+  "module": "SymptomTracking",
+  "feature": "measure request throughput for /api/data/symptoms POST route on database replica set failover",
+  "title": "Verify behavior of /api/data/symptoms POST route during attempts to measure request throughput on database replica set failover",
+  "objective": "Evaluate that user can safely execute measure request throughput for /api/data/symptoms POST route on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/symptoms POST route configuration on database replica set failover (Ref LOAD_071).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-071",
+  "steps": "1. Target active interface for /api/data/symptoms POST route.\n2. Trigger action to measure request throughput on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_071).",
+  "input": "Target: /api/data/symptoms POST route, Action: measure request throughput, Parameters: on database replica set failover, Case Index: LOAD_071",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_071.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_071_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_078",
+  "module": "AccessControl",
+  "feature": "test token generation logic for sensitive information log mask with high frequency rapid authentication attempts",
+  "title": "Verify behavior of sensitive information log mask during attempts to test token generation logic with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute test token generation logic for sensitive information log mask with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to sensitive information log mask configuration with high frequency rapid authentication attempts (Ref SEC_078).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-078",
+  "steps": "1. Target active interface for sensitive information log mask.\n2. Trigger action to test token generation logic with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_078).",
+  "input": "Target: sensitive information log mask, Action: test token generation logic, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_078",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_078.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_078_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

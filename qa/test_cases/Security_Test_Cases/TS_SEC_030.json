@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_030",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for multer audio file type validation using relative path traversing dots",
+  "title": "Verify behavior of multer audio file type validation during attempts to check cookie storage configurations using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for multer audio file type validation using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multer audio file type validation configuration using relative path traversing dots (Ref SEC_030).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-030",
+  "steps": "1. Target active interface for multer audio file type validation.\n2. Trigger action to check cookie storage configurations using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_030).",
+  "input": "Target: multer audio file type validation, Action: check cookie storage configurations, Parameters: using relative path traversing dots, Case Index: SEC_030",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_030.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_030_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

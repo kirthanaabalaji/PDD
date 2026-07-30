@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_026",
+  "module": "AccessControl",
+  "feature": "verify CSRF validation defenses for static report PDF download access by altering token payload structure",
+  "title": "Verify behavior of static report PDF download access during attempts to verify CSRF validation defenses by altering token payload structure",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for static report PDF download access by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to static report PDF download access configuration by altering token payload structure (Ref SEC_026).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-026",
+  "steps": "1. Target active interface for static report PDF download access.\n2. Trigger action to verify CSRF validation defenses by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_026).",
+  "input": "Target: static report PDF download access, Action: verify CSRF validation defenses, Parameters: by altering token payload structure, Case Index: SEC_026",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_026.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_026_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

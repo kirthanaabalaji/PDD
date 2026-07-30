@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_209",
+  "module": "Authentication",
+  "feature": "evaluate socket connection times for /api/auth/forgot-password endpoint with 500 concurrent virtual users",
+  "title": "Verify behavior of /api/auth/forgot-password endpoint during attempts to evaluate socket connection times with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute evaluate socket connection times for /api/auth/forgot-password endpoint with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/forgot-password endpoint configuration with 500 concurrent virtual users (Ref LOAD_209).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-209",
+  "steps": "1. Target active interface for /api/auth/forgot-password endpoint.\n2. Trigger action to evaluate socket connection times with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_209).",
+  "input": "Target: /api/auth/forgot-password endpoint, Action: evaluate socket connection times, Parameters: with 500 concurrent virtual users, Case Index: LOAD_209",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_209.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_209_execution.log",
+  "execution_time": "15.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

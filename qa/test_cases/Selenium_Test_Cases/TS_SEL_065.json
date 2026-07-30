@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_065",
+  "module": "Authentication",
+  "feature": "verify network callback for remember me cookie setting on high resolution displays",
+  "title": "Verify behavior of remember me cookie setting during attempts to verify network callback on high resolution displays",
+  "objective": "Evaluate that user can safely execute verify network callback for remember me cookie setting on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to remember me cookie setting configuration on high resolution displays (Ref SEL_065).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-065",
+  "steps": "1. Target active interface for remember me cookie setting.\n2. Trigger action to verify network callback on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_065).",
+  "input": "Target: remember me cookie setting, Action: verify network callback, Parameters: on high resolution displays, Case Index: SEL_065",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_065.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_065_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

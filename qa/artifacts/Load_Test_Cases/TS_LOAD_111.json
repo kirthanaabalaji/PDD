@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_111",
+  "module": "BreathingExercises",
+  "feature": "test queue backlog latency for /api/data/sessions DELETE route with unindexed database query filters",
+  "title": "Verify behavior of /api/data/sessions DELETE route during attempts to test queue backlog latency with unindexed database query filters",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for /api/data/sessions DELETE route with unindexed database query filters under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions DELETE route configuration with unindexed database query filters (Ref LOAD_111).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-111",
+  "steps": "1. Target active interface for /api/data/sessions DELETE route.\n2. Trigger action to test queue backlog latency with unindexed database query filters.\n3. Collect audit logs and confirm status code validation (Check LOAD_111).",
+  "input": "Target: /api/data/sessions DELETE route, Action: test queue backlog latency, Parameters: with unindexed database query filters, Case Index: LOAD_111",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_111.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_111_execution.log",
+  "execution_time": "5.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

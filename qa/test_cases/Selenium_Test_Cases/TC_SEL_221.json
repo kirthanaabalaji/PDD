@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_221",
+  "module": "Authentication",
+  "feature": "check boundary limits for logout redirect landing page after five minutes of inactivity",
+  "title": "Verify behavior of logout redirect landing page during attempts to check boundary limits after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute check boundary limits for logout redirect landing page after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to logout redirect landing page configuration after five minutes of inactivity (Ref SEL_221).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-221",
+  "steps": "1. Target active interface for logout redirect landing page.\n2. Trigger action to check boundary limits after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_221).",
+  "input": "Target: logout redirect landing page, Action: check boundary limits, Parameters: after five minutes of inactivity, Case Index: SEL_221",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_221.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_221_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

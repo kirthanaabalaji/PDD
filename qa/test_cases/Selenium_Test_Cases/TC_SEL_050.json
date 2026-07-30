@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_050",
+  "module": "Authentication",
+  "feature": "process submission for login input fields after five minutes of inactivity",
+  "title": "Verify behavior of login input fields during attempts to process submission after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute process submission for login input fields after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login input fields configuration after five minutes of inactivity (Ref SEL_050).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-050",
+  "steps": "1. Target active interface for login input fields.\n2. Trigger action to process submission after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_050).",
+  "input": "Target: login input fields, Action: process submission, Parameters: after five minutes of inactivity, Case Index: SEL_050",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_050.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_050_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

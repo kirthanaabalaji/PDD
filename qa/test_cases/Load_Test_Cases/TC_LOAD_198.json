@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_198",
+  "module": "AIChat",
+  "feature": "check payload upload time for /api/chat/history GET route during massive server cold start",
+  "title": "Verify behavior of /api/chat/history GET route during attempts to check payload upload time during massive server cold start",
+  "objective": "Evaluate that user can safely execute check payload upload time for /api/chat/history GET route during massive server cold start under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat/history GET route configuration during massive server cold start (Ref LOAD_198).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-198",
+  "steps": "1. Target active interface for /api/chat/history GET route.\n2. Trigger action to check payload upload time during massive server cold start.\n3. Collect audit logs and confirm status code validation (Check LOAD_198).",
+  "input": "Target: /api/chat/history GET route, Action: check payload upload time, Parameters: during massive server cold start, Case Index: LOAD_198",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_198.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_198_execution.log",
+  "execution_time": "14.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

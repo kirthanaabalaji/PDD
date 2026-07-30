@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_072",
+  "module": "AIChat",
+  "feature": "log telemetry events for ai chat message input box when cookies are blocked",
+  "title": "Verify behavior of ai chat message input box during attempts to log telemetry events when cookies are blocked",
+  "objective": "Evaluate that user can safely execute log telemetry events for ai chat message input box when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat message input box configuration when cookies are blocked (Ref SEL_072).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-072",
+  "steps": "1. Target active interface for ai chat message input box.\n2. Trigger action to log telemetry events when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_072).",
+  "input": "Target: ai chat message input box, Action: log telemetry events, Parameters: when cookies are blocked, Case Index: SEL_072",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_072.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_072_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

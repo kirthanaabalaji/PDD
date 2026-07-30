@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_228",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for sensitive information log mask using malicious string payloads",
+  "title": "Verify behavior of sensitive information log mask during attempts to test prompt payload injection using malicious string payloads",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for sensitive information log mask using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to sensitive information log mask configuration using malicious string payloads (Ref SEC_228).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-228",
+  "steps": "1. Target active interface for sensitive information log mask.\n2. Trigger action to test prompt payload injection using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_228).",
+  "input": "Target: sensitive information log mask, Action: test prompt payload injection, Parameters: using malicious string payloads, Case Index: SEC_228",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_228.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_228_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

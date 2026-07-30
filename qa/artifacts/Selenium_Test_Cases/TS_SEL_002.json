@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_002",
+  "module": "Authentication",
+  "feature": "verify network callback for multi-tab login state sync for assistive screen readers",
+  "title": "Verify behavior of multi-tab login state sync during attempts to verify network callback for assistive screen readers",
+  "objective": "Evaluate that user can safely execute verify network callback for multi-tab login state sync for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multi-tab login state sync configuration for assistive screen readers (Ref SEL_002).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-002",
+  "steps": "1. Target active interface for multi-tab login state sync.\n2. Trigger action to verify network callback for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_002).",
+  "input": "Target: multi-tab login state sync, Action: verify network callback, Parameters: for assistive screen readers, Case Index: SEL_002",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_002.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_002_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

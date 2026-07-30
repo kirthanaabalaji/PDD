@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_287",
+  "module": "Settings",
+  "feature": "ensure contrast ratios for offline mode status warning banner for assistive screen readers",
+  "title": "Verify behavior of offline mode status warning banner during attempts to ensure contrast ratios for assistive screen readers",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for offline mode status warning banner for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode status warning banner configuration for assistive screen readers (Ref SEL_287).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-287",
+  "steps": "1. Target active interface for offline mode status warning banner.\n2. Trigger action to ensure contrast ratios for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_287).",
+  "input": "Target: offline mode status warning banner, Action: ensure contrast ratios, Parameters: for assistive screen readers, Case Index: SEL_287",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_287.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_287_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

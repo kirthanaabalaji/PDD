@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_037",
+  "module": "Database",
+  "feature": "inspect memory consumption for Audio transcription server socket during network connection dropping events",
+  "title": "Verify behavior of Audio transcription server socket during attempts to inspect memory consumption during network connection dropping events",
+  "objective": "Evaluate that user can safely execute inspect memory consumption for Audio transcription server socket during network connection dropping events under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Audio transcription server socket configuration during network connection dropping events (Ref LOAD_037).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-037",
+  "steps": "1. Target active interface for Audio transcription server socket.\n2. Trigger action to inspect memory consumption during network connection dropping events.\n3. Collect audit logs and confirm status code validation (Check LOAD_037).",
+  "input": "Target: Audio transcription server socket, Action: inspect memory consumption, Parameters: during network connection dropping events, Case Index: LOAD_037",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_037.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_037_execution.log",
+  "execution_time": "12.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

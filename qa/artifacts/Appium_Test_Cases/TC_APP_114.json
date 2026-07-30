@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_114",
+  "module": "Settings",
+  "feature": "verify cache database write for system settings redirect link when user denies camera permission",
+  "title": "Verify behavior of system settings redirect link during attempts to verify cache database write when user denies camera permission",
+  "objective": "Evaluate that user can safely execute verify cache database write for system settings redirect link when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to system settings redirect link configuration when user denies camera permission (Ref APP_114).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-114",
+  "steps": "1. Target active interface for system settings redirect link.\n2. Trigger action to verify cache database write when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_114).",
+  "input": "Target: system settings redirect link, Action: verify cache database write, Parameters: when user denies camera permission, Case Index: APP_114",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_114.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_114_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

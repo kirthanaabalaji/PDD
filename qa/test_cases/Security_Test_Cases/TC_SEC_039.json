@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_039",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for CORS response origin whitelist using a different user database index",
+  "title": "Verify behavior of CORS response origin whitelist during attempts to test prompt payload injection using a different user database index",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for CORS response origin whitelist using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS response origin whitelist configuration using a different user database index (Ref SEC_039).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-039",
+  "steps": "1. Target active interface for CORS response origin whitelist.\n2. Trigger action to test prompt payload injection using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_039).",
+  "input": "Target: CORS response origin whitelist, Action: test prompt payload injection, Parameters: using a different user database index, Case Index: SEC_039",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_039.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_039_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

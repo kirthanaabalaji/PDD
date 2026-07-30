@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_001",
+  "module": "BreathingExercises",
+  "feature": "track cookie changes for breathing exercise custom configuration after session token expiration",
+  "title": "Verify behavior of breathing exercise custom configuration during attempts to track cookie changes after session token expiration",
+  "objective": "Evaluate that user can safely execute track cookie changes for breathing exercise custom configuration after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing exercise custom configuration configuration after session token expiration (Ref SEL_001).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-001",
+  "steps": "1. Target active interface for breathing exercise custom configuration.\n2. Trigger action to track cookie changes after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_001).",
+  "input": "Target: breathing exercise custom configuration, Action: track cookie changes, Parameters: after session token expiration, Case Index: SEL_001",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_001.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_001_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

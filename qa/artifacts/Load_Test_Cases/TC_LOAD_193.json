@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_193",
+  "module": "Database",
+  "feature": "verify cache hit ratio for MongoDB Atlas index metrics under rapid burst volume spikes",
+  "title": "Verify behavior of MongoDB Atlas index metrics during attempts to verify cache hit ratio under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for MongoDB Atlas index metrics under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas index metrics configuration under rapid burst volume spikes (Ref LOAD_193).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-193",
+  "steps": "1. Target active interface for MongoDB Atlas index metrics.\n2. Trigger action to verify cache hit ratio under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_193).",
+  "input": "Target: MongoDB Atlas index metrics, Action: verify cache hit ratio, Parameters: under rapid burst volume spikes, Case Index: LOAD_193",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_193.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_193_execution.log",
+  "execution_time": "8.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

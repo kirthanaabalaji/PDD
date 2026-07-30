@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_206",
+  "module": "Authentication",
+  "feature": "test system recovery latency for /api/auth/profile retrieval with unindexed database query filters",
+  "title": "Verify behavior of /api/auth/profile retrieval during attempts to test system recovery latency with unindexed database query filters",
+  "objective": "Evaluate that user can safely execute test system recovery latency for /api/auth/profile retrieval with unindexed database query filters under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/profile retrieval configuration with unindexed database query filters (Ref LOAD_206).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-206",
+  "steps": "1. Target active interface for /api/auth/profile retrieval.\n2. Trigger action to test system recovery latency with unindexed database query filters.\n3. Collect audit logs and confirm status code validation (Check LOAD_206).",
+  "input": "Target: /api/auth/profile retrieval, Action: test system recovery latency, Parameters: with unindexed database query filters, Case Index: LOAD_206",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_206.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_206_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_144",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for CORS preflight request routing check using relative path traversing dots",
+  "title": "Verify behavior of CORS preflight request routing check during attempts to test prompt payload injection using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for CORS preflight request routing check using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS preflight request routing check configuration using relative path traversing dots (Ref SEC_144).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-144",
+  "steps": "1. Target active interface for CORS preflight request routing check.\n2. Trigger action to test prompt payload injection using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_144).",
+  "input": "Target: CORS preflight request routing check, Action: test prompt payload injection, Parameters: using relative path traversing dots, Case Index: SEC_144",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_144.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_144_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

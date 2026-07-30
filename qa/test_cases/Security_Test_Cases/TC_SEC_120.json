@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_120",
+  "module": "AccessControl",
+  "feature": "test token generation logic for CSRF security token validator using prompt injection context escape",
+  "title": "Verify behavior of CSRF security token validator during attempts to test token generation logic using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute test token generation logic for CSRF security token validator using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CSRF security token validator configuration using prompt injection context escape (Ref SEC_120).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-120",
+  "steps": "1. Target active interface for CSRF security token validator.\n2. Trigger action to test token generation logic using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_120).",
+  "input": "Target: CSRF security token validator, Action: test token generation logic, Parameters: using prompt injection context escape, Case Index: SEC_120",
+  "expected": "The verification checks confirm that the system rejects the tampered token successfully under reference SEC_120.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_120_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

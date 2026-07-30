@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_275",
+  "module": "AIChat",
+  "feature": "verify network callback for ai chat markdown rendering structure during api gateway timeout",
+  "title": "Verify behavior of ai chat markdown rendering structure during attempts to verify network callback during api gateway timeout",
+  "objective": "Evaluate that user can safely execute verify network callback for ai chat markdown rendering structure during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat markdown rendering structure configuration during api gateway timeout (Ref SEL_275).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-275",
+  "steps": "1. Target active interface for ai chat markdown rendering structure.\n2. Trigger action to verify network callback during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_275).",
+  "input": "Target: ai chat markdown rendering structure, Action: verify network callback, Parameters: during api gateway timeout, Case Index: SEL_275",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_275.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_275_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

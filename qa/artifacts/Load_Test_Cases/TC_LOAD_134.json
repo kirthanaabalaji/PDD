@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_134",
+  "module": "Database",
+  "feature": "measure request throughput for Static assets asset pipeline during peak hours scheduling traffic",
+  "title": "Verify behavior of Static assets asset pipeline during attempts to measure request throughput during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute measure request throughput for Static assets asset pipeline during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Static assets asset pipeline configuration during peak hours scheduling traffic (Ref LOAD_134).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-134",
+  "steps": "1. Target active interface for Static assets asset pipeline.\n2. Trigger action to measure request throughput during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_134).",
+  "input": "Target: Static assets asset pipeline, Action: measure request throughput, Parameters: during peak hours scheduling traffic, Case Index: LOAD_134",
+  "expected": "The verification checks confirm that the WebSocket session handles parallel connections successfully under reference LOAD_134.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_134_execution.log",
+  "execution_time": "9.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

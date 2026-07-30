@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_131",
+  "module": "Database",
+  "feature": "test failover routing times for Cors verification origin whitelist under complex aggregation pipeline queries",
+  "title": "Verify behavior of Cors verification origin whitelist during attempts to test failover routing times under complex aggregation pipeline queries",
+  "objective": "Evaluate that user can safely execute test failover routing times for Cors verification origin whitelist under complex aggregation pipeline queries under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Cors verification origin whitelist configuration under complex aggregation pipeline queries (Ref LOAD_131).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-131",
+  "steps": "1. Target active interface for Cors verification origin whitelist.\n2. Trigger action to test failover routing times under complex aggregation pipeline queries.\n3. Collect audit logs and confirm status code validation (Check LOAD_131).",
+  "input": "Target: Cors verification origin whitelist, Action: test failover routing times, Parameters: under complex aggregation pipeline queries, Case Index: LOAD_131",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_131.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_131_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

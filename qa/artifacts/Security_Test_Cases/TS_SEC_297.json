@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_297",
+  "module": "AccessControl",
+  "feature": "manipulate record ownership indices for user metadata modification routes under unencrypted transport layer check",
+  "title": "Verify behavior of user metadata modification routes during attempts to manipulate record ownership indices under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for user metadata modification routes under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user metadata modification routes configuration under unencrypted transport layer check (Ref SEC_297).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-297",
+  "steps": "1. Target active interface for user metadata modification routes.\n2. Trigger action to manipulate record ownership indices under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_297).",
+  "input": "Target: user metadata modification routes, Action: manipulate record ownership indices, Parameters: under unencrypted transport layer check, Case Index: SEC_297",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_297.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_297_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

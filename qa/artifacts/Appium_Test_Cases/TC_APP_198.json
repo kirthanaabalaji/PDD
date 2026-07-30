@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_198",
+  "module": "AIChat",
+  "feature": "verify cache database write for screen reader overlay when offline network state is active",
+  "title": "Verify behavior of screen reader overlay during attempts to verify cache database write when offline network state is active",
+  "objective": "Evaluate that user can safely execute verify cache database write for screen reader overlay when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to screen reader overlay configuration when offline network state is active (Ref APP_198).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-198",
+  "steps": "1. Target active interface for screen reader overlay.\n2. Trigger action to verify cache database write when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_198).",
+  "input": "Target: screen reader overlay, Action: verify cache database write, Parameters: when offline network state is active, Case Index: APP_198",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_198.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_198_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

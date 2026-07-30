@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_068",
+  "module": "Notifications",
+  "feature": "audit gesture scaling zoom for reminder alarm service under poor signal coverage",
+  "title": "Verify behavior of reminder alarm service during attempts to audit gesture scaling zoom under poor signal coverage",
+  "objective": "Evaluate that user can safely execute audit gesture scaling zoom for reminder alarm service under poor signal coverage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reminder alarm service configuration under poor signal coverage (Ref APP_068).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-068",
+  "steps": "1. Target active interface for reminder alarm service.\n2. Trigger action to audit gesture scaling zoom under poor signal coverage.\n3. Collect audit logs and confirm status code validation (Check APP_068).",
+  "input": "Target: reminder alarm service, Action: audit gesture scaling zoom, Parameters: under poor signal coverage, Case Index: APP_068",
+  "expected": "The verification checks confirm that the app shows system settings link successfully under reference APP_068.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_068_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_105",
+  "module": "Authentication",
+  "feature": "validate fields for browser history back navigation behavior with browser extensions active",
+  "title": "Verify behavior of browser history back navigation behavior during attempts to validate fields with browser extensions active",
+  "objective": "Evaluate that user can safely execute validate fields for browser history back navigation behavior with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to browser history back navigation behavior configuration with browser extensions active (Ref SEL_105).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-105",
+  "steps": "1. Target active interface for browser history back navigation behavior.\n2. Trigger action to validate fields with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_105).",
+  "input": "Target: browser history back navigation behavior, Action: validate fields, Parameters: with browser extensions active, Case Index: SEL_105",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_105.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_105_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

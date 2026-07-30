@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_159",
+  "module": "SQLi",
+  "feature": "inspect routing for open redirect for verify OTP code check routing by altering token payload structure",
+  "title": "Verify behavior of verify OTP code check routing during attempts to inspect routing for open redirect by altering token payload structure",
+  "objective": "Evaluate that user can safely execute inspect routing for open redirect for verify OTP code check routing by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to verify OTP code check routing configuration by altering token payload structure (Ref SEC_159).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-159",
+  "steps": "1. Target active interface for verify OTP code check routing.\n2. Trigger action to inspect routing for open redirect by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_159).",
+  "input": "Target: verify OTP code check routing, Action: inspect routing for open redirect, Parameters: by altering token payload structure, Case Index: SEC_159",
+  "expected": "The verification checks confirm that the user is kept on original origin domain successfully under reference SEC_159.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_159_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

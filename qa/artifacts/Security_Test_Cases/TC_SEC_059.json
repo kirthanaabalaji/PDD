@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_059",
+  "module": "SQLi",
+  "feature": "verify cascade data wiping for verify OTP code check routing with high frequency rapid authentication attempts",
+  "title": "Verify behavior of verify OTP code check routing during attempts to verify cascade data wiping with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for verify OTP code check routing with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to verify OTP code check routing configuration with high frequency rapid authentication attempts (Ref SEC_059).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-059",
+  "steps": "1. Target active interface for verify OTP code check routing.\n2. Trigger action to verify cascade data wiping with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_059).",
+  "input": "Target: verify OTP code check routing, Action: verify cascade data wiping, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_059",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_059.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_059_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

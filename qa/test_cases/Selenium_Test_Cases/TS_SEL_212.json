@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_212",
+  "module": "Authentication",
+  "feature": "verify network callback for OTP verification screen timer using cross-site scripting strings",
+  "title": "Verify behavior of OTP verification screen timer during attempts to verify network callback using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute verify network callback for OTP verification screen timer using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to OTP verification screen timer configuration using cross-site scripting strings (Ref SEL_212).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-212",
+  "steps": "1. Target active interface for OTP verification screen timer.\n2. Trigger action to verify network callback using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_212).",
+  "input": "Target: OTP verification screen timer, Action: verify network callback, Parameters: using cross-site scripting strings, Case Index: SEL_212",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_212.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_212_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

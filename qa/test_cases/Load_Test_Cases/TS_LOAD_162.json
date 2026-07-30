@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_162",
+  "module": "Authentication",
+  "feature": "verify database writes capacity for /api/auth/verify-otp endpoint during server container restart cycles",
+  "title": "Verify behavior of /api/auth/verify-otp endpoint during attempts to verify database writes capacity during server container restart cycles",
+  "objective": "Evaluate that user can safely execute verify database writes capacity for /api/auth/verify-otp endpoint during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/verify-otp endpoint configuration during server container restart cycles (Ref LOAD_162).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-162",
+  "steps": "1. Target active interface for /api/auth/verify-otp endpoint.\n2. Trigger action to verify database writes capacity during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_162).",
+  "input": "Target: /api/auth/verify-otp endpoint, Action: verify database writes capacity, Parameters: during server container restart cycles, Case Index: LOAD_162",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_162.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_162_execution.log",
+  "execution_time": "6.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

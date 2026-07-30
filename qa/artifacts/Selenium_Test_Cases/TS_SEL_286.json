@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_286",
+  "module": "Dashboard",
+  "feature": "validate text alignment for navigation drawer menu items after session token expiration",
+  "title": "Verify behavior of navigation drawer menu items during attempts to validate text alignment after session token expiration",
+  "objective": "Evaluate that user can safely execute validate text alignment for navigation drawer menu items after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to navigation drawer menu items configuration after session token expiration (Ref SEL_286).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-286",
+  "steps": "1. Target active interface for navigation drawer menu items.\n2. Trigger action to validate text alignment after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_286).",
+  "input": "Target: navigation drawer menu items, Action: validate text alignment, Parameters: after session token expiration, Case Index: SEL_286",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_286.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_286_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

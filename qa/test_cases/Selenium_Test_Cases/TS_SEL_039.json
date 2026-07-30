@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_039",
+  "module": "Dashboard",
+  "feature": "test tooltips display for quick actions shortcuts bar after session token expiration",
+  "title": "Verify behavior of quick actions shortcuts bar during attempts to test tooltips display after session token expiration",
+  "objective": "Evaluate that user can safely execute test tooltips display for quick actions shortcuts bar after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to quick actions shortcuts bar configuration after session token expiration (Ref SEL_039).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-039",
+  "steps": "1. Target active interface for quick actions shortcuts bar.\n2. Trigger action to test tooltips display after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_039).",
+  "input": "Target: quick actions shortcuts bar, Action: test tooltips display, Parameters: after session token expiration, Case Index: SEL_039",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_039.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_039_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

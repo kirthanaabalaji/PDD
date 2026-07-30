@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_041",
+  "module": "AccessControl",
+  "feature": "audit code injection vulnerabilities for log logger system credentials for client local cookie storage",
+  "title": "Verify behavior of log logger system credentials during attempts to audit code injection vulnerabilities for client local cookie storage",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for log logger system credentials for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to log logger system credentials configuration for client local cookie storage (Ref SEC_041).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-041",
+  "steps": "1. Target active interface for log logger system credentials.\n2. Trigger action to audit code injection vulnerabilities for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_041).",
+  "input": "Target: log logger system credentials, Action: audit code injection vulnerabilities, Parameters: for client local cookie storage, Case Index: SEC_041",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_041.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_041_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

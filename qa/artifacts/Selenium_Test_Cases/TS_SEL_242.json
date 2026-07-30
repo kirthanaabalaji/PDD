@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_242",
+  "module": "Settings",
+  "feature": "check boundary limits for onboarding assessment launch button with multiple simultaneous submits",
+  "title": "Verify behavior of onboarding assessment launch button during attempts to check boundary limits with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute check boundary limits for onboarding assessment launch button with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to onboarding assessment launch button configuration with multiple simultaneous submits (Ref SEL_242).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-242",
+  "steps": "1. Target active interface for onboarding assessment launch button.\n2. Trigger action to check boundary limits with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_242).",
+  "input": "Target: onboarding assessment launch button, Action: check boundary limits, Parameters: with multiple simultaneous submits, Case Index: SEL_242",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_242.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_242_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

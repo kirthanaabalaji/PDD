@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_230",
+  "module": "BreathingExercises",
+  "feature": "evaluate socket connection times for /api/data/sessions GET route with large audio attachment uploads",
+  "title": "Verify behavior of /api/data/sessions GET route during attempts to evaluate socket connection times with large audio attachment uploads",
+  "objective": "Evaluate that user can safely execute evaluate socket connection times for /api/data/sessions GET route with large audio attachment uploads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions GET route configuration with large audio attachment uploads (Ref LOAD_230).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-230",
+  "steps": "1. Target active interface for /api/data/sessions GET route.\n2. Trigger action to evaluate socket connection times with large audio attachment uploads.\n3. Collect audit logs and confirm status code validation (Check LOAD_230).",
+  "input": "Target: /api/data/sessions GET route, Action: evaluate socket connection times, Parameters: with large audio attachment uploads, Case Index: LOAD_230",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_230.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_230_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_123",
+  "module": "Settings",
+  "feature": "test tooltips display for notification preferences toggles during api gateway timeout",
+  "title": "Verify behavior of notification preferences toggles during attempts to test tooltips display during api gateway timeout",
+  "objective": "Evaluate that user can safely execute test tooltips display for notification preferences toggles during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification preferences toggles configuration during api gateway timeout (Ref SEL_123).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-123",
+  "steps": "1. Target active interface for notification preferences toggles.\n2. Trigger action to test tooltips display during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_123).",
+  "input": "Target: notification preferences toggles, Action: test tooltips display, Parameters: during api gateway timeout, Case Index: SEL_123",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_123.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_123_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

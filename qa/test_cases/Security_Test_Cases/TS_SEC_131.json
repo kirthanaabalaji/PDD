@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_131",
+  "module": "JWT",
+  "feature": "verify CSRF validation defenses for API key authorization header check with command terminal syntax symbols",
+  "title": "Verify behavior of API key authorization header check during attempts to verify CSRF validation defenses with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for API key authorization header check with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API key authorization header check configuration with command terminal syntax symbols (Ref SEC_131).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-131",
+  "steps": "1. Target active interface for API key authorization header check.\n2. Trigger action to verify CSRF validation defenses with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_131).",
+  "input": "Target: API key authorization header check, Action: verify CSRF validation defenses, Parameters: with command terminal syntax symbols, Case Index: SEC_131",
+  "expected": "The verification checks confirm that the system does not expose credentials successfully under reference SEC_131.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_131_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

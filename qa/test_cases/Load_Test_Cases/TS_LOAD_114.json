@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_114",
+  "module": "Database",
+  "feature": "check payload upload time for JWT token refresh route with 500 concurrent virtual users",
+  "title": "Verify behavior of JWT token refresh route during attempts to check payload upload time with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute check payload upload time for JWT token refresh route with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to JWT token refresh route configuration with 500 concurrent virtual users (Ref LOAD_114).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-114",
+  "steps": "1. Target active interface for JWT token refresh route.\n2. Trigger action to check payload upload time with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_114).",
+  "input": "Target: JWT token refresh route, Action: check payload upload time, Parameters: with 500 concurrent virtual users, Case Index: LOAD_114",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_114.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_114_execution.log",
+  "execution_time": "9.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

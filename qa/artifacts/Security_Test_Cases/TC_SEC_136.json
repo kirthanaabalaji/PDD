@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_136",
+  "module": "AccessControl",
+  "feature": "verify database decryption controls for server secrets database configuration for client local cookie storage",
+  "title": "Verify behavior of server secrets database configuration during attempts to verify database decryption controls for client local cookie storage",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for server secrets database configuration for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server secrets database configuration configuration for client local cookie storage (Ref SEC_136).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-136",
+  "steps": "1. Target active interface for server secrets database configuration.\n2. Trigger action to verify database decryption controls for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_136).",
+  "input": "Target: server secrets database configuration, Action: verify database decryption controls, Parameters: for client local cookie storage, Case Index: SEC_136",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_136.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_136_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

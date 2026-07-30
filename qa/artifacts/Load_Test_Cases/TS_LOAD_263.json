@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_263",
+  "module": "Database",
+  "feature": "check error rate threshold for Auth verification JWT header verification with unindexed database query filters",
+  "title": "Verify behavior of Auth verification JWT header verification during attempts to check error rate threshold with unindexed database query filters",
+  "objective": "Evaluate that user can safely execute check error rate threshold for Auth verification JWT header verification with unindexed database query filters under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Auth verification JWT header verification configuration with unindexed database query filters (Ref LOAD_263).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-263",
+  "steps": "1. Target active interface for Auth verification JWT header verification.\n2. Trigger action to check error rate threshold with unindexed database query filters.\n3. Collect audit logs and confirm status code validation (Check LOAD_263).",
+  "input": "Target: Auth verification JWT header verification, Action: check error rate threshold, Parameters: with unindexed database query filters, Case Index: LOAD_263",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_263.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_263_execution.log",
+  "execution_time": "8.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

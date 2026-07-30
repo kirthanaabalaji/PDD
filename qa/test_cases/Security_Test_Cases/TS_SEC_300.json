@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_300",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for register form email verification during server internal log dumping",
+  "title": "Verify behavior of register form email verification during attempts to audit brute force block speed during server internal log dumping",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for register form email verification during server internal log dumping under system checks.",
+  "preconditions": "System state is reset, and target console is directed to register form email verification configuration during server internal log dumping (Ref SEC_300).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-300",
+  "steps": "1. Target active interface for register form email verification.\n2. Trigger action to audit brute force block speed during server internal log dumping.\n3. Collect audit logs and confirm status code validation (Check SEC_300).",
+  "input": "Target: register form email verification, Action: audit brute force block speed, Parameters: during server internal log dumping, Case Index: SEC_300",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_300.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_300_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

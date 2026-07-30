@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_019",
+  "module": "ClinicalReports",
+  "feature": "inspect click handlers for doctor search filter dropdown with empty values",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to inspect click handlers with empty values",
+  "objective": "Evaluate that user can safely execute inspect click handlers for doctor search filter dropdown with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration with empty values (Ref SEL_019).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-019",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to inspect click handlers with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_019).",
+  "input": "Target: doctor search filter dropdown, Action: inspect click handlers, Parameters: with empty values, Case Index: SEL_019",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_019.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_019_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

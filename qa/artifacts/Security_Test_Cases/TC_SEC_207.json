@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_207",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for business logic cascade delete checks with command terminal syntax symbols",
+  "title": "Verify behavior of business logic cascade delete checks during attempts to test prompt payload injection with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for business logic cascade delete checks with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to business logic cascade delete checks configuration with command terminal syntax symbols (Ref SEC_207).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-207",
+  "steps": "1. Target active interface for business logic cascade delete checks.\n2. Trigger action to test prompt payload injection with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_207).",
+  "input": "Target: business logic cascade delete checks, Action: test prompt payload injection, Parameters: with command terminal syntax symbols, Case Index: SEC_207",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_207.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_207_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

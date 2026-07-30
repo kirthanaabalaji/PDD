@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_090",
+  "module": "Settings",
+  "feature": "audit keyboard navigation for local storage synchronization queue with multiple simultaneous submits",
+  "title": "Verify behavior of local storage synchronization queue during attempts to audit keyboard navigation with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for local storage synchronization queue with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to local storage synchronization queue configuration with multiple simultaneous submits (Ref SEL_090).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-090",
+  "steps": "1. Target active interface for local storage synchronization queue.\n2. Trigger action to audit keyboard navigation with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_090).",
+  "input": "Target: local storage synchronization queue, Action: audit keyboard navigation, Parameters: with multiple simultaneous submits, Case Index: SEL_090",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_090.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_090_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

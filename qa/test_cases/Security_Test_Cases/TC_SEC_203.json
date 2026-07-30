@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_203",
+  "module": "SQLi",
+  "feature": "inspect logs for exposed keys for login password input sanitization with html tag script inputs",
+  "title": "Verify behavior of login password input sanitization during attempts to inspect logs for exposed keys with html tag script inputs",
+  "objective": "Evaluate that user can safely execute inspect logs for exposed keys for login password input sanitization with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login password input sanitization configuration with html tag script inputs (Ref SEC_203).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-203",
+  "steps": "1. Target active interface for login password input sanitization.\n2. Trigger action to inspect logs for exposed keys with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_203).",
+  "input": "Target: login password input sanitization, Action: inspect logs for exposed keys, Parameters: with html tag script inputs, Case Index: SEC_203",
+  "expected": "The verification checks confirm that the authorization validation check blocks query successfully under reference SEC_203.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_203_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

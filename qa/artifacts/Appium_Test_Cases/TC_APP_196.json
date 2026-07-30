@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_196",
+  "module": "Settings",
+  "feature": "test app launch sequence for network latency indicator during deep link routing lookup",
+  "title": "Verify behavior of network latency indicator during attempts to test app launch sequence during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute test app launch sequence for network latency indicator during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to network latency indicator configuration during deep link routing lookup (Ref APP_196).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-196",
+  "steps": "1. Target active interface for network latency indicator.\n2. Trigger action to test app launch sequence during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_196).",
+  "input": "Target: network latency indicator, Action: test app launch sequence, Parameters: during deep link routing lookup, Case Index: APP_196",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_196.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_196_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

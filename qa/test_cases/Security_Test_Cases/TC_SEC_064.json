@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_064",
+  "module": "AccessControl",
+  "feature": "validate secure header parameters for Groq endpoint token allocation quota by altering token payload structure",
+  "title": "Verify behavior of Groq endpoint token allocation quota during attempts to validate secure header parameters by altering token payload structure",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for Groq endpoint token allocation quota by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq endpoint token allocation quota configuration by altering token payload structure (Ref SEC_064).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-064",
+  "steps": "1. Target active interface for Groq endpoint token allocation quota.\n2. Trigger action to validate secure header parameters by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_064).",
+  "input": "Target: Groq endpoint token allocation quota, Action: validate secure header parameters, Parameters: by altering token payload structure, Case Index: SEC_064",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_064.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_064_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

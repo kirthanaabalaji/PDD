@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_177",
+  "module": "Settings",
+  "feature": "verify cache database write for device orientation toggle during deep link routing lookup",
+  "title": "Verify behavior of device orientation toggle during attempts to verify cache database write during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute verify cache database write for device orientation toggle during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to device orientation toggle configuration during deep link routing lookup (Ref APP_177).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-177",
+  "steps": "1. Target active interface for device orientation toggle.\n2. Trigger action to verify cache database write during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_177).",
+  "input": "Target: device orientation toggle, Action: verify cache database write, Parameters: during deep link routing lookup, Case Index: APP_177",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_177.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_177_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

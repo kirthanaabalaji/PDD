@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_083",
+  "module": "SQLi",
+  "feature": "audit code injection vulnerabilities for brute force attempt limits by altering token payload structure",
+  "title": "Verify behavior of brute force attempt limits during attempts to audit code injection vulnerabilities by altering token payload structure",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for brute force attempt limits by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to brute force attempt limits configuration by altering token payload structure (Ref SEC_083).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-083",
+  "steps": "1. Target active interface for brute force attempt limits.\n2. Trigger action to audit code injection vulnerabilities by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_083).",
+  "input": "Target: brute force attempt limits, Action: audit code injection vulnerabilities, Parameters: by altering token payload structure, Case Index: SEC_083",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_083.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_083_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

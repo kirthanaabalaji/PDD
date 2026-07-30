@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_196",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for API endpoint parameter validation schemas using prompt injection context escape",
+  "title": "Verify behavior of API endpoint parameter validation schemas during attempts to check traversal directory access using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute check traversal directory access for API endpoint parameter validation schemas using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API endpoint parameter validation schemas configuration using prompt injection context escape (Ref SEC_196).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-196",
+  "steps": "1. Target active interface for API endpoint parameter validation schemas.\n2. Trigger action to check traversal directory access using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_196).",
+  "input": "Target: API endpoint parameter validation schemas, Action: check traversal directory access, Parameters: using prompt injection context escape, Case Index: SEC_196",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_196.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_196_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

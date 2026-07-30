@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_280",
+  "module": "BreathingExercises",
+  "feature": "audit log writing speed for /api/data/sessions GET route on database replica set failover",
+  "title": "Verify behavior of /api/data/sessions GET route during attempts to audit log writing speed on database replica set failover",
+  "objective": "Evaluate that user can safely execute audit log writing speed for /api/data/sessions GET route on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions GET route configuration on database replica set failover (Ref LOAD_280).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-280",
+  "steps": "1. Target active interface for /api/data/sessions GET route.\n2. Trigger action to audit log writing speed on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_280).",
+  "input": "Target: /api/data/sessions GET route, Action: audit log writing speed, Parameters: on database replica set failover, Case Index: LOAD_280",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_280.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_280_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

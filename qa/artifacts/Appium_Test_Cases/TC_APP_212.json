@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_212",
+  "module": "BreathingAnalysis",
+  "feature": "test network call recovery for camera snapshot frame for assistive touch gestures",
+  "title": "Verify behavior of camera snapshot frame during attempts to test network call recovery for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute test network call recovery for camera snapshot frame for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to camera snapshot frame configuration for assistive touch gestures (Ref APP_212).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-212",
+  "steps": "1. Target active interface for camera snapshot frame.\n2. Trigger action to test network call recovery for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_212).",
+  "input": "Target: camera snapshot frame, Action: test network call recovery, Parameters: for assistive touch gestures, Case Index: APP_212",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_212.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_212_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

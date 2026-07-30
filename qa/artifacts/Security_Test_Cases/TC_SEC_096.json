@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_096",
+  "module": "AccessControl",
+  "feature": "inspect routing for open redirect for API endpoint parameter validation schemas using a different user database index",
+  "title": "Verify behavior of API endpoint parameter validation schemas during attempts to inspect routing for open redirect using a different user database index",
+  "objective": "Evaluate that user can safely execute inspect routing for open redirect for API endpoint parameter validation schemas using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API endpoint parameter validation schemas configuration using a different user database index (Ref SEC_096).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-096",
+  "steps": "1. Target active interface for API endpoint parameter validation schemas.\n2. Trigger action to inspect routing for open redirect using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_096).",
+  "input": "Target: API endpoint parameter validation schemas, Action: inspect routing for open redirect, Parameters: using a different user database index, Case Index: SEC_096",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_096.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_096_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

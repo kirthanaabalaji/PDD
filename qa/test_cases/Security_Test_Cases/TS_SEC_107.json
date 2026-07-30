@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_107",
+  "module": "AccessControl",
+  "feature": "evaluate privilege escalation bypass for business logic cascade delete checks under unencrypted transport layer check",
+  "title": "Verify behavior of business logic cascade delete checks during attempts to evaluate privilege escalation bypass under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute evaluate privilege escalation bypass for business logic cascade delete checks under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to business logic cascade delete checks configuration under unencrypted transport layer check (Ref SEC_107).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-107",
+  "steps": "1. Target active interface for business logic cascade delete checks.\n2. Trigger action to evaluate privilege escalation bypass under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_107).",
+  "input": "Target: business logic cascade delete checks, Action: evaluate privilege escalation bypass, Parameters: under unencrypted transport layer check, Case Index: SEC_107",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_107.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_107_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

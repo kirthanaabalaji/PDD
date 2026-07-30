@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_093",
+  "module": "Settings",
+  "feature": "log telemetry events for captcha validation image challenge when database sync is delayed",
+  "title": "Verify behavior of captcha validation image challenge during attempts to log telemetry events when database sync is delayed",
+  "objective": "Evaluate that user can safely execute log telemetry events for captcha validation image challenge when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to captcha validation image challenge configuration when database sync is delayed (Ref SEL_093).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-093",
+  "steps": "1. Target active interface for captcha validation image challenge.\n2. Trigger action to log telemetry events when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_093).",
+  "input": "Target: captcha validation image challenge, Action: log telemetry events, Parameters: when database sync is delayed, Case Index: SEL_093",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_093.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_093_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

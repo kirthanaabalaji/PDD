@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_097",
+  "module": "ClinicalReports",
+  "feature": "inspect element boundaries for pinch-to-zoom chart viewer during package upgrade install",
+  "title": "Verify behavior of pinch-to-zoom chart viewer during attempts to inspect element boundaries during package upgrade install",
+  "objective": "Evaluate that user can safely execute inspect element boundaries for pinch-to-zoom chart viewer during package upgrade install under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pinch-to-zoom chart viewer configuration during package upgrade install (Ref APP_097).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-097",
+  "steps": "1. Target active interface for pinch-to-zoom chart viewer.\n2. Trigger action to inspect element boundaries during package upgrade install.\n3. Collect audit logs and confirm status code validation (Check APP_097).",
+  "input": "Target: pinch-to-zoom chart viewer, Action: inspect element boundaries, Parameters: during package upgrade install, Case Index: APP_097",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_097.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_097_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

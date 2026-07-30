@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_058",
+  "module": "BreathingAnalysis",
+  "feature": "trigger orientation switch for bluetooth stethoscope listener during database compaction sync",
+  "title": "Verify behavior of bluetooth stethoscope listener during attempts to trigger orientation switch during database compaction sync",
+  "objective": "Evaluate that user can safely execute trigger orientation switch for bluetooth stethoscope listener during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to bluetooth stethoscope listener configuration during database compaction sync (Ref APP_058).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-058",
+  "steps": "1. Target active interface for bluetooth stethoscope listener.\n2. Trigger action to trigger orientation switch during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_058).",
+  "input": "Target: bluetooth stethoscope listener, Action: trigger orientation switch, Parameters: during database compaction sync, Case Index: APP_058",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_058.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_058_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

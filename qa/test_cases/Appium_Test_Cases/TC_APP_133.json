@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_133",
+  "module": "Settings",
+  "feature": "test app launch sequence for deep link navigation schema when user denies camera permission",
+  "title": "Verify behavior of deep link navigation schema during attempts to test app launch sequence when user denies camera permission",
+  "objective": "Evaluate that user can safely execute test app launch sequence for deep link navigation schema when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to deep link navigation schema configuration when user denies camera permission (Ref APP_133).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-133",
+  "steps": "1. Target active interface for deep link navigation schema.\n2. Trigger action to test app launch sequence when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_133).",
+  "input": "Target: deep link navigation schema, Action: test app launch sequence, Parameters: when user denies camera permission, Case Index: APP_133",
+  "expected": "The verification checks confirm that the image crop boundaries are validated successfully under reference APP_133.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_133_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

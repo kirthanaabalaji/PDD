@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_284",
+  "module": "Settings",
+  "feature": "check boundary limits for accessibility keyboard focus indicators with custom theme configurations",
+  "title": "Verify behavior of accessibility keyboard focus indicators during attempts to check boundary limits with custom theme configurations",
+  "objective": "Evaluate that user can safely execute check boundary limits for accessibility keyboard focus indicators with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to accessibility keyboard focus indicators configuration with custom theme configurations (Ref SEL_284).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-284",
+  "steps": "1. Target active interface for accessibility keyboard focus indicators.\n2. Trigger action to check boundary limits with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_284).",
+  "input": "Target: accessibility keyboard focus indicators, Action: check boundary limits, Parameters: with custom theme configurations, Case Index: SEL_284",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_284.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_284_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

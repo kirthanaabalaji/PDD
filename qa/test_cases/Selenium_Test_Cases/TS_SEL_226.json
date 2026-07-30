@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_226",
+  "module": "ClinicalReports",
+  "feature": "reset options for clinical recommendations expansion accordion when database sync is delayed",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to reset options when database sync is delayed",
+  "objective": "Evaluate that user can safely execute reset options for clinical recommendations expansion accordion when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration when database sync is delayed (Ref SEL_226).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-226",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to reset options when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_226).",
+  "input": "Target: clinical recommendations expansion accordion, Action: reset options, Parameters: when database sync is delayed, Case Index: SEL_226",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_226.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_226_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

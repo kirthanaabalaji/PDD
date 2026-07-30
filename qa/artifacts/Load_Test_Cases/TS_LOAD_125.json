@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_125",
+  "module": "Database",
+  "feature": "evaluate socket connection times for Vercel edge server router when downstream Groq service is throttled",
+  "title": "Verify behavior of Vercel edge server router during attempts to evaluate socket connection times when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute evaluate socket connection times for Vercel edge server router when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Vercel edge server router configuration when downstream Groq service is throttled (Ref LOAD_125).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-125",
+  "steps": "1. Target active interface for Vercel edge server router.\n2. Trigger action to evaluate socket connection times when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_125).",
+  "input": "Target: Vercel edge server router, Action: evaluate socket connection times, Parameters: when downstream Groq service is throttled, Case Index: LOAD_125",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_125.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_125_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

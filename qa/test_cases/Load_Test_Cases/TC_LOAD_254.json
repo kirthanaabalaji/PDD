@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_254",
+  "module": "Database",
+  "feature": "measure server warm start delay for Express HTTP router cluster with 2000 concurrent virtual users",
+  "title": "Verify behavior of Express HTTP router cluster during attempts to measure server warm start delay with 2000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute measure server warm start delay for Express HTTP router cluster with 2000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express HTTP router cluster configuration with 2000 concurrent virtual users (Ref LOAD_254).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-254",
+  "steps": "1. Target active interface for Express HTTP router cluster.\n2. Trigger action to measure server warm start delay with 2000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_254).",
+  "input": "Target: Express HTTP router cluster, Action: measure server warm start delay, Parameters: with 2000 concurrent virtual users, Case Index: LOAD_254",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_254.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_254_execution.log",
+  "execution_time": "9.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

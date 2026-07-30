@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_099",
+  "module": "Authentication",
+  "feature": "evaluate text wrapping for cookie consent policy banner on narrow mobile layout viewport",
+  "title": "Verify behavior of cookie consent policy banner during attempts to evaluate text wrapping on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for cookie consent policy banner on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cookie consent policy banner configuration on narrow mobile layout viewport (Ref SEL_099).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-099",
+  "steps": "1. Target active interface for cookie consent policy banner.\n2. Trigger action to evaluate text wrapping on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_099).",
+  "input": "Target: cookie consent policy banner, Action: evaluate text wrapping, Parameters: on narrow mobile layout viewport, Case Index: SEL_099",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_099.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_099_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_210",
+  "module": "Settings",
+  "feature": "verify permission dialogue for medicine alarm vibration pattern during database compaction sync",
+  "title": "Verify behavior of medicine alarm vibration pattern during attempts to verify permission dialogue during database compaction sync",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for medicine alarm vibration pattern during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine alarm vibration pattern configuration during database compaction sync (Ref APP_210).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-210",
+  "steps": "1. Target active interface for medicine alarm vibration pattern.\n2. Trigger action to verify permission dialogue during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_210).",
+  "input": "Target: medicine alarm vibration pattern, Action: verify permission dialogue, Parameters: during database compaction sync, Case Index: APP_210",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_210.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_210_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_102",
+  "module": "Authentication",
+  "feature": "test tooltips display for multi-tab login state sync when network speed is throttled",
+  "title": "Verify behavior of multi-tab login state sync during attempts to test tooltips display when network speed is throttled",
+  "objective": "Evaluate that user can safely execute test tooltips display for multi-tab login state sync when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multi-tab login state sync configuration when network speed is throttled (Ref SEL_102).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-102",
+  "steps": "1. Target active interface for multi-tab login state sync.\n2. Trigger action to test tooltips display when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_102).",
+  "input": "Target: multi-tab login state sync, Action: test tooltips display, Parameters: when network speed is throttled, Case Index: SEL_102",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_102.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_102_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

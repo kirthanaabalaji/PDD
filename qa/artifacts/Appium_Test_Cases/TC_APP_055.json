@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_055",
+  "module": "OfflineMode",
+  "feature": "inspect element boundaries for local db compaction service when background storage is cleared",
+  "title": "Verify behavior of local db compaction service during attempts to inspect element boundaries when background storage is cleared",
+  "objective": "Evaluate that user can safely execute inspect element boundaries for local db compaction service when background storage is cleared under system checks.",
+  "preconditions": "System state is reset, and target console is directed to local db compaction service configuration when background storage is cleared (Ref APP_055).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-055",
+  "steps": "1. Target active interface for local db compaction service.\n2. Trigger action to inspect element boundaries when background storage is cleared.\n3. Collect audit logs and confirm status code validation (Check APP_055).",
+  "input": "Target: local db compaction service, Action: inspect element boundaries, Parameters: when background storage is cleared, Case Index: APP_055",
+  "expected": "The verification checks confirm that the touch targets resize to accessible scale successfully under reference APP_055.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_055_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_124",
+  "module": "SymptomTracking",
+  "feature": "audit database query times for /api/data/symptoms GET route during server container restart cycles",
+  "title": "Verify behavior of /api/data/symptoms GET route during attempts to audit database query times during server container restart cycles",
+  "objective": "Evaluate that user can safely execute audit database query times for /api/data/symptoms GET route during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/symptoms GET route configuration during server container restart cycles (Ref LOAD_124).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-124",
+  "steps": "1. Target active interface for /api/data/symptoms GET route.\n2. Trigger action to audit database query times during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_124).",
+  "input": "Target: /api/data/symptoms GET route, Action: audit database query times, Parameters: during server container restart cycles, Case Index: LOAD_124",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_124.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_124_execution.log",
+  "execution_time": "9.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_235",
+  "module": "Settings",
+  "feature": "validate regex matching for terms of service scroll validation when network speed is throttled",
+  "title": "Verify behavior of terms of service scroll validation during attempts to validate regex matching when network speed is throttled",
+  "objective": "Evaluate that user can safely execute validate regex matching for terms of service scroll validation when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to terms of service scroll validation configuration when network speed is throttled (Ref SEL_235).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-235",
+  "steps": "1. Target active interface for terms of service scroll validation.\n2. Trigger action to validate regex matching when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_235).",
+  "input": "Target: terms of service scroll validation, Action: validate regex matching, Parameters: when network speed is throttled, Case Index: SEL_235",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_235.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_235_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

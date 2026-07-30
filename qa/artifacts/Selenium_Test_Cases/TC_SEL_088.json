@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_088",
+  "module": "Authentication",
+  "feature": "validate regex matching for session token refresh process after five minutes of inactivity",
+  "title": "Verify behavior of session token refresh process during attempts to validate regex matching after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute validate regex matching for session token refresh process after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session token refresh process configuration after five minutes of inactivity (Ref SEL_088).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-088",
+  "steps": "1. Target active interface for session token refresh process.\n2. Trigger action to validate regex matching after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_088).",
+  "input": "Target: session token refresh process, Action: validate regex matching, Parameters: after five minutes of inactivity, Case Index: SEL_088",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_088.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_088_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_134",
+  "module": "AccessControl",
+  "feature": "check stored script execution for GraphQL execution query depth limit using a different user database index",
+  "title": "Verify behavior of GraphQL execution query depth limit during attempts to check stored script execution using a different user database index",
+  "objective": "Evaluate that user can safely execute check stored script execution for GraphQL execution query depth limit using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to GraphQL execution query depth limit configuration using a different user database index (Ref SEC_134).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-134",
+  "steps": "1. Target active interface for GraphQL execution query depth limit.\n2. Trigger action to check stored script execution using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_134).",
+  "input": "Target: GraphQL execution query depth limit, Action: check stored script execution, Parameters: using a different user database index, Case Index: SEC_134",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_134.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_134_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

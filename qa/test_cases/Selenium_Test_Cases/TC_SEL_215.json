@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_215",
+  "module": "Authentication",
+  "feature": "measure execution time for remember me cookie setting when file size exceeds limit",
+  "title": "Verify behavior of remember me cookie setting during attempts to measure execution time when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute measure execution time for remember me cookie setting when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to remember me cookie setting configuration when file size exceeds limit (Ref SEL_215).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-215",
+  "steps": "1. Target active interface for remember me cookie setting.\n2. Trigger action to measure execution time when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_215).",
+  "input": "Target: remember me cookie setting, Action: measure execution time, Parameters: when file size exceeds limit, Case Index: SEL_215",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_215.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_215_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

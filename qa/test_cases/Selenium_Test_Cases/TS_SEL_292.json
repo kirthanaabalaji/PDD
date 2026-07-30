@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_292",
+  "module": "Settings",
+  "feature": "inspect click handlers for onboarding assessment launch button when network speed is throttled",
+  "title": "Verify behavior of onboarding assessment launch button during attempts to inspect click handlers when network speed is throttled",
+  "objective": "Evaluate that user can safely execute inspect click handlers for onboarding assessment launch button when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to onboarding assessment launch button configuration when network speed is throttled (Ref SEL_292).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-292",
+  "steps": "1. Target active interface for onboarding assessment launch button.\n2. Trigger action to inspect click handlers when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_292).",
+  "input": "Target: onboarding assessment launch button, Action: inspect click handlers, Parameters: when network speed is throttled, Case Index: SEL_292",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_292.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_292_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

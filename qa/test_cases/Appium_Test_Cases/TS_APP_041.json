@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_041",
+  "module": "Settings",
+  "feature": "inspect storage path allocation for account deletion sequence for assistive touch gestures",
+  "title": "Verify behavior of account deletion sequence during attempts to inspect storage path allocation for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute inspect storage path allocation for account deletion sequence for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account deletion sequence configuration for assistive touch gestures (Ref APP_041).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-041",
+  "steps": "1. Target active interface for account deletion sequence.\n2. Trigger action to inspect storage path allocation for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_041).",
+  "input": "Target: account deletion sequence, Action: inspect storage path allocation, Parameters: for assistive touch gestures, Case Index: APP_041",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_041.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_041_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

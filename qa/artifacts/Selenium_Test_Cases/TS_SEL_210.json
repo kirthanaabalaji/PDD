@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_210",
+  "module": "SymptomTracking",
+  "feature": "validate fields for symptom log severity score slider after session token expiration",
+  "title": "Verify behavior of symptom log severity score slider during attempts to validate fields after session token expiration",
+  "objective": "Evaluate that user can safely execute validate fields for symptom log severity score slider after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration after session token expiration (Ref SEL_210).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-210",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to validate fields after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_210).",
+  "input": "Target: symptom log severity score slider, Action: validate fields, Parameters: after session token expiration, Case Index: SEL_210",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_210.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_210_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

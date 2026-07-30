@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_055",
+  "module": "Authentication",
+  "feature": "validate text alignment for browser history back navigation behavior when database sync is delayed",
+  "title": "Verify behavior of browser history back navigation behavior during attempts to validate text alignment when database sync is delayed",
+  "objective": "Evaluate that user can safely execute validate text alignment for browser history back navigation behavior when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to browser history back navigation behavior configuration when database sync is delayed (Ref SEL_055).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-055",
+  "steps": "1. Target active interface for browser history back navigation behavior.\n2. Trigger action to validate text alignment when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_055).",
+  "input": "Target: browser history back navigation behavior, Action: validate text alignment, Parameters: when database sync is delayed, Case Index: SEL_055",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_055.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_055_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

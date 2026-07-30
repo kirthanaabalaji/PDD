@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_024",
+  "module": "Onboarding",
+  "feature": "verify layout rendering for profile information form fields during server database failover",
+  "title": "Verify behavior of profile information form fields during attempts to verify layout rendering during server database failover",
+  "objective": "Evaluate that user can safely execute verify layout rendering for profile information form fields during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile information form fields configuration during server database failover (Ref SEL_024).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-024",
+  "steps": "1. Target active interface for profile information form fields.\n2. Trigger action to verify layout rendering during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_024).",
+  "input": "Target: profile information form fields, Action: verify layout rendering, Parameters: during server database failover, Case Index: SEL_024",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_024.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_024_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

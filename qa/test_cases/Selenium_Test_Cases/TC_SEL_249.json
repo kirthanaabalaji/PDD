@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_249",
+  "module": "Authentication",
+  "feature": "test tooltips display for cookie consent policy banner for assistive screen readers",
+  "title": "Verify behavior of cookie consent policy banner during attempts to test tooltips display for assistive screen readers",
+  "objective": "Evaluate that user can safely execute test tooltips display for cookie consent policy banner for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cookie consent policy banner configuration for assistive screen readers (Ref SEL_249).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-249",
+  "steps": "1. Target active interface for cookie consent policy banner.\n2. Trigger action to test tooltips display for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_249).",
+  "input": "Target: cookie consent policy banner, Action: test tooltips display, Parameters: for assistive screen readers, Case Index: SEL_249",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_249.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_249_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

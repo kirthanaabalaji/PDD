@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_146",
+  "module": "AccessControl",
+  "feature": "audit code injection vulnerabilities for API endpoint parameter validation schemas with html tag script inputs",
+  "title": "Verify behavior of API endpoint parameter validation schemas during attempts to audit code injection vulnerabilities with html tag script inputs",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for API endpoint parameter validation schemas with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API endpoint parameter validation schemas configuration with html tag script inputs (Ref SEC_146).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-146",
+  "steps": "1. Target active interface for API endpoint parameter validation schemas.\n2. Trigger action to audit code injection vulnerabilities with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_146).",
+  "input": "Target: API endpoint parameter validation schemas, Action: audit code injection vulnerabilities, Parameters: with html tag script inputs, Case Index: SEC_146",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_146.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_146_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

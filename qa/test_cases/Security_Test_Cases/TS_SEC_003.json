@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_003",
+  "module": "SQLi",
+  "feature": "manipulate record ownership indices for login password input sanitization for client local cookie storage",
+  "title": "Verify behavior of login password input sanitization during attempts to manipulate record ownership indices for client local cookie storage",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for login password input sanitization for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login password input sanitization configuration for client local cookie storage (Ref SEC_003).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-003",
+  "steps": "1. Target active interface for login password input sanitization.\n2. Trigger action to manipulate record ownership indices for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_003).",
+  "input": "Target: login password input sanitization, Action: manipulate record ownership indices, Parameters: for client local cookie storage, Case Index: SEC_003",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_003.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_003_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

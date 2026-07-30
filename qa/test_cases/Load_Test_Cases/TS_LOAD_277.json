@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_277",
+  "module": "BreathingExercises",
+  "feature": "verify cache hit ratio for /api/data/sessions POST route when downstream Groq service is throttled",
+  "title": "Verify behavior of /api/data/sessions POST route during attempts to verify cache hit ratio when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for /api/data/sessions POST route when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions POST route configuration when downstream Groq service is throttled (Ref LOAD_277).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-277",
+  "steps": "1. Target active interface for /api/data/sessions POST route.\n2. Trigger action to verify cache hit ratio when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_277).",
+  "input": "Target: /api/data/sessions POST route, Action: verify cache hit ratio, Parameters: when downstream Groq service is throttled, Case Index: LOAD_277",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_277.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_277_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

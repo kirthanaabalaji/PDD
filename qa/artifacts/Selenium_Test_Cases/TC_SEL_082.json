@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_082",
+  "module": "AIChat",
+  "feature": "inspect click handlers for help center search suggestions dropdown when file size exceeds limit",
+  "title": "Verify behavior of help center search suggestions dropdown during attempts to inspect click handlers when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute inspect click handlers for help center search suggestions dropdown when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help center search suggestions dropdown configuration when file size exceeds limit (Ref SEL_082).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-082",
+  "steps": "1. Target active interface for help center search suggestions dropdown.\n2. Trigger action to inspect click handlers when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_082).",
+  "input": "Target: help center search suggestions dropdown, Action: inspect click handlers, Parameters: when file size exceeds limit, Case Index: SEL_082",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_082.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_082_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

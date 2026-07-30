@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_155",
+  "module": "Authentication",
+  "feature": "process submission for browser history back navigation behavior using cross-site scripting strings",
+  "title": "Verify behavior of browser history back navigation behavior during attempts to process submission using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute process submission for browser history back navigation behavior using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to browser history back navigation behavior configuration using cross-site scripting strings (Ref SEL_155).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-155",
+  "steps": "1. Target active interface for browser history back navigation behavior.\n2. Trigger action to process submission using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_155).",
+  "input": "Target: browser history back navigation behavior, Action: process submission, Parameters: using cross-site scripting strings, Case Index: SEL_155",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_155.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_155_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

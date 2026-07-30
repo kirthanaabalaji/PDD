@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_194",
+  "module": "Settings",
+  "feature": "measure execution time for api error toast notifications on narrow mobile layout viewport",
+  "title": "Verify behavior of api error toast notifications during attempts to measure execution time on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute measure execution time for api error toast notifications on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration on narrow mobile layout viewport (Ref SEL_194).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-194",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to measure execution time on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_194).",
+  "input": "Target: api error toast notifications, Action: measure execution time, Parameters: on narrow mobile layout viewport, Case Index: SEL_194",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_194.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_194_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

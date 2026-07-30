@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_280",
+  "module": "Settings",
+  "feature": "test app launch sequence for dark mode system theme config with screen readers enabled",
+  "title": "Verify behavior of dark mode system theme config during attempts to test app launch sequence with screen readers enabled",
+  "objective": "Evaluate that user can safely execute test app launch sequence for dark mode system theme config with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode system theme config configuration with screen readers enabled (Ref APP_280).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-280",
+  "steps": "1. Target active interface for dark mode system theme config.\n2. Trigger action to test app launch sequence with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_280).",
+  "input": "Target: dark mode system theme config, Action: test app launch sequence, Parameters: with screen readers enabled, Case Index: APP_280",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_280.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_280_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

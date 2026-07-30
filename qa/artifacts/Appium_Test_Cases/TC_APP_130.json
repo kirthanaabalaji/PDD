@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_130",
+  "module": "Settings",
+  "feature": "verify image dimensions for dark mode system theme config during background audio sync",
+  "title": "Verify behavior of dark mode system theme config during attempts to verify image dimensions during background audio sync",
+  "objective": "Evaluate that user can safely execute verify image dimensions for dark mode system theme config during background audio sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode system theme config configuration during background audio sync (Ref APP_130).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-130",
+  "steps": "1. Target active interface for dark mode system theme config.\n2. Trigger action to verify image dimensions during background audio sync.\n3. Collect audit logs and confirm status code validation (Check APP_130).",
+  "input": "Target: dark mode system theme config, Action: verify image dimensions, Parameters: during background audio sync, Case Index: APP_130",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_130.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_130_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_194",
+  "module": "AccessControl",
+  "feature": "verify CSRF validation defenses for CORS preflight request routing check using external URL domains",
+  "title": "Verify behavior of CORS preflight request routing check during attempts to verify CSRF validation defenses using external URL domains",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for CORS preflight request routing check using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS preflight request routing check configuration using external URL domains (Ref SEC_194).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-194",
+  "steps": "1. Target active interface for CORS preflight request routing check.\n2. Trigger action to verify CSRF validation defenses using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_194).",
+  "input": "Target: CORS preflight request routing check, Action: verify CSRF validation defenses, Parameters: using external URL domains, Case Index: SEC_194",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_194.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_194_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

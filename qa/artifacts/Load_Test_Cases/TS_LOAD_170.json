@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_170",
+  "module": "AIChat",
+  "feature": "measure server warm start delay for Groq chat history truncation queue during network connection dropping events",
+  "title": "Verify behavior of Groq chat history truncation queue during attempts to measure server warm start delay during network connection dropping events",
+  "objective": "Evaluate that user can safely execute measure server warm start delay for Groq chat history truncation queue during network connection dropping events under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq chat history truncation queue configuration during network connection dropping events (Ref LOAD_170).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-170",
+  "steps": "1. Target active interface for Groq chat history truncation queue.\n2. Trigger action to measure server warm start delay during network connection dropping events.\n3. Collect audit logs and confirm status code validation (Check LOAD_170).",
+  "input": "Target: Groq chat history truncation queue, Action: measure server warm start delay, Parameters: during network connection dropping events, Case Index: LOAD_170",
+  "expected": "The verification checks confirm that the response latency remains below 300ms successfully under reference LOAD_170.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_170_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

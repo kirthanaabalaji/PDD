@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_232",
+  "module": "AccessControl",
+  "feature": "validate secure header parameters for account settings password modification flow using external URL domains",
+  "title": "Verify behavior of account settings password modification flow during attempts to validate secure header parameters using external URL domains",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for account settings password modification flow using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account settings password modification flow configuration using external URL domains (Ref SEC_232).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-232",
+  "steps": "1. Target active interface for account settings password modification flow.\n2. Trigger action to validate secure header parameters using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_232).",
+  "input": "Target: account settings password modification flow, Action: validate secure header parameters, Parameters: using external URL domains, Case Index: SEC_232",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_232.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_232_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

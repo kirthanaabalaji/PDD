@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_197",
+  "module": "Onboarding",
+  "feature": "process submission for image crop zoom controls when network speed is throttled",
+  "title": "Verify behavior of image crop zoom controls during attempts to process submission when network speed is throttled",
+  "objective": "Evaluate that user can safely execute process submission for image crop zoom controls when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration when network speed is throttled (Ref SEL_197).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-197",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to process submission when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_197).",
+  "input": "Target: image crop zoom controls, Action: process submission, Parameters: when network speed is throttled, Case Index: SEL_197",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_197.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_197_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

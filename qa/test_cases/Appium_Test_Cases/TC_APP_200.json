@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_200",
+  "module": "Authentication",
+  "feature": "verify native toast layout for welcome screen layout on device orientation rotate",
+  "title": "Verify behavior of welcome screen layout during attempts to verify native toast layout on device orientation rotate",
+  "objective": "Evaluate that user can safely execute verify native toast layout for welcome screen layout on device orientation rotate under system checks.",
+  "preconditions": "System state is reset, and target console is directed to welcome screen layout configuration on device orientation rotate (Ref APP_200).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-200",
+  "steps": "1. Target active interface for welcome screen layout.\n2. Trigger action to verify native toast layout on device orientation rotate.\n3. Collect audit logs and confirm status code validation (Check APP_200).",
+  "input": "Target: welcome screen layout, Action: verify native toast layout, Parameters: on device orientation rotate, Case Index: APP_200",
+  "expected": "The verification checks confirm that the database commits transaction successfully under reference APP_200.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_200_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

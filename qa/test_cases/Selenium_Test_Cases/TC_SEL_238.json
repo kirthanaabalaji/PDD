@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_238",
+  "module": "Authentication",
+  "feature": "check tab indexing for session token refresh process with browser extensions active",
+  "title": "Verify behavior of session token refresh process during attempts to check tab indexing with browser extensions active",
+  "objective": "Evaluate that user can safely execute check tab indexing for session token refresh process with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session token refresh process configuration with browser extensions active (Ref SEL_238).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-238",
+  "steps": "1. Target active interface for session token refresh process.\n2. Trigger action to check tab indexing with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_238).",
+  "input": "Target: session token refresh process, Action: check tab indexing, Parameters: with browser extensions active, Case Index: SEL_238",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_238.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_238_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

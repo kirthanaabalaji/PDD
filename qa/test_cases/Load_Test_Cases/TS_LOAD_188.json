@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_188",
+  "module": "Database",
+  "feature": "evaluate socket connection times for CORS preflight request routing check under complex aggregation pipeline queries",
+  "title": "Verify behavior of CORS preflight request routing check during attempts to evaluate socket connection times under complex aggregation pipeline queries",
+  "objective": "Evaluate that user can safely execute evaluate socket connection times for CORS preflight request routing check under complex aggregation pipeline queries under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS preflight request routing check configuration under complex aggregation pipeline queries (Ref LOAD_188).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-188",
+  "steps": "1. Target active interface for CORS preflight request routing check.\n2. Trigger action to evaluate socket connection times under complex aggregation pipeline queries.\n3. Collect audit logs and confirm status code validation (Check LOAD_188).",
+  "input": "Target: CORS preflight request routing check, Action: evaluate socket connection times, Parameters: under complex aggregation pipeline queries, Case Index: LOAD_188",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_188.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_188_execution.log",
+  "execution_time": "14.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

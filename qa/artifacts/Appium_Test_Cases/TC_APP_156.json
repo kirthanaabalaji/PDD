@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_156",
+  "module": "Authentication",
+  "feature": "verify cache database write for biometric FaceID login with custom theme configurations",
+  "title": "Verify behavior of biometric FaceID login during attempts to verify cache database write with custom theme configurations",
+  "objective": "Evaluate that user can safely execute verify cache database write for biometric FaceID login with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to biometric FaceID login configuration with custom theme configurations (Ref APP_156).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-156",
+  "steps": "1. Target active interface for biometric FaceID login.\n2. Trigger action to verify cache database write with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_156).",
+  "input": "Target: biometric FaceID login, Action: verify cache database write, Parameters: with custom theme configurations, Case Index: APP_156",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_156.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_156_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

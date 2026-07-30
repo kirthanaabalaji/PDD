@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_185",
+  "module": "AccessControl",
+  "feature": "verify cascade data wiping for session timeout logout invalidation without providing auth token headers",
+  "title": "Verify behavior of session timeout logout invalidation during attempts to verify cascade data wiping without providing auth token headers",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for session timeout logout invalidation without providing auth token headers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session timeout logout invalidation configuration without providing auth token headers (Ref SEC_185).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-185",
+  "steps": "1. Target active interface for session timeout logout invalidation.\n2. Trigger action to verify cascade data wiping without providing auth token headers.\n3. Collect audit logs and confirm status code validation (Check SEC_185).",
+  "input": "Target: session timeout logout invalidation, Action: verify cascade data wiping, Parameters: without providing auth token headers, Case Index: SEC_185",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_185.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_185_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

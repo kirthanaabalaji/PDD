@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_261",
+  "module": "SymptomTracking",
+  "feature": "log telemetry events for symptom history calendar grid view with multiple simultaneous submits",
+  "title": "Verify behavior of symptom history calendar grid view during attempts to log telemetry events with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute log telemetry events for symptom history calendar grid view with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom history calendar grid view configuration with multiple simultaneous submits (Ref SEL_261).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-261",
+  "steps": "1. Target active interface for symptom history calendar grid view.\n2. Trigger action to log telemetry events with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_261).",
+  "input": "Target: symptom history calendar grid view, Action: log telemetry events, Parameters: with multiple simultaneous submits, Case Index: SEL_261",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_261.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_261_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

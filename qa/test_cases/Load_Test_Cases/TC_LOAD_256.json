@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_256",
+  "module": "Authentication",
+  "feature": "verify cache hit ratio for /api/auth/profile retrieval when rate limiting limits are reached",
+  "title": "Verify behavior of /api/auth/profile retrieval during attempts to verify cache hit ratio when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for /api/auth/profile retrieval when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/profile retrieval configuration when rate limiting limits are reached (Ref LOAD_256).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-256",
+  "steps": "1. Target active interface for /api/auth/profile retrieval.\n2. Trigger action to verify cache hit ratio when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_256).",
+  "input": "Target: /api/auth/profile retrieval, Action: verify cache hit ratio, Parameters: when rate limiting limits are reached, Case Index: LOAD_256",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_256.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_256_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

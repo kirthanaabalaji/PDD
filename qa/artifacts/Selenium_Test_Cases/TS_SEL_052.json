@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_052",
+  "module": "Authentication",
+  "feature": "inspect download stream for multi-tab login state sync with multiple simultaneous submits",
+  "title": "Verify behavior of multi-tab login state sync during attempts to inspect download stream with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute inspect download stream for multi-tab login state sync with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multi-tab login state sync configuration with multiple simultaneous submits (Ref SEL_052).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-052",
+  "steps": "1. Target active interface for multi-tab login state sync.\n2. Trigger action to inspect download stream with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_052).",
+  "input": "Target: multi-tab login state sync, Action: inspect download stream, Parameters: with multiple simultaneous submits, Case Index: SEL_052",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_052.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_052_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

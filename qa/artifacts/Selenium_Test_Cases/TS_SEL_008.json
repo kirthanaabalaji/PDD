@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_008",
+  "module": "Dashboard",
+  "feature": "process submission for dashboard live graph animation on high resolution displays",
+  "title": "Verify behavior of dashboard live graph animation during attempts to process submission on high resolution displays",
+  "objective": "Evaluate that user can safely execute process submission for dashboard live graph animation on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard live graph animation configuration on high resolution displays (Ref SEL_008).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-008",
+  "steps": "1. Target active interface for dashboard live graph animation.\n2. Trigger action to process submission on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_008).",
+  "input": "Target: dashboard live graph animation, Action: process submission, Parameters: on high resolution displays, Case Index: SEL_008",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_008.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_008_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

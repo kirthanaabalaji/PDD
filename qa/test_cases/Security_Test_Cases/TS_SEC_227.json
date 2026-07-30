@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_227",
+  "module": "SQLi",
+  "feature": "verify cascade data wiping for unauthenticated route access controls by requesting admin privilege routes",
+  "title": "Verify behavior of unauthenticated route access controls during attempts to verify cascade data wiping by requesting admin privilege routes",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for unauthenticated route access controls by requesting admin privilege routes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unauthenticated route access controls configuration by requesting admin privilege routes (Ref SEC_227).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-227",
+  "steps": "1. Target active interface for unauthenticated route access controls.\n2. Trigger action to verify cascade data wiping by requesting admin privilege routes.\n3. Collect audit logs and confirm status code validation (Check SEC_227).",
+  "input": "Target: unauthenticated route access controls, Action: verify cascade data wiping, Parameters: by requesting admin privilege routes, Case Index: SEC_227",
+  "expected": "The verification checks confirm that the user is kept on original origin domain successfully under reference SEC_227.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_227_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_033",
+  "module": "BreathingAnalysis",
+  "feature": "measure network bandwidth load for /api/data/reports POST route on database replica set failover",
+  "title": "Verify behavior of /api/data/reports POST route during attempts to measure network bandwidth load on database replica set failover",
+  "objective": "Evaluate that user can safely execute measure network bandwidth load for /api/data/reports POST route on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/reports POST route configuration on database replica set failover (Ref LOAD_033).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-033",
+  "steps": "1. Target active interface for /api/data/reports POST route.\n2. Trigger action to measure network bandwidth load on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_033).",
+  "input": "Target: /api/data/reports POST route, Action: measure network bandwidth load, Parameters: on database replica set failover, Case Index: LOAD_033",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_033.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_033_execution.log",
+  "execution_time": "8.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

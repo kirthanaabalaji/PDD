@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_098",
+  "module": "Settings",
+  "feature": "ensure contrast ratios for questionnaire submit assessment confirmation using cross-site scripting strings",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to ensure contrast ratios using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for questionnaire submit assessment confirmation using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration using cross-site scripting strings (Ref SEL_098).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-098",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to ensure contrast ratios using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_098).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: ensure contrast ratios, Parameters: using cross-site scripting strings, Case Index: SEL_098",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_098.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_098_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

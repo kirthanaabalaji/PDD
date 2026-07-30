@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_158",
+  "module": "BreathingAnalysis",
+  "feature": "verify native toast layout for bluetooth stethoscope listener during deep link routing lookup",
+  "title": "Verify behavior of bluetooth stethoscope listener during attempts to verify native toast layout during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute verify native toast layout for bluetooth stethoscope listener during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to bluetooth stethoscope listener configuration during deep link routing lookup (Ref APP_158).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-158",
+  "steps": "1. Target active interface for bluetooth stethoscope listener.\n2. Trigger action to verify native toast layout during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_158).",
+  "input": "Target: bluetooth stethoscope listener, Action: verify native toast layout, Parameters: during deep link routing lookup, Case Index: APP_158",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_158.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_158_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

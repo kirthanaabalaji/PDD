@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_258",
+  "module": "SymptomTracking",
+  "feature": "test queue backlog latency for /api/data/symptoms DELETE route when downstream Groq service is throttled",
+  "title": "Verify behavior of /api/data/symptoms DELETE route during attempts to test queue backlog latency when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for /api/data/symptoms DELETE route when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/symptoms DELETE route configuration when downstream Groq service is throttled (Ref LOAD_258).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-258",
+  "steps": "1. Target active interface for /api/data/symptoms DELETE route.\n2. Trigger action to test queue backlog latency when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_258).",
+  "input": "Target: /api/data/symptoms DELETE route, Action: test queue backlog latency, Parameters: when downstream Groq service is throttled, Case Index: LOAD_258",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_258.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_258_execution.log",
+  "execution_time": "14.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

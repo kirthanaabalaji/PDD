@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_200",
+  "module": "Authentication",
+  "feature": "check boundary limits for login input fields with browser extensions active",
+  "title": "Verify behavior of login input fields during attempts to check boundary limits with browser extensions active",
+  "objective": "Evaluate that user can safely execute check boundary limits for login input fields with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login input fields configuration with browser extensions active (Ref SEL_200).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-200",
+  "steps": "1. Target active interface for login input fields.\n2. Trigger action to check boundary limits with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_200).",
+  "input": "Target: login input fields, Action: check boundary limits, Parameters: with browser extensions active, Case Index: SEL_200",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_200.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_200_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

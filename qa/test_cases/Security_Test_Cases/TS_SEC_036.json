@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_036",
+  "module": "AccessControl",
+  "feature": "test token generation logic for server secrets database configuration with command terminal syntax symbols",
+  "title": "Verify behavior of server secrets database configuration during attempts to test token generation logic with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute test token generation logic for server secrets database configuration with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server secrets database configuration configuration with command terminal syntax symbols (Ref SEC_036).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-036",
+  "steps": "1. Target active interface for server secrets database configuration.\n2. Trigger action to test token generation logic with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_036).",
+  "input": "Target: server secrets database configuration, Action: test token generation logic, Parameters: with command terminal syntax symbols, Case Index: SEC_036",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_036.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_036_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

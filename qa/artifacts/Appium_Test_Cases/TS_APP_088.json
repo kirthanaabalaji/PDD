@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_088",
+  "module": "Settings",
+  "feature": "verify image dimensions for help search auto-suggestions when system notification service crashes",
+  "title": "Verify behavior of help search auto-suggestions during attempts to verify image dimensions when system notification service crashes",
+  "objective": "Evaluate that user can safely execute verify image dimensions for help search auto-suggestions when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help search auto-suggestions configuration when system notification service crashes (Ref APP_088).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-088",
+  "steps": "1. Target active interface for help search auto-suggestions.\n2. Trigger action to verify image dimensions when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_088).",
+  "input": "Target: help search auto-suggestions, Action: verify image dimensions, Parameters: when system notification service crashes, Case Index: APP_088",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_088.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_088_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

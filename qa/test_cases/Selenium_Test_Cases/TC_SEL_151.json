@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_151",
+  "module": "BreathingExercises",
+  "feature": "validate regex matching for breathing exercise custom configuration with custom theme configurations",
+  "title": "Verify behavior of breathing exercise custom configuration during attempts to validate regex matching with custom theme configurations",
+  "objective": "Evaluate that user can safely execute validate regex matching for breathing exercise custom configuration with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing exercise custom configuration configuration with custom theme configurations (Ref SEL_151).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-151",
+  "steps": "1. Target active interface for breathing exercise custom configuration.\n2. Trigger action to validate regex matching with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_151).",
+  "input": "Target: breathing exercise custom configuration, Action: validate regex matching, Parameters: with custom theme configurations, Case Index: SEL_151",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_151.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_151_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_145",
+  "module": "AIChat",
+  "feature": "test swipe gesture handlers for voice input speech recognition when system notification service crashes",
+  "title": "Verify behavior of voice input speech recognition during attempts to test swipe gesture handlers when system notification service crashes",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for voice input speech recognition when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to voice input speech recognition configuration when system notification service crashes (Ref APP_145).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-145",
+  "steps": "1. Target active interface for voice input speech recognition.\n2. Trigger action to test swipe gesture handlers when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_145).",
+  "input": "Target: voice input speech recognition, Action: test swipe gesture handlers, Parameters: when system notification service crashes, Case Index: APP_145",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_145.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_145_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

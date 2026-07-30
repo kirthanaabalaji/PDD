@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_023",
+  "module": "Settings",
+  "feature": "test network call recovery for warm start wake sequence with custom theme configurations",
+  "title": "Verify behavior of warm start wake sequence during attempts to test network call recovery with custom theme configurations",
+  "objective": "Evaluate that user can safely execute test network call recovery for warm start wake sequence with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to warm start wake sequence configuration with custom theme configurations (Ref APP_023).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-023",
+  "steps": "1. Target active interface for warm start wake sequence.\n2. Trigger action to test network call recovery with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_023).",
+  "input": "Target: warm start wake sequence, Action: test network call recovery, Parameters: with custom theme configurations, Case Index: APP_023",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_023.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_023_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

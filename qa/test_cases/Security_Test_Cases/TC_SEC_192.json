@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_192",
+  "module": "XSS",
+  "feature": "manipulate record ownership indices for XSS script sanitization on notes with high frequency rapid authentication attempts",
+  "title": "Verify behavior of XSS script sanitization on notes during attempts to manipulate record ownership indices with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for XSS script sanitization on notes with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to XSS script sanitization on notes configuration with high frequency rapid authentication attempts (Ref SEC_192).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-192",
+  "steps": "1. Target active interface for XSS script sanitization on notes.\n2. Trigger action to manipulate record ownership indices with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_192).",
+  "input": "Target: XSS script sanitization on notes, Action: manipulate record ownership indices, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_192",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_192.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_192_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

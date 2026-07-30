@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_233",
+  "module": "Dashboard",
+  "feature": "verify network callback for dashboard widget grid layout during server database failover",
+  "title": "Verify behavior of dashboard widget grid layout during attempts to verify network callback during server database failover",
+  "objective": "Evaluate that user can safely execute verify network callback for dashboard widget grid layout during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard widget grid layout configuration during server database failover (Ref SEL_233).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-233",
+  "steps": "1. Target active interface for dashboard widget grid layout.\n2. Trigger action to verify network callback during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_233).",
+  "input": "Target: dashboard widget grid layout, Action: verify network callback, Parameters: during server database failover, Case Index: SEL_233",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_233.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_233_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

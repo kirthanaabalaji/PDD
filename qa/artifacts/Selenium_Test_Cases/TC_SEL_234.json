@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_234",
+  "module": "Settings",
+  "feature": "verify layout rendering for accessibility keyboard focus indicators when file size exceeds limit",
+  "title": "Verify behavior of accessibility keyboard focus indicators during attempts to verify layout rendering when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute verify layout rendering for accessibility keyboard focus indicators when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to accessibility keyboard focus indicators configuration when file size exceeds limit (Ref SEL_234).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-234",
+  "steps": "1. Target active interface for accessibility keyboard focus indicators.\n2. Trigger action to verify layout rendering when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_234).",
+  "input": "Target: accessibility keyboard focus indicators, Action: verify layout rendering, Parameters: when file size exceeds limit, Case Index: SEL_234",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_234.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_234_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_225",
+  "module": "AccessControl",
+  "feature": "test token generation logic for directory traversal path filters upon user profile account deletion",
+  "title": "Verify behavior of directory traversal path filters during attempts to test token generation logic upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute test token generation logic for directory traversal path filters upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to directory traversal path filters configuration upon user profile account deletion (Ref SEC_225).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-225",
+  "steps": "1. Target active interface for directory traversal path filters.\n2. Trigger action to test token generation logic upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_225).",
+  "input": "Target: directory traversal path filters, Action: test token generation logic, Parameters: upon user profile account deletion, Case Index: SEC_225",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_225.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_225_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

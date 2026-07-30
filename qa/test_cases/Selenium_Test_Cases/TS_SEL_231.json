@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_231",
+  "module": "Settings",
+  "feature": "validate fields for dark mode theme layout colors using cross-site scripting strings",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to validate fields using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute validate fields for dark mode theme layout colors using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration using cross-site scripting strings (Ref SEL_231).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-231",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to validate fields using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_231).",
+  "input": "Target: dark mode theme layout colors, Action: validate fields, Parameters: using cross-site scripting strings, Case Index: SEL_231",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_231.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_231_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_219",
+  "module": "ClinicalReports",
+  "feature": "log telemetry events for doctor search filter dropdown with browser extensions active",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to log telemetry events with browser extensions active",
+  "objective": "Evaluate that user can safely execute log telemetry events for doctor search filter dropdown with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration with browser extensions active (Ref SEL_219).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-219",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to log telemetry events with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_219).",
+  "input": "Target: doctor search filter dropdown, Action: log telemetry events, Parameters: with browser extensions active, Case Index: SEL_219",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_219.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_219_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

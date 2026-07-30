@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_019",
+  "module": "Onboarding",
+  "feature": "test swipe gesture handlers for onboarding questionnaire pagination when user denies camera permission",
+  "title": "Verify behavior of onboarding questionnaire pagination during attempts to test swipe gesture handlers when user denies camera permission",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for onboarding questionnaire pagination when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to onboarding questionnaire pagination configuration when user denies camera permission (Ref APP_019).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-019",
+  "steps": "1. Target active interface for onboarding questionnaire pagination.\n2. Trigger action to test swipe gesture handlers when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_019).",
+  "input": "Target: onboarding questionnaire pagination, Action: test swipe gesture handlers, Parameters: when user denies camera permission, Case Index: APP_019",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_019.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_019_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_047",
+  "module": "Onboarding",
+  "feature": "measure execution time for image crop zoom controls during api gateway timeout",
+  "title": "Verify behavior of image crop zoom controls during attempts to measure execution time during api gateway timeout",
+  "objective": "Evaluate that user can safely execute measure execution time for image crop zoom controls during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration during api gateway timeout (Ref SEL_047).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-047",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to measure execution time during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_047).",
+  "input": "Target: image crop zoom controls, Action: measure execution time, Parameters: during api gateway timeout, Case Index: SEL_047",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_047.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_047_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

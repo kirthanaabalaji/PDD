@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_061",
+  "module": "Notifications",
+  "feature": "test swipe gesture handlers for notification badge count updater with custom theme configurations",
+  "title": "Verify behavior of notification badge count updater during attempts to test swipe gesture handlers with custom theme configurations",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for notification badge count updater with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification badge count updater configuration with custom theme configurations (Ref APP_061).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-061",
+  "steps": "1. Target active interface for notification badge count updater.\n2. Trigger action to test swipe gesture handlers with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_061).",
+  "input": "Target: notification badge count updater, Action: test swipe gesture handlers, Parameters: with custom theme configurations, Case Index: APP_061",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_061.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_061_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

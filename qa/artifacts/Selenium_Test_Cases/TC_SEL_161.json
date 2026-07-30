@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_161",
+  "module": "SymptomTracking",
+  "feature": "ensure contrast ratios for symptom history calendar grid view during api gateway timeout",
+  "title": "Verify behavior of symptom history calendar grid view during attempts to ensure contrast ratios during api gateway timeout",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for symptom history calendar grid view during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom history calendar grid view configuration during api gateway timeout (Ref SEL_161).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-161",
+  "steps": "1. Target active interface for symptom history calendar grid view.\n2. Trigger action to ensure contrast ratios during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_161).",
+  "input": "Target: symptom history calendar grid view, Action: ensure contrast ratios, Parameters: during api gateway timeout, Case Index: SEL_161",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_161.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_161_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

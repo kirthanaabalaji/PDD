@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_170",
+  "module": "ClinicalReports",
+  "feature": "verify network callback for pulmonologist appointment booking slot selection with custom theme configurations",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to verify network callback with custom theme configurations",
+  "objective": "Evaluate that user can safely execute verify network callback for pulmonologist appointment booking slot selection with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration with custom theme configurations (Ref SEL_170).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-170",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to verify network callback with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_170).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: verify network callback, Parameters: with custom theme configurations, Case Index: SEL_170",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_170.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_170_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

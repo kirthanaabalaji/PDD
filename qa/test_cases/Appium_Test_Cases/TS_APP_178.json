@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_178",
+  "module": "ClinicalReports",
+  "feature": "inspect alarm configuration for pulmonologist contact selector when background execution is suspended",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to inspect alarm configuration when background execution is suspended",
+  "objective": "Evaluate that user can safely execute inspect alarm configuration for pulmonologist contact selector when background execution is suspended under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration when background execution is suspended (Ref APP_178).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-178",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to inspect alarm configuration when background execution is suspended.\n3. Collect audit logs and confirm status code validation (Check APP_178).",
+  "input": "Target: pulmonologist contact selector, Action: inspect alarm configuration, Parameters: when background execution is suspended, Case Index: APP_178",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_178.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_178_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

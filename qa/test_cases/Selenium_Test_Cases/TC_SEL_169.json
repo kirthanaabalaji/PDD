@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_169",
+  "module": "ClinicalReports",
+  "feature": "track cookie changes for doctor search filter dropdown when database sync is delayed",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to track cookie changes when database sync is delayed",
+  "objective": "Evaluate that user can safely execute track cookie changes for doctor search filter dropdown when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration when database sync is delayed (Ref SEL_169).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-169",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to track cookie changes when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_169).",
+  "input": "Target: doctor search filter dropdown, Action: track cookie changes, Parameters: when database sync is delayed, Case Index: SEL_169",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_169.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_169_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

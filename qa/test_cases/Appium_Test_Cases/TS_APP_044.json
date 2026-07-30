@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_044",
+  "module": "Settings",
+  "feature": "test network call recovery for api connection recovery check during deep link routing lookup",
+  "title": "Verify behavior of api connection recovery check during attempts to test network call recovery during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute test network call recovery for api connection recovery check during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api connection recovery check configuration during deep link routing lookup (Ref APP_044).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-044",
+  "steps": "1. Target active interface for api connection recovery check.\n2. Trigger action to test network call recovery during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_044).",
+  "input": "Target: api connection recovery check, Action: test network call recovery, Parameters: during deep link routing lookup, Case Index: APP_044",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_044.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_044_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

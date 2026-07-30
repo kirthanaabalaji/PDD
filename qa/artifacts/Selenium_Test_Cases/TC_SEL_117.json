@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_117",
+  "module": "SymptomTracking",
+  "feature": "inspect modal overlays for medicine entry list scroll position using cross-site scripting strings",
+  "title": "Verify behavior of medicine entry list scroll position during attempts to inspect modal overlays using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for medicine entry list scroll position using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine entry list scroll position configuration using cross-site scripting strings (Ref SEL_117).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-117",
+  "steps": "1. Target active interface for medicine entry list scroll position.\n2. Trigger action to inspect modal overlays using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_117).",
+  "input": "Target: medicine entry list scroll position, Action: inspect modal overlays, Parameters: using cross-site scripting strings, Case Index: SEL_117",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_117.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_117_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

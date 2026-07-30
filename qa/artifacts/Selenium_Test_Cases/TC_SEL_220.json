@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_220",
+  "module": "ClinicalReports",
+  "feature": "inspect download stream for pulmonologist appointment booking slot selection for special character strings",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to inspect download stream for special character strings",
+  "objective": "Evaluate that user can safely execute inspect download stream for pulmonologist appointment booking slot selection for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration for special character strings (Ref SEL_220).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-220",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to inspect download stream for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_220).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: inspect download stream, Parameters: for special character strings, Case Index: SEL_220",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_220.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_220_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

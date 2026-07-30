@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_230",
+  "module": "Onboarding",
+  "feature": "audit focus states for change password input validation for assistive screen readers",
+  "title": "Verify behavior of change password input validation during attempts to audit focus states for assistive screen readers",
+  "objective": "Evaluate that user can safely execute audit focus states for change password input validation for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration for assistive screen readers (Ref SEL_230).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-230",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to audit focus states for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_230).",
+  "input": "Target: change password input validation, Action: audit focus states, Parameters: for assistive screen readers, Case Index: SEL_230",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_230.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_230_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

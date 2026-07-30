@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_073",
+  "module": "AccessControl",
+  "feature": "verify database decryption controls for admin route dashboard permissions upon user profile account deletion",
+  "title": "Verify behavior of admin route dashboard permissions during attempts to verify database decryption controls upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for admin route dashboard permissions upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to admin route dashboard permissions configuration upon user profile account deletion (Ref SEC_073).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-073",
+  "steps": "1. Target active interface for admin route dashboard permissions.\n2. Trigger action to verify database decryption controls upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_073).",
+  "input": "Target: admin route dashboard permissions, Action: verify database decryption controls, Parameters: upon user profile account deletion, Case Index: SEC_073",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_073.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_073_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

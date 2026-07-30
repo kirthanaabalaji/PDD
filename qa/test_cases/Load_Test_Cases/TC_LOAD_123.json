@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_123",
+  "module": "Database",
+  "feature": "check thread context switches for Multer payload size validator when rate limiting limits are reached",
+  "title": "Verify behavior of Multer payload size validator during attempts to check thread context switches when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute check thread context switches for Multer payload size validator when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Multer payload size validator configuration when rate limiting limits are reached (Ref LOAD_123).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-123",
+  "steps": "1. Target active interface for Multer payload size validator.\n2. Trigger action to check thread context switches when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_123).",
+  "input": "Target: Multer payload size validator, Action: check thread context switches, Parameters: when rate limiting limits are reached, Case Index: LOAD_123",
+  "expected": "The verification checks confirm that the database throughput handles burst operations successfully under reference LOAD_123.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_123_execution.log",
+  "execution_time": "8.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

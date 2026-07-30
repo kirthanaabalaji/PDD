@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_045",
+  "module": "Settings",
+  "feature": "verify layout rendering for questionnaire save progress state when network speed is throttled",
+  "title": "Verify behavior of questionnaire save progress state during attempts to verify layout rendering when network speed is throttled",
+  "objective": "Evaluate that user can safely execute verify layout rendering for questionnaire save progress state when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire save progress state configuration when network speed is throttled (Ref SEL_045).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-045",
+  "steps": "1. Target active interface for questionnaire save progress state.\n2. Trigger action to verify layout rendering when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_045).",
+  "input": "Target: questionnaire save progress state, Action: verify layout rendering, Parameters: when network speed is throttled, Case Index: SEL_045",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_045.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_045_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

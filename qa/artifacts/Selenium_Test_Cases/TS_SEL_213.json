@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_213",
+  "module": "SymptomTracking",
+  "feature": "verify layout rendering for symptom log trigger selection checkboxes on narrow mobile layout viewport",
+  "title": "Verify behavior of symptom log trigger selection checkboxes during attempts to verify layout rendering on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute verify layout rendering for symptom log trigger selection checkboxes on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log trigger selection checkboxes configuration on narrow mobile layout viewport (Ref SEL_213).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-213",
+  "steps": "1. Target active interface for symptom log trigger selection checkboxes.\n2. Trigger action to verify layout rendering on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_213).",
+  "input": "Target: symptom log trigger selection checkboxes, Action: verify layout rendering, Parameters: on narrow mobile layout viewport, Case Index: SEL_213",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_213.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_213_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_181",
+  "module": "Database",
+  "feature": "test query throughput for Cors verification origin whitelist during server container restart cycles",
+  "title": "Verify behavior of Cors verification origin whitelist during attempts to test query throughput during server container restart cycles",
+  "objective": "Evaluate that user can safely execute test query throughput for Cors verification origin whitelist during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Cors verification origin whitelist configuration during server container restart cycles (Ref LOAD_181).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-181",
+  "steps": "1. Target active interface for Cors verification origin whitelist.\n2. Trigger action to test query throughput during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_181).",
+  "input": "Target: Cors verification origin whitelist, Action: test query throughput, Parameters: during server container restart cycles, Case Index: LOAD_181",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_181.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_181_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

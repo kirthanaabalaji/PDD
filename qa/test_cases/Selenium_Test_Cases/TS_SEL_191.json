@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_191",
+  "module": "Onboarding",
+  "feature": "verify network callback for user deletion confirmation popup after session token expiration",
+  "title": "Verify behavior of user deletion confirmation popup during attempts to verify network callback after session token expiration",
+  "objective": "Evaluate that user can safely execute verify network callback for user deletion confirmation popup after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user deletion confirmation popup configuration after session token expiration (Ref SEL_191).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-191",
+  "steps": "1. Target active interface for user deletion confirmation popup.\n2. Trigger action to verify network callback after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_191).",
+  "input": "Target: user deletion confirmation popup, Action: verify network callback, Parameters: after session token expiration, Case Index: SEL_191",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_191.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_191_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

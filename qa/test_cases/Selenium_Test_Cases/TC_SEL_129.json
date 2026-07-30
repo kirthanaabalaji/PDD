@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_129",
+  "module": "Settings",
+  "feature": "verify layout rendering for emergency trigger swipe action button when cookies are blocked",
+  "title": "Verify behavior of emergency trigger swipe action button during attempts to verify layout rendering when cookies are blocked",
+  "objective": "Evaluate that user can safely execute verify layout rendering for emergency trigger swipe action button when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency trigger swipe action button configuration when cookies are blocked (Ref SEL_129).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-129",
+  "steps": "1. Target active interface for emergency trigger swipe action button.\n2. Trigger action to verify layout rendering when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_129).",
+  "input": "Target: emergency trigger swipe action button, Action: verify layout rendering, Parameters: when cookies are blocked, Case Index: SEL_129",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_129.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_129_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

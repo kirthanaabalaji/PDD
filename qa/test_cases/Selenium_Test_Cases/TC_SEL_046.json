@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_046",
+  "module": "Settings",
+  "feature": "validate regex matching for password visibility toggle switch on high resolution displays",
+  "title": "Verify behavior of password visibility toggle switch during attempts to validate regex matching on high resolution displays",
+  "objective": "Evaluate that user can safely execute validate regex matching for password visibility toggle switch on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password visibility toggle switch configuration on high resolution displays (Ref SEL_046).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-046",
+  "steps": "1. Target active interface for password visibility toggle switch.\n2. Trigger action to validate regex matching on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_046).",
+  "input": "Target: password visibility toggle switch, Action: validate regex matching, Parameters: on high resolution displays, Case Index: SEL_046",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_046.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_046_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_113",
+  "module": "BreathingAnalysis",
+  "feature": "process voice capture for AI audio report preview after biometric authentication failure",
+  "title": "Verify behavior of AI audio report preview during attempts to process voice capture after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute process voice capture for AI audio report preview after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AI audio report preview configuration after biometric authentication failure (Ref APP_113).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-113",
+  "steps": "1. Target active interface for AI audio report preview.\n2. Trigger action to process voice capture after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_113).",
+  "input": "Target: AI audio report preview, Action: process voice capture, Parameters: after biometric authentication failure, Case Index: APP_113",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_113.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_113_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

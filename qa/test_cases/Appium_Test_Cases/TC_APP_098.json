@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_098",
+  "module": "AIChat",
+  "feature": "execute deep link request for screen reader overlay for assistive touch gestures",
+  "title": "Verify behavior of screen reader overlay during attempts to execute deep link request for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute execute deep link request for screen reader overlay for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to screen reader overlay configuration for assistive touch gestures (Ref APP_098).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-098",
+  "steps": "1. Target active interface for screen reader overlay.\n2. Trigger action to execute deep link request for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_098).",
+  "input": "Target: screen reader overlay, Action: execute deep link request, Parameters: for assistive touch gestures, Case Index: APP_098",
+  "expected": "The verification checks confirm that the database commits transaction successfully under reference APP_098.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_098_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

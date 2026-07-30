@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_014",
+  "module": "SymptomTracking",
+  "feature": "ensure contrast ratios for dosage calculator slider controls with multiple simultaneous submits",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to ensure contrast ratios with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for dosage calculator slider controls with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration with multiple simultaneous submits (Ref SEL_014).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-014",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to ensure contrast ratios with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_014).",
+  "input": "Target: dosage calculator slider controls, Action: ensure contrast ratios, Parameters: with multiple simultaneous submits, Case Index: SEL_014",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_014.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_014_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

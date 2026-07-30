@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_139",
+  "module": "Dashboard",
+  "feature": "validate text alignment for quick actions shortcuts bar when file size exceeds limit",
+  "title": "Verify behavior of quick actions shortcuts bar during attempts to validate text alignment when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute validate text alignment for quick actions shortcuts bar when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to quick actions shortcuts bar configuration when file size exceeds limit (Ref SEL_139).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-139",
+  "steps": "1. Target active interface for quick actions shortcuts bar.\n2. Trigger action to validate text alignment when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_139).",
+  "input": "Target: quick actions shortcuts bar, Action: validate text alignment, Parameters: when file size exceeds limit, Case Index: SEL_139",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_139.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_139_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

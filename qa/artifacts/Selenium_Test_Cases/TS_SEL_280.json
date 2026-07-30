@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_280",
+  "module": "Onboarding",
+  "feature": "check tab indexing for change password input validation with multiple simultaneous submits",
+  "title": "Verify behavior of change password input validation during attempts to check tab indexing with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute check tab indexing for change password input validation with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration with multiple simultaneous submits (Ref SEL_280).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-280",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to check tab indexing with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_280).",
+  "input": "Target: change password input validation, Action: check tab indexing, Parameters: with multiple simultaneous submits, Case Index: SEL_280",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_280.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_280_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

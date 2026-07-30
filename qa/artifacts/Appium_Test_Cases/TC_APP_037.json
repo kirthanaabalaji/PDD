@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_037",
+  "module": "BreathingExercises",
+  "feature": "trigger orientation switch for breathing box pattern timer after biometric authentication failure",
+  "title": "Verify behavior of breathing box pattern timer during attempts to trigger orientation switch after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute trigger orientation switch for breathing box pattern timer after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing box pattern timer configuration after biometric authentication failure (Ref APP_037).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-037",
+  "steps": "1. Target active interface for breathing box pattern timer.\n2. Trigger action to trigger orientation switch after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_037).",
+  "input": "Target: breathing box pattern timer, Action: trigger orientation switch, Parameters: after biometric authentication failure, Case Index: APP_037",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_037.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_037_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

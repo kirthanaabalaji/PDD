@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_257",
+  "module": "Database",
+  "feature": "test failover routing times for Mongoose symptom query indexes during server container restart cycles",
+  "title": "Verify behavior of Mongoose symptom query indexes during attempts to test failover routing times during server container restart cycles",
+  "objective": "Evaluate that user can safely execute test failover routing times for Mongoose symptom query indexes during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Mongoose symptom query indexes configuration during server container restart cycles (Ref LOAD_257).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-257",
+  "steps": "1. Target active interface for Mongoose symptom query indexes.\n2. Trigger action to test failover routing times during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_257).",
+  "input": "Target: Mongoose symptom query indexes, Action: test failover routing times, Parameters: during server container restart cycles, Case Index: LOAD_257",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_257.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_257_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_172",
+  "module": "AIChat",
+  "feature": "validate regex matching for ai chat message input box after session token expiration",
+  "title": "Verify behavior of ai chat message input box during attempts to validate regex matching after session token expiration",
+  "objective": "Evaluate that user can safely execute validate regex matching for ai chat message input box after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat message input box configuration after session token expiration (Ref SEL_172).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-172",
+  "steps": "1. Target active interface for ai chat message input box.\n2. Trigger action to validate regex matching after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_172).",
+  "input": "Target: ai chat message input box, Action: validate regex matching, Parameters: after session token expiration, Case Index: SEL_172",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_172.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_172_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

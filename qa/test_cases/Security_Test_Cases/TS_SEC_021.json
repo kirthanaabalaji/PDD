@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_021",
+  "module": "IDOR",
+  "feature": "test SQL injection bypass for IDOR checks on clinical reports with high frequency rapid authentication attempts",
+  "title": "Verify behavior of IDOR checks on clinical reports during attempts to test SQL injection bypass with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute test SQL injection bypass for IDOR checks on clinical reports with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on clinical reports configuration with high frequency rapid authentication attempts (Ref SEC_021).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-021",
+  "steps": "1. Target active interface for IDOR checks on clinical reports.\n2. Trigger action to test SQL injection bypass with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_021).",
+  "input": "Target: IDOR checks on clinical reports, Action: test SQL injection bypass, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_021",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_021.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_021_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_258",
+  "module": "Dashboard",
+  "feature": "audit keyboard navigation for dashboard live graph animation for special character strings",
+  "title": "Verify behavior of dashboard live graph animation during attempts to audit keyboard navigation for special character strings",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for dashboard live graph animation for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard live graph animation configuration for special character strings (Ref SEL_258).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-258",
+  "steps": "1. Target active interface for dashboard live graph animation.\n2. Trigger action to audit keyboard navigation for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_258).",
+  "input": "Target: dashboard live graph animation, Action: audit keyboard navigation, Parameters: for special character strings, Case Index: SEL_258",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_258.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_258_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

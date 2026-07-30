@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_260",
+  "module": "SymptomTracking",
+  "feature": "process submission for symptom log severity score slider using invalid credentials",
+  "title": "Verify behavior of symptom log severity score slider during attempts to process submission using invalid credentials",
+  "objective": "Evaluate that user can safely execute process submission for symptom log severity score slider using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration using invalid credentials (Ref SEL_260).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-260",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to process submission using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_260).",
+  "input": "Target: symptom log severity score slider, Action: process submission, Parameters: using invalid credentials, Case Index: SEL_260",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_260.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_260_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

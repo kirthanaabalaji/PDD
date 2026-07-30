@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_070",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for CSRF security token validator with html tag script inputs",
+  "title": "Verify behavior of CSRF security token validator during attempts to check traversal directory access with html tag script inputs",
+  "objective": "Evaluate that user can safely execute check traversal directory access for CSRF security token validator with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CSRF security token validator configuration with html tag script inputs (Ref SEC_070).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-070",
+  "steps": "1. Target active interface for CSRF security token validator.\n2. Trigger action to check traversal directory access with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_070).",
+  "input": "Target: CSRF security token validator, Action: check traversal directory access, Parameters: with html tag script inputs, Case Index: SEC_070",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_070.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_070_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

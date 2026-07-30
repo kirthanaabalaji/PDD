@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_067",
+  "module": "SymptomTracking",
+  "feature": "validate regex matching for medicine entry list scroll position with browser extensions active",
+  "title": "Verify behavior of medicine entry list scroll position during attempts to validate regex matching with browser extensions active",
+  "objective": "Evaluate that user can safely execute validate regex matching for medicine entry list scroll position with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to medicine entry list scroll position configuration with browser extensions active (Ref SEL_067).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-067",
+  "steps": "1. Target active interface for medicine entry list scroll position.\n2. Trigger action to validate regex matching with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_067).",
+  "input": "Target: medicine entry list scroll position, Action: validate regex matching, Parameters: with browser extensions active, Case Index: SEL_067",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_067.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_067_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

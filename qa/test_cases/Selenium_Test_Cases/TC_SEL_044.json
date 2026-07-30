@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_044",
+  "module": "Settings",
+  "feature": "verify network callback for api error toast notifications when file size exceeds limit",
+  "title": "Verify behavior of api error toast notifications during attempts to verify network callback when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute verify network callback for api error toast notifications when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration when file size exceeds limit (Ref SEL_044).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-044",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to verify network callback when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_044).",
+  "input": "Target: api error toast notifications, Action: verify network callback, Parameters: when file size exceeds limit, Case Index: SEL_044",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_044.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_044_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

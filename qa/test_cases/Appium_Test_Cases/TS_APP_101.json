@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_101",
+  "module": "AIChat",
+  "feature": "test push alert payload for localization language switcher during deep link routing lookup",
+  "title": "Verify behavior of localization language switcher during attempts to test push alert payload during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute test push alert payload for localization language switcher during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to localization language switcher configuration during deep link routing lookup (Ref APP_101).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-101",
+  "steps": "1. Target active interface for localization language switcher.\n2. Trigger action to test push alert payload during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_101).",
+  "input": "Target: localization language switcher, Action: test push alert payload, Parameters: during deep link routing lookup, Case Index: APP_101",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_101.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_101_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

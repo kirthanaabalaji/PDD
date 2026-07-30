@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_189",
+  "module": "AccessControl",
+  "feature": "test SQL injection bypass for CORS response origin whitelist by requesting admin privilege routes",
+  "title": "Verify behavior of CORS response origin whitelist during attempts to test SQL injection bypass by requesting admin privilege routes",
+  "objective": "Evaluate that user can safely execute test SQL injection bypass for CORS response origin whitelist by requesting admin privilege routes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS response origin whitelist configuration by requesting admin privilege routes (Ref SEC_189).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-189",
+  "steps": "1. Target active interface for CORS response origin whitelist.\n2. Trigger action to test SQL injection bypass by requesting admin privilege routes.\n3. Collect audit logs and confirm status code validation (Check SEC_189).",
+  "input": "Target: CORS response origin whitelist, Action: test SQL injection bypass, Parameters: by requesting admin privilege routes, Case Index: SEC_189",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_189.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_189_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

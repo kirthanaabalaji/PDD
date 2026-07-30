@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_123",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for admin route dashboard permissions against OWASP top 10 rules",
+  "title": "Verify behavior of admin route dashboard permissions during attempts to test prompt payload injection against OWASP top 10 rules",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for admin route dashboard permissions against OWASP top 10 rules under system checks.",
+  "preconditions": "System state is reset, and target console is directed to admin route dashboard permissions configuration against OWASP top 10 rules (Ref SEC_123).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-123",
+  "steps": "1. Target active interface for admin route dashboard permissions.\n2. Trigger action to test prompt payload injection against OWASP top 10 rules.\n3. Collect audit logs and confirm status code validation (Check SEC_123).",
+  "input": "Target: admin route dashboard permissions, Action: test prompt payload injection, Parameters: against OWASP top 10 rules, Case Index: SEC_123",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_123.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_123_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

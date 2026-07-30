@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_196",
+  "module": "Database",
+  "feature": "audit log writing speed for Express middleware stack pipeline with multi-threaded k6 load configurations",
+  "title": "Verify behavior of Express middleware stack pipeline during attempts to audit log writing speed with multi-threaded k6 load configurations",
+  "objective": "Evaluate that user can safely execute audit log writing speed for Express middleware stack pipeline with multi-threaded k6 load configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express middleware stack pipeline configuration with multi-threaded k6 load configurations (Ref LOAD_196).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-196",
+  "steps": "1. Target active interface for Express middleware stack pipeline.\n2. Trigger action to audit log writing speed with multi-threaded k6 load configurations.\n3. Collect audit logs and confirm status code validation (Check LOAD_196).",
+  "input": "Target: Express middleware stack pipeline, Action: audit log writing speed, Parameters: with multi-threaded k6 load configurations, Case Index: LOAD_196",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_196.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_196_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

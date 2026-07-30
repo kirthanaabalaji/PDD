@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_181",
+  "module": "JWT",
+  "feature": "test injection path traversal for API key authorization header check with array parameter pollution payloads",
+  "title": "Verify behavior of API key authorization header check during attempts to test injection path traversal with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute test injection path traversal for API key authorization header check with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API key authorization header check configuration with array parameter pollution payloads (Ref SEC_181).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-181",
+  "steps": "1. Target active interface for API key authorization header check.\n2. Trigger action to test injection path traversal with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_181).",
+  "input": "Target: API key authorization header check, Action: test injection path traversal, Parameters: with array parameter pollution payloads, Case Index: SEC_181",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_181.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_181_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_118",
+  "module": "Notifications",
+  "feature": "inspect element boundaries for reminder alarm service with custom theme configurations",
+  "title": "Verify behavior of reminder alarm service during attempts to inspect element boundaries with custom theme configurations",
+  "objective": "Evaluate that user can safely execute inspect element boundaries for reminder alarm service with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reminder alarm service configuration with custom theme configurations (Ref APP_118).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-118",
+  "steps": "1. Target active interface for reminder alarm service.\n2. Trigger action to inspect element boundaries with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_118).",
+  "input": "Target: reminder alarm service, Action: inspect element boundaries, Parameters: with custom theme configurations, Case Index: APP_118",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_118.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_118_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

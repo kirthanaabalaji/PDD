@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_102",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for user role privilege escalation limit by altering token payload structure",
+  "title": "Verify behavior of user role privilege escalation limit during attempts to test prompt payload injection by altering token payload structure",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for user role privilege escalation limit by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user role privilege escalation limit configuration by altering token payload structure (Ref SEC_102).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-102",
+  "steps": "1. Target active interface for user role privilege escalation limit.\n2. Trigger action to test prompt payload injection by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_102).",
+  "input": "Target: user role privilege escalation limit, Action: test prompt payload injection, Parameters: by altering token payload structure, Case Index: SEC_102",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_102.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_102_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

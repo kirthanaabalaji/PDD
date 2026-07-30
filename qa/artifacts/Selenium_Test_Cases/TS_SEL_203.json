@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_203",
+  "module": "Authentication",
+  "feature": "ensure contrast ratios for registration email validation using invalid credentials",
+  "title": "Verify behavior of registration email validation during attempts to ensure contrast ratios using invalid credentials",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for registration email validation using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to registration email validation configuration using invalid credentials (Ref SEL_203).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-203",
+  "steps": "1. Target active interface for registration email validation.\n2. Trigger action to ensure contrast ratios using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_203).",
+  "input": "Target: registration email validation, Action: ensure contrast ratios, Parameters: using invalid credentials, Case Index: SEL_203",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_203.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_203_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

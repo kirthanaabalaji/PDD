@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_093",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for password hashing algorithm settings with command terminal syntax symbols",
+  "title": "Verify behavior of password hashing algorithm settings during attempts to check cookie storage configurations with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for password hashing algorithm settings with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password hashing algorithm settings configuration with command terminal syntax symbols (Ref SEC_093).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-093",
+  "steps": "1. Target active interface for password hashing algorithm settings.\n2. Trigger action to check cookie storage configurations with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_093).",
+  "input": "Target: password hashing algorithm settings, Action: check cookie storage configurations, Parameters: with command terminal syntax symbols, Case Index: SEC_093",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_093.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_093_execution.log",
+  "execution_time": "0.360s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

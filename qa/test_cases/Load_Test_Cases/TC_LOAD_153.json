@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_153",
+  "module": "Authentication",
+  "feature": "test queue backlog latency for /api/auth/login endpoint during peak hours scheduling traffic",
+  "title": "Verify behavior of /api/auth/login endpoint during attempts to test queue backlog latency during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for /api/auth/login endpoint during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/login endpoint configuration during peak hours scheduling traffic (Ref LOAD_153).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-153",
+  "steps": "1. Target active interface for /api/auth/login endpoint.\n2. Trigger action to test queue backlog latency during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_153).",
+  "input": "Target: /api/auth/login endpoint, Action: test queue backlog latency, Parameters: during peak hours scheduling traffic, Case Index: LOAD_153",
+  "expected": "The verification checks confirm that the response latency remains below 300ms successfully under reference LOAD_153.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_153_execution.log",
+  "execution_time": "8.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

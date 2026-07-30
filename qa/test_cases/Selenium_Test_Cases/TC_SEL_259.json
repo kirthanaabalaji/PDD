@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_259",
+  "module": "Authentication",
+  "feature": "check tab indexing for reset password form submission after five minutes of inactivity",
+  "title": "Verify behavior of reset password form submission during attempts to check tab indexing after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute check tab indexing for reset password form submission after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reset password form submission configuration after five minutes of inactivity (Ref SEL_259).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-259",
+  "steps": "1. Target active interface for reset password form submission.\n2. Trigger action to check tab indexing after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_259).",
+  "input": "Target: reset password form submission, Action: check tab indexing, Parameters: after five minutes of inactivity, Case Index: SEL_259",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_259.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_259_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

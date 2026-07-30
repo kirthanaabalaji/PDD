@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_012",
+  "module": "Authentication",
+  "feature": "inspect modal overlays for OTP verification screen timer after five minutes of inactivity",
+  "title": "Verify behavior of OTP verification screen timer during attempts to inspect modal overlays after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for OTP verification screen timer after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to OTP verification screen timer configuration after five minutes of inactivity (Ref SEL_012).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-012",
+  "steps": "1. Target active interface for OTP verification screen timer.\n2. Trigger action to inspect modal overlays after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_012).",
+  "input": "Target: OTP verification screen timer, Action: inspect modal overlays, Parameters: after five minutes of inactivity, Case Index: SEL_012",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_012.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_012_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

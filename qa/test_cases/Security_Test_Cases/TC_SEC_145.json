@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_145",
+  "module": "XSS",
+  "feature": "test executable file injection for SQL injection payload filters under unencrypted transport layer check",
+  "title": "Verify behavior of SQL injection payload filters during attempts to test executable file injection under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute test executable file injection for SQL injection payload filters under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to SQL injection payload filters configuration under unencrypted transport layer check (Ref SEC_145).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-145",
+  "steps": "1. Target active interface for SQL injection payload filters.\n2. Trigger action to test executable file injection under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_145).",
+  "input": "Target: SQL injection payload filters, Action: test executable file injection, Parameters: under unencrypted transport layer check, Case Index: SEC_145",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_145.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_145_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

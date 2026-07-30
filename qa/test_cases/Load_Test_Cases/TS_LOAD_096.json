@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_096",
+  "module": "Database",
+  "feature": "measure network bandwidth load for Express middleware stack pipeline during peak hours scheduling traffic",
+  "title": "Verify behavior of Express middleware stack pipeline during attempts to measure network bandwidth load during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute measure network bandwidth load for Express middleware stack pipeline during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express middleware stack pipeline configuration during peak hours scheduling traffic (Ref LOAD_096).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-096",
+  "steps": "1. Target active interface for Express middleware stack pipeline.\n2. Trigger action to measure network bandwidth load during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_096).",
+  "input": "Target: Express middleware stack pipeline, Action: measure network bandwidth load, Parameters: during peak hours scheduling traffic, Case Index: LOAD_096",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_096.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_096_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

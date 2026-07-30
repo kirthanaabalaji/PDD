@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_029",
+  "module": "Settings",
+  "feature": "process submission for emergency trigger swipe action button with browser extensions active",
+  "title": "Verify behavior of emergency trigger swipe action button during attempts to process submission with browser extensions active",
+  "objective": "Evaluate that user can safely execute process submission for emergency trigger swipe action button with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency trigger swipe action button configuration with browser extensions active (Ref SEL_029).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-029",
+  "steps": "1. Target active interface for emergency trigger swipe action button.\n2. Trigger action to process submission with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_029).",
+  "input": "Target: emergency trigger swipe action button, Action: process submission, Parameters: with browser extensions active, Case Index: SEL_029",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_029.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_029_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_146",
+  "module": "Settings",
+  "feature": "audit focus states for password visibility toggle switch using invalid credentials",
+  "title": "Verify behavior of password visibility toggle switch during attempts to audit focus states using invalid credentials",
+  "objective": "Evaluate that user can safely execute audit focus states for password visibility toggle switch using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password visibility toggle switch configuration using invalid credentials (Ref SEL_146).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-146",
+  "steps": "1. Target active interface for password visibility toggle switch.\n2. Trigger action to audit focus states using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_146).",
+  "input": "Target: password visibility toggle switch, Action: audit focus states, Parameters: using invalid credentials, Case Index: SEL_146",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_146.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_146_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

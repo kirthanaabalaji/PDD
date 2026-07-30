@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_067",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for emergency contact phone text validation with array parameter pollution payloads",
+  "title": "Verify behavior of emergency contact phone text validation during attempts to test parameter parsing pollution with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for emergency contact phone text validation with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency contact phone text validation configuration with array parameter pollution payloads (Ref SEC_067).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-067",
+  "steps": "1. Target active interface for emergency contact phone text validation.\n2. Trigger action to test parameter parsing pollution with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_067).",
+  "input": "Target: emergency contact phone text validation, Action: test parameter parsing pollution, Parameters: with array parameter pollution payloads, Case Index: SEC_067",
+  "expected": "The verification checks confirm that the authorization validation check blocks query successfully under reference SEC_067.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_067_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

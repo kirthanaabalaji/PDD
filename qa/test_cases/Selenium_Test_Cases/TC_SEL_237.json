@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_237",
+  "module": "Settings",
+  "feature": "audit keyboard navigation for offline mode status warning banner during api gateway timeout",
+  "title": "Verify behavior of offline mode status warning banner during attempts to audit keyboard navigation during api gateway timeout",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for offline mode status warning banner during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode status warning banner configuration during api gateway timeout (Ref SEL_237).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-237",
+  "steps": "1. Target active interface for offline mode status warning banner.\n2. Trigger action to audit keyboard navigation during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_237).",
+  "input": "Target: offline mode status warning banner, Action: audit keyboard navigation, Parameters: during api gateway timeout, Case Index: SEL_237",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_237.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_237_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

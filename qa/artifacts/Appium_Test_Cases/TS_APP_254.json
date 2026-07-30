@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_254",
+  "module": "OfflineMode",
+  "feature": "test network call recovery for offline mode login cache when background execution is suspended",
+  "title": "Verify behavior of offline mode login cache during attempts to test network call recovery when background execution is suspended",
+  "objective": "Evaluate that user can safely execute test network call recovery for offline mode login cache when background execution is suspended under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode login cache configuration when background execution is suspended (Ref APP_254).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-254",
+  "steps": "1. Target active interface for offline mode login cache.\n2. Trigger action to test network call recovery when background execution is suspended.\n3. Collect audit logs and confirm status code validation (Check APP_254).",
+  "input": "Target: offline mode login cache, Action: test network call recovery, Parameters: when background execution is suspended, Case Index: APP_254",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_254.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_254_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

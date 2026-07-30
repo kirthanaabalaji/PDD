@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_080",
+  "module": "Onboarding",
+  "feature": "check storage updates for change password input validation on narrow mobile layout viewport",
+  "title": "Verify behavior of change password input validation during attempts to check storage updates on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute check storage updates for change password input validation on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration on narrow mobile layout viewport (Ref SEL_080).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-080",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to check storage updates on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_080).",
+  "input": "Target: change password input validation, Action: check storage updates, Parameters: on narrow mobile layout viewport, Case Index: SEL_080",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_080.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_080_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

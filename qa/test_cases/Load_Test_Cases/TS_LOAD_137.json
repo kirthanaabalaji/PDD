@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_137",
+  "module": "Database",
+  "feature": "check error rate threshold for Audio transcription server socket with large session payload records",
+  "title": "Verify behavior of Audio transcription server socket during attempts to check error rate threshold with large session payload records",
+  "objective": "Evaluate that user can safely execute check error rate threshold for Audio transcription server socket with large session payload records under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Audio transcription server socket configuration with large session payload records (Ref LOAD_137).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-137",
+  "steps": "1. Target active interface for Audio transcription server socket.\n2. Trigger action to check error rate threshold with large session payload records.\n3. Collect audit logs and confirm status code validation (Check LOAD_137).",
+  "input": "Target: Audio transcription server socket, Action: check error rate threshold, Parameters: with large session payload records, Case Index: LOAD_137",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_137.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_137_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

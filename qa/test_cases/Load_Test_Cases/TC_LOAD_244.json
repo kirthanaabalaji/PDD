@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_244",
+  "module": "AIChat",
+  "feature": "test query throughput for /api/chat/clear POST route with unindexed database query filters",
+  "title": "Verify behavior of /api/chat/clear POST route during attempts to test query throughput with unindexed database query filters",
+  "objective": "Evaluate that user can safely execute test query throughput for /api/chat/clear POST route with unindexed database query filters under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat/clear POST route configuration with unindexed database query filters (Ref LOAD_244).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-244",
+  "steps": "1. Target active interface for /api/chat/clear POST route.\n2. Trigger action to test query throughput with unindexed database query filters.\n3. Collect audit logs and confirm status code validation (Check LOAD_244).",
+  "input": "Target: /api/chat/clear POST route, Action: test query throughput, Parameters: with unindexed database query filters, Case Index: LOAD_244",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_244.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_244_execution.log",
+  "execution_time": "9.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

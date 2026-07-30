@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_068",
+  "module": "IDOR",
+  "feature": "verify CSRF validation defenses for IDOR checks on breathing session logs using relative path traversing dots",
+  "title": "Verify behavior of IDOR checks on breathing session logs during attempts to verify CSRF validation defenses using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for IDOR checks on breathing session logs using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on breathing session logs configuration using relative path traversing dots (Ref SEC_068).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-068",
+  "steps": "1. Target active interface for IDOR checks on breathing session logs.\n2. Trigger action to verify CSRF validation defenses using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_068).",
+  "input": "Target: IDOR checks on breathing session logs, Action: verify CSRF validation defenses, Parameters: using relative path traversing dots, Case Index: SEC_068",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_068.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_068_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

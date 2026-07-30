@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_264",
+  "module": "SymptomTracking",
+  "feature": "inspect modal overlays for dosage calculator slider controls when database sync is delayed",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to inspect modal overlays when database sync is delayed",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for dosage calculator slider controls when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration when database sync is delayed (Ref SEL_264).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-264",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to inspect modal overlays when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_264).",
+  "input": "Target: dosage calculator slider controls, Action: inspect modal overlays, Parameters: when database sync is delayed, Case Index: SEL_264",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_264.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_264_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

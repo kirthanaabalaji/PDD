@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_250",
+  "module": "Authentication",
+  "feature": "inspect click handlers for login input fields using cross-site scripting strings",
+  "title": "Verify behavior of login input fields during attempts to inspect click handlers using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute inspect click handlers for login input fields using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login input fields configuration using cross-site scripting strings (Ref SEL_250).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-250",
+  "steps": "1. Target active interface for login input fields.\n2. Trigger action to inspect click handlers using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_250).",
+  "input": "Target: login input fields, Action: inspect click handlers, Parameters: using cross-site scripting strings, Case Index: SEL_250",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_250.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_250_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

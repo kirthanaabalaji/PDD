@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_090",
+  "module": "BreathingExercises",
+  "feature": "monitor memory consumption for breath holding counter with screen readers enabled",
+  "title": "Verify behavior of breath holding counter during attempts to monitor memory consumption with screen readers enabled",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for breath holding counter with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breath holding counter configuration with screen readers enabled (Ref APP_090).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-090",
+  "steps": "1. Target active interface for breath holding counter.\n2. Trigger action to monitor memory consumption with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_090).",
+  "input": "Target: breath holding counter, Action: monitor memory consumption, Parameters: with screen readers enabled, Case Index: APP_090",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_090.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_090_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

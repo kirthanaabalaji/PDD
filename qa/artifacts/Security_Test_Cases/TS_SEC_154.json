@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_154",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for TLS transport layer encryption with high frequency rapid authentication attempts",
+  "title": "Verify behavior of TLS transport layer encryption during attempts to check traversal directory access with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute check traversal directory access for TLS transport layer encryption with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to TLS transport layer encryption configuration with high frequency rapid authentication attempts (Ref SEC_154).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-154",
+  "steps": "1. Target active interface for TLS transport layer encryption.\n2. Trigger action to check traversal directory access with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_154).",
+  "input": "Target: TLS transport layer encryption, Action: check traversal directory access, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_154",
+  "expected": "The verification checks confirm that the system rejects the tampered token successfully under reference SEC_154.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_154_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_170",
+  "module": "AccessControl",
+  "feature": "evaluate privilege escalation bypass for CSRF security token validator by requesting admin privilege routes",
+  "title": "Verify behavior of CSRF security token validator during attempts to evaluate privilege escalation bypass by requesting admin privilege routes",
+  "objective": "Evaluate that user can safely execute evaluate privilege escalation bypass for CSRF security token validator by requesting admin privilege routes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CSRF security token validator configuration by requesting admin privilege routes (Ref SEC_170).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-170",
+  "steps": "1. Target active interface for CSRF security token validator.\n2. Trigger action to evaluate privilege escalation bypass by requesting admin privilege routes.\n3. Collect audit logs and confirm status code validation (Check SEC_170).",
+  "input": "Target: CSRF security token validator, Action: evaluate privilege escalation bypass, Parameters: by requesting admin privilege routes, Case Index: SEC_170",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_170.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_170_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

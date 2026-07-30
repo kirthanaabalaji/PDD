@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_030",
+  "module": "Onboarding",
+  "feature": "log telemetry events for change password input validation for special character strings",
+  "title": "Verify behavior of change password input validation during attempts to log telemetry events for special character strings",
+  "objective": "Evaluate that user can safely execute log telemetry events for change password input validation for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration for special character strings (Ref SEL_030).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-030",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to log telemetry events for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_030).",
+  "input": "Target: change password input validation, Action: log telemetry events, Parameters: for special character strings, Case Index: SEL_030",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_030.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_030_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

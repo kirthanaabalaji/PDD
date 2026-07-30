@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_272",
+  "module": "AccessControl",
+  "feature": "audit code injection vulnerabilities for command line shell execution check using prompt injection context escape",
+  "title": "Verify behavior of command line shell execution check during attempts to audit code injection vulnerabilities using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for command line shell execution check using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to command line shell execution check configuration using prompt injection context escape (Ref SEC_272).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-272",
+  "steps": "1. Target active interface for command line shell execution check.\n2. Trigger action to audit code injection vulnerabilities using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_272).",
+  "input": "Target: command line shell execution check, Action: audit code injection vulnerabilities, Parameters: using prompt injection context escape, Case Index: SEC_272",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_272.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_272_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

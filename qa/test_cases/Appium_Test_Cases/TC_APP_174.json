@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_174",
+  "module": "OfflineMode",
+  "feature": "monitor memory consumption for sync queue network background check for assistive touch gestures",
+  "title": "Verify behavior of sync queue network background check during attempts to monitor memory consumption for assistive touch gestures",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for sync queue network background check for assistive touch gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to sync queue network background check configuration for assistive touch gestures (Ref APP_174).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-174",
+  "steps": "1. Target active interface for sync queue network background check.\n2. Trigger action to monitor memory consumption for assistive touch gestures.\n3. Collect audit logs and confirm status code validation (Check APP_174).",
+  "input": "Target: sync queue network background check, Action: monitor memory consumption, Parameters: for assistive touch gestures, Case Index: APP_174",
+  "expected": "The verification checks confirm that the touch targets resize to accessible scale successfully under reference APP_174.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_174_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

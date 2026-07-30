@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_023",
+  "module": "Settings",
+  "feature": "verify network callback for notification preferences toggles on narrow mobile layout viewport",
+  "title": "Verify behavior of notification preferences toggles during attempts to verify network callback on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute verify network callback for notification preferences toggles on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification preferences toggles configuration on narrow mobile layout viewport (Ref SEL_023).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-023",
+  "steps": "1. Target active interface for notification preferences toggles.\n2. Trigger action to verify network callback on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_023).",
+  "input": "Target: notification preferences toggles, Action: verify network callback, Parameters: on narrow mobile layout viewport, Case Index: SEL_023",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_023.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_023_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

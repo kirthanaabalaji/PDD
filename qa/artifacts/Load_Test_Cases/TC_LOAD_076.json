@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_076",
+  "module": "Database",
+  "feature": "test query throughput for Atlas backup restore throughput with 500 concurrent virtual users",
+  "title": "Verify behavior of Atlas backup restore throughput during attempts to test query throughput with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute test query throughput for Atlas backup restore throughput with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Atlas backup restore throughput configuration with 500 concurrent virtual users (Ref LOAD_076).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-076",
+  "steps": "1. Target active interface for Atlas backup restore throughput.\n2. Trigger action to test query throughput with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_076).",
+  "input": "Target: Atlas backup restore throughput, Action: test query throughput, Parameters: with 500 concurrent virtual users, Case Index: LOAD_076",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_076.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_076_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

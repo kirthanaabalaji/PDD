@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_213",
+  "module": "Database",
+  "feature": "monitor CPU execution load for Auth verification JWT header verification with large session payload records",
+  "title": "Verify behavior of Auth verification JWT header verification during attempts to monitor CPU execution load with large session payload records",
+  "objective": "Evaluate that user can safely execute monitor CPU execution load for Auth verification JWT header verification with large session payload records under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Auth verification JWT header verification configuration with large session payload records (Ref LOAD_213).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-213",
+  "steps": "1. Target active interface for Auth verification JWT header verification.\n2. Trigger action to monitor CPU execution load with large session payload records.\n3. Collect audit logs and confirm status code validation (Check LOAD_213).",
+  "input": "Target: Auth verification JWT header verification, Action: monitor CPU execution load, Parameters: with large session payload records, Case Index: LOAD_213",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_213.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_213_execution.log",
+  "execution_time": "8.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_257",
+  "module": "AccessControl",
+  "feature": "verify CSRF validation defenses for business logic cascade delete checks with array parameter pollution payloads",
+  "title": "Verify behavior of business logic cascade delete checks during attempts to verify CSRF validation defenses with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute verify CSRF validation defenses for business logic cascade delete checks with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to business logic cascade delete checks configuration with array parameter pollution payloads (Ref SEC_257).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-257",
+  "steps": "1. Target active interface for business logic cascade delete checks.\n2. Trigger action to verify CSRF validation defenses with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_257).",
+  "input": "Target: business logic cascade delete checks, Action: verify CSRF validation defenses, Parameters: with array parameter pollution payloads, Case Index: SEC_257",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_257.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_257_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

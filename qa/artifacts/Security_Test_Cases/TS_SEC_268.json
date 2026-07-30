@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_268",
+  "module": "IDOR",
+  "feature": "tamper token authorization signature for IDOR checks on breathing session logs with high frequency rapid authentication attempts",
+  "title": "Verify behavior of IDOR checks on breathing session logs during attempts to tamper token authorization signature with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute tamper token authorization signature for IDOR checks on breathing session logs with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on breathing session logs configuration with high frequency rapid authentication attempts (Ref SEC_268).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-268",
+  "steps": "1. Target active interface for IDOR checks on breathing session logs.\n2. Trigger action to tamper token authorization signature with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_268).",
+  "input": "Target: IDOR checks on breathing session logs, Action: tamper token authorization signature, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_268",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_268.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_268_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

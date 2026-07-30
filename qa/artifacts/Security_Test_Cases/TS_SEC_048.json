@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_048",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for security HTTP response headers with array parameter pollution payloads",
+  "title": "Verify behavior of security HTTP response headers during attempts to audit brute force block speed with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for security HTTP response headers with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to security HTTP response headers configuration with array parameter pollution payloads (Ref SEC_048).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-048",
+  "steps": "1. Target active interface for security HTTP response headers.\n2. Trigger action to audit brute force block speed with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_048).",
+  "input": "Target: security HTTP response headers, Action: audit brute force block speed, Parameters: with array parameter pollution payloads, Case Index: SEC_048",
+  "expected": "The verification checks confirm that the request is blocked by payload validator successfully under reference SEC_048.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_048_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

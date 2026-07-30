@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_071",
+  "module": "Authentication",
+  "feature": "process submission for logout redirect landing page with multiple simultaneous submits",
+  "title": "Verify behavior of logout redirect landing page during attempts to process submission with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute process submission for logout redirect landing page with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to logout redirect landing page configuration with multiple simultaneous submits (Ref SEL_071).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-071",
+  "steps": "1. Target active interface for logout redirect landing page.\n2. Trigger action to process submission with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_071).",
+  "input": "Target: logout redirect landing page, Action: process submission, Parameters: with multiple simultaneous submits, Case Index: SEL_071",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_071.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_071_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

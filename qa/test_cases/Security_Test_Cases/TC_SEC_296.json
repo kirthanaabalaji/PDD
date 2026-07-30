@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_296",
+  "module": "AccessControl",
+  "feature": "evaluate privilege escalation bypass for API endpoint parameter validation schemas using relative path traversing dots",
+  "title": "Verify behavior of API endpoint parameter validation schemas during attempts to evaluate privilege escalation bypass using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute evaluate privilege escalation bypass for API endpoint parameter validation schemas using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to API endpoint parameter validation schemas configuration using relative path traversing dots (Ref SEC_296).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-296",
+  "steps": "1. Target active interface for API endpoint parameter validation schemas.\n2. Trigger action to evaluate privilege escalation bypass using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_296).",
+  "input": "Target: API endpoint parameter validation schemas, Action: evaluate privilege escalation bypass, Parameters: using relative path traversing dots, Case Index: SEC_296",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_296.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_296_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

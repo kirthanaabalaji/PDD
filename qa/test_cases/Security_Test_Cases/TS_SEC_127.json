@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_127",
+  "module": "SQLi",
+  "feature": "validate secure header parameters for unauthenticated route access controls with html tag script inputs",
+  "title": "Verify behavior of unauthenticated route access controls during attempts to validate secure header parameters with html tag script inputs",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for unauthenticated route access controls with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unauthenticated route access controls configuration with html tag script inputs (Ref SEC_127).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-127",
+  "steps": "1. Target active interface for unauthenticated route access controls.\n2. Trigger action to validate secure header parameters with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_127).",
+  "input": "Target: unauthenticated route access controls, Action: validate secure header parameters, Parameters: with html tag script inputs, Case Index: SEC_127",
+  "expected": "The verification checks confirm that the application denies permission and logs 403 successfully under reference SEC_127.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_127_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

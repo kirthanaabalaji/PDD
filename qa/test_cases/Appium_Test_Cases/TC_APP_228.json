@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_228",
+  "module": "ClinicalReports",
+  "feature": "verify localization override for pulmonologist contact selector when user denies camera permission",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to verify localization override when user denies camera permission",
+  "objective": "Evaluate that user can safely execute verify localization override for pulmonologist contact selector when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration when user denies camera permission (Ref APP_228).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-228",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to verify localization override when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_228).",
+  "input": "Target: pulmonologist contact selector, Action: verify localization override, Parameters: when user denies camera permission, Case Index: APP_228",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_228.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_228_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

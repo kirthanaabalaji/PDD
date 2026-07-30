@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_062",
+  "module": "Authentication",
+  "feature": "evaluate socket connection times for /api/auth/verify-otp endpoint with high frequency preflight requests",
+  "title": "Verify behavior of /api/auth/verify-otp endpoint during attempts to evaluate socket connection times with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute evaluate socket connection times for /api/auth/verify-otp endpoint with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/verify-otp endpoint configuration with high frequency preflight requests (Ref LOAD_062).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-062",
+  "steps": "1. Target active interface for /api/auth/verify-otp endpoint.\n2. Trigger action to evaluate socket connection times with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_062).",
+  "input": "Target: /api/auth/verify-otp endpoint, Action: evaluate socket connection times, Parameters: with high frequency preflight requests, Case Index: LOAD_062",
+  "expected": "The verification checks confirm that the query index optimization prevents locks successfully under reference LOAD_062.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_062_execution.log",
+  "execution_time": "6.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

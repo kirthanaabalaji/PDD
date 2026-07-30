@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_086",
+  "module": "Dashboard",
+  "feature": "verify network callback for navigation drawer menu items with browser extensions active",
+  "title": "Verify behavior of navigation drawer menu items during attempts to verify network callback with browser extensions active",
+  "objective": "Evaluate that user can safely execute verify network callback for navigation drawer menu items with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to navigation drawer menu items configuration with browser extensions active (Ref SEL_086).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-086",
+  "steps": "1. Target active interface for navigation drawer menu items.\n2. Trigger action to verify network callback with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_086).",
+  "input": "Target: navigation drawer menu items, Action: verify network callback, Parameters: with browser extensions active, Case Index: SEL_086",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_086.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_086_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

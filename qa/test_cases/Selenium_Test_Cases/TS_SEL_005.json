@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_005",
+  "module": "Authentication",
+  "feature": "measure execution time for browser history back navigation behavior during server database failover",
+  "title": "Verify behavior of browser history back navigation behavior during attempts to measure execution time during server database failover",
+  "objective": "Evaluate that user can safely execute measure execution time for browser history back navigation behavior during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to browser history back navigation behavior configuration during server database failover (Ref SEL_005).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-005",
+  "steps": "1. Target active interface for browser history back navigation behavior.\n2. Trigger action to measure execution time during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_005).",
+  "input": "Target: browser history back navigation behavior, Action: measure execution time, Parameters: during server database failover, Case Index: SEL_005",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_005.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_005_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

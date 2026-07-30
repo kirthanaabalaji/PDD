@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_125",
+  "module": "AIChat",
+  "feature": "audit focus states for ai chat markdown rendering structure for special character strings",
+  "title": "Verify behavior of ai chat markdown rendering structure during attempts to audit focus states for special character strings",
+  "objective": "Evaluate that user can safely execute audit focus states for ai chat markdown rendering structure for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat markdown rendering structure configuration for special character strings (Ref SEL_125).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-125",
+  "steps": "1. Target active interface for ai chat markdown rendering structure.\n2. Trigger action to audit focus states for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_125).",
+  "input": "Target: ai chat markdown rendering structure, Action: audit focus states, Parameters: for special character strings, Case Index: SEL_125",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_125.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_125_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

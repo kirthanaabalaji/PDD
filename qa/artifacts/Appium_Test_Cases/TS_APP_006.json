@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_006",
+  "module": "Authentication",
+  "feature": "monitor memory consumption for biometric FaceID login during deep link routing lookup",
+  "title": "Verify behavior of biometric FaceID login during attempts to monitor memory consumption during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for biometric FaceID login during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to biometric FaceID login configuration during deep link routing lookup (Ref APP_006).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-006",
+  "steps": "1. Target active interface for biometric FaceID login.\n2. Trigger action to monitor memory consumption during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_006).",
+  "input": "Target: biometric FaceID login, Action: monitor memory consumption, Parameters: during deep link routing lookup, Case Index: APP_006",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_006.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_006_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

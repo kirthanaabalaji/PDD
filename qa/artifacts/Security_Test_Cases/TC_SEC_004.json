@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_004",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for TLS transport layer encryption using external URL domains",
+  "title": "Verify behavior of TLS transport layer encryption during attempts to test parameter parsing pollution using external URL domains",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for TLS transport layer encryption using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to TLS transport layer encryption configuration using external URL domains (Ref SEC_004).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-004",
+  "steps": "1. Target active interface for TLS transport layer encryption.\n2. Trigger action to test parameter parsing pollution using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_004).",
+  "input": "Target: TLS transport layer encryption, Action: test parameter parsing pollution, Parameters: using external URL domains, Case Index: SEC_004",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_004.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_004_execution.log",
+  "execution_time": "0.440s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

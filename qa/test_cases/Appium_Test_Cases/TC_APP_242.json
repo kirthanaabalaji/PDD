@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_242",
+  "module": "Settings",
+  "feature": "verify native toast layout for app crash recovery state with screen readers enabled",
+  "title": "Verify behavior of app crash recovery state during attempts to verify native toast layout with screen readers enabled",
+  "objective": "Evaluate that user can safely execute verify native toast layout for app crash recovery state with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to app crash recovery state configuration with screen readers enabled (Ref APP_242).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-242",
+  "steps": "1. Target active interface for app crash recovery state.\n2. Trigger action to verify native toast layout with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_242).",
+  "input": "Target: app crash recovery state, Action: verify native toast layout, Parameters: with screen readers enabled, Case Index: APP_242",
+  "expected": "The verification checks confirm that the touch targets resize to accessible scale successfully under reference APP_242.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_242_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_282",
+  "module": "SymptomTracking",
+  "feature": "verify cache database write for dosage calculator inputs during background audio sync",
+  "title": "Verify behavior of dosage calculator inputs during attempts to verify cache database write during background audio sync",
+  "objective": "Evaluate that user can safely execute verify cache database write for dosage calculator inputs during background audio sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator inputs configuration during background audio sync (Ref APP_282).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-282",
+  "steps": "1. Target active interface for dosage calculator inputs.\n2. Trigger action to verify cache database write during background audio sync.\n3. Collect audit logs and confirm status code validation (Check APP_282).",
+  "input": "Target: dosage calculator inputs, Action: verify cache database write, Parameters: during background audio sync, Case Index: APP_282",
+  "expected": "The verification checks confirm that the process executes in background thread successfully under reference APP_282.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_282_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

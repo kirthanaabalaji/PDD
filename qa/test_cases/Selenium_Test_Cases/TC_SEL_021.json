@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_021",
+  "module": "Authentication",
+  "feature": "validate fields for logout redirect landing page for assistive screen readers",
+  "title": "Verify behavior of logout redirect landing page during attempts to validate fields for assistive screen readers",
+  "objective": "Evaluate that user can safely execute validate fields for logout redirect landing page for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to logout redirect landing page configuration for assistive screen readers (Ref SEL_021).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-021",
+  "steps": "1. Target active interface for logout redirect landing page.\n2. Trigger action to validate fields for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_021).",
+  "input": "Target: logout redirect landing page, Action: validate fields, Parameters: for assistive screen readers, Case Index: SEL_021",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_021.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_021_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

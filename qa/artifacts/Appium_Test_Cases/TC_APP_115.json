@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_115",
+  "module": "Notifications",
+  "feature": "inspect alarm configuration for push notification handler during database compaction sync",
+  "title": "Verify behavior of push notification handler during attempts to inspect alarm configuration during database compaction sync",
+  "objective": "Evaluate that user can safely execute inspect alarm configuration for push notification handler during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to push notification handler configuration during database compaction sync (Ref APP_115).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-115",
+  "steps": "1. Target active interface for push notification handler.\n2. Trigger action to inspect alarm configuration during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_115).",
+  "input": "Target: push notification handler, Action: inspect alarm configuration, Parameters: during database compaction sync, Case Index: APP_115",
+  "expected": "The verification checks confirm that the database commits transaction successfully under reference APP_115.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_115_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

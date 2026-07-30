@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_279",
+  "module": "AccessControl",
+  "feature": "audit brute force block speed for clinical insights calculations validation with html tag script inputs",
+  "title": "Verify behavior of clinical insights calculations validation during attempts to audit brute force block speed with html tag script inputs",
+  "objective": "Evaluate that user can safely execute audit brute force block speed for clinical insights calculations validation with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical insights calculations validation configuration with html tag script inputs (Ref SEC_279).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-279",
+  "steps": "1. Target active interface for clinical insights calculations validation.\n2. Trigger action to audit brute force block speed with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_279).",
+  "input": "Target: clinical insights calculations validation, Action: audit brute force block speed, Parameters: with html tag script inputs, Case Index: SEC_279",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_279.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_279_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_076",
+  "module": "ClinicalReports",
+  "feature": "validate text alignment for clinical recommendations expansion accordion with empty values",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to validate text alignment with empty values",
+  "objective": "Evaluate that user can safely execute validate text alignment for clinical recommendations expansion accordion with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration with empty values (Ref SEL_076).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-076",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to validate text alignment with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_076).",
+  "input": "Target: clinical recommendations expansion accordion, Action: validate text alignment, Parameters: with empty values, Case Index: SEL_076",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_076.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_076_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

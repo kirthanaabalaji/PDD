@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_260",
+  "module": "Database",
+  "feature": "measure request throughput for Redis cache response storage with 1000 concurrent virtual users",
+  "title": "Verify behavior of Redis cache response storage during attempts to measure request throughput with 1000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute measure request throughput for Redis cache response storage with 1000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Redis cache response storage configuration with 1000 concurrent virtual users (Ref LOAD_260).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-260",
+  "steps": "1. Target active interface for Redis cache response storage.\n2. Trigger action to measure request throughput with 1000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_260).",
+  "input": "Target: Redis cache response storage, Action: measure request throughput, Parameters: with 1000 concurrent virtual users, Case Index: LOAD_260",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_260.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_260_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

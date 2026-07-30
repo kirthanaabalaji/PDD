@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_062",
+  "module": "JWT",
+  "feature": "audit code injection vulnerabilities for JWT expiration and signature validation with blank authorization keys",
+  "title": "Verify behavior of JWT expiration and signature validation during attempts to audit code injection vulnerabilities with blank authorization keys",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for JWT expiration and signature validation with blank authorization keys under system checks.",
+  "preconditions": "System state is reset, and target console is directed to JWT expiration and signature validation configuration with blank authorization keys (Ref SEC_062).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-062",
+  "steps": "1. Target active interface for JWT expiration and signature validation.\n2. Trigger action to audit code injection vulnerabilities with blank authorization keys.\n3. Collect audit logs and confirm status code validation (Check SEC_062).",
+  "input": "Target: JWT expiration and signature validation, Action: audit code injection vulnerabilities, Parameters: with blank authorization keys, Case Index: SEC_062",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_062.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_062_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

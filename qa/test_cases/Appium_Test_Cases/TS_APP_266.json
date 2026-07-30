@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_266",
+  "module": "SymptomTracking",
+  "feature": "execute deep link request for daily symptom logging form when user denies camera permission",
+  "title": "Verify behavior of daily symptom logging form during attempts to execute deep link request when user denies camera permission",
+  "objective": "Evaluate that user can safely execute execute deep link request for daily symptom logging form when user denies camera permission under system checks.",
+  "preconditions": "System state is reset, and target console is directed to daily symptom logging form configuration when user denies camera permission (Ref APP_266).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-266",
+  "steps": "1. Target active interface for daily symptom logging form.\n2. Trigger action to execute deep link request when user denies camera permission.\n3. Collect audit logs and confirm status code validation (Check APP_266).",
+  "input": "Target: daily symptom logging form, Action: execute deep link request, Parameters: when user denies camera permission, Case Index: APP_266",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_266.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_266_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

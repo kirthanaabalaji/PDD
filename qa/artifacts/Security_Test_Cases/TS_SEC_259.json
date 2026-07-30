@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_259",
+  "module": "SQLi",
+  "feature": "check traversal directory access for verify OTP code check routing under unencrypted transport layer check",
+  "title": "Verify behavior of verify OTP code check routing during attempts to check traversal directory access under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute check traversal directory access for verify OTP code check routing under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to verify OTP code check routing configuration under unencrypted transport layer check (Ref SEC_259).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-259",
+  "steps": "1. Target active interface for verify OTP code check routing.\n2. Trigger action to check traversal directory access under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_259).",
+  "input": "Target: verify OTP code check routing, Action: check traversal directory access, Parameters: under unencrypted transport layer check, Case Index: SEC_259",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_259.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_259_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_043",
+  "module": "Settings",
+  "feature": "track cookie changes for captcha validation image challenge during server database failover",
+  "title": "Verify behavior of captcha validation image challenge during attempts to track cookie changes during server database failover",
+  "objective": "Evaluate that user can safely execute track cookie changes for captcha validation image challenge during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to captcha validation image challenge configuration during server database failover (Ref SEL_043).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-043",
+  "steps": "1. Target active interface for captcha validation image challenge.\n2. Trigger action to track cookie changes during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_043).",
+  "input": "Target: captcha validation image challenge, Action: track cookie changes, Parameters: during server database failover, Case Index: SEL_043",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_043.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_043_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

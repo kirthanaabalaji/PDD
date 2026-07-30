@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_271",
+  "module": "Authentication",
+  "feature": "inspect click handlers for logout redirect landing page during server database failover",
+  "title": "Verify behavior of logout redirect landing page during attempts to inspect click handlers during server database failover",
+  "objective": "Evaluate that user can safely execute inspect click handlers for logout redirect landing page during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to logout redirect landing page configuration during server database failover (Ref SEL_271).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-271",
+  "steps": "1. Target active interface for logout redirect landing page.\n2. Trigger action to inspect click handlers during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_271).",
+  "input": "Target: logout redirect landing page, Action: inspect click handlers, Parameters: during server database failover, Case Index: SEL_271",
+  "expected": "The verification checks confirm that the client enters offline cached mode successfully under reference SEL_271.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_271_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

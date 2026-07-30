@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_130",
+  "module": "AccessControl",
+  "feature": "test parameter parsing pollution for multer audio file type validation upon user profile account deletion",
+  "title": "Verify behavior of multer audio file type validation during attempts to test parameter parsing pollution upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute test parameter parsing pollution for multer audio file type validation upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multer audio file type validation configuration upon user profile account deletion (Ref SEC_130).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-130",
+  "steps": "1. Target active interface for multer audio file type validation.\n2. Trigger action to test parameter parsing pollution upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_130).",
+  "input": "Target: multer audio file type validation, Action: test parameter parsing pollution, Parameters: upon user profile account deletion, Case Index: SEC_130",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_130.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_130_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

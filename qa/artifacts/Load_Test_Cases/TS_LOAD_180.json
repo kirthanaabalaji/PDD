@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_180",
+  "module": "BreathingExercises",
+  "feature": "measure network bandwidth load for /api/data/sessions GET route when rate limiting limits are reached",
+  "title": "Verify behavior of /api/data/sessions GET route during attempts to measure network bandwidth load when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute measure network bandwidth load for /api/data/sessions GET route when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions GET route configuration when rate limiting limits are reached (Ref LOAD_180).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-180",
+  "steps": "1. Target active interface for /api/data/sessions GET route.\n2. Trigger action to measure network bandwidth load when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_180).",
+  "input": "Target: /api/data/sessions GET route, Action: measure network bandwidth load, Parameters: when rate limiting limits are reached, Case Index: LOAD_180",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_180.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_180_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

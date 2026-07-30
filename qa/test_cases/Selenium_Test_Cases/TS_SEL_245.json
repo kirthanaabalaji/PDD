@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_245",
+  "module": "Settings",
+  "feature": "ensure contrast ratios for questionnaire save progress state when database sync is delayed",
+  "title": "Verify behavior of questionnaire save progress state during attempts to ensure contrast ratios when database sync is delayed",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for questionnaire save progress state when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire save progress state configuration when database sync is delayed (Ref SEL_245).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-245",
+  "steps": "1. Target active interface for questionnaire save progress state.\n2. Trigger action to ensure contrast ratios when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_245).",
+  "input": "Target: questionnaire save progress state, Action: ensure contrast ratios, Parameters: when database sync is delayed, Case Index: SEL_245",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_245.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_245_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

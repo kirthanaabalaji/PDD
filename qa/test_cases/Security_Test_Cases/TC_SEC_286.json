@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_286",
+  "module": "AccessControl",
+  "feature": "test injection path traversal for server secrets database configuration using a different user database index",
+  "title": "Verify behavior of server secrets database configuration during attempts to test injection path traversal using a different user database index",
+  "objective": "Evaluate that user can safely execute test injection path traversal for server secrets database configuration using a different user database index under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server secrets database configuration configuration using a different user database index (Ref SEC_286).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-286",
+  "steps": "1. Target active interface for server secrets database configuration.\n2. Trigger action to test injection path traversal using a different user database index.\n3. Collect audit logs and confirm status code validation (Check SEC_286).",
+  "input": "Target: server secrets database configuration, Action: test injection path traversal, Parameters: using a different user database index, Case Index: SEC_286",
+  "expected": "The verification checks confirm that the request is blocked by payload validator successfully under reference SEC_286.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_286_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

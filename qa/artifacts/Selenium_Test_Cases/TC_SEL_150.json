@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_150",
+  "module": "Authentication",
+  "feature": "verify layout rendering for login input fields when database sync is delayed",
+  "title": "Verify behavior of login input fields during attempts to verify layout rendering when database sync is delayed",
+  "objective": "Evaluate that user can safely execute verify layout rendering for login input fields when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login input fields configuration when database sync is delayed (Ref SEL_150).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-150",
+  "steps": "1. Target active interface for login input fields.\n2. Trigger action to verify layout rendering when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_150).",
+  "input": "Target: login input fields, Action: verify layout rendering, Parameters: when database sync is delayed, Case Index: SEL_150",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_150.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_150_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

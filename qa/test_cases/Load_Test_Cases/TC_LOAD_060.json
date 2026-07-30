@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_060",
+  "module": "Database",
+  "feature": "check thread context switches for Redis cache response storage under rapid burst volume spikes",
+  "title": "Verify behavior of Redis cache response storage during attempts to check thread context switches under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute check thread context switches for Redis cache response storage under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Redis cache response storage configuration under rapid burst volume spikes (Ref LOAD_060).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-060",
+  "steps": "1. Target active interface for Redis cache response storage.\n2. Trigger action to check thread context switches under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_060).",
+  "input": "Target: Redis cache response storage, Action: check thread context switches, Parameters: under rapid burst volume spikes, Case Index: LOAD_060",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_060.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_060_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

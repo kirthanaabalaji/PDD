@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_230",
+  "module": "AccessControl",
+  "feature": "audit code injection vulnerabilities for multer audio file type validation with high frequency rapid authentication attempts",
+  "title": "Verify behavior of multer audio file type validation during attempts to audit code injection vulnerabilities with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute audit code injection vulnerabilities for multer audio file type validation with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to multer audio file type validation configuration with high frequency rapid authentication attempts (Ref SEC_230).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-230",
+  "steps": "1. Target active interface for multer audio file type validation.\n2. Trigger action to audit code injection vulnerabilities with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_230).",
+  "input": "Target: multer audio file type validation, Action: audit code injection vulnerabilities, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_230",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_230.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_230_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

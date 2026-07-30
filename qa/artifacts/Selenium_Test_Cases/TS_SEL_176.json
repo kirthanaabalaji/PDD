@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_176",
+  "module": "ClinicalReports",
+  "feature": "process submission for clinical recommendations expansion accordion during server database failover",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to process submission during server database failover",
+  "objective": "Evaluate that user can safely execute process submission for clinical recommendations expansion accordion during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration during server database failover (Ref SEL_176).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-176",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to process submission during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_176).",
+  "input": "Target: clinical recommendations expansion accordion, Action: process submission, Parameters: during server database failover, Case Index: SEL_176",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_176.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_176_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

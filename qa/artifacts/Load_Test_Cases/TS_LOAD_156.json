@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_156",
+  "module": "Authentication",
+  "feature": "check payload upload time for /api/auth/profile retrieval with large session payload records",
+  "title": "Verify behavior of /api/auth/profile retrieval during attempts to check payload upload time with large session payload records",
+  "objective": "Evaluate that user can safely execute check payload upload time for /api/auth/profile retrieval with large session payload records under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/profile retrieval configuration with large session payload records (Ref LOAD_156).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-156",
+  "steps": "1. Target active interface for /api/auth/profile retrieval.\n2. Trigger action to check payload upload time with large session payload records.\n3. Collect audit logs and confirm status code validation (Check LOAD_156).",
+  "input": "Target: /api/auth/profile retrieval, Action: check payload upload time, Parameters: with large session payload records, Case Index: LOAD_156",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_156.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_156_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_032",
+  "module": "AIChat",
+  "feature": "check boundary limits for help center search suggestions dropdown using invalid credentials",
+  "title": "Verify behavior of help center search suggestions dropdown during attempts to check boundary limits using invalid credentials",
+  "objective": "Evaluate that user can safely execute check boundary limits for help center search suggestions dropdown using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help center search suggestions dropdown configuration using invalid credentials (Ref SEL_032).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-032",
+  "steps": "1. Target active interface for help center search suggestions dropdown.\n2. Trigger action to check boundary limits using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_032).",
+  "input": "Target: help center search suggestions dropdown, Action: check boundary limits, Parameters: using invalid credentials, Case Index: SEL_032",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_032.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_032_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

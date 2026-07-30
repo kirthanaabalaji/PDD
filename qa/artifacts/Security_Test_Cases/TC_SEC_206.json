@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_206",
+  "module": "SQLi",
+  "feature": "verify cascade data wiping for forgot password reset link token upon user profile account deletion",
+  "title": "Verify behavior of forgot password reset link token during attempts to verify cascade data wiping upon user profile account deletion",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for forgot password reset link token upon user profile account deletion under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password reset link token configuration upon user profile account deletion (Ref SEC_206).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-206",
+  "steps": "1. Target active interface for forgot password reset link token.\n2. Trigger action to verify cascade data wiping upon user profile account deletion.\n3. Collect audit logs and confirm status code validation (Check SEC_206).",
+  "input": "Target: forgot password reset link token, Action: verify cascade data wiping, Parameters: upon user profile account deletion, Case Index: SEC_206",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_206.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_206_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

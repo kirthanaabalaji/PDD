@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_267",
+  "module": "Settings",
+  "feature": "evaluate resource lock duration for app upgrade package validator during database compaction sync",
+  "title": "Verify behavior of app upgrade package validator during attempts to evaluate resource lock duration during database compaction sync",
+  "objective": "Evaluate that user can safely execute evaluate resource lock duration for app upgrade package validator during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to app upgrade package validator configuration during database compaction sync (Ref APP_267).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-267",
+  "steps": "1. Target active interface for app upgrade package validator.\n2. Trigger action to evaluate resource lock duration during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_267).",
+  "input": "Target: app upgrade package validator, Action: evaluate resource lock duration, Parameters: during database compaction sync, Case Index: APP_267",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_267.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_267_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

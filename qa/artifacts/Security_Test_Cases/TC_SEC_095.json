@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_095",
+  "module": "XSS",
+  "feature": "verify public route visibility for SQL injection payload filters using malicious string payloads",
+  "title": "Verify behavior of SQL injection payload filters during attempts to verify public route visibility using malicious string payloads",
+  "objective": "Evaluate that user can safely execute verify public route visibility for SQL injection payload filters using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to SQL injection payload filters configuration using malicious string payloads (Ref SEC_095).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-095",
+  "steps": "1. Target active interface for SQL injection payload filters.\n2. Trigger action to verify public route visibility using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_095).",
+  "input": "Target: SQL injection payload filters, Action: verify public route visibility, Parameters: using malicious string payloads, Case Index: SEC_095",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_095.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_095_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

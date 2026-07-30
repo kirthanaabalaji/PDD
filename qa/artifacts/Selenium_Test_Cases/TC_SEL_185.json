@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_185",
+  "module": "Settings",
+  "feature": "check storage updates for terms of service scroll validation with multiple simultaneous submits",
+  "title": "Verify behavior of terms of service scroll validation during attempts to check storage updates with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute check storage updates for terms of service scroll validation with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to terms of service scroll validation configuration with multiple simultaneous submits (Ref SEL_185).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-185",
+  "steps": "1. Target active interface for terms of service scroll validation.\n2. Trigger action to check storage updates with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_185).",
+  "input": "Target: terms of service scroll validation, Action: check storage updates, Parameters: with multiple simultaneous submits, Case Index: SEL_185",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_185.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_185_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

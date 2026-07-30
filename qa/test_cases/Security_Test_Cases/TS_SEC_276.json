@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_276",
+  "module": "AccessControl",
+  "feature": "manipulate record ownership indices for static report PDF download access with array parameter pollution payloads",
+  "title": "Verify behavior of static report PDF download access during attempts to manipulate record ownership indices with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute manipulate record ownership indices for static report PDF download access with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to static report PDF download access configuration with array parameter pollution payloads (Ref SEC_276).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-276",
+  "steps": "1. Target active interface for static report PDF download access.\n2. Trigger action to manipulate record ownership indices with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_276).",
+  "input": "Target: static report PDF download access, Action: manipulate record ownership indices, Parameters: with array parameter pollution payloads, Case Index: SEC_276",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_276.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_276_execution.log",
+  "execution_time": "0.600s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

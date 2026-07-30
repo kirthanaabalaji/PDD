@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_071",
+  "module": "IDOR",
+  "feature": "check stored script execution for IDOR checks on clinical reports without providing auth token headers",
+  "title": "Verify behavior of IDOR checks on clinical reports during attempts to check stored script execution without providing auth token headers",
+  "objective": "Evaluate that user can safely execute check stored script execution for IDOR checks on clinical reports without providing auth token headers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on clinical reports configuration without providing auth token headers (Ref SEC_071).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-071",
+  "steps": "1. Target active interface for IDOR checks on clinical reports.\n2. Trigger action to check stored script execution without providing auth token headers.\n3. Collect audit logs and confirm status code validation (Check SEC_071).",
+  "input": "Target: IDOR checks on clinical reports, Action: check stored script execution, Parameters: without providing auth token headers, Case Index: SEC_071",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_071.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_071_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

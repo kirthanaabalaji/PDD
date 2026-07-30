@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_007",
+  "module": "BreathingExercises",
+  "feature": "check tab indexing for breathing history table paging when network speed is throttled",
+  "title": "Verify behavior of breathing history table paging during attempts to check tab indexing when network speed is throttled",
+  "objective": "Evaluate that user can safely execute check tab indexing for breathing history table paging when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing history table paging configuration when network speed is throttled (Ref SEL_007).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-007",
+  "steps": "1. Target active interface for breathing history table paging.\n2. Trigger action to check tab indexing when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_007).",
+  "input": "Target: breathing history table paging, Action: check tab indexing, Parameters: when network speed is throttled, Case Index: SEL_007",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_007.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_007_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

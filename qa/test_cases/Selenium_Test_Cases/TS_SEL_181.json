@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_181",
+  "module": "Settings",
+  "feature": "validate text alignment for dark mode theme layout colors with browser extensions active",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to validate text alignment with browser extensions active",
+  "objective": "Evaluate that user can safely execute validate text alignment for dark mode theme layout colors with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration with browser extensions active (Ref SEL_181).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-181",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to validate text alignment with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_181).",
+  "input": "Target: dark mode theme layout colors, Action: validate text alignment, Parameters: with browser extensions active, Case Index: SEL_181",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_181.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_181_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

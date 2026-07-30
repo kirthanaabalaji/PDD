@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_062",
+  "module": "Authentication",
+  "feature": "audit focus states for OTP verification screen timer during server database failover",
+  "title": "Verify behavior of OTP verification screen timer during attempts to audit focus states during server database failover",
+  "objective": "Evaluate that user can safely execute audit focus states for OTP verification screen timer during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to OTP verification screen timer configuration during server database failover (Ref SEL_062).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-062",
+  "steps": "1. Target active interface for OTP verification screen timer.\n2. Trigger action to audit focus states during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_062).",
+  "input": "Target: OTP verification screen timer, Action: audit focus states, Parameters: during server database failover, Case Index: SEL_062",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_062.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_062_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

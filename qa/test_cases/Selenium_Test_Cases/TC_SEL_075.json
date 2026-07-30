@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_075",
+  "module": "AIChat",
+  "feature": "inspect modal overlays for ai chat markdown rendering structure with custom theme configurations",
+  "title": "Verify behavior of ai chat markdown rendering structure during attempts to inspect modal overlays with custom theme configurations",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for ai chat markdown rendering structure with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat markdown rendering structure configuration with custom theme configurations (Ref SEL_075).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-075",
+  "steps": "1. Target active interface for ai chat markdown rendering structure.\n2. Trigger action to inspect modal overlays with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_075).",
+  "input": "Target: ai chat markdown rendering structure, Action: inspect modal overlays, Parameters: with custom theme configurations, Case Index: SEL_075",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_075.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_075_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

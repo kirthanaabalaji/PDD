@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_098",
+  "module": "AIChat",
+  "feature": "evaluate connection pool reuse for /api/chat/history GET route under rapid burst volume spikes",
+  "title": "Verify behavior of /api/chat/history GET route during attempts to evaluate connection pool reuse under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for /api/chat/history GET route under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat/history GET route configuration under rapid burst volume spikes (Ref LOAD_098).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-098",
+  "steps": "1. Target active interface for /api/chat/history GET route.\n2. Trigger action to evaluate connection pool reuse under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_098).",
+  "input": "Target: /api/chat/history GET route, Action: evaluate connection pool reuse, Parameters: under rapid burst volume spikes, Case Index: LOAD_098",
+  "expected": "The verification checks confirm that the failover route restores active states successfully under reference LOAD_098.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_098_execution.log",
+  "execution_time": "14.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

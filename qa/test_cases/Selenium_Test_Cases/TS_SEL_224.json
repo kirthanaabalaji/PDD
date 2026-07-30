@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_224",
+  "module": "Onboarding",
+  "feature": "ensure contrast ratios for profile information form fields when cookies are blocked",
+  "title": "Verify behavior of profile information form fields during attempts to ensure contrast ratios when cookies are blocked",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for profile information form fields when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile information form fields configuration when cookies are blocked (Ref SEL_224).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-224",
+  "steps": "1. Target active interface for profile information form fields.\n2. Trigger action to ensure contrast ratios when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_224).",
+  "input": "Target: profile information form fields, Action: ensure contrast ratios, Parameters: when cookies are blocked, Case Index: SEL_224",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_224.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_224_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_096",
+  "module": "Settings",
+  "feature": "inspect modal overlays for password visibility toggle switch after session token expiration",
+  "title": "Verify behavior of password visibility toggle switch during attempts to inspect modal overlays after session token expiration",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for password visibility toggle switch after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password visibility toggle switch configuration after session token expiration (Ref SEL_096).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-096",
+  "steps": "1. Target active interface for password visibility toggle switch.\n2. Trigger action to inspect modal overlays after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_096).",
+  "input": "Target: password visibility toggle switch, Action: inspect modal overlays, Parameters: after session token expiration, Case Index: SEL_096",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_096.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_096_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

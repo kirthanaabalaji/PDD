@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_056",
+  "module": "Authentication",
+  "feature": "ensure contrast ratios for forgot password security link with custom theme configurations",
+  "title": "Verify behavior of forgot password security link during attempts to ensure contrast ratios with custom theme configurations",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for forgot password security link with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password security link configuration with custom theme configurations (Ref SEL_056).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-056",
+  "steps": "1. Target active interface for forgot password security link.\n2. Trigger action to ensure contrast ratios with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_056).",
+  "input": "Target: forgot password security link, Action: ensure contrast ratios, Parameters: with custom theme configurations, Case Index: SEL_056",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_056.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_056_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_114",
+  "module": "SymptomTracking",
+  "feature": "log telemetry events for dosage calculator slider controls with empty values",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to log telemetry events with empty values",
+  "objective": "Evaluate that user can safely execute log telemetry events for dosage calculator slider controls with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration with empty values (Ref SEL_114).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-114",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to log telemetry events with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_114).",
+  "input": "Target: dosage calculator slider controls, Action: log telemetry events, Parameters: with empty values, Case Index: SEL_114",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_114.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_114_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

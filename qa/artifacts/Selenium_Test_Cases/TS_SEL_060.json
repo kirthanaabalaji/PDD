@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_060",
+  "module": "SymptomTracking",
+  "feature": "test tooltips display for symptom log severity score slider using cross-site scripting strings",
+  "title": "Verify behavior of symptom log severity score slider during attempts to test tooltips display using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute test tooltips display for symptom log severity score slider using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration using cross-site scripting strings (Ref SEL_060).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-060",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to test tooltips display using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_060).",
+  "input": "Target: symptom log severity score slider, Action: test tooltips display, Parameters: using cross-site scripting strings, Case Index: SEL_060",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_060.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_060_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

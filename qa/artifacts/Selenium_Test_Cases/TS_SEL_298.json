@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_298",
+  "module": "Settings",
+  "feature": "validate regex matching for questionnaire submit assessment confirmation using invalid credentials",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to validate regex matching using invalid credentials",
+  "objective": "Evaluate that user can safely execute validate regex matching for questionnaire submit assessment confirmation using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration using invalid credentials (Ref SEL_298).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-298",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to validate regex matching using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_298).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: validate regex matching, Parameters: using invalid credentials, Case Index: SEL_298",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_298.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_298_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

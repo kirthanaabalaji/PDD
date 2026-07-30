@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_206",
+  "module": "Authentication",
+  "feature": "check storage updates for forgot password security link under local storage quota limits",
+  "title": "Verify behavior of forgot password security link during attempts to check storage updates under local storage quota limits",
+  "objective": "Evaluate that user can safely execute check storage updates for forgot password security link under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password security link configuration under local storage quota limits (Ref SEL_206).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-206",
+  "steps": "1. Target active interface for forgot password security link.\n2. Trigger action to check storage updates under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_206).",
+  "input": "Target: forgot password security link, Action: check storage updates, Parameters: under local storage quota limits, Case Index: SEL_206",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_206.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_206_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

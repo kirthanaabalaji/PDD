@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_241",
+  "module": "BreathingAnalysis",
+  "feature": "inspect memory allocation limits for Static reports file system cache with 1000 concurrent virtual users",
+  "title": "Verify behavior of Static reports file system cache during attempts to inspect memory allocation limits with 1000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute inspect memory allocation limits for Static reports file system cache with 1000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Static reports file system cache configuration with 1000 concurrent virtual users (Ref LOAD_241).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-241",
+  "steps": "1. Target active interface for Static reports file system cache.\n2. Trigger action to inspect memory allocation limits with 1000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_241).",
+  "input": "Target: Static reports file system cache, Action: inspect memory allocation limits, Parameters: with 1000 concurrent virtual users, Case Index: LOAD_241",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_241.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_241_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

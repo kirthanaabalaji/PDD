@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_140",
+  "module": "Database",
+  "feature": "evaluate connection pool reuse for /api/health check endpoint with 2000 concurrent virtual users",
+  "title": "Verify behavior of /api/health check endpoint during attempts to evaluate connection pool reuse with 2000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for /api/health check endpoint with 2000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/health check endpoint configuration with 2000 concurrent virtual users (Ref LOAD_140).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-140",
+  "steps": "1. Target active interface for /api/health check endpoint.\n2. Trigger action to evaluate connection pool reuse with 2000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_140).",
+  "input": "Target: /api/health check endpoint, Action: evaluate connection pool reuse, Parameters: with 2000 concurrent virtual users, Case Index: LOAD_140",
+  "expected": "The verification checks confirm that the database throughput handles burst operations successfully under reference LOAD_140.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_140_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

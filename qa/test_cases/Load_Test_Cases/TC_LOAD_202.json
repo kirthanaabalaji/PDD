@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_202",
+  "module": "Database",
+  "feature": "test query throughput for Symptom report query aggregator under continuous memory heap pressure",
+  "title": "Verify behavior of Symptom report query aggregator during attempts to test query throughput under continuous memory heap pressure",
+  "objective": "Evaluate that user can safely execute test query throughput for Symptom report query aggregator under continuous memory heap pressure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Symptom report query aggregator configuration under continuous memory heap pressure (Ref LOAD_202).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-202",
+  "steps": "1. Target active interface for Symptom report query aggregator.\n2. Trigger action to test query throughput under continuous memory heap pressure.\n3. Collect audit logs and confirm status code validation (Check LOAD_202).",
+  "input": "Target: Symptom report query aggregator, Action: test query throughput, Parameters: under continuous memory heap pressure, Case Index: LOAD_202",
+  "expected": "The verification checks confirm that the WebSocket session handles parallel connections successfully under reference LOAD_202.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_202_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

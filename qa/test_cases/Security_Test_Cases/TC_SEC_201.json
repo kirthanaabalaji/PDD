@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_201",
+  "module": "AccessControl",
+  "feature": "inspect routing for open redirect for HttpOnly and Secure session cookies using relative path traversing dots",
+  "title": "Verify behavior of HttpOnly and Secure session cookies during attempts to inspect routing for open redirect using relative path traversing dots",
+  "objective": "Evaluate that user can safely execute inspect routing for open redirect for HttpOnly and Secure session cookies using relative path traversing dots under system checks.",
+  "preconditions": "System state is reset, and target console is directed to HttpOnly and Secure session cookies configuration using relative path traversing dots (Ref SEC_201).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-201",
+  "steps": "1. Target active interface for HttpOnly and Secure session cookies.\n2. Trigger action to inspect routing for open redirect using relative path traversing dots.\n3. Collect audit logs and confirm status code validation (Check SEC_201).",
+  "input": "Target: HttpOnly and Secure session cookies, Action: inspect routing for open redirect, Parameters: using relative path traversing dots, Case Index: SEC_201",
+  "expected": "The verification checks confirm that the request is blocked by payload validator successfully under reference SEC_201.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_201_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

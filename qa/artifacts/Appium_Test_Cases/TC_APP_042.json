@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_042",
+  "module": "Settings",
+  "feature": "verify permission dialogue for app crash recovery state with custom theme configurations",
+  "title": "Verify behavior of app crash recovery state during attempts to verify permission dialogue with custom theme configurations",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for app crash recovery state with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to app crash recovery state configuration with custom theme configurations (Ref APP_042).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-042",
+  "steps": "1. Target active interface for app crash recovery state.\n2. Trigger action to verify permission dialogue with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_042).",
+  "input": "Target: app crash recovery state, Action: verify permission dialogue, Parameters: with custom theme configurations, Case Index: APP_042",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_042.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_042_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

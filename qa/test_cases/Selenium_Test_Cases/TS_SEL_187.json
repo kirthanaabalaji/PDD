@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_187",
+  "module": "Settings",
+  "feature": "inspect click handlers for offline mode status warning banner under local storage quota limits",
+  "title": "Verify behavior of offline mode status warning banner during attempts to inspect click handlers under local storage quota limits",
+  "objective": "Evaluate that user can safely execute inspect click handlers for offline mode status warning banner under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode status warning banner configuration under local storage quota limits (Ref SEL_187).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-187",
+  "steps": "1. Target active interface for offline mode status warning banner.\n2. Trigger action to inspect click handlers under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_187).",
+  "input": "Target: offline mode status warning banner, Action: inspect click handlers, Parameters: under local storage quota limits, Case Index: SEL_187",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_187.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_187_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

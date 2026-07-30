@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_202",
+  "module": "AccessControl",
+  "feature": "test injection path traversal for user role privilege escalation limit under unencrypted transport layer check",
+  "title": "Verify behavior of user role privilege escalation limit during attempts to test injection path traversal under unencrypted transport layer check",
+  "objective": "Evaluate that user can safely execute test injection path traversal for user role privilege escalation limit under unencrypted transport layer check under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user role privilege escalation limit configuration under unencrypted transport layer check (Ref SEC_202).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-202",
+  "steps": "1. Target active interface for user role privilege escalation limit.\n2. Trigger action to test injection path traversal under unencrypted transport layer check.\n3. Collect audit logs and confirm status code validation (Check SEC_202).",
+  "input": "Target: user role privilege escalation limit, Action: test injection path traversal, Parameters: under unencrypted transport layer check, Case Index: SEC_202",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_202.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_202_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

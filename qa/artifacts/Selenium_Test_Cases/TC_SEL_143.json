@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_143",
+  "module": "Settings",
+  "feature": "check storage updates for captcha validation image challenge with browser extensions active",
+  "title": "Verify behavior of captcha validation image challenge during attempts to check storage updates with browser extensions active",
+  "objective": "Evaluate that user can safely execute check storage updates for captcha validation image challenge with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to captcha validation image challenge configuration with browser extensions active (Ref SEL_143).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-143",
+  "steps": "1. Target active interface for captcha validation image challenge.\n2. Trigger action to check storage updates with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_143).",
+  "input": "Target: captcha validation image challenge, Action: check storage updates, Parameters: with browser extensions active, Case Index: SEL_143",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_143.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_143_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

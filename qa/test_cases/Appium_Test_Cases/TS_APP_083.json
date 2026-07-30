@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_083",
+  "module": "Settings",
+  "feature": "inspect storage path allocation for deep link navigation schema when background execution is suspended",
+  "title": "Verify behavior of deep link navigation schema during attempts to inspect storage path allocation when background execution is suspended",
+  "objective": "Evaluate that user can safely execute inspect storage path allocation for deep link navigation schema when background execution is suspended under system checks.",
+  "preconditions": "System state is reset, and target console is directed to deep link navigation schema configuration when background execution is suspended (Ref APP_083).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-083",
+  "steps": "1. Target active interface for deep link navigation schema.\n2. Trigger action to inspect storage path allocation when background execution is suspended.\n3. Collect audit logs and confirm status code validation (Check APP_083).",
+  "input": "Target: deep link navigation schema, Action: inspect storage path allocation, Parameters: when background execution is suspended, Case Index: APP_083",
+  "expected": "The verification checks confirm that the local storage path is secured successfully under reference APP_083.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_083_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

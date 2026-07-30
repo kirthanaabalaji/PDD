@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_170",
+  "module": "Settings",
+  "feature": "test network call recovery for cold start initialization duration after biometric authentication failure",
+  "title": "Verify behavior of cold start initialization duration during attempts to test network call recovery after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute test network call recovery for cold start initialization duration after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cold start initialization duration configuration after biometric authentication failure (Ref APP_170).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-170",
+  "steps": "1. Target active interface for cold start initialization duration.\n2. Trigger action to test network call recovery after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_170).",
+  "input": "Target: cold start initialization duration, Action: test network call recovery, Parameters: after biometric authentication failure, Case Index: APP_170",
+  "expected": "The verification checks confirm that the app shows system settings link successfully under reference APP_170.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_170_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

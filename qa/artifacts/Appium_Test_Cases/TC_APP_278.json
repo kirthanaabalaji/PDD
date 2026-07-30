@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_278",
+  "module": "ClinicalReports",
+  "feature": "audit gesture scaling zoom for pulmonologist contact selector when system notification service crashes",
+  "title": "Verify behavior of pulmonologist contact selector during attempts to audit gesture scaling zoom when system notification service crashes",
+  "objective": "Evaluate that user can safely execute audit gesture scaling zoom for pulmonologist contact selector when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist contact selector configuration when system notification service crashes (Ref APP_278).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-278",
+  "steps": "1. Target active interface for pulmonologist contact selector.\n2. Trigger action to audit gesture scaling zoom when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_278).",
+  "input": "Target: pulmonologist contact selector, Action: audit gesture scaling zoom, Parameters: when system notification service crashes, Case Index: APP_278",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_278.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_278_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

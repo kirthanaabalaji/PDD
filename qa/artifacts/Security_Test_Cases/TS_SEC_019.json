@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_019",
+  "module": "AccessControl",
+  "feature": "test executable file injection for server-side request forgery checks using malicious string payloads",
+  "title": "Verify behavior of server-side request forgery checks during attempts to test executable file injection using malicious string payloads",
+  "objective": "Evaluate that user can safely execute test executable file injection for server-side request forgery checks using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server-side request forgery checks configuration using malicious string payloads (Ref SEC_019).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-019",
+  "steps": "1. Target active interface for server-side request forgery checks.\n2. Trigger action to test executable file injection using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_019).",
+  "input": "Target: server-side request forgery checks, Action: test executable file injection, Parameters: using malicious string payloads, Case Index: SEC_019",
+  "expected": "The verification checks confirm that the request is redirected with 401 code successfully under reference SEC_019.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_019_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

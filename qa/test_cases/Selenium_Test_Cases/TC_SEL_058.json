@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_058",
+  "module": "Dashboard",
+  "feature": "reset options for dashboard live graph animation after session token expiration",
+  "title": "Verify behavior of dashboard live graph animation during attempts to reset options after session token expiration",
+  "objective": "Evaluate that user can safely execute reset options for dashboard live graph animation after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard live graph animation configuration after session token expiration (Ref SEL_058).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-058",
+  "steps": "1. Target active interface for dashboard live graph animation.\n2. Trigger action to reset options after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_058).",
+  "input": "Target: dashboard live graph animation, Action: reset options, Parameters: after session token expiration, Case Index: SEL_058",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_058.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_058_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

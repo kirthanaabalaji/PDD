@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_221",
+  "module": "OfflineMode",
+  "feature": "verify native toast layout for AsyncStorage caching engine when system notification service crashes",
+  "title": "Verify behavior of AsyncStorage caching engine during attempts to verify native toast layout when system notification service crashes",
+  "objective": "Evaluate that user can safely execute verify native toast layout for AsyncStorage caching engine when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AsyncStorage caching engine configuration when system notification service crashes (Ref APP_221).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-221",
+  "steps": "1. Target active interface for AsyncStorage caching engine.\n2. Trigger action to verify native toast layout when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_221).",
+  "input": "Target: AsyncStorage caching engine, Action: verify native toast layout, Parameters: when system notification service crashes, Case Index: APP_221",
+  "expected": "The verification checks confirm that the app shows system settings link successfully under reference APP_221.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_221_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

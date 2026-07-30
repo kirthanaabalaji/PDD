@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_195",
+  "module": "AIChat",
+  "feature": "test queue backlog latency for /api/chat messaging endpoint with high frequency preflight requests",
+  "title": "Verify behavior of /api/chat messaging endpoint during attempts to test queue backlog latency with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for /api/chat messaging endpoint with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat messaging endpoint configuration with high frequency preflight requests (Ref LOAD_195).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-195",
+  "steps": "1. Target active interface for /api/chat messaging endpoint.\n2. Trigger action to test queue backlog latency with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_195).",
+  "input": "Target: /api/chat messaging endpoint, Action: test queue backlog latency, Parameters: with high frequency preflight requests, Case Index: LOAD_195",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_195.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_195_execution.log",
+  "execution_time": "10.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

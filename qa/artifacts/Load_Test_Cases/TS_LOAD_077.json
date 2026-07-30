@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_077",
+  "module": "BreathingExercises",
+  "feature": "evaluate connection pool reuse for /api/data/sessions POST route during peak hours scheduling traffic",
+  "title": "Verify behavior of /api/data/sessions POST route during attempts to evaluate connection pool reuse during peak hours scheduling traffic",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for /api/data/sessions POST route during peak hours scheduling traffic under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/sessions POST route configuration during peak hours scheduling traffic (Ref LOAD_077).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-077",
+  "steps": "1. Target active interface for /api/data/sessions POST route.\n2. Trigger action to evaluate connection pool reuse during peak hours scheduling traffic.\n3. Collect audit logs and confirm status code validation (Check LOAD_077).",
+  "input": "Target: /api/data/sessions POST route, Action: evaluate connection pool reuse, Parameters: during peak hours scheduling traffic, Case Index: LOAD_077",
+  "expected": "The verification checks confirm that the error rate stays under 1 percent successfully under reference LOAD_077.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_077_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

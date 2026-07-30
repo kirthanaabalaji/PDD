@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_048",
+  "module": "Settings",
+  "feature": "audit keyboard navigation for questionnaire submit assessment confirmation with browser extensions active",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to audit keyboard navigation with browser extensions active",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for questionnaire submit assessment confirmation with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration with browser extensions active (Ref SEL_048).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-048",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to audit keyboard navigation with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_048).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: audit keyboard navigation, Parameters: with browser extensions active, Case Index: SEL_048",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_048.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_048_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

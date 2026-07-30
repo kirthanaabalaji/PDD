@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_276",
+  "module": "ClinicalReports",
+  "feature": "verify layout rendering for clinical recommendations expansion accordion with browser extensions active",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to verify layout rendering with browser extensions active",
+  "objective": "Evaluate that user can safely execute verify layout rendering for clinical recommendations expansion accordion with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration with browser extensions active (Ref SEL_276).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-276",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to verify layout rendering with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_276).",
+  "input": "Target: clinical recommendations expansion accordion, Action: verify layout rendering, Parameters: with browser extensions active, Case Index: SEL_276",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_276.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_276_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

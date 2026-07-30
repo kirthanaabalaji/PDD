@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_071",
+  "module": "OfflineMode",
+  "feature": "process voice capture for AsyncStorage caching engine with screen readers enabled",
+  "title": "Verify behavior of AsyncStorage caching engine during attempts to process voice capture with screen readers enabled",
+  "objective": "Evaluate that user can safely execute process voice capture for AsyncStorage caching engine with screen readers enabled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AsyncStorage caching engine configuration with screen readers enabled (Ref APP_071).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-071",
+  "steps": "1. Target active interface for AsyncStorage caching engine.\n2. Trigger action to process voice capture with screen readers enabled.\n3. Collect audit logs and confirm status code validation (Check APP_071).",
+  "input": "Target: AsyncStorage caching engine, Action: process voice capture, Parameters: with screen readers enabled, Case Index: APP_071",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_071.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_071_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

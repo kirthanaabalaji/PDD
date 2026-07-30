@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_037",
+  "module": "Settings",
+  "feature": "reset options for offline mode status warning banner with custom theme configurations",
+  "title": "Verify behavior of offline mode status warning banner during attempts to reset options with custom theme configurations",
+  "objective": "Evaluate that user can safely execute reset options for offline mode status warning banner with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode status warning banner configuration with custom theme configurations (Ref SEL_037).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-037",
+  "steps": "1. Target active interface for offline mode status warning banner.\n2. Trigger action to reset options with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_037).",
+  "input": "Target: offline mode status warning banner, Action: reset options, Parameters: with custom theme configurations, Case Index: SEL_037",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_037.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_037_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

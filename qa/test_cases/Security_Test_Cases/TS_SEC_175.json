@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_175",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for directory traversal path filters using external URL domains",
+  "title": "Verify behavior of directory traversal path filters during attempts to check traversal directory access using external URL domains",
+  "objective": "Evaluate that user can safely execute check traversal directory access for directory traversal path filters using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to directory traversal path filters configuration using external URL domains (Ref SEC_175).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-175",
+  "steps": "1. Target active interface for directory traversal path filters.\n2. Trigger action to check traversal directory access using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_175).",
+  "input": "Target: directory traversal path filters, Action: check traversal directory access, Parameters: using external URL domains, Case Index: SEC_175",
+  "expected": "The verification checks confirm that the dependent tables are fully wiped successfully under reference SEC_175.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_175_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

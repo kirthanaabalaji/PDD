@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_006",
+  "module": "Authentication",
+  "feature": "audit keyboard navigation for forgot password security link when file size exceeds limit",
+  "title": "Verify behavior of forgot password security link during attempts to audit keyboard navigation when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for forgot password security link when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to forgot password security link configuration when file size exceeds limit (Ref SEL_006).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-006",
+  "steps": "1. Target active interface for forgot password security link.\n2. Trigger action to audit keyboard navigation when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_006).",
+  "input": "Target: forgot password security link, Action: audit keyboard navigation, Parameters: when file size exceeds limit, Case Index: SEL_006",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_006.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_006_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

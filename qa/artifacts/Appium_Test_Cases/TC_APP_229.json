@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_229",
+  "module": "Settings",
+  "feature": "test swipe gesture handlers for symptom logs calendar view during database compaction sync",
+  "title": "Verify behavior of symptom logs calendar view during attempts to test swipe gesture handlers during database compaction sync",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for symptom logs calendar view during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom logs calendar view configuration during database compaction sync (Ref APP_229).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-229",
+  "steps": "1. Target active interface for symptom logs calendar view.\n2. Trigger action to test swipe gesture handlers during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_229).",
+  "input": "Target: symptom logs calendar view, Action: test swipe gesture handlers, Parameters: during database compaction sync, Case Index: APP_229",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_229.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_229_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

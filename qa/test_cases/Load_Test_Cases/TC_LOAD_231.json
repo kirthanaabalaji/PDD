@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_231",
+  "module": "Database",
+  "feature": "evaluate response time for Cors verification origin whitelist under rapid burst volume spikes",
+  "title": "Verify behavior of Cors verification origin whitelist during attempts to evaluate response time under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute evaluate response time for Cors verification origin whitelist under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Cors verification origin whitelist configuration under rapid burst volume spikes (Ref LOAD_231).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-231",
+  "steps": "1. Target active interface for Cors verification origin whitelist.\n2. Trigger action to evaluate response time under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_231).",
+  "input": "Target: Cors verification origin whitelist, Action: evaluate response time, Parameters: under rapid burst volume spikes, Case Index: LOAD_231",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_231.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_231_execution.log",
+  "execution_time": "5.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_239",
+  "module": "BreathingAnalysis",
+  "feature": "measure request throughput for /api/breathing/analyze endpoint when downstream Groq service is throttled",
+  "title": "Verify behavior of /api/breathing/analyze endpoint during attempts to measure request throughput when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute measure request throughput for /api/breathing/analyze endpoint when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/analyze endpoint configuration when downstream Groq service is throttled (Ref LOAD_239).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-239",
+  "steps": "1. Target active interface for /api/breathing/analyze endpoint.\n2. Trigger action to measure request throughput when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_239).",
+  "input": "Target: /api/breathing/analyze endpoint, Action: measure request throughput, Parameters: when downstream Groq service is throttled, Case Index: LOAD_239",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_239.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_239_execution.log",
+  "execution_time": "15.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

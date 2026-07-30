@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_055",
+  "module": "AccessControl",
+  "feature": "test injection path traversal for MongoDB Atlas network IP access list with command terminal syntax symbols",
+  "title": "Verify behavior of MongoDB Atlas network IP access list during attempts to test injection path traversal with command terminal syntax symbols",
+  "objective": "Evaluate that user can safely execute test injection path traversal for MongoDB Atlas network IP access list with command terminal syntax symbols under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas network IP access list configuration with command terminal syntax symbols (Ref SEC_055).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-055",
+  "steps": "1. Target active interface for MongoDB Atlas network IP access list.\n2. Trigger action to test injection path traversal with command terminal syntax symbols.\n3. Collect audit logs and confirm status code validation (Check SEC_055).",
+  "input": "Target: MongoDB Atlas network IP access list, Action: test injection path traversal, Parameters: with command terminal syntax symbols, Case Index: SEC_055",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_055.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_055_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

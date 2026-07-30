@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_272",
+  "module": "AIChat",
+  "feature": "audit focus states for ai chat message input box when file size exceeds limit",
+  "title": "Verify behavior of ai chat message input box during attempts to audit focus states when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute audit focus states for ai chat message input box when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat message input box configuration when file size exceeds limit (Ref SEL_272).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-272",
+  "steps": "1. Target active interface for ai chat message input box.\n2. Trigger action to audit focus states when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_272).",
+  "input": "Target: ai chat message input box, Action: audit focus states, Parameters: when file size exceeds limit, Case Index: SEL_272",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_272.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_272_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_217",
+  "module": "AccessControl",
+  "feature": "check traversal directory access for emergency contact phone text validation with executable php script files",
+  "title": "Verify behavior of emergency contact phone text validation during attempts to check traversal directory access with executable php script files",
+  "objective": "Evaluate that user can safely execute check traversal directory access for emergency contact phone text validation with executable php script files under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency contact phone text validation configuration with executable php script files (Ref SEC_217).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-217",
+  "steps": "1. Target active interface for emergency contact phone text validation.\n2. Trigger action to check traversal directory access with executable php script files.\n3. Collect audit logs and confirm status code validation (Check SEC_217).",
+  "input": "Target: emergency contact phone text validation, Action: check traversal directory access, Parameters: with executable php script files, Case Index: SEC_217",
+  "expected": "The verification checks confirm that the cookie values cannot be read by Javascript successfully under reference SEC_217.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_217_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

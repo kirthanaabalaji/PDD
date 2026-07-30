@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_251",
+  "module": "BreathingExercises",
+  "feature": "audit focus states for breathing exercise custom configuration on narrow mobile layout viewport",
+  "title": "Verify behavior of breathing exercise custom configuration during attempts to audit focus states on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute audit focus states for breathing exercise custom configuration on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing exercise custom configuration configuration on narrow mobile layout viewport (Ref SEL_251).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-251",
+  "steps": "1. Target active interface for breathing exercise custom configuration.\n2. Trigger action to audit focus states on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_251).",
+  "input": "Target: breathing exercise custom configuration, Action: audit focus states, Parameters: on narrow mobile layout viewport, Case Index: SEL_251",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_251.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_251_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

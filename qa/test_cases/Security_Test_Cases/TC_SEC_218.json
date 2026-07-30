@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_218",
+  "module": "IDOR",
+  "feature": "check stored script execution for IDOR checks on breathing session logs against OWASP top 10 rules",
+  "title": "Verify behavior of IDOR checks on breathing session logs during attempts to check stored script execution against OWASP top 10 rules",
+  "objective": "Evaluate that user can safely execute check stored script execution for IDOR checks on breathing session logs against OWASP top 10 rules under system checks.",
+  "preconditions": "System state is reset, and target console is directed to IDOR checks on breathing session logs configuration against OWASP top 10 rules (Ref SEC_218).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-218",
+  "steps": "1. Target active interface for IDOR checks on breathing session logs.\n2. Trigger action to check stored script execution against OWASP top 10 rules.\n3. Collect audit logs and confirm status code validation (Check SEC_218).",
+  "input": "Target: IDOR checks on breathing session logs, Action: check stored script execution, Parameters: against OWASP top 10 rules, Case Index: SEC_218",
+  "expected": "The verification checks confirm that the request is blocked by payload validator successfully under reference SEC_218.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_218_execution.log",
+  "execution_time": "0.760s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

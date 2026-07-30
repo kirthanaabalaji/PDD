@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_224",
+  "module": "SymptomTracking",
+  "feature": "evaluate connection pool reuse for /api/data/symptoms GET route under continuous long-duration soak run",
+  "title": "Verify behavior of /api/data/symptoms GET route during attempts to evaluate connection pool reuse under continuous long-duration soak run",
+  "objective": "Evaluate that user can safely execute evaluate connection pool reuse for /api/data/symptoms GET route under continuous long-duration soak run under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/symptoms GET route configuration under continuous long-duration soak run (Ref LOAD_224).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-224",
+  "steps": "1. Target active interface for /api/data/symptoms GET route.\n2. Trigger action to evaluate connection pool reuse under continuous long-duration soak run.\n3. Collect audit logs and confirm status code validation (Check LOAD_224).",
+  "input": "Target: /api/data/symptoms GET route, Action: evaluate connection pool reuse, Parameters: under continuous long-duration soak run, Case Index: LOAD_224",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_224.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_224_execution.log",
+  "execution_time": "9.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

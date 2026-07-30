@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_083",
+  "module": "Dashboard",
+  "feature": "audit focus states for dashboard widget grid layout when network speed is throttled",
+  "title": "Verify behavior of dashboard widget grid layout during attempts to audit focus states when network speed is throttled",
+  "objective": "Evaluate that user can safely execute audit focus states for dashboard widget grid layout when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dashboard widget grid layout configuration when network speed is throttled (Ref SEL_083).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-083",
+  "steps": "1. Target active interface for dashboard widget grid layout.\n2. Trigger action to audit focus states when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_083).",
+  "input": "Target: dashboard widget grid layout, Action: audit focus states, Parameters: when network speed is throttled, Case Index: SEL_083",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_083.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_083_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

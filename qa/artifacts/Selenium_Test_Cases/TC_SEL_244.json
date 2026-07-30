@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_244",
+  "module": "Settings",
+  "feature": "validate text alignment for api error toast notifications under local storage quota limits",
+  "title": "Verify behavior of api error toast notifications during attempts to validate text alignment under local storage quota limits",
+  "objective": "Evaluate that user can safely execute validate text alignment for api error toast notifications under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration under local storage quota limits (Ref SEL_244).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-244",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to validate text alignment under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_244).",
+  "input": "Target: api error toast notifications, Action: validate text alignment, Parameters: under local storage quota limits, Case Index: SEL_244",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_244.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_244_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

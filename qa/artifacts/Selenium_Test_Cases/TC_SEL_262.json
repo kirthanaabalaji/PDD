@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_262",
+  "module": "Authentication",
+  "feature": "inspect download stream for OTP verification screen timer when cookies are blocked",
+  "title": "Verify behavior of OTP verification screen timer during attempts to inspect download stream when cookies are blocked",
+  "objective": "Evaluate that user can safely execute inspect download stream for OTP verification screen timer when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to OTP verification screen timer configuration when cookies are blocked (Ref SEL_262).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-262",
+  "steps": "1. Target active interface for OTP verification screen timer.\n2. Trigger action to inspect download stream when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_262).",
+  "input": "Target: OTP verification screen timer, Action: inspect download stream, Parameters: when cookies are blocked, Case Index: SEL_262",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_262.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_262_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

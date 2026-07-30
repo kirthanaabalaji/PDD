@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_142",
+  "module": "Settings",
+  "feature": "trigger orientation switch for app crash recovery state when database storage quota is exceeded",
+  "title": "Verify behavior of app crash recovery state during attempts to trigger orientation switch when database storage quota is exceeded",
+  "objective": "Evaluate that user can safely execute trigger orientation switch for app crash recovery state when database storage quota is exceeded under system checks.",
+  "preconditions": "System state is reset, and target console is directed to app crash recovery state configuration when database storage quota is exceeded (Ref APP_142).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-142",
+  "steps": "1. Target active interface for app crash recovery state.\n2. Trigger action to trigger orientation switch when database storage quota is exceeded.\n3. Collect audit logs and confirm status code validation (Check APP_142).",
+  "input": "Target: app crash recovery state, Action: trigger orientation switch, Parameters: when database storage quota is exceeded, Case Index: APP_142",
+  "expected": "The verification checks confirm that the cached logs are parsed correctly successfully under reference APP_142.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_142_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

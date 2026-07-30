@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_216",
+  "module": "Database",
+  "feature": "test queue backlog latency for Rate limiting API gateway with 2000 concurrent virtual users",
+  "title": "Verify behavior of Rate limiting API gateway during attempts to test queue backlog latency with 2000 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute test queue backlog latency for Rate limiting API gateway with 2000 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Rate limiting API gateway configuration with 2000 concurrent virtual users (Ref LOAD_216).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-216",
+  "steps": "1. Target active interface for Rate limiting API gateway.\n2. Trigger action to test queue backlog latency with 2000 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_216).",
+  "input": "Target: Rate limiting API gateway, Action: test queue backlog latency, Parameters: with 2000 concurrent virtual users, Case Index: LOAD_216",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_216.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_216_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

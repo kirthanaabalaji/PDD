@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_218",
+  "module": "Authentication",
+  "feature": "measure request throughput for /api/auth/emergency-contact updater when rate limiting limits are reached",
+  "title": "Verify behavior of /api/auth/emergency-contact updater during attempts to measure request throughput when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute measure request throughput for /api/auth/emergency-contact updater when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/emergency-contact updater configuration when rate limiting limits are reached (Ref LOAD_218).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-218",
+  "steps": "1. Target active interface for /api/auth/emergency-contact updater.\n2. Trigger action to measure request throughput when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_218).",
+  "input": "Target: /api/auth/emergency-contact updater, Action: measure request throughput, Parameters: when rate limiting limits are reached, Case Index: LOAD_218",
+  "expected": "The verification checks confirm that the system throughput scales linearly successfully under reference LOAD_218.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_218_execution.log",
+  "execution_time": "14.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

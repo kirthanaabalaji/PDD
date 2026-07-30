@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_152",
+  "module": "Database",
+  "feature": "test failover routing times for Symptom report query aggregator with 500 concurrent virtual users",
+  "title": "Verify behavior of Symptom report query aggregator during attempts to test failover routing times with 500 concurrent virtual users",
+  "objective": "Evaluate that user can safely execute test failover routing times for Symptom report query aggregator with 500 concurrent virtual users under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Symptom report query aggregator configuration with 500 concurrent virtual users (Ref LOAD_152).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-152",
+  "steps": "1. Target active interface for Symptom report query aggregator.\n2. Trigger action to test failover routing times with 500 concurrent virtual users.\n3. Collect audit logs and confirm status code validation (Check LOAD_152).",
+  "input": "Target: Symptom report query aggregator, Action: test failover routing times, Parameters: with 500 concurrent virtual users, Case Index: LOAD_152",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_152.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_152_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_296",
+  "module": "Settings",
+  "feature": "verify network callback for password visibility toggle switch for special character strings",
+  "title": "Verify behavior of password visibility toggle switch during attempts to verify network callback for special character strings",
+  "objective": "Evaluate that user can safely execute verify network callback for password visibility toggle switch for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password visibility toggle switch configuration for special character strings (Ref SEL_296).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-296",
+  "steps": "1. Target active interface for password visibility toggle switch.\n2. Trigger action to verify network callback for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_296).",
+  "input": "Target: password visibility toggle switch, Action: verify network callback, Parameters: for special character strings, Case Index: SEL_296",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_296.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_296_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

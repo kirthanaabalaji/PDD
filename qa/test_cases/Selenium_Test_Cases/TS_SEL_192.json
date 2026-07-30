@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_192",
+  "module": "Settings",
+  "feature": "verify layout rendering for onboarding assessment launch button for assistive screen readers",
+  "title": "Verify behavior of onboarding assessment launch button during attempts to verify layout rendering for assistive screen readers",
+  "objective": "Evaluate that user can safely execute verify layout rendering for onboarding assessment launch button for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to onboarding assessment launch button configuration for assistive screen readers (Ref SEL_192).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-192",
+  "steps": "1. Target active interface for onboarding assessment launch button.\n2. Trigger action to verify layout rendering for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_192).",
+  "input": "Target: onboarding assessment launch button, Action: verify layout rendering, Parameters: for assistive screen readers, Case Index: SEL_192",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_192.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_192_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

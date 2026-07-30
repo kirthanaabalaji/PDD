@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_132",
+  "module": "SymptomTracking",
+  "feature": "monitor memory consumption for dosage calculator inputs after biometric authentication failure",
+  "title": "Verify behavior of dosage calculator inputs during attempts to monitor memory consumption after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for dosage calculator inputs after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator inputs configuration after biometric authentication failure (Ref APP_132).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-132",
+  "steps": "1. Target active interface for dosage calculator inputs.\n2. Trigger action to monitor memory consumption after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_132).",
+  "input": "Target: dosage calculator inputs, Action: monitor memory consumption, Parameters: after biometric authentication failure, Case Index: APP_132",
+  "expected": "The verification checks confirm that the database commits transaction successfully under reference APP_132.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_132_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

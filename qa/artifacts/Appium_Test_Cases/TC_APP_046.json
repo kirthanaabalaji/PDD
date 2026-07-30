@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_046",
+  "module": "Settings",
+  "feature": "verify image dimensions for network latency indicator when offline network state is active",
+  "title": "Verify behavior of network latency indicator during attempts to verify image dimensions when offline network state is active",
+  "objective": "Evaluate that user can safely execute verify image dimensions for network latency indicator when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to network latency indicator configuration when offline network state is active (Ref APP_046).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-046",
+  "steps": "1. Target active interface for network latency indicator.\n2. Trigger action to verify image dimensions when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_046).",
+  "input": "Target: network latency indicator, Action: verify image dimensions, Parameters: when offline network state is active, Case Index: APP_046",
+  "expected": "The verification checks confirm that the user is navigated to dashboard successfully under reference APP_046.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_046_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

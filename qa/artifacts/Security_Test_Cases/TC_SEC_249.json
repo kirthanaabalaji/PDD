@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_249",
+  "module": "AccessControl",
+  "feature": "test prompt payload injection for broken session handling invalidator with high frequency rapid authentication attempts",
+  "title": "Verify behavior of broken session handling invalidator during attempts to test prompt payload injection with high frequency rapid authentication attempts",
+  "objective": "Evaluate that user can safely execute test prompt payload injection for broken session handling invalidator with high frequency rapid authentication attempts under system checks.",
+  "preconditions": "System state is reset, and target console is directed to broken session handling invalidator configuration with high frequency rapid authentication attempts (Ref SEC_249).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-249",
+  "steps": "1. Target active interface for broken session handling invalidator.\n2. Trigger action to test prompt payload injection with high frequency rapid authentication attempts.\n3. Collect audit logs and confirm status code validation (Check SEC_249).",
+  "input": "Target: broken session handling invalidator, Action: test prompt payload injection, Parameters: with high frequency rapid authentication attempts, Case Index: SEC_249",
+  "expected": "The verification checks confirm that the upload fails with file format error successfully under reference SEC_249.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_249_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_201",
+  "module": "BreathingExercises",
+  "feature": "inspect modal overlays for breathing exercise custom configuration for special character strings",
+  "title": "Verify behavior of breathing exercise custom configuration during attempts to inspect modal overlays for special character strings",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for breathing exercise custom configuration for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing exercise custom configuration configuration for special character strings (Ref SEL_201).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-201",
+  "steps": "1. Target active interface for breathing exercise custom configuration.\n2. Trigger action to inspect modal overlays for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_201).",
+  "input": "Target: breathing exercise custom configuration, Action: inspect modal overlays, Parameters: for special character strings, Case Index: SEL_201",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_201.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_201_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

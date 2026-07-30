@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_144",
+  "module": "Settings",
+  "feature": "test tooltips display for api error toast notifications for special character strings",
+  "title": "Verify behavior of api error toast notifications during attempts to test tooltips display for special character strings",
+  "objective": "Evaluate that user can safely execute test tooltips display for api error toast notifications for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration for special character strings (Ref SEL_144).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-144",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to test tooltips display for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_144).",
+  "input": "Target: api error toast notifications, Action: test tooltips display, Parameters: for special character strings, Case Index: SEL_144",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_144.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_144_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

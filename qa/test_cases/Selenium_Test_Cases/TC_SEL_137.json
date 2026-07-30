@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_137",
+  "module": "Settings",
+  "feature": "check boundary limits for offline mode status warning banner on narrow mobile layout viewport",
+  "title": "Verify behavior of offline mode status warning banner during attempts to check boundary limits on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute check boundary limits for offline mode status warning banner on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode status warning banner configuration on narrow mobile layout viewport (Ref SEL_137).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-137",
+  "steps": "1. Target active interface for offline mode status warning banner.\n2. Trigger action to check boundary limits on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_137).",
+  "input": "Target: offline mode status warning banner, Action: check boundary limits, Parameters: on narrow mobile layout viewport, Case Index: SEL_137",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_137.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_137_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

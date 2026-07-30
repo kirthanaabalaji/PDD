@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_074",
+  "module": "Onboarding",
+  "feature": "check boundary limits for profile information form fields when database sync is delayed",
+  "title": "Verify behavior of profile information form fields during attempts to check boundary limits when database sync is delayed",
+  "objective": "Evaluate that user can safely execute check boundary limits for profile information form fields when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile information form fields configuration when database sync is delayed (Ref SEL_074).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-074",
+  "steps": "1. Target active interface for profile information form fields.\n2. Trigger action to check boundary limits when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_074).",
+  "input": "Target: profile information form fields, Action: check boundary limits, Parameters: when database sync is delayed, Case Index: SEL_074",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_074.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_074_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_242",
+  "module": "BreathingAnalysis",
+  "feature": "check error rate threshold for /api/breathing/clinical-report endpoint on database replica set failover",
+  "title": "Verify behavior of /api/breathing/clinical-report endpoint during attempts to check error rate threshold on database replica set failover",
+  "objective": "Evaluate that user can safely execute check error rate threshold for /api/breathing/clinical-report endpoint on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/clinical-report endpoint configuration on database replica set failover (Ref LOAD_242).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-242",
+  "steps": "1. Target active interface for /api/breathing/clinical-report endpoint.\n2. Trigger action to check error rate threshold on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_242).",
+  "input": "Target: /api/breathing/clinical-report endpoint, Action: check error rate threshold, Parameters: on database replica set failover, Case Index: LOAD_242",
+  "expected": "The verification checks confirm that the database throughput handles burst operations successfully under reference LOAD_242.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_242_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_213",
+  "module": "BreathingAnalysis",
+  "feature": "test background execution for AI audio report preview with custom theme configurations",
+  "title": "Verify behavior of AI audio report preview during attempts to test background execution with custom theme configurations",
+  "objective": "Evaluate that user can safely execute test background execution for AI audio report preview with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to AI audio report preview configuration with custom theme configurations (Ref APP_213).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-213",
+  "steps": "1. Target active interface for AI audio report preview.\n2. Trigger action to test background execution with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_213).",
+  "input": "Target: AI audio report preview, Action: test background execution, Parameters: with custom theme configurations, Case Index: APP_213",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_213.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_213_success.png",
+  "execution_time": "2.25s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

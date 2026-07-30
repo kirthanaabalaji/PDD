@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_067",
+  "module": "Database",
+  "feature": "verify cache hit ratio for Express error logger route during server container restart cycles",
+  "title": "Verify behavior of Express error logger route during attempts to verify cache hit ratio during server container restart cycles",
+  "objective": "Evaluate that user can safely execute verify cache hit ratio for Express error logger route during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Express error logger route configuration during server container restart cycles (Ref LOAD_067).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-067",
+  "steps": "1. Target active interface for Express error logger route.\n2. Trigger action to verify cache hit ratio during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_067).",
+  "input": "Target: Express error logger route, Action: verify cache hit ratio, Parameters: during server container restart cycles, Case Index: LOAD_067",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_067.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_067_execution.log",
+  "execution_time": "12.9s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

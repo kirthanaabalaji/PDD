@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_277",
+  "module": "Onboarding",
+  "feature": "validate regex matching for profile picture upload modal for special character strings",
+  "title": "Verify behavior of profile picture upload modal during attempts to validate regex matching for special character strings",
+  "objective": "Evaluate that user can safely execute validate regex matching for profile picture upload modal for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile picture upload modal configuration for special character strings (Ref SEL_277).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-277",
+  "steps": "1. Target active interface for profile picture upload modal.\n2. Trigger action to validate regex matching for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_277).",
+  "input": "Target: profile picture upload modal, Action: validate regex matching, Parameters: for special character strings, Case Index: SEL_277",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_277.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_277_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

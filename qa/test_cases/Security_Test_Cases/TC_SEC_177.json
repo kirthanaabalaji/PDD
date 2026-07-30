@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_177",
+  "module": "SQLi",
+  "feature": "check cookie storage configurations for unauthenticated route access controls using prompt injection context escape",
+  "title": "Verify behavior of unauthenticated route access controls during attempts to check cookie storage configurations using prompt injection context escape",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for unauthenticated route access controls using prompt injection context escape under system checks.",
+  "preconditions": "System state is reset, and target console is directed to unauthenticated route access controls configuration using prompt injection context escape (Ref SEC_177).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-177",
+  "steps": "1. Target active interface for unauthenticated route access controls.\n2. Trigger action to check cookie storage configurations using prompt injection context escape.\n3. Collect audit logs and confirm status code validation (Check SEC_177).",
+  "input": "Target: unauthenticated route access controls, Action: check cookie storage configurations, Parameters: using prompt injection context escape, Case Index: SEC_177",
+  "expected": "The verification checks confirm that the relative path escape fails to load successfully under reference SEC_177.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_177_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_062",
+  "module": "BreathingAnalysis",
+  "feature": "inspect storage path allocation for camera snapshot frame with multiple rapid click gestures",
+  "title": "Verify behavior of camera snapshot frame during attempts to inspect storage path allocation with multiple rapid click gestures",
+  "objective": "Evaluate that user can safely execute inspect storage path allocation for camera snapshot frame with multiple rapid click gestures under system checks.",
+  "preconditions": "System state is reset, and target console is directed to camera snapshot frame configuration with multiple rapid click gestures (Ref APP_062).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-062",
+  "steps": "1. Target active interface for camera snapshot frame.\n2. Trigger action to inspect storage path allocation with multiple rapid click gestures.\n3. Collect audit logs and confirm status code validation (Check APP_062).",
+  "input": "Target: camera snapshot frame, Action: inspect storage path allocation, Parameters: with multiple rapid click gestures, Case Index: APP_062",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_062.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_062_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

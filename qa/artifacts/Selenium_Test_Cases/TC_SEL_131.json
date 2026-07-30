@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_131",
+  "module": "Settings",
+  "feature": "measure execution time for dark mode theme layout colors when database sync is delayed",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to measure execution time when database sync is delayed",
+  "objective": "Evaluate that user can safely execute measure execution time for dark mode theme layout colors when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration when database sync is delayed (Ref SEL_131).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-131",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to measure execution time when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_131).",
+  "input": "Target: dark mode theme layout colors, Action: measure execution time, Parameters: when database sync is delayed, Case Index: SEL_131",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_131.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_131_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

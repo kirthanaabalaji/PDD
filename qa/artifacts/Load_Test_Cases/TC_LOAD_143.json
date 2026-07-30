@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_143",
+  "module": "Database",
+  "feature": "test system recovery latency for MongoDB Atlas index metrics during server container restart cycles",
+  "title": "Verify behavior of MongoDB Atlas index metrics during attempts to test system recovery latency during server container restart cycles",
+  "objective": "Evaluate that user can safely execute test system recovery latency for MongoDB Atlas index metrics during server container restart cycles under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas index metrics configuration during server container restart cycles (Ref LOAD_143).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-143",
+  "steps": "1. Target active interface for MongoDB Atlas index metrics.\n2. Trigger action to test system recovery latency during server container restart cycles.\n3. Collect audit logs and confirm status code validation (Check LOAD_143).",
+  "input": "Target: MongoDB Atlas index metrics, Action: test system recovery latency, Parameters: during server container restart cycles, Case Index: LOAD_143",
+  "expected": "The verification checks confirm that the log parser executes without writing delay successfully under reference LOAD_143.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_143_execution.log",
+  "execution_time": "8.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

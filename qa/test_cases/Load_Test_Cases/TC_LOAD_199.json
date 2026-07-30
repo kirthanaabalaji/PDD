@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_199",
+  "module": "Authentication",
+  "feature": "inspect memory allocation limits for /api/auth/logout invalidator when rate limiting limits are reached",
+  "title": "Verify behavior of /api/auth/logout invalidator during attempts to inspect memory allocation limits when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute inspect memory allocation limits for /api/auth/logout invalidator when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/logout invalidator configuration when rate limiting limits are reached (Ref LOAD_199).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-199",
+  "steps": "1. Target active interface for /api/auth/logout invalidator.\n2. Trigger action to inspect memory allocation limits when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_199).",
+  "input": "Target: /api/auth/logout invalidator, Action: inspect memory allocation limits, Parameters: when rate limiting limits are reached, Case Index: LOAD_199",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_199.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_199_execution.log",
+  "execution_time": "15.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

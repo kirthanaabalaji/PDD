@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_268",
+  "module": "Authentication",
+  "feature": "reset options for session timeout idle alert for assistive screen readers",
+  "title": "Verify behavior of session timeout idle alert during attempts to reset options for assistive screen readers",
+  "objective": "Evaluate that user can safely execute reset options for session timeout idle alert for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session timeout idle alert configuration for assistive screen readers (Ref SEL_268).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-268",
+  "steps": "1. Target active interface for session timeout idle alert.\n2. Trigger action to reset options for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_268).",
+  "input": "Target: session timeout idle alert, Action: reset options, Parameters: for assistive screen readers, Case Index: SEL_268",
+  "expected": "The verification checks confirm that the local storage key is deleted successfully under reference SEL_268.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_268_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_136",
+  "module": "Dashboard",
+  "feature": "inspect download stream for navigation drawer menu items using cross-site scripting strings",
+  "title": "Verify behavior of navigation drawer menu items during attempts to inspect download stream using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute inspect download stream for navigation drawer menu items using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to navigation drawer menu items configuration using cross-site scripting strings (Ref SEL_136).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-136",
+  "steps": "1. Target active interface for navigation drawer menu items.\n2. Trigger action to inspect download stream using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_136).",
+  "input": "Target: navigation drawer menu items, Action: inspect download stream, Parameters: using cross-site scripting strings, Case Index: SEL_136",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_136.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_136_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

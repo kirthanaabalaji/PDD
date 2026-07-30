@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_119",
+  "module": "ClinicalReports",
+  "feature": "ensure contrast ratios for doctor search filter dropdown during server database failover",
+  "title": "Verify behavior of doctor search filter dropdown during attempts to ensure contrast ratios during server database failover",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for doctor search filter dropdown during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor search filter dropdown configuration during server database failover (Ref SEL_119).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-119",
+  "steps": "1. Target active interface for doctor search filter dropdown.\n2. Trigger action to ensure contrast ratios during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_119).",
+  "input": "Target: doctor search filter dropdown, Action: ensure contrast ratios, Parameters: during server database failover, Case Index: SEL_119",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_119.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_119_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

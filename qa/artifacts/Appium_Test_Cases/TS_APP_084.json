@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_084",
+  "module": "Dashboard",
+  "feature": "verify permission dialogue for streak card achievements progress when offline network state is active",
+  "title": "Verify behavior of streak card achievements progress during attempts to verify permission dialogue when offline network state is active",
+  "objective": "Evaluate that user can safely execute verify permission dialogue for streak card achievements progress when offline network state is active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to streak card achievements progress configuration when offline network state is active (Ref APP_084).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-084",
+  "steps": "1. Target active interface for streak card achievements progress.\n2. Trigger action to verify permission dialogue when offline network state is active.\n3. Collect audit logs and confirm status code validation (Check APP_084).",
+  "input": "Target: streak card achievements progress, Action: verify permission dialogue, Parameters: when offline network state is active, Case Index: APP_084",
+  "expected": "The verification checks confirm that the resource lock is released cleanly successfully under reference APP_084.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_084_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

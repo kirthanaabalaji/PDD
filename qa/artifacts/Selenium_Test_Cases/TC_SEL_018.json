@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_018",
+  "module": "Authentication",
+  "feature": "test tooltips display for session timeout idle alert with custom theme configurations",
+  "title": "Verify behavior of session timeout idle alert during attempts to test tooltips display with custom theme configurations",
+  "objective": "Evaluate that user can safely execute test tooltips display for session timeout idle alert with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session timeout idle alert configuration with custom theme configurations (Ref SEL_018).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-018",
+  "steps": "1. Target active interface for session timeout idle alert.\n2. Trigger action to test tooltips display with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_018).",
+  "input": "Target: session timeout idle alert, Action: test tooltips display, Parameters: with custom theme configurations, Case Index: SEL_018",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_018.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_018_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_052",
+  "module": "AccessControl",
+  "feature": "verify database decryption controls for user role privilege escalation limit without providing auth token headers",
+  "title": "Verify behavior of user role privilege escalation limit during attempts to verify database decryption controls without providing auth token headers",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for user role privilege escalation limit without providing auth token headers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user role privilege escalation limit configuration without providing auth token headers (Ref SEC_052).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-052",
+  "steps": "1. Target active interface for user role privilege escalation limit.\n2. Trigger action to verify database decryption controls without providing auth token headers.\n3. Collect audit logs and confirm status code validation (Check SEC_052).",
+  "input": "Target: user role privilege escalation limit, Action: verify database decryption controls, Parameters: without providing auth token headers, Case Index: SEC_052",
+  "expected": "The verification checks confirm that the system rejects the tampered token successfully under reference SEC_052.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_052_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

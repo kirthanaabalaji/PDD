@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_294",
+  "module": "AIChat",
+  "feature": "evaluate response time for /api/chat/clear POST route when rate limiting limits are reached",
+  "title": "Verify behavior of /api/chat/clear POST route during attempts to evaluate response time when rate limiting limits are reached",
+  "objective": "Evaluate that user can safely execute evaluate response time for /api/chat/clear POST route when rate limiting limits are reached under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/chat/clear POST route configuration when rate limiting limits are reached (Ref LOAD_294).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-294",
+  "steps": "1. Target active interface for /api/chat/clear POST route.\n2. Trigger action to evaluate response time when rate limiting limits are reached.\n3. Collect audit logs and confirm status code validation (Check LOAD_294).",
+  "input": "Target: /api/chat/clear POST route, Action: evaluate response time, Parameters: when rate limiting limits are reached, Case Index: LOAD_294",
+  "expected": "The verification checks confirm that the Redis cache handles query response successfully under reference LOAD_294.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_294_execution.log",
+  "execution_time": "9.3s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

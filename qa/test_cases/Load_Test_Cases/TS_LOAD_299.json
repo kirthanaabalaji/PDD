@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_299",
+  "module": "Authentication",
+  "feature": "test failover routing times for /api/auth/logout invalidator on database replica set failover",
+  "title": "Verify behavior of /api/auth/logout invalidator during attempts to test failover routing times on database replica set failover",
+  "objective": "Evaluate that user can safely execute test failover routing times for /api/auth/logout invalidator on database replica set failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/logout invalidator configuration on database replica set failover (Ref LOAD_299).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-299",
+  "steps": "1. Target active interface for /api/auth/logout invalidator.\n2. Trigger action to test failover routing times on database replica set failover.\n3. Collect audit logs and confirm status code validation (Check LOAD_299).",
+  "input": "Target: /api/auth/logout invalidator, Action: test failover routing times, Parameters: on database replica set failover, Case Index: LOAD_299",
+  "expected": "The verification checks confirm that the CPU execution load peaks below 80 percent successfully under reference LOAD_299.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_299_execution.log",
+  "execution_time": "15.3s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

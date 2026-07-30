@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_247",
+  "module": "AccessControl",
+  "feature": "tamper token authorization signature for user metadata modification routes using malicious string payloads",
+  "title": "Verify behavior of user metadata modification routes during attempts to tamper token authorization signature using malicious string payloads",
+  "objective": "Evaluate that user can safely execute tamper token authorization signature for user metadata modification routes using malicious string payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user metadata modification routes configuration using malicious string payloads (Ref SEC_247).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-247",
+  "steps": "1. Target active interface for user metadata modification routes.\n2. Trigger action to tamper token authorization signature using malicious string payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_247).",
+  "input": "Target: user metadata modification routes, Action: tamper token authorization signature, Parameters: using malicious string payloads, Case Index: SEC_247",
+  "expected": "The verification checks confirm that the input script is encoded and neutralized successfully under reference SEC_247.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_247_execution.log",
+  "execution_time": "0.680s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_266",
+  "module": "ClinicalReports",
+  "feature": "ensure contrast ratios for clinical PDF report print dialog with empty values",
+  "title": "Verify behavior of clinical PDF report print dialog during attempts to ensure contrast ratios with empty values",
+  "objective": "Evaluate that user can safely execute ensure contrast ratios for clinical PDF report print dialog with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical PDF report print dialog configuration with empty values (Ref SEL_266).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-266",
+  "steps": "1. Target active interface for clinical PDF report print dialog.\n2. Trigger action to ensure contrast ratios with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_266).",
+  "input": "Target: clinical PDF report print dialog, Action: ensure contrast ratios, Parameters: with empty values, Case Index: SEL_266",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_266.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_266_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

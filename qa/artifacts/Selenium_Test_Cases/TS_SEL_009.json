@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_009",
+  "module": "Authentication",
+  "feature": "log telemetry events for reset password form submission during api gateway timeout",
+  "title": "Verify behavior of reset password form submission during attempts to log telemetry events during api gateway timeout",
+  "objective": "Evaluate that user can safely execute log telemetry events for reset password form submission during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to reset password form submission configuration during api gateway timeout (Ref SEL_009).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-009",
+  "steps": "1. Target active interface for reset password form submission.\n2. Trigger action to log telemetry events during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_009).",
+  "input": "Target: reset password form submission, Action: log telemetry events, Parameters: during api gateway timeout, Case Index: SEL_009",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_009.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_009_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

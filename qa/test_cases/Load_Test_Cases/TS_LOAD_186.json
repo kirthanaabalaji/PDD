@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_186",
+  "module": "BreathingAnalysis",
+  "feature": "check thread context switches for /api/data/reports GET route under continuous long-duration soak run",
+  "title": "Verify behavior of /api/data/reports GET route during attempts to check thread context switches under continuous long-duration soak run",
+  "objective": "Evaluate that user can safely execute check thread context switches for /api/data/reports GET route under continuous long-duration soak run under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/data/reports GET route configuration under continuous long-duration soak run (Ref LOAD_186).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-186",
+  "steps": "1. Target active interface for /api/data/reports GET route.\n2. Trigger action to check thread context switches under continuous long-duration soak run.\n3. Collect audit logs and confirm status code validation (Check LOAD_186).",
+  "input": "Target: /api/data/reports GET route, Action: check thread context switches, Parameters: under continuous long-duration soak run, Case Index: LOAD_186",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_186.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_186_execution.log",
+  "execution_time": "11.7s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

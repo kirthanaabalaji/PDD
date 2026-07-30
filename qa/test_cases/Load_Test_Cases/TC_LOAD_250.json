@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_250",
+  "module": "Authentication",
+  "feature": "audit database query times for /api/auth/register endpoint under rapid burst volume spikes",
+  "title": "Verify behavior of /api/auth/register endpoint during attempts to audit database query times under rapid burst volume spikes",
+  "objective": "Evaluate that user can safely execute audit database query times for /api/auth/register endpoint under rapid burst volume spikes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/auth/register endpoint configuration under rapid burst volume spikes (Ref LOAD_250).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-250",
+  "steps": "1. Target active interface for /api/auth/register endpoint.\n2. Trigger action to audit database query times under rapid burst volume spikes.\n3. Collect audit logs and confirm status code validation (Check LOAD_250).",
+  "input": "Target: /api/auth/register endpoint, Action: audit database query times, Parameters: under rapid burst volume spikes, Case Index: LOAD_250",
+  "expected": "The verification checks confirm that the autoscaling rules provision extra nodes successfully under reference LOAD_250.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_250_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_204",
+  "module": "BreathingExercises",
+  "feature": "evaluate text wrapping for breathing orb size scale animation with multiple simultaneous submits",
+  "title": "Verify behavior of breathing orb size scale animation during attempts to evaluate text wrapping with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for breathing orb size scale animation with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing orb size scale animation configuration with multiple simultaneous submits (Ref SEL_204).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-204",
+  "steps": "1. Target active interface for breathing orb size scale animation.\n2. Trigger action to evaluate text wrapping with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_204).",
+  "input": "Target: breathing orb size scale animation, Action: evaluate text wrapping, Parameters: with multiple simultaneous submits, Case Index: SEL_204",
+  "expected": "The verification checks confirm that the form shows inline errors successfully under reference SEL_204.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_204_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

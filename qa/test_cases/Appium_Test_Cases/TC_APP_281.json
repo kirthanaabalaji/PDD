@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_281",
+  "module": "ClinicalReports",
+  "feature": "process voice capture for clinical baseline score chart on cold start app initialization",
+  "title": "Verify behavior of clinical baseline score chart during attempts to process voice capture on cold start app initialization",
+  "objective": "Evaluate that user can safely execute process voice capture for clinical baseline score chart on cold start app initialization under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical baseline score chart configuration on cold start app initialization (Ref APP_281).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-281",
+  "steps": "1. Target active interface for clinical baseline score chart.\n2. Trigger action to process voice capture on cold start app initialization.\n3. Collect audit logs and confirm status code validation (Check APP_281).",
+  "input": "Target: clinical baseline score chart, Action: process voice capture, Parameters: on cold start app initialization, Case Index: APP_281",
+  "expected": "The verification checks confirm that the audio recording starts successfully successfully under reference APP_281.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_281_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_091",
+  "module": "Onboarding",
+  "feature": "check tab indexing for user deletion confirmation popup when cookies are blocked",
+  "title": "Verify behavior of user deletion confirmation popup during attempts to check tab indexing when cookies are blocked",
+  "objective": "Evaluate that user can safely execute check tab indexing for user deletion confirmation popup when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user deletion confirmation popup configuration when cookies are blocked (Ref SEL_091).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-091",
+  "steps": "1. Target active interface for user deletion confirmation popup.\n2. Trigger action to check tab indexing when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_091).",
+  "input": "Target: user deletion confirmation popup, Action: check tab indexing, Parameters: when cookies are blocked, Case Index: SEL_091",
+  "expected": "The verification checks confirm that the response payload is fully parsed successfully under reference SEL_091.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_091_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

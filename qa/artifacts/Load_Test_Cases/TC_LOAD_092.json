@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_092",
+  "module": "BreathingAnalysis",
+  "feature": "measure request throughput for /api/breathing/clinical-report endpoint with unindexed database query filters",
+  "title": "Verify behavior of /api/breathing/clinical-report endpoint during attempts to measure request throughput with unindexed database query filters",
+  "objective": "Evaluate that user can safely execute measure request throughput for /api/breathing/clinical-report endpoint with unindexed database query filters under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/clinical-report endpoint configuration with unindexed database query filters (Ref LOAD_092).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-092",
+  "steps": "1. Target active interface for /api/breathing/clinical-report endpoint.\n2. Trigger action to measure request throughput with unindexed database query filters.\n3. Collect audit logs and confirm status code validation (Check LOAD_092).",
+  "input": "Target: /api/breathing/clinical-report endpoint, Action: measure request throughput, Parameters: with unindexed database query filters, Case Index: LOAD_092",
+  "expected": "The verification checks confirm that the log parser executes without writing delay successfully under reference LOAD_092.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_092_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

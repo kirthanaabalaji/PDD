@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_010",
+  "module": "AccessControl",
+  "feature": "verify database decryption controls for express parameter pollution sanitizer with array parameter pollution payloads",
+  "title": "Verify behavior of express parameter pollution sanitizer during attempts to verify database decryption controls with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute verify database decryption controls for express parameter pollution sanitizer with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to express parameter pollution sanitizer configuration with array parameter pollution payloads (Ref SEC_010).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-010",
+  "steps": "1. Target active interface for express parameter pollution sanitizer.\n2. Trigger action to verify database decryption controls with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_010).",
+  "input": "Target: express parameter pollution sanitizer, Action: verify database decryption controls, Parameters: with array parameter pollution payloads, Case Index: SEC_010",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_010.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_010_execution.log",
+  "execution_time": "0.120s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

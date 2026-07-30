@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_164",
+  "module": "SymptomTracking",
+  "feature": "check storage updates for dosage calculator slider controls after five minutes of inactivity",
+  "title": "Verify behavior of dosage calculator slider controls during attempts to check storage updates after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute check storage updates for dosage calculator slider controls after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator slider controls configuration after five minutes of inactivity (Ref SEL_164).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-164",
+  "steps": "1. Target active interface for dosage calculator slider controls.\n2. Trigger action to check storage updates after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_164).",
+  "input": "Target: dosage calculator slider controls, Action: check storage updates, Parameters: after five minutes of inactivity, Case Index: SEL_164",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_164.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_164_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

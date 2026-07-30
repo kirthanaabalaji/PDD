@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_001",
+  "module": "AIChat",
+  "feature": "audit touch target scale for localization language switcher during database compaction sync",
+  "title": "Verify behavior of localization language switcher during attempts to audit touch target scale during database compaction sync",
+  "objective": "Evaluate that user can safely execute audit touch target scale for localization language switcher during database compaction sync under system checks.",
+  "preconditions": "System state is reset, and target console is directed to localization language switcher configuration during database compaction sync (Ref APP_001).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-001",
+  "steps": "1. Target active interface for localization language switcher.\n2. Trigger action to audit touch target scale during database compaction sync.\n3. Collect audit logs and confirm status code validation (Check APP_001).",
+  "input": "Target: localization language switcher, Action: audit touch target scale, Parameters: during database compaction sync, Case Index: APP_001",
+  "expected": "The verification checks confirm that the layout switches to landscape mode successfully under reference APP_001.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_001_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

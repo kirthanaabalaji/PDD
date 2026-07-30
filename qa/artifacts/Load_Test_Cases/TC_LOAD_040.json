@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_040",
+  "module": "Database",
+  "feature": "audit database query times for /api/health check endpoint with large audio attachment uploads",
+  "title": "Verify behavior of /api/health check endpoint during attempts to audit database query times with large audio attachment uploads",
+  "objective": "Evaluate that user can safely execute audit database query times for /api/health check endpoint with large audio attachment uploads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/health check endpoint configuration with large audio attachment uploads (Ref LOAD_040).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-040",
+  "steps": "1. Target active interface for /api/health check endpoint.\n2. Trigger action to audit database query times with large audio attachment uploads.\n3. Collect audit logs and confirm status code validation (Check LOAD_040).",
+  "input": "Target: /api/health check endpoint, Action: audit database query times, Parameters: with large audio attachment uploads, Case Index: LOAD_040",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_040.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_040_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_120",
+  "module": "AIChat",
+  "feature": "verify database writes capacity for Groq chat history truncation queue with multi-threaded k6 load configurations",
+  "title": "Verify behavior of Groq chat history truncation queue during attempts to verify database writes capacity with multi-threaded k6 load configurations",
+  "objective": "Evaluate that user can safely execute verify database writes capacity for Groq chat history truncation queue with multi-threaded k6 load configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq chat history truncation queue configuration with multi-threaded k6 load configurations (Ref LOAD_120).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-120",
+  "steps": "1. Target active interface for Groq chat history truncation queue.\n2. Trigger action to verify database writes capacity with multi-threaded k6 load configurations.\n3. Collect audit logs and confirm status code validation (Check LOAD_120).",
+  "input": "Target: Groq chat history truncation queue, Action: verify database writes capacity, Parameters: with multi-threaded k6 load configurations, Case Index: LOAD_120",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_120.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_120_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

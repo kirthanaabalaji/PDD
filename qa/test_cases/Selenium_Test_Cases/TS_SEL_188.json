@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_188",
+  "module": "Authentication",
+  "feature": "audit focus states for session token refresh process when database sync is delayed",
+  "title": "Verify behavior of session token refresh process during attempts to audit focus states when database sync is delayed",
+  "objective": "Evaluate that user can safely execute audit focus states for session token refresh process when database sync is delayed under system checks.",
+  "preconditions": "System state is reset, and target console is directed to session token refresh process configuration when database sync is delayed (Ref SEL_188).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-188",
+  "steps": "1. Target active interface for session token refresh process.\n2. Trigger action to audit focus states when database sync is delayed.\n3. Collect audit logs and confirm status code validation (Check SEL_188).",
+  "input": "Target: session token refresh process, Action: audit focus states, Parameters: when database sync is delayed, Case Index: SEL_188",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_188.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_188_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

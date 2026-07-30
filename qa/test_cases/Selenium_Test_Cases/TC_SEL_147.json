@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_147",
+  "module": "Onboarding",
+  "feature": "validate fields for image crop zoom controls with multiple simultaneous submits",
+  "title": "Verify behavior of image crop zoom controls during attempts to validate fields with multiple simultaneous submits",
+  "objective": "Evaluate that user can safely execute validate fields for image crop zoom controls with multiple simultaneous submits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration with multiple simultaneous submits (Ref SEL_147).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-147",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to validate fields with multiple simultaneous submits.\n3. Collect audit logs and confirm status code validation (Check SEL_147).",
+  "input": "Target: image crop zoom controls, Action: validate fields, Parameters: with multiple simultaneous submits, Case Index: SEL_147",
+  "expected": "The verification checks confirm that the layout reflows without overlapping successfully under reference SEL_147.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_147_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

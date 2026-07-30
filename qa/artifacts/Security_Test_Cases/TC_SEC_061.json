@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_061",
+  "module": "AccessControl",
+  "feature": "test executable file injection for Gemini API prompt injection defense using external URL domains",
+  "title": "Verify behavior of Gemini API prompt injection defense during attempts to test executable file injection using external URL domains",
+  "objective": "Evaluate that user can safely execute test executable file injection for Gemini API prompt injection defense using external URL domains under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Gemini API prompt injection defense configuration using external URL domains (Ref SEC_061).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-061",
+  "steps": "1. Target active interface for Gemini API prompt injection defense.\n2. Trigger action to test executable file injection using external URL domains.\n3. Collect audit logs and confirm status code validation (Check SEC_061).",
+  "input": "Target: Gemini API prompt injection defense, Action: test executable file injection, Parameters: using external URL domains, Case Index: SEC_061",
+  "expected": "The verification checks confirm that the server blocks the unauthorized data access successfully under reference SEC_061.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_061_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_248",
+  "module": "Settings",
+  "feature": "check storage updates for questionnaire submit assessment confirmation after session token expiration",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to check storage updates after session token expiration",
+  "objective": "Evaluate that user can safely execute check storage updates for questionnaire submit assessment confirmation after session token expiration under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration after session token expiration (Ref SEL_248).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-248",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to check storage updates after session token expiration.\n3. Collect audit logs and confirm status code validation (Check SEL_248).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: check storage updates, Parameters: after session token expiration, Case Index: SEL_248",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_248.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_248_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

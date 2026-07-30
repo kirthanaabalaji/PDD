@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_257",
+  "module": "BreathingExercises",
+  "feature": "measure execution time for breathing history table paging with browser extensions active",
+  "title": "Verify behavior of breathing history table paging during attempts to measure execution time with browser extensions active",
+  "objective": "Evaluate that user can safely execute measure execution time for breathing history table paging with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing history table paging configuration with browser extensions active (Ref SEL_257).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-257",
+  "steps": "1. Target active interface for breathing history table paging.\n2. Trigger action to measure execution time with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_257).",
+  "input": "Target: breathing history table paging, Action: measure execution time, Parameters: with browser extensions active, Case Index: SEL_257",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_257.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_257_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

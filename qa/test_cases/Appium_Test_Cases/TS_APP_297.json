@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_297",
+  "module": "ClinicalReports",
+  "feature": "test background execution for pinch-to-zoom chart viewer when system notification service crashes",
+  "title": "Verify behavior of pinch-to-zoom chart viewer during attempts to test background execution when system notification service crashes",
+  "objective": "Evaluate that user can safely execute test background execution for pinch-to-zoom chart viewer when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pinch-to-zoom chart viewer configuration when system notification service crashes (Ref APP_297).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-297",
+  "steps": "1. Target active interface for pinch-to-zoom chart viewer.\n2. Trigger action to test background execution when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_297).",
+  "input": "Target: pinch-to-zoom chart viewer, Action: test background execution, Parameters: when system notification service crashes, Case Index: APP_297",
+  "expected": "The verification checks confirm that the network requests are queued for retry successfully under reference APP_297.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_297_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

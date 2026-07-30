@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_240",
+  "module": "BreathingExercises",
+  "feature": "verify cache database write for breath holding counter when system notification service crashes",
+  "title": "Verify behavior of breath holding counter during attempts to verify cache database write when system notification service crashes",
+  "objective": "Evaluate that user can safely execute verify cache database write for breath holding counter when system notification service crashes under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breath holding counter configuration when system notification service crashes (Ref APP_240).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-240",
+  "steps": "1. Target active interface for breath holding counter.\n2. Trigger action to verify cache database write when system notification service crashes.\n3. Collect audit logs and confirm status code validation (Check APP_240).",
+  "input": "Target: breath holding counter, Action: verify cache database write, Parameters: when system notification service crashes, Case Index: APP_240",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_240.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_240_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

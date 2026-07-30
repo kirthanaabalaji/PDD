@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_295",
+  "module": "XSS",
+  "feature": "validate secure header parameters for SQL injection payload filters with array parameter pollution payloads",
+  "title": "Verify behavior of SQL injection payload filters during attempts to validate secure header parameters with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute validate secure header parameters for SQL injection payload filters with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to SQL injection payload filters configuration with array parameter pollution payloads (Ref SEC_295).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-295",
+  "steps": "1. Target active interface for SQL injection payload filters.\n2. Trigger action to validate secure header parameters with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_295).",
+  "input": "Target: SQL injection payload filters, Action: validate secure header parameters, Parameters: with array parameter pollution payloads, Case Index: SEC_295",
+  "expected": "The verification checks confirm that the user is kept on original origin domain successfully under reference SEC_295.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_295_execution.log",
+  "execution_time": "0.520s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

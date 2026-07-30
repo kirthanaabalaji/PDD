@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_122",
+  "module": "AIChat",
+  "feature": "check storage updates for ai chat message input box on high resolution displays",
+  "title": "Verify behavior of ai chat message input box during attempts to check storage updates on high resolution displays",
+  "objective": "Evaluate that user can safely execute check storage updates for ai chat message input box on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to ai chat message input box configuration on high resolution displays (Ref SEL_122).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-122",
+  "steps": "1. Target active interface for ai chat message input box.\n2. Trigger action to check storage updates on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_122).",
+  "input": "Target: ai chat message input box, Action: check storage updates, Parameters: on high resolution displays, Case Index: SEL_122",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_122.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_122_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

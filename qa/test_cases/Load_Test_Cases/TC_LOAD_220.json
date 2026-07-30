@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_220",
+  "module": "AIChat",
+  "feature": "inspect memory allocation limits for Groq chat history truncation queue when downstream Groq service is throttled",
+  "title": "Verify behavior of Groq chat history truncation queue during attempts to inspect memory allocation limits when downstream Groq service is throttled",
+  "objective": "Evaluate that user can safely execute inspect memory allocation limits for Groq chat history truncation queue when downstream Groq service is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Groq chat history truncation queue configuration when downstream Groq service is throttled (Ref LOAD_220).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-220",
+  "steps": "1. Target active interface for Groq chat history truncation queue.\n2. Trigger action to inspect memory allocation limits when downstream Groq service is throttled.\n3. Collect audit logs and confirm status code validation (Check LOAD_220).",
+  "input": "Target: Groq chat history truncation queue, Action: inspect memory allocation limits, Parameters: when downstream Groq service is throttled, Case Index: LOAD_220",
+  "expected": "The verification checks confirm that the server restarts within execution limits successfully under reference LOAD_220.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_220_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

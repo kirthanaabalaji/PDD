@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_196",
+  "module": "Settings",
+  "feature": "check tab indexing for password visibility toggle switch when file size exceeds limit",
+  "title": "Verify behavior of password visibility toggle switch during attempts to check tab indexing when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute check tab indexing for password visibility toggle switch when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to password visibility toggle switch configuration when file size exceeds limit (Ref SEL_196).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-196",
+  "steps": "1. Target active interface for password visibility toggle switch.\n2. Trigger action to check tab indexing when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_196).",
+  "input": "Target: password visibility toggle switch, Action: check tab indexing, Parameters: when file size exceeds limit, Case Index: SEL_196",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_196.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_196_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

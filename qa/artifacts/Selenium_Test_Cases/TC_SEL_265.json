@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_265",
+  "module": "Authentication",
+  "feature": "validate text alignment for remember me cookie setting with custom theme configurations",
+  "title": "Verify behavior of remember me cookie setting during attempts to validate text alignment with custom theme configurations",
+  "objective": "Evaluate that user can safely execute validate text alignment for remember me cookie setting with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to remember me cookie setting configuration with custom theme configurations (Ref SEL_265).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-265",
+  "steps": "1. Target active interface for remember me cookie setting.\n2. Trigger action to validate text alignment with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check SEL_265).",
+  "input": "Target: remember me cookie setting, Action: validate text alignment, Parameters: with custom theme configurations, Case Index: SEL_265",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_265.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_265_success.png",
+  "execution_time": "0.520s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

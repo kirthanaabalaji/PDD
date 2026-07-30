@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_104",
+  "module": "OfflineMode",
+  "feature": "inspect storage path allocation for offline mode login cache when database storage quota is exceeded",
+  "title": "Verify behavior of offline mode login cache during attempts to inspect storage path allocation when database storage quota is exceeded",
+  "objective": "Evaluate that user can safely execute inspect storage path allocation for offline mode login cache when database storage quota is exceeded under system checks.",
+  "preconditions": "System state is reset, and target console is directed to offline mode login cache configuration when database storage quota is exceeded (Ref APP_104).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-104",
+  "steps": "1. Target active interface for offline mode login cache.\n2. Trigger action to inspect storage path allocation when database storage quota is exceeded.\n3. Collect audit logs and confirm status code validation (Check APP_104).",
+  "input": "Target: offline mode login cache, Action: inspect storage path allocation, Parameters: when database storage quota is exceeded, Case Index: APP_104",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_104.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_104_success.png",
+  "execution_time": "2.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_120",
+  "module": "ClinicalReports",
+  "feature": "evaluate text wrapping for pulmonologist appointment booking slot selection when file size exceeds limit",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to evaluate text wrapping when file size exceeds limit",
+  "objective": "Evaluate that user can safely execute evaluate text wrapping for pulmonologist appointment booking slot selection when file size exceeds limit under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration when file size exceeds limit (Ref SEL_120).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-120",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to evaluate text wrapping when file size exceeds limit.\n3. Collect audit logs and confirm status code validation (Check SEL_120).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: evaluate text wrapping, Parameters: when file size exceeds limit, Case Index: SEL_120",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_120.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_120_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

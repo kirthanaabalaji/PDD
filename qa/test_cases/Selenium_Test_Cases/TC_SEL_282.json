@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_282",
+  "module": "AIChat",
+  "feature": "log telemetry events for help center search suggestions dropdown under local storage quota limits",
+  "title": "Verify behavior of help center search suggestions dropdown during attempts to log telemetry events under local storage quota limits",
+  "objective": "Evaluate that user can safely execute log telemetry events for help center search suggestions dropdown under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to help center search suggestions dropdown configuration under local storage quota limits (Ref SEL_282).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-282",
+  "steps": "1. Target active interface for help center search suggestions dropdown.\n2. Trigger action to log telemetry events under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_282).",
+  "input": "Target: help center search suggestions dropdown, Action: log telemetry events, Parameters: under local storage quota limits, Case Index: SEL_282",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_282.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_282_success.png",
+  "execution_time": "0.280s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

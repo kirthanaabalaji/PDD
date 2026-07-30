@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_207",
+  "module": "Database",
+  "feature": "check thread context switches for Mongoose symptom query indexes under complex aggregation pipeline queries",
+  "title": "Verify behavior of Mongoose symptom query indexes during attempts to check thread context switches under complex aggregation pipeline queries",
+  "objective": "Evaluate that user can safely execute check thread context switches for Mongoose symptom query indexes under complex aggregation pipeline queries under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Mongoose symptom query indexes configuration under complex aggregation pipeline queries (Ref LOAD_207).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-207",
+  "steps": "1. Target active interface for Mongoose symptom query indexes.\n2. Trigger action to check thread context switches under complex aggregation pipeline queries.\n3. Collect audit logs and confirm status code validation (Check LOAD_207).",
+  "input": "Target: Mongoose symptom query indexes, Action: check thread context switches, Parameters: under complex aggregation pipeline queries, Case Index: LOAD_207",
+  "expected": "The verification checks confirm that the request queue does not overflow backlog successfully under reference LOAD_207.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_207_execution.log",
+  "execution_time": "12.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

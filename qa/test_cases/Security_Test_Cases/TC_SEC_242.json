@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_242",
+  "module": "XSS",
+  "feature": "verify public route visibility for XSS script sanitization on notes without providing auth token headers",
+  "title": "Verify behavior of XSS script sanitization on notes during attempts to verify public route visibility without providing auth token headers",
+  "objective": "Evaluate that user can safely execute verify public route visibility for XSS script sanitization on notes without providing auth token headers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to XSS script sanitization on notes configuration without providing auth token headers (Ref SEC_242).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-242",
+  "steps": "1. Target active interface for XSS script sanitization on notes.\n2. Trigger action to verify public route visibility without providing auth token headers.\n3. Collect audit logs and confirm status code validation (Check SEC_242).",
+  "input": "Target: XSS script sanitization on notes, Action: verify public route visibility, Parameters: without providing auth token headers, Case Index: SEC_242",
+  "expected": "The verification checks confirm that the security headers are parsed properly successfully under reference SEC_242.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_242_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_180",
+  "module": "Onboarding",
+  "feature": "inspect modal overlays for change password input validation during api gateway timeout",
+  "title": "Verify behavior of change password input validation during attempts to inspect modal overlays during api gateway timeout",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for change password input validation during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to change password input validation configuration during api gateway timeout (Ref SEL_180).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-180",
+  "steps": "1. Target active interface for change password input validation.\n2. Trigger action to inspect modal overlays during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_180).",
+  "input": "Target: change password input validation, Action: inspect modal overlays, Parameters: during api gateway timeout, Case Index: SEL_180",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_180.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_180_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

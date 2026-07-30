@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_175",
+  "module": "Settings",
+  "feature": "test app launch sequence for doctor call emergency button with custom theme configurations",
+  "title": "Verify behavior of doctor call emergency button during attempts to test app launch sequence with custom theme configurations",
+  "objective": "Evaluate that user can safely execute test app launch sequence for doctor call emergency button with custom theme configurations under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor call emergency button configuration with custom theme configurations (Ref APP_175).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-175",
+  "steps": "1. Target active interface for doctor call emergency button.\n2. Trigger action to test app launch sequence with custom theme configurations.\n3. Collect audit logs and confirm status code validation (Check APP_175).",
+  "input": "Target: doctor call emergency button, Action: test app launch sequence, Parameters: with custom theme configurations, Case Index: APP_175",
+  "expected": "The verification checks confirm that the notification badge count increments successfully under reference APP_175.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_175_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

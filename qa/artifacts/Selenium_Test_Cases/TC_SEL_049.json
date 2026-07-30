@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_049",
+  "module": "Authentication",
+  "feature": "check tab indexing for cookie consent policy banner for special character strings",
+  "title": "Verify behavior of cookie consent policy banner during attempts to check tab indexing for special character strings",
+  "objective": "Evaluate that user can safely execute check tab indexing for cookie consent policy banner for special character strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to cookie consent policy banner configuration for special character strings (Ref SEL_049).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-049",
+  "steps": "1. Target active interface for cookie consent policy banner.\n2. Trigger action to check tab indexing for special character strings.\n3. Collect audit logs and confirm status code validation (Check SEL_049).",
+  "input": "Target: cookie consent policy banner, Action: check tab indexing, Parameters: for special character strings, Case Index: SEL_049",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_049.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_049_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

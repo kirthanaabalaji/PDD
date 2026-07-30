@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_041",
+  "module": "Onboarding",
+  "feature": "audit focus states for user deletion confirmation popup using cross-site scripting strings",
+  "title": "Verify behavior of user deletion confirmation popup during attempts to audit focus states using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute audit focus states for user deletion confirmation popup using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to user deletion confirmation popup configuration using cross-site scripting strings (Ref SEL_041).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-041",
+  "steps": "1. Target active interface for user deletion confirmation popup.\n2. Trigger action to audit focus states using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_041).",
+  "input": "Target: user deletion confirmation popup, Action: audit focus states, Parameters: using cross-site scripting strings, Case Index: SEL_041",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_041.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_041_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

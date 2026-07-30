@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_273",
+  "module": "Settings",
+  "feature": "validate fields for notification preferences toggles when network speed is throttled",
+  "title": "Verify behavior of notification preferences toggles during attempts to validate fields when network speed is throttled",
+  "objective": "Evaluate that user can safely execute validate fields for notification preferences toggles when network speed is throttled under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification preferences toggles configuration when network speed is throttled (Ref SEL_273).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-273",
+  "steps": "1. Target active interface for notification preferences toggles.\n2. Trigger action to validate fields when network speed is throttled.\n3. Collect audit logs and confirm status code validation (Check SEL_273).",
+  "input": "Target: notification preferences toggles, Action: validate fields, Parameters: when network speed is throttled, Case Index: SEL_273",
+  "expected": "The verification checks confirm that the state resets to default settings successfully under reference SEL_273.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_273_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

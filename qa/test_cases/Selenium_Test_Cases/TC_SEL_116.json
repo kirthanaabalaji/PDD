@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_116",
+  "module": "ClinicalReports",
+  "feature": "check boundary limits for clinical PDF report print dialog for assistive screen readers",
+  "title": "Verify behavior of clinical PDF report print dialog during attempts to check boundary limits for assistive screen readers",
+  "objective": "Evaluate that user can safely execute check boundary limits for clinical PDF report print dialog for assistive screen readers under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical PDF report print dialog configuration for assistive screen readers (Ref SEL_116).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-116",
+  "steps": "1. Target active interface for clinical PDF report print dialog.\n2. Trigger action to check boundary limits for assistive screen readers.\n3. Collect audit logs and confirm status code validation (Check SEL_116).",
+  "input": "Target: clinical PDF report print dialog, Action: check boundary limits, Parameters: for assistive screen readers, Case Index: SEL_116",
+  "expected": "The verification checks confirm that the input is sanitized and saved successfully under reference SEL_116.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_116_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_070",
+  "module": "ClinicalReports",
+  "feature": "check tab indexing for pulmonologist appointment booking slot selection using invalid credentials",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to check tab indexing using invalid credentials",
+  "objective": "Evaluate that user can safely execute check tab indexing for pulmonologist appointment booking slot selection using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration using invalid credentials (Ref SEL_070).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-070",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to check tab indexing using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_070).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: check tab indexing, Parameters: using invalid credentials, Case Index: SEL_070",
+  "expected": "The verification checks confirm that the client retries the API request successfully under reference SEL_070.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_070_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

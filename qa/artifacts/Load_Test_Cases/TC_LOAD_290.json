@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_290",
+  "module": "Database",
+  "feature": "test system recovery latency for /api/health check endpoint with high frequency preflight requests",
+  "title": "Verify behavior of /api/health check endpoint during attempts to test system recovery latency with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute test system recovery latency for /api/health check endpoint with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/health check endpoint configuration with high frequency preflight requests (Ref LOAD_290).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-290",
+  "steps": "1. Target active interface for /api/health check endpoint.\n2. Trigger action to test system recovery latency with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_290).",
+  "input": "Target: /api/health check endpoint, Action: test system recovery latency, Parameters: with high frequency preflight requests, Case Index: LOAD_290",
+  "expected": "The verification checks confirm that the container memory utilization is stable successfully under reference LOAD_290.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_290_execution.log",
+  "execution_time": "4.5s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

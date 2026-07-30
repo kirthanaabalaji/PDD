@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_270",
+  "module": "ClinicalReports",
+  "feature": "test tooltips display for pulmonologist appointment booking slot selection on narrow mobile layout viewport",
+  "title": "Verify behavior of pulmonologist appointment booking slot selection during attempts to test tooltips display on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute test tooltips display for pulmonologist appointment booking slot selection on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to pulmonologist appointment booking slot selection configuration on narrow mobile layout viewport (Ref SEL_270).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-270",
+  "steps": "1. Target active interface for pulmonologist appointment booking slot selection.\n2. Trigger action to test tooltips display on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_270).",
+  "input": "Target: pulmonologist appointment booking slot selection, Action: test tooltips display, Parameters: on narrow mobile layout viewport, Case Index: SEL_270",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_270.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_270_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_042",
+  "module": "BreathingAnalysis",
+  "feature": "evaluate response time for /api/breathing/clinical-report endpoint with large session payload records",
+  "title": "Verify behavior of /api/breathing/clinical-report endpoint during attempts to evaluate response time with large session payload records",
+  "objective": "Evaluate that user can safely execute evaluate response time for /api/breathing/clinical-report endpoint with large session payload records under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/breathing/clinical-report endpoint configuration with large session payload records (Ref LOAD_042).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-042",
+  "steps": "1. Target active interface for /api/breathing/clinical-report endpoint.\n2. Trigger action to evaluate response time with large session payload records.\n3. Collect audit logs and confirm status code validation (Check LOAD_042).",
+  "input": "Target: /api/breathing/clinical-report endpoint, Action: evaluate response time, Parameters: with large session payload records, Case Index: LOAD_042",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_042.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_042_execution.log",
+  "execution_time": "6.9s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

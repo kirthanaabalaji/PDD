@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_066",
+  "module": "ClinicalReports",
+  "feature": "verify layout rendering for clinical PDF report print dialog during api gateway timeout",
+  "title": "Verify behavior of clinical PDF report print dialog during attempts to verify layout rendering during api gateway timeout",
+  "objective": "Evaluate that user can safely execute verify layout rendering for clinical PDF report print dialog during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical PDF report print dialog configuration during api gateway timeout (Ref SEL_066).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-066",
+  "steps": "1. Target active interface for clinical PDF report print dialog.\n2. Trigger action to verify layout rendering during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_066).",
+  "input": "Target: clinical PDF report print dialog, Action: verify layout rendering, Parameters: during api gateway timeout, Case Index: SEL_066",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_066.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_066_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

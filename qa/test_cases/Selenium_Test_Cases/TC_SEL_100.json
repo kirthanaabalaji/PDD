@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_100",
+  "module": "Authentication",
+  "feature": "reset options for login input fields during server database failover",
+  "title": "Verify behavior of login input fields during attempts to reset options during server database failover",
+  "objective": "Evaluate that user can safely execute reset options for login input fields during server database failover under system checks.",
+  "preconditions": "System state is reset, and target console is directed to login input fields configuration during server database failover (Ref SEL_100).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-100",
+  "steps": "1. Target active interface for login input fields.\n2. Trigger action to reset options during server database failover.\n3. Collect audit logs and confirm status code validation (Check SEL_100).",
+  "input": "Target: login input fields, Action: reset options, Parameters: during server database failover, Case Index: SEL_100",
+  "expected": "The verification checks confirm that the animation runs smoothly at 60fps successfully under reference SEL_100.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_100_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

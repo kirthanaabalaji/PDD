@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_004",
+  "module": "BreathingExercises",
+  "feature": "validate regex matching for breathing orb size scale animation on narrow mobile layout viewport",
+  "title": "Verify behavior of breathing orb size scale animation during attempts to validate regex matching on narrow mobile layout viewport",
+  "objective": "Evaluate that user can safely execute validate regex matching for breathing orb size scale animation on narrow mobile layout viewport under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing orb size scale animation configuration on narrow mobile layout viewport (Ref SEL_004).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-004",
+  "steps": "1. Target active interface for breathing orb size scale animation.\n2. Trigger action to validate regex matching on narrow mobile layout viewport.\n3. Collect audit logs and confirm status code validation (Check SEL_004).",
+  "input": "Target: breathing orb size scale animation, Action: validate regex matching, Parameters: on narrow mobile layout viewport, Case Index: SEL_004",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_004.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_004_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

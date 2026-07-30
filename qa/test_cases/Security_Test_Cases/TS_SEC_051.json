@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_051",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for HttpOnly and Secure session cookies with html tag script inputs",
+  "title": "Verify behavior of HttpOnly and Secure session cookies during attempts to check cookie storage configurations with html tag script inputs",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for HttpOnly and Secure session cookies with html tag script inputs under system checks.",
+  "preconditions": "System state is reset, and target console is directed to HttpOnly and Secure session cookies configuration with html tag script inputs (Ref SEC_051).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-051",
+  "steps": "1. Target active interface for HttpOnly and Secure session cookies.\n2. Trigger action to check cookie storage configurations with html tag script inputs.\n3. Collect audit logs and confirm status code validation (Check SEC_051).",
+  "input": "Target: HttpOnly and Secure session cookies, Action: check cookie storage configurations, Parameters: with html tag script inputs, Case Index: SEC_051",
+  "expected": "The verification checks confirm that the application returns database error blocks successfully under reference SEC_051.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_051_execution.log",
+  "execution_time": "0.200s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

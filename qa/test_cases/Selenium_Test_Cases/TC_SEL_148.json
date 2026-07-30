@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_148",
+  "module": "Settings",
+  "feature": "track cookie changes for questionnaire submit assessment confirmation when cookies are blocked",
+  "title": "Verify behavior of questionnaire submit assessment confirmation during attempts to track cookie changes when cookies are blocked",
+  "objective": "Evaluate that user can safely execute track cookie changes for questionnaire submit assessment confirmation when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to questionnaire submit assessment confirmation configuration when cookies are blocked (Ref SEL_148).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-148",
+  "steps": "1. Target active interface for questionnaire submit assessment confirmation.\n2. Trigger action to track cookie changes when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_148).",
+  "input": "Target: questionnaire submit assessment confirmation, Action: track cookie changes, Parameters: when cookies are blocked, Case Index: SEL_148",
+  "expected": "The verification checks confirm that the cookies are cleared from storage successfully under reference SEL_148.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_148_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

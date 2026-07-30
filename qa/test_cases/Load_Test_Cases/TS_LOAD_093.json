@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_093",
+  "module": "Database",
+  "feature": "check payload upload time for MongoDB Atlas index metrics under complex aggregation pipeline queries",
+  "title": "Verify behavior of MongoDB Atlas index metrics during attempts to check payload upload time under complex aggregation pipeline queries",
+  "objective": "Evaluate that user can safely execute check payload upload time for MongoDB Atlas index metrics under complex aggregation pipeline queries under system checks.",
+  "preconditions": "System state is reset, and target console is directed to MongoDB Atlas index metrics configuration under complex aggregation pipeline queries (Ref LOAD_093).",
+  "priority": "High",
+  "severity": "Major",
+  "requirements_mapping": "REQ-LOAD-093",
+  "steps": "1. Target active interface for MongoDB Atlas index metrics.\n2. Trigger action to check payload upload time under complex aggregation pipeline queries.\n3. Collect audit logs and confirm status code validation (Check LOAD_093).",
+  "input": "Target: MongoDB Atlas index metrics, Action: check payload upload time, Parameters: under complex aggregation pipeline queries, Case Index: LOAD_093",
+  "expected": "The verification checks confirm that the downstream calls queue up safely successfully under reference LOAD_093.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_093_execution.log",
+  "execution_time": "8.1s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

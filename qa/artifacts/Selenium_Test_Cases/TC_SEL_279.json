@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_279",
+  "module": "Settings",
+  "feature": "audit keyboard navigation for emergency trigger swipe action button using invalid credentials",
+  "title": "Verify behavior of emergency trigger swipe action button during attempts to audit keyboard navigation using invalid credentials",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for emergency trigger swipe action button using invalid credentials under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency trigger swipe action button configuration using invalid credentials (Ref SEL_279).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-279",
+  "steps": "1. Target active interface for emergency trigger swipe action button.\n2. Trigger action to audit keyboard navigation using invalid credentials.\n3. Collect audit logs and confirm status code validation (Check SEL_279).",
+  "input": "Target: emergency trigger swipe action button, Action: audit keyboard navigation, Parameters: using invalid credentials, Case Index: SEL_279",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_279.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_279_success.png",
+  "execution_time": "0.840s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

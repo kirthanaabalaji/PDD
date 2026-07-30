@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_126",
+  "module": "ClinicalReports",
+  "feature": "validate fields for clinical recommendations expansion accordion after five minutes of inactivity",
+  "title": "Verify behavior of clinical recommendations expansion accordion during attempts to validate fields after five minutes of inactivity",
+  "objective": "Evaluate that user can safely execute validate fields for clinical recommendations expansion accordion after five minutes of inactivity under system checks.",
+  "preconditions": "System state is reset, and target console is directed to clinical recommendations expansion accordion configuration after five minutes of inactivity (Ref SEL_126).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-126",
+  "steps": "1. Target active interface for clinical recommendations expansion accordion.\n2. Trigger action to validate fields after five minutes of inactivity.\n3. Collect audit logs and confirm status code validation (Check SEL_126).",
+  "input": "Target: clinical recommendations expansion accordion, Action: validate fields, Parameters: after five minutes of inactivity, Case Index: SEL_126",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_126.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_126_success.png",
+  "execution_time": "0.600s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

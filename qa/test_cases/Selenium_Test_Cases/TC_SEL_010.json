@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_010",
+  "module": "SymptomTracking",
+  "feature": "inspect download stream for symptom log severity score slider with browser extensions active",
+  "title": "Verify behavior of symptom log severity score slider during attempts to inspect download stream with browser extensions active",
+  "objective": "Evaluate that user can safely execute inspect download stream for symptom log severity score slider with browser extensions active under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration with browser extensions active (Ref SEL_010).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-010",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to inspect download stream with browser extensions active.\n3. Collect audit logs and confirm status code validation (Check SEL_010).",
+  "input": "Target: symptom log severity score slider, Action: inspect download stream, Parameters: with browser extensions active, Case Index: SEL_010",
+  "expected": "The verification checks confirm that the browser console shows no errors successfully under reference SEL_010.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_010_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

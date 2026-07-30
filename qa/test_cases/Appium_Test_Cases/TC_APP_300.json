@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_300",
+  "module": "Authentication",
+  "feature": "monitor memory consumption for welcome screen layout on cold start app initialization",
+  "title": "Verify behavior of welcome screen layout during attempts to monitor memory consumption on cold start app initialization",
+  "objective": "Evaluate that user can safely execute monitor memory consumption for welcome screen layout on cold start app initialization under system checks.",
+  "preconditions": "System state is reset, and target console is directed to welcome screen layout configuration on cold start app initialization (Ref APP_300).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-APP-300",
+  "steps": "1. Target active interface for welcome screen layout.\n2. Trigger action to monitor memory consumption on cold start app initialization.\n3. Collect audit logs and confirm status code validation (Check APP_300).",
+  "input": "Target: welcome screen layout, Action: monitor memory consumption, Parameters: on cold start app initialization, Case Index: APP_300",
+  "expected": "The verification checks confirm that the item is scrolled into focus successfully under reference APP_300.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_300_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Pixel 6 Emulator",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

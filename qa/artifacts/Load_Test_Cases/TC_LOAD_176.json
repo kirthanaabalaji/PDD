@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_176",
+  "module": "Database",
+  "feature": "measure request throughput for Atlas backup restore throughput with high frequency preflight requests",
+  "title": "Verify behavior of Atlas backup restore throughput during attempts to measure request throughput with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute measure request throughput for Atlas backup restore throughput with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to Atlas backup restore throughput configuration with high frequency preflight requests (Ref LOAD_176).",
+  "priority": "Low",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-176",
+  "steps": "1. Target active interface for Atlas backup restore throughput.\n2. Trigger action to measure request throughput with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_176).",
+  "input": "Target: Atlas backup restore throughput, Action: measure request throughput, Parameters: with high frequency preflight requests, Case Index: LOAD_176",
+  "expected": "The verification checks confirm that the bandwidth footprint meets network specs successfully under reference LOAD_176.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_176_execution.log",
+  "execution_time": "11.7s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

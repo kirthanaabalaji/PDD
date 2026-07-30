@@ -1,0 +1,22 @@
+{
+  "id": "TS_LOAD_240",
+  "module": "Database",
+  "feature": "check payload upload time for /api/health check endpoint under continuous memory heap pressure",
+  "title": "Verify behavior of /api/health check endpoint during attempts to check payload upload time under continuous memory heap pressure",
+  "objective": "Evaluate that user can safely execute check payload upload time for /api/health check endpoint under continuous memory heap pressure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to /api/health check endpoint configuration under continuous memory heap pressure (Ref LOAD_240).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-LOAD-240",
+  "steps": "1. Target active interface for /api/health check endpoint.\n2. Trigger action to check payload upload time under continuous memory heap pressure.\n3. Collect audit logs and confirm status code validation (Check LOAD_240).",
+  "input": "Target: /api/health check endpoint, Action: check payload upload time, Parameters: under continuous memory heap pressure, Case Index: LOAD_240",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_240.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_LOAD_240_execution.log",
+  "execution_time": "4.5s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

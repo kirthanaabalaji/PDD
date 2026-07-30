@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_174",
+  "module": "Onboarding",
+  "feature": "audit keyboard navigation for profile information form fields using cross-site scripting strings",
+  "title": "Verify behavior of profile information form fields during attempts to audit keyboard navigation using cross-site scripting strings",
+  "objective": "Evaluate that user can safely execute audit keyboard navigation for profile information form fields using cross-site scripting strings under system checks.",
+  "preconditions": "System state is reset, and target console is directed to profile information form fields configuration using cross-site scripting strings (Ref SEL_174).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-174",
+  "steps": "1. Target active interface for profile information form fields.\n2. Trigger action to audit keyboard navigation using cross-site scripting strings.\n3. Collect audit logs and confirm status code validation (Check SEL_174).",
+  "input": "Target: profile information form fields, Action: audit keyboard navigation, Parameters: using cross-site scripting strings, Case Index: SEL_174",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_174.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_174_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

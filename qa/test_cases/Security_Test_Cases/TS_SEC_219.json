@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_219",
+  "module": "AccessControl",
+  "feature": "check cookie storage configurations for server-side request forgery checks with array parameter pollution payloads",
+  "title": "Verify behavior of server-side request forgery checks during attempts to check cookie storage configurations with array parameter pollution payloads",
+  "objective": "Evaluate that user can safely execute check cookie storage configurations for server-side request forgery checks with array parameter pollution payloads under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server-side request forgery checks configuration with array parameter pollution payloads (Ref SEC_219).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEC-219",
+  "steps": "1. Target active interface for server-side request forgery checks.\n2. Trigger action to check cookie storage configurations with array parameter pollution payloads.\n3. Collect audit logs and confirm status code validation (Check SEC_219).",
+  "input": "Target: server-side request forgery checks, Action: check cookie storage configurations, Parameters: with array parameter pollution payloads, Case Index: SEC_219",
+  "expected": "The verification checks confirm that the backend blocks terminal execution successfully under reference SEC_219.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_219_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

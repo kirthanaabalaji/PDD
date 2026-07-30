@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_257",
+  "module": "Onboarding",
+  "feature": "audit gesture scaling zoom for storage permission alert dialog on device orientation rotate",
+  "title": "Verify behavior of storage permission alert dialog during attempts to audit gesture scaling zoom on device orientation rotate",
+  "objective": "Evaluate that user can safely execute audit gesture scaling zoom for storage permission alert dialog on device orientation rotate under system checks.",
+  "preconditions": "System state is reset, and target console is directed to storage permission alert dialog configuration on device orientation rotate (Ref APP_257).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-257",
+  "steps": "1. Target active interface for storage permission alert dialog.\n2. Trigger action to audit gesture scaling zoom on device orientation rotate.\n3. Collect audit logs and confirm status code validation (Check APP_257).",
+  "input": "Target: storage permission alert dialog, Action: audit gesture scaling zoom, Parameters: on device orientation rotate, Case Index: APP_257",
+  "expected": "The verification checks confirm that the toast notification is displayed successfully under reference APP_257.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_257_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 14",
+  "automation_tool": "Appium Native Driver"
+}

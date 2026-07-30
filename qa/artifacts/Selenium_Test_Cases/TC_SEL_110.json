@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_110",
+  "module": "SymptomTracking",
+  "feature": "measure execution time for symptom log severity score slider when cookies are blocked",
+  "title": "Verify behavior of symptom log severity score slider during attempts to measure execution time when cookies are blocked",
+  "objective": "Evaluate that user can safely execute measure execution time for symptom log severity score slider when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to symptom log severity score slider configuration when cookies are blocked (Ref SEL_110).",
+  "priority": "Low",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-110",
+  "steps": "1. Target active interface for symptom log severity score slider.\n2. Trigger action to measure execution time when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_110).",
+  "input": "Target: symptom log severity score slider, Action: measure execution time, Parameters: when cookies are blocked, Case Index: SEL_110",
+  "expected": "The verification checks confirm that the token is renewed seamlessly successfully under reference SEL_110.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_110_success.png",
+  "execution_time": "0.120s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

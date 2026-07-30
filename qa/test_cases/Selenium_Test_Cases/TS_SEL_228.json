@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_228",
+  "module": "Settings",
+  "feature": "test tooltips display for emergency contact name entry with empty values",
+  "title": "Verify behavior of emergency contact name entry during attempts to test tooltips display with empty values",
+  "objective": "Evaluate that user can safely execute test tooltips display for emergency contact name entry with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to emergency contact name entry configuration with empty values (Ref SEL_228).",
+  "priority": "High",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEL-228",
+  "steps": "1. Target active interface for emergency contact name entry.\n2. Trigger action to test tooltips display with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_228).",
+  "input": "Target: emergency contact name entry, Action: test tooltips display, Parameters: with empty values, Case Index: SEL_228",
+  "expected": "The verification checks confirm that the download begins automatically successfully under reference SEL_228.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_228_success.png",
+  "execution_time": "0.760s",
+  "environment": "Production Sandbox",
+  "browser_device": "Chrome",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

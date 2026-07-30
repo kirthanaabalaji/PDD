@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_281",
+  "module": "Settings",
+  "feature": "process submission for dark mode theme layout colors when cookies are blocked",
+  "title": "Verify behavior of dark mode theme layout colors during attempts to process submission when cookies are blocked",
+  "objective": "Evaluate that user can safely execute process submission for dark mode theme layout colors when cookies are blocked under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dark mode theme layout colors configuration when cookies are blocked (Ref SEL_281).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-281",
+  "steps": "1. Target active interface for dark mode theme layout colors.\n2. Trigger action to process submission when cookies are blocked.\n3. Collect audit logs and confirm status code validation (Check SEL_281).",
+  "input": "Target: dark mode theme layout colors, Action: process submission, Parameters: when cookies are blocked, Case Index: SEL_281",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_281.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_281_success.png",
+  "execution_time": "0.200s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

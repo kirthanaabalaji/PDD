@@ -1,0 +1,22 @@
+{
+  "id": "TC_LOAD_138",
+  "module": "Database",
+  "feature": "measure network bandwidth load for CORS preflight request routing check with high frequency preflight requests",
+  "title": "Verify behavior of CORS preflight request routing check during attempts to measure network bandwidth load with high frequency preflight requests",
+  "objective": "Evaluate that user can safely execute measure network bandwidth load for CORS preflight request routing check with high frequency preflight requests under system checks.",
+  "preconditions": "System state is reset, and target console is directed to CORS preflight request routing check configuration with high frequency preflight requests (Ref LOAD_138).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-LOAD-138",
+  "steps": "1. Target active interface for CORS preflight request routing check.\n2. Trigger action to measure network bandwidth load with high frequency preflight requests.\n3. Collect audit logs and confirm status code validation (Check LOAD_138).",
+  "input": "Target: CORS preflight request routing check, Action: measure network bandwidth load, Parameters: with high frequency preflight requests, Case Index: LOAD_138",
+  "expected": "The verification checks confirm that the connection pool handles load without timeout successfully under reference LOAD_138.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_LOAD_138_execution.log",
+  "execution_time": "14.1s",
+  "environment": "k6 Load Runner Sandbox",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

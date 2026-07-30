@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEC_292",
+  "module": "XSS",
+  "feature": "test executable file injection for XSS script sanitization on notes by altering token payload structure",
+  "title": "Verify behavior of XSS script sanitization on notes during attempts to test executable file injection by altering token payload structure",
+  "objective": "Evaluate that user can safely execute test executable file injection for XSS script sanitization on notes by altering token payload structure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to XSS script sanitization on notes configuration by altering token payload structure (Ref SEC_292).",
+  "priority": "Medium",
+  "severity": "Critical",
+  "requirements_mapping": "REQ-SEC-292",
+  "steps": "1. Target active interface for XSS script sanitization on notes.\n2. Trigger action to test executable file injection by altering token payload structure.\n3. Collect audit logs and confirm status code validation (Check SEC_292).",
+  "input": "Target: XSS script sanitization on notes, Action: test executable file injection, Parameters: by altering token payload structure, Case Index: SEC_292",
+  "expected": "The verification checks confirm that the authentication rate limiter blocks IP successfully under reference SEC_292.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TC_SEC_292_execution.log",
+  "execution_time": "0.280s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}

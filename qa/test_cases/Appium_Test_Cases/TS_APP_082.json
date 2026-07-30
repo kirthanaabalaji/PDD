@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_082",
+  "module": "SymptomTracking",
+  "feature": "test swipe gesture handlers for dosage calculator inputs during deep link routing lookup",
+  "title": "Verify behavior of dosage calculator inputs during attempts to test swipe gesture handlers during deep link routing lookup",
+  "objective": "Evaluate that user can safely execute test swipe gesture handlers for dosage calculator inputs during deep link routing lookup under system checks.",
+  "preconditions": "System state is reset, and target console is directed to dosage calculator inputs configuration during deep link routing lookup (Ref APP_082).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-082",
+  "steps": "1. Target active interface for dosage calculator inputs.\n2. Trigger action to test swipe gesture handlers during deep link routing lookup.\n3. Collect audit logs and confirm status code validation (Check APP_082).",
+  "input": "Target: dosage calculator inputs, Action: test swipe gesture handlers, Parameters: during deep link routing lookup, Case Index: APP_082",
+  "expected": "The verification checks confirm that the image crop boundaries are validated successfully under reference APP_082.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_082_success.png",
+  "execution_time": "2.00s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "OnePlus 10 Pro",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

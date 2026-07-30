@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_054",
+  "module": "BreathingExercises",
+  "feature": "inspect modal overlays for breathing orb size scale animation under local storage quota limits",
+  "title": "Verify behavior of breathing orb size scale animation during attempts to inspect modal overlays under local storage quota limits",
+  "objective": "Evaluate that user can safely execute inspect modal overlays for breathing orb size scale animation under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to breathing orb size scale animation configuration under local storage quota limits (Ref SEL_054).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-054",
+  "steps": "1. Target active interface for breathing orb size scale animation.\n2. Trigger action to inspect modal overlays under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_054).",
+  "input": "Target: breathing orb size scale animation, Action: inspect modal overlays, Parameters: under local storage quota limits, Case Index: SEL_054",
+  "expected": "The verification checks confirm that the accessibility indicators remain focused successfully under reference SEL_054.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_054_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

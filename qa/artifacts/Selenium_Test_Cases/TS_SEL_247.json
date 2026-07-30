@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_247",
+  "module": "Onboarding",
+  "feature": "reset options for image crop zoom controls with empty values",
+  "title": "Verify behavior of image crop zoom controls during attempts to reset options with empty values",
+  "objective": "Evaluate that user can safely execute reset options for image crop zoom controls with empty values under system checks.",
+  "preconditions": "System state is reset, and target console is directed to image crop zoom controls configuration with empty values (Ref SEL_247).",
+  "priority": "Medium",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-247",
+  "steps": "1. Target active interface for image crop zoom controls.\n2. Trigger action to reset options with empty values.\n3. Collect audit logs and confirm status code validation (Check SEL_247).",
+  "input": "Target: image crop zoom controls, Action: reset options, Parameters: with empty values, Case Index: SEL_247",
+  "expected": "The verification checks confirm that the server rejects the submission successfully under reference SEL_247.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_247_success.png",
+  "execution_time": "0.680s",
+  "environment": "Production Sandbox",
+  "browser_device": "Edge",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

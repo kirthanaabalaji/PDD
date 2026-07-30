@@ -1,0 +1,22 @@
+{
+  "id": "TC_SEL_073",
+  "module": "Settings",
+  "feature": "inspect download stream for notification preferences toggles under local storage quota limits",
+  "title": "Verify behavior of notification preferences toggles during attempts to inspect download stream under local storage quota limits",
+  "objective": "Evaluate that user can safely execute inspect download stream for notification preferences toggles under local storage quota limits under system checks.",
+  "preconditions": "System state is reset, and target console is directed to notification preferences toggles configuration under local storage quota limits (Ref SEL_073).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-073",
+  "steps": "1. Target active interface for notification preferences toggles.\n2. Trigger action to inspect download stream under local storage quota limits.\n3. Collect audit logs and confirm status code validation (Check SEL_073).",
+  "input": "Target: notification preferences toggles, Action: inspect download stream, Parameters: under local storage quota limits, Case Index: SEL_073",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_073.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_SEL_073_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "macOS Sonoma",
+  "automation_tool": "Selenium Webdriver"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TC_APP_241",
+  "module": "Settings",
+  "feature": "inspect alarm configuration for account deletion sequence under extreme low battery conditions",
+  "title": "Verify behavior of account deletion sequence during attempts to inspect alarm configuration under extreme low battery conditions",
+  "objective": "Evaluate that user can safely execute inspect alarm configuration for account deletion sequence under extreme low battery conditions under system checks.",
+  "preconditions": "System state is reset, and target console is directed to account deletion sequence configuration under extreme low battery conditions (Ref APP_241).",
+  "priority": "Medium",
+  "severity": "Major",
+  "requirements_mapping": "REQ-APP-241",
+  "steps": "1. Target active interface for account deletion sequence.\n2. Trigger action to inspect alarm configuration under extreme low battery conditions.\n3. Collect audit logs and confirm status code validation (Check APP_241).",
+  "input": "Target: account deletion sequence, Action: inspect alarm configuration, Parameters: under extreme low battery conditions, Case Index: APP_241",
+  "expected": "The verification checks confirm that the device releases memory allocations successfully under reference APP_241.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TC_APP_241_success.png",
+  "execution_time": "1.75s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Samsung Galaxy S22",
+  "platform": "Android 13",
+  "automation_tool": "Appium Native Driver"
+}

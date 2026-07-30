@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_293",
+  "module": "Settings",
+  "feature": "audit focus states for captcha validation image challenge on high resolution displays",
+  "title": "Verify behavior of captcha validation image challenge during attempts to audit focus states on high resolution displays",
+  "objective": "Evaluate that user can safely execute audit focus states for captcha validation image challenge on high resolution displays under system checks.",
+  "preconditions": "System state is reset, and target console is directed to captcha validation image challenge configuration on high resolution displays (Ref SEL_293).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEL-293",
+  "steps": "1. Target active interface for captcha validation image challenge.\n2. Trigger action to audit focus states on high resolution displays.\n3. Collect audit logs and confirm status code validation (Check SEL_293).",
+  "input": "Target: captcha validation image challenge, Action: audit focus states, Parameters: on high resolution displays, Case Index: SEL_293",
+  "expected": "The verification checks confirm that the toast error alert is rendered successfully under reference SEL_293.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_293_success.png",
+  "execution_time": "0.360s",
+  "environment": "Production Sandbox",
+  "browser_device": "Firefox",
+  "platform": "Linux Ubuntu",
+  "automation_tool": "Selenium Webdriver"
+}

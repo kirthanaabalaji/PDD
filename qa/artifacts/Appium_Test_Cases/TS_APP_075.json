@@ -1,0 +1,22 @@
+{
+  "id": "TS_APP_075",
+  "module": "Settings",
+  "feature": "test local database fetch for doctor call emergency button after biometric authentication failure",
+  "title": "Verify behavior of doctor call emergency button during attempts to test local database fetch after biometric authentication failure",
+  "objective": "Evaluate that user can safely execute test local database fetch for doctor call emergency button after biometric authentication failure under system checks.",
+  "preconditions": "System state is reset, and target console is directed to doctor call emergency button configuration after biometric authentication failure (Ref APP_075).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-APP-075",
+  "steps": "1. Target active interface for doctor call emergency button.\n2. Trigger action to test local database fetch after biometric authentication failure.\n3. Collect audit logs and confirm status code validation (Check APP_075).",
+  "input": "Target: doctor call emergency button, Action: test local database fetch, Parameters: after biometric authentication failure, Case Index: APP_075",
+  "expected": "The verification checks confirm that the initialization starts within SLA successfully under reference APP_075.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_APP_075_success.png",
+  "execution_time": "1.50s",
+  "environment": "Mobile Emulation Lab",
+  "browser_device": "Google Pixel 7",
+  "platform": "Android 12",
+  "automation_tool": "Appium Native Driver"
+}

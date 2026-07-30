@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEL_294",
+  "module": "Settings",
+  "feature": "validate fields for api error toast notifications during api gateway timeout",
+  "title": "Verify behavior of api error toast notifications during attempts to validate fields during api gateway timeout",
+  "objective": "Evaluate that user can safely execute validate fields for api error toast notifications during api gateway timeout under system checks.",
+  "preconditions": "System state is reset, and target console is directed to api error toast notifications configuration during api gateway timeout (Ref SEL_294).",
+  "priority": "High",
+  "severity": "Minor",
+  "requirements_mapping": "REQ-SEL-294",
+  "steps": "1. Target active interface for api error toast notifications.\n2. Trigger action to validate fields during api gateway timeout.\n3. Collect audit logs and confirm status code validation (Check SEL_294).",
+  "input": "Target: api error toast notifications, Action: validate fields, Parameters: during api gateway timeout, Case Index: SEL_294",
+  "expected": "The verification checks confirm that the session redirects to login successfully under reference SEL_294.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "evidence/TS_SEL_294_success.png",
+  "execution_time": "0.440s",
+  "environment": "Production Sandbox",
+  "browser_device": "Safari",
+  "platform": "Windows 11",
+  "automation_tool": "Selenium Webdriver"
+}

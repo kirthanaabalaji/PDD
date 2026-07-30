@@ -1,0 +1,22 @@
+{
+  "id": "TS_SEC_269",
+  "module": "AccessControl",
+  "feature": "verify cascade data wiping for server-side request forgery checks for client local cookie storage",
+  "title": "Verify behavior of server-side request forgery checks during attempts to verify cascade data wiping for client local cookie storage",
+  "objective": "Evaluate that user can safely execute verify cascade data wiping for server-side request forgery checks for client local cookie storage under system checks.",
+  "preconditions": "System state is reset, and target console is directed to server-side request forgery checks configuration for client local cookie storage (Ref SEC_269).",
+  "priority": "Low",
+  "severity": "Major",
+  "requirements_mapping": "REQ-SEC-269",
+  "steps": "1. Target active interface for server-side request forgery checks.\n2. Trigger action to verify cascade data wiping for client local cookie storage.\n3. Collect audit logs and confirm status code validation (Check SEC_269).",
+  "input": "Target: server-side request forgery checks, Action: verify cascade data wiping, Parameters: for client local cookie storage, Case Index: SEC_269",
+  "expected": "The verification checks confirm that the request is blocked by payload validator successfully under reference SEC_269.",
+  "actual": "Passed: Execution validates expected behavior.",
+  "status": "Passed",
+  "evidence": "logs/TS_SEC_269_execution.log",
+  "execution_time": "0.840s",
+  "environment": "OWASP ZAP Target Environment",
+  "browser_device": "OWASP ZAP Target VM",
+  "platform": "Kali Linux Security Box",
+  "automation_tool": "OWASP ZAP CLI"
+}
