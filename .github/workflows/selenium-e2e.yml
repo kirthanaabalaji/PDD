@@ -45,7 +45,7 @@ jobs:
           BROWSER: 'chrome'
           BASE_URL: 'http://localhost:3000'
         run: |
-          npm test || true
+          npm test
 
       - name: Merge & Compile Mochawesome HTML Report
         run: |
@@ -59,6 +59,13 @@ jobs:
           path: |
             reports/E2E_Report.xlsx
             excel/E2E_Report.xlsx
+          if-no-files-found: ignore
+
+      - name: Upload Uniqueness Audit Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Uniqueness_Verification_Report
+          path: qa/reports/e2e_uniqueness_verification_report.md
           if-no-files-found: ignore
 
       - name: Upload Mochawesome HTML Report Artifact
