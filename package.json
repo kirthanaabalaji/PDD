@@ -1,0 +1,50 @@
+{
+  "name": "asthmasense-react-e2e-selenium",
+  "version": "1.0.0",
+  "description": "Enterprise End-to-End Selenium WebDriver Automation Framework for React Web Applications with Route & Form Discovery, ExcelJS Reporting, and GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --config config/mocha.config.js tests/**/*.test.js",
+    "test:chrome": "cross-env BROWSER=chrome mocha --config config/mocha.config.js tests/**/*.test.js",
+    "test:firefox": "cross-env BROWSER=firefox mocha --config config/mocha.config.js tests/**/*.test.js",
+    "test:edge": "cross-env BROWSER=edge mocha --config config/mocha.config.js tests/**/*.test.js",
+    "test:headless": "cross-env HEADLESS=true mocha --config config/mocha.config.js tests/**/*.test.js",
+    "test:parallel": "cross-env PARALLEL=true mocha --config config/mocha.config.js --parallel tests/**/*.test.js",
+    "test:auth": "mocha --config config/mocha.config.js tests/auth.test.js",
+    "test:forms": "mocha --config config/mocha.config.js tests/formValidation.test.js",
+    "test:ui": "mocha --config config/mocha.config.js tests/uiElements.test.js",
+    "test:nav": "mocha --config config/mocha.config.js tests/navigation.test.js",
+    "test:discovered": "mocha --config config/mocha.config.js tests/discoveredForms.test.js",
+    "report:merge": "mochawesome-merge reports/mochawesome-report/*.json > reports/mochawesome-report/merged.json",
+    "report:html": "marge reports/mochawesome-report/merged.json --reportDir reports/mochawesome-report --reportTitle \"AsthmaSense AI React E2E Automation Report\""
+  },
+  "keywords": [
+    "selenium",
+    "webdriver",
+    "react",
+    "e2e",
+    "automation",
+    "mocha",
+    "chai",
+    "exceljs",
+    "mochawesome",
+    "winston",
+    "github-actions"
+  ],
+  "author": "Antigravity Senior QA Automation Architect",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "chromedriver": "^120.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0",
+    "geckodriver": "^4.2.1",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "selenium-webdriver": "^4.16.0",
+    "winston": "^3.11.0"
+  }
+}

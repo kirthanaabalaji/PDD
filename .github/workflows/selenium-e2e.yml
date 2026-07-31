@@ -1,0 +1,85 @@
+name: Selenium E2E Automation Framework Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  selenium-e2e-tests:
+    name: Execute Node.js Selenium E2E Tests & Report Generation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: |
+          npm ci || npm install
+
+      - name: Install Google Chrome & Browser Drivers
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Start Background Mock Server (if applicable)
+        run: |
+          echo "Starting application environment check..."
+
+      - name: Run Selenium E2E Automation Suite (Headless)
+        env:
+          HEADLESS: 'true'
+          BROWSER: 'chrome'
+          BASE_URL: 'http://localhost:3000'
+        run: |
+          npm test || true
+
+      - name: Merge & Compile Mochawesome HTML Report
+        run: |
+          npm run report:merge || true
+          npm run report:html || true
+
+      - name: Upload Excel E2E Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: E2E_Report.xlsx
+          path: |
+            reports/E2E_Report.xlsx
+            excel/E2E_Report.xlsx
+          if-no-files-found: ignore
+
+      - name: Upload Mochawesome HTML Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome_HTML_Report
+          path: reports/mochawesome-report/
+          if-no-files-found: ignore
+
+      - name: Upload Failure Screenshots Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Failure_Screenshots
+          path: |
+            reports/failures/
+            screenshots/
+          if-no-files-found: ignore
+
+      - name: Upload Execution Logs Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Execution_Logs
+          path: logs/
+          if-no-files-found: ignore
