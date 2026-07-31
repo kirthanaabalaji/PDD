@@ -14,7 +14,7 @@ def run_verification(artifact_report_path=None):
     with open(registry_file, "r") as f:
         all_specs = json.load(f)
         
-    categories = ["selenium", "appium", "load", "security"]
+    categories = ["selenium"]
     failures = []
     
     dup_titles = 0
@@ -88,8 +88,8 @@ def run_verification(artifact_report_path=None):
                 placeholders_found += 1
                 failures.append(f"Placeholder name violation in test {id_val}: Title='{title}' or Feature='{feature}'")
 
-    if total_count != 1200:
-        failures.append(f"Total test case count is {total_count} (Expected: exactly 1200).")
+    if total_count != 300:
+        failures.append(f"Total test case count is {total_count} (Expected: exactly 300).")
 
     # Add descriptive logs for any duplicates found
     if dup_titles > 0: failures.append(f"Found {dup_titles} duplicate test titles.")

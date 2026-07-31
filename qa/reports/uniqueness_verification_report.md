@@ -13,16 +13,13 @@ This report verifies that the rebuilt QA automation framework meets all strict q
 - Duplicate Traceability Entries: 0
 - Duplicate Business Scenarios: 0
 - Placeholder Naming Violations: 0
-- Total Test Cases Checked: 1200
+- Total Test Cases Checked: 300
 
 ## Category Execution Audit Breakdown
 
 | Category | Total Tests | Status |
 | :--- | :---: | :---: |
 | SELENIUM | 300 | ✅ PASS |
-| APPIUM | 300 | ✅ PASS |
-| LOAD | 300 | ✅ PASS |
-| SECURITY | 300 | ✅ PASS |
 
 ## Detailed Audit Log
 
